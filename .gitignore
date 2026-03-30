@@ -1,0 +1,10 @@
+.env
+.tmp/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+credentials.json
+service-account.json

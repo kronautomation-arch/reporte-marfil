@@ -1,0 +1,1262 @@
+{
+  "updated_at": "2026-03-30T17:15:25.381856",
+  "periodos": {
+    "ayer": {
+      "fecha_inicio": "2026-03-29",
+      "fecha_fin": "2026-03-29",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 0,
+        "devoluciones": 0,
+        "ventas_netas": 0,
+        "ordenes": 0,
+        "unidades": 0,
+        "costo_producto": 0,
+        "costo_envio": 0,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 0,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 0
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 0
+            }
+          ],
+          "roas": 0,
+          "cpa": 0
+        },
+        "utilidad": 0,
+        "ultimo_dia": {
+          "ventas": 0,
+          "utilidad": 0,
+          "ordenes": 0,
+          "roas": 0,
+          "cpa": 0,
+          "gasto_ads": 0
+        },
+        "historial_diario": []
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 0,
+        "costos_totales": 0,
+        "utilidad_neta": 0,
+        "margen": 0,
+        "distribucion": {}
+      }
+    },
+    "7d": {
+      "fecha_inicio": "2026-03-24",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 7740797,
+        "devoluciones": 774080,
+        "ventas_netas": 6966717,
+        "ordenes": 58,
+        "unidades": 58,
+        "costo_producto": 1914000,
+        "costo_envio": 619264,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 2344488,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 1495254
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 849234
+            }
+          ],
+          "roas": 3.0,
+          "cpa": 97687
+        },
+        "utilidad": 1314886,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 5.5,
+          "cpa": 27407,
+          "gasto_ads": 219255
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-03-24",
+            "ventas": 3976799,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-25",
+            "ventas": 1039198,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-26",
+            "ventas": 887200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-27",
+            "ventas": 628600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 6966717,
+        "costos_totales": 5651832,
+        "utilidad_neta": 1314885,
+        "margen": 18.9,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    },
+    "14d": {
+      "fecha_inicio": "2026-03-17",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 11714245,
+        "devoluciones": 1171424,
+        "ventas_netas": 10542820,
+        "ordenes": 87,
+        "unidades": 87,
+        "costo_producto": 2871000,
+        "costo_envio": 937140,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 5354488,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 3695254
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 1659234
+            }
+          ],
+          "roas": 2.0,
+          "cpa": 86363
+        },
+        "utilidad": 208768,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 5.5,
+          "cpa": 27407,
+          "gasto_ads": 219255
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-03-17",
+            "ventas": 855100,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-18",
+            "ventas": 572450,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-19",
+            "ventas": 379698,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-20",
+            "ventas": 1137000,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-21",
+            "ventas": 1029200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-24",
+            "ventas": 3976799,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-25",
+            "ventas": 1039198,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-26",
+            "ventas": 887200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-27",
+            "ventas": 628600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 10542820,
+        "costos_totales": 10334052,
+        "utilidad_neta": 208768,
+        "margen": 2.0,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    },
+    "30d": {
+      "fecha_inicio": "2026-03-01",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 25849592,
+        "devoluciones": 2584959,
+        "ventas_netas": 23264633,
+        "ordenes": 190,
+        "unidades": 190,
+        "costo_producto": 6270000,
+        "costo_envio": 2067967,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 9013330,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 6004155
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 3009175
+            }
+          ],
+          "roas": 2.6,
+          "cpa": 71534
+        },
+        "utilidad": 3328376,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 5.5,
+          "cpa": 27407,
+          "gasto_ads": 219255
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-03-02",
+            "ventas": 1686503,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-03",
+            "ventas": 1651550,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-04",
+            "ventas": 702350,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-09",
+            "ventas": 1338900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-10",
+            "ventas": 899300,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-11",
+            "ventas": 667399,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-12",
+            "ventas": 1698700,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-13",
+            "ventas": 1973449,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-14",
+            "ventas": 489598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-16",
+            "ventas": 3027598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-17",
+            "ventas": 855100,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-18",
+            "ventas": 572450,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-19",
+            "ventas": 379698,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-20",
+            "ventas": 1137000,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-21",
+            "ventas": 1029200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-24",
+            "ventas": 3976799,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-25",
+            "ventas": 1039198,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-26",
+            "ventas": 887200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-27",
+            "ventas": 628600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 23264633,
+        "costos_totales": 19936256,
+        "utilidad_neta": 3328377,
+        "margen": 14.3,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    },
+    "esta_semana": {
+      "fecha_inicio": "2026-03-30",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 1209000,
+        "devoluciones": 120900,
+        "ventas_netas": 1088100,
+        "ordenes": 8,
+        "unidades": 8,
+        "costo_producto": 264000,
+        "costo_envio": 96720,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 219255,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 130021
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 89234
+            }
+          ],
+          "roas": 5.0,
+          "cpa": 0
+        },
+        "utilidad": 387225,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 5.5,
+          "cpa": 27407,
+          "gasto_ads": 219255
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 1088100,
+        "costos_totales": 700875,
+        "utilidad_neta": 387225,
+        "margen": 35.6,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    },
+    "este_mes": {
+      "fecha_inicio": "2026-03-01",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 25849592,
+        "devoluciones": 2584959,
+        "ventas_netas": 23264633,
+        "ordenes": 190,
+        "unidades": 190,
+        "costo_producto": 6270000,
+        "costo_envio": 2067967,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 9013330,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 6004155
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 3009175
+            }
+          ],
+          "roas": 2.6,
+          "cpa": 71534
+        },
+        "utilidad": 3328376,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 5.5,
+          "cpa": 27407,
+          "gasto_ads": 219255
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-03-02",
+            "ventas": 1686503,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-03",
+            "ventas": 1651550,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-04",
+            "ventas": 702350,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-09",
+            "ventas": 1338900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-10",
+            "ventas": 899300,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-11",
+            "ventas": 667399,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-12",
+            "ventas": 1698700,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-13",
+            "ventas": 1973449,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-14",
+            "ventas": 489598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-16",
+            "ventas": 3027598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-17",
+            "ventas": 855100,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-18",
+            "ventas": 572450,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-19",
+            "ventas": 379698,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-20",
+            "ventas": 1137000,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-21",
+            "ventas": 1029200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-24",
+            "ventas": 3976799,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-25",
+            "ventas": 1039198,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-26",
+            "ventas": 887200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-27",
+            "ventas": 628600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 23264633,
+        "costos_totales": 19936256,
+        "utilidad_neta": 3328377,
+        "margen": 14.3,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    },
+    "todo": {
+      "fecha_inicio": "2024-01-01",
+      "fecha_fin": "2026-03-30",
+      "config": {
+        "costo_unitario_gafa": 33000.0,
+        "pct_devoluciones": 0.1
+      },
+      "digital": {
+        "ventas_brutas": 66103312,
+        "devoluciones": 6610331,
+        "ventas_netas": 59492981,
+        "ordenes": 475,
+        "unidades": 475,
+        "costo_producto": 15675000,
+        "costo_envio": 5288265,
+        "costo_operaciones": 0,
+        "costos_fijos": {},
+        "ads": {
+          "gasto_total": 31928334,
+          "cuentas": [
+            {
+              "nombre": "Cuenta 01",
+              "gasto": 22071543
+            },
+            {
+              "nombre": "Cuenta 02",
+              "gasto": 9856791
+            }
+          ],
+          "roas": 1.9,
+          "cpa": 47371
+        },
+        "utilidad": -8949,
+        "ultimo_dia": {
+          "ventas": 1209000,
+          "utilidad": 0,
+          "ordenes": 8,
+          "roas": 19.7,
+          "cpa": 7682,
+          "gasto_ads": 61452
+        },
+        "historial_diario": [
+          {
+            "fecha": "2026-01-19",
+            "ventas": 3381400,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-20",
+            "ventas": 2008400,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-21",
+            "ventas": 2747800,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-22",
+            "ventas": 2807900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-23",
+            "ventas": 1099100,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-26",
+            "ventas": 1600820,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-27",
+            "ventas": 2388199,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-28",
+            "ventas": 1061099,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-29",
+            "ventas": 1978396,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-01-30",
+            "ventas": 1468800,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-03",
+            "ventas": 2712900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-04",
+            "ventas": 964300,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-06",
+            "ventas": 1798598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-07",
+            "ventas": 239800,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-09",
+            "ventas": 1019200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-10",
+            "ventas": 819400,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-11",
+            "ventas": 979215,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-12",
+            "ventas": 739400,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-13",
+            "ventas": 119900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-14",
+            "ventas": 119900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-16",
+            "ventas": 989200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-17",
+            "ventas": 472550,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-18",
+            "ventas": 1414699,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-19",
+            "ventas": 854350,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-20",
+            "ventas": 769400,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-21",
+            "ventas": 749399,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-23",
+            "ventas": 982150,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-24",
+            "ventas": 1346797,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-25",
+            "ventas": 927099,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-26",
+            "ventas": 1213949,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-02-27",
+            "ventas": 479600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-02",
+            "ventas": 1686503,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-03",
+            "ventas": 1651550,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-04",
+            "ventas": 702350,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-09",
+            "ventas": 1338900,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-10",
+            "ventas": 899300,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-11",
+            "ventas": 667399,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-12",
+            "ventas": 1698700,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-13",
+            "ventas": 1973449,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-14",
+            "ventas": 489598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-16",
+            "ventas": 3027598,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-17",
+            "ventas": 855100,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-18",
+            "ventas": 572450,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-19",
+            "ventas": 379698,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-20",
+            "ventas": 1137000,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-21",
+            "ventas": 1029200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-24",
+            "ventas": 3976799,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-25",
+            "ventas": 1039198,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-26",
+            "ventas": 887200,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-27",
+            "ventas": 628600,
+            "utilidad": 0
+          },
+          {
+            "fecha": "2026-03-30",
+            "ventas": 1209000,
+            "utilidad": 0
+          }
+        ]
+      },
+      "pos": {
+        "caracoli": {
+          "nombre": "Caracolí",
+          "ciudad": "Bucaramanga",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "titan_plaza": {
+          "nombre": "Titan Plaza",
+          "ciudad": "Bogotá",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        },
+        "fundadores": {
+          "nombre": "Fundadores",
+          "ciudad": "Manizales",
+          "ventas": 0,
+          "unidades": 0,
+          "gastos": {
+            "arriendo": 0,
+            "salarios": 0,
+            "costo_gafas": 0,
+            "otros": 0,
+            "total": 0
+          },
+          "utilidad": 0,
+          "margen": 0
+        }
+      },
+      "consolidado": {
+        "ingresos_totales": 59492981,
+        "costos_totales": 59501930,
+        "utilidad_neta": -8949,
+        "margen": -0.0,
+        "distribucion": {
+          "digital": 100.0,
+          "caracoli": 0.0,
+          "titan_plaza": 0.0,
+          "fundadores": 0.0
+        }
+      }
+    }
+  }
+}

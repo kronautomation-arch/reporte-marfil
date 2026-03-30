@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-30T17:15:25.381856",
+  "updated_at": "2026-03-30T22:45:34.764972",
   "periodos": {
     "ayer": {
       "fecha_inicio": "2026-03-29",
       "fecha_fin": "2026-03-29",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 0,
@@ -104,12 +104,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 7740797,
-        "devoluciones": 774080,
-        "ventas_netas": 6966717,
+        "devoluciones": 541856,
+        "ventas_netas": 7198941,
         "ordenes": 58,
         "unidades": 58,
         "costo_producto": 1914000,
@@ -117,28 +117,28 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 2344488,
+          "gasto_total": 2357027,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 1495254
+              "gasto": 1499478
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 849234
+              "gasto": 857549
             }
           ],
-          "roas": 3.0,
-          "cpa": 97687
+          "roas": 3.1,
+          "cpa": 98209
         },
-        "utilidad": 1314886,
+        "utilidad": 1766795,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
           "ordenes": 8,
-          "roas": 5.5,
-          "cpa": 27407,
-          "gasto_ads": 219255
+          "roas": 5.2,
+          "cpa": 28974,
+          "gasto_ads": 231794
         },
         "historial_diario": [
           {
@@ -216,10 +216,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 6966717,
-        "costos_totales": 5651832,
-        "utilidad_neta": 1314885,
-        "margen": 18.9,
+        "ingresos_totales": 7198941,
+        "costos_totales": 5432147,
+        "utilidad_neta": 1766794,
+        "margen": 24.5,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,
@@ -233,12 +233,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 11714245,
-        "devoluciones": 1171424,
-        "ventas_netas": 10542820,
+        "devoluciones": 819997,
+        "ventas_netas": 10894248,
         "ordenes": 87,
         "unidades": 87,
         "costo_producto": 2871000,
@@ -246,28 +246,28 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 5354488,
+          "gasto_total": 5367027,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 3695254
+              "gasto": 3699478
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 1659234
+              "gasto": 1667549
             }
           ],
           "roas": 2.0,
-          "cpa": 86363
+          "cpa": 86565
         },
-        "utilidad": 208768,
+        "utilidad": 899084,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
           "ordenes": 8,
-          "roas": 5.5,
-          "cpa": 27407,
-          "gasto_ads": 219255
+          "roas": 5.2,
+          "cpa": 28974,
+          "gasto_ads": 231794
         },
         "historial_diario": [
           {
@@ -370,10 +370,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 10542820,
-        "costos_totales": 10334052,
-        "utilidad_neta": 208768,
-        "margen": 2.0,
+        "ingresos_totales": 10894248,
+        "costos_totales": 9995164,
+        "utilidad_neta": 899084,
+        "margen": 8.3,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,
@@ -387,12 +387,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 25849592,
-        "devoluciones": 2584959,
-        "ventas_netas": 23264633,
+        "devoluciones": 1809471,
+        "ventas_netas": 24040121,
         "ordenes": 190,
         "unidades": 190,
         "costo_producto": 6270000,
@@ -400,28 +400,28 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 9013330,
+          "gasto_total": 9025869,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 6004155
+              "gasto": 6008379
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 3009175
+              "gasto": 3017490
             }
           ],
-          "roas": 2.6,
-          "cpa": 71534
+          "roas": 2.7,
+          "cpa": 71634
         },
-        "utilidad": 3328376,
+        "utilidad": 4866813,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
           "ordenes": 8,
-          "roas": 5.5,
-          "cpa": 27407,
-          "gasto_ads": 219255
+          "roas": 5.2,
+          "cpa": 28974,
+          "gasto_ads": 231794
         },
         "historial_diario": [
           {
@@ -574,10 +574,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 23264633,
-        "costos_totales": 19936256,
-        "utilidad_neta": 3328377,
-        "margen": 14.3,
+        "ingresos_totales": 24040121,
+        "costos_totales": 19173307,
+        "utilidad_neta": 4866814,
+        "margen": 20.2,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,
@@ -591,12 +591,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 1209000,
-        "devoluciones": 120900,
-        "ventas_netas": 1088100,
+        "devoluciones": 84630,
+        "ventas_netas": 1124370,
         "ordenes": 8,
         "unidades": 8,
         "costo_producto": 264000,
@@ -604,28 +604,28 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 219255,
+          "gasto_total": 231794,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 130021
+              "gasto": 134245
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 89234
+              "gasto": 97549
             }
           ],
-          "roas": 5.0,
+          "roas": 4.9,
           "cpa": 0
         },
-        "utilidad": 387225,
+        "utilidad": 447226,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
           "ordenes": 8,
-          "roas": 5.5,
-          "cpa": 27407,
-          "gasto_ads": 219255
+          "roas": 5.2,
+          "cpa": 28974,
+          "gasto_ads": 231794
         },
         "historial_diario": [
           {
@@ -683,10 +683,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 1088100,
-        "costos_totales": 700875,
-        "utilidad_neta": 387225,
-        "margen": 35.6,
+        "ingresos_totales": 1124370,
+        "costos_totales": 677144,
+        "utilidad_neta": 447226,
+        "margen": 39.8,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,
@@ -700,12 +700,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 25849592,
-        "devoluciones": 2584959,
-        "ventas_netas": 23264633,
+        "devoluciones": 1809471,
+        "ventas_netas": 24040121,
         "ordenes": 190,
         "unidades": 190,
         "costo_producto": 6270000,
@@ -713,28 +713,28 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 9013330,
+          "gasto_total": 9025869,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 6004155
+              "gasto": 6008379
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 3009175
+              "gasto": 3017490
             }
           ],
-          "roas": 2.6,
-          "cpa": 71534
+          "roas": 2.7,
+          "cpa": 71634
         },
-        "utilidad": 3328376,
+        "utilidad": 4866813,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
           "ordenes": 8,
-          "roas": 5.5,
-          "cpa": 27407,
-          "gasto_ads": 219255
+          "roas": 5.2,
+          "cpa": 28974,
+          "gasto_ads": 231794
         },
         "historial_diario": [
           {
@@ -887,10 +887,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 23264633,
-        "costos_totales": 19936256,
-        "utilidad_neta": 3328377,
-        "margen": 14.3,
+        "ingresos_totales": 24040121,
+        "costos_totales": 19173307,
+        "utilidad_neta": 4866814,
+        "margen": 20.2,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,
@@ -904,12 +904,12 @@
       "fecha_fin": "2026-03-30",
       "config": {
         "costo_unitario_gafa": 33000.0,
-        "pct_devoluciones": 0.1
+        "pct_devoluciones": 0.07
       },
       "digital": {
         "ventas_brutas": 66103312,
-        "devoluciones": 6610331,
-        "ventas_netas": 59492981,
+        "devoluciones": 4627232,
+        "ventas_netas": 61476080,
         "ordenes": 475,
         "unidades": 475,
         "costo_producto": 15675000,
@@ -917,21 +917,21 @@
         "costo_operaciones": 0,
         "costos_fijos": {},
         "ads": {
-          "gasto_total": 31928334,
+          "gasto_total": 31940873,
           "cuentas": [
             {
               "nombre": "Cuenta 01",
-              "gasto": 22071543
+              "gasto": 22075767
             },
             {
               "nombre": "Cuenta 02",
-              "gasto": 9856791
+              "gasto": 9865106
             }
           ],
           "roas": 1.9,
-          "cpa": 47371
+          "cpa": 47390
         },
-        "utilidad": -8949,
+        "utilidad": 3944710,
         "ultimo_dia": {
           "ventas": 1209000,
           "utilidad": 0,
@@ -1246,10 +1246,10 @@
         }
       },
       "consolidado": {
-        "ingresos_totales": 59492981,
-        "costos_totales": 59501930,
-        "utilidad_neta": -8949,
-        "margen": -0.0,
+        "ingresos_totales": 61476080,
+        "costos_totales": 57531370,
+        "utilidad_neta": 3944710,
+        "margen": 6.4,
         "distribucion": {
           "digital": 100.0,
           "caracoli": 0.0,

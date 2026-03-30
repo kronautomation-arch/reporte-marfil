@@ -43,6 +43,15 @@
         .date-range-sep { color: var(--text-muted); font-size: 12px; }
         .date-range-btn { padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 600; background: var(--indigo); color: #fff; border: none; cursor: pointer; transition: all 0.2s; }
         .date-range-btn:hover { background: #4F46E5; }
+        .month-select { position: relative; }
+        .month-select-btn { padding: 7px 16px; border-radius: 10px; font-size: 12px; font-weight: 500; background: var(--card); color: var(--text-secondary); border: 1px solid var(--border); cursor: pointer; transition: all 0.2s; user-select: none; display: flex; align-items: center; gap: 6px; }
+        .month-select-btn.active { background: var(--active); color: #fff; border-color: var(--active); }
+        .month-select-btn:hover:not(.active) { border-color: var(--text-muted); }
+        .month-dropdown { display: none; position: absolute; top: 100%; left: 0; margin-top: 6px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); z-index: 100; padding: 6px; min-width: 160px; }
+        .month-dropdown.open { display: block; }
+        .month-option { padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 500; color: var(--text); cursor: pointer; transition: all 0.15s; }
+        .month-option:hover { background: var(--bg); }
+        .month-option.selected { background: var(--active); color: #fff; }
         /* KPIs */
         .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 24px; }
         .kpi-card { background: var(--card); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
@@ -160,6 +169,23 @@
                 <div class="filter" data-period="esta_semana">Esta semana</div>
                 <div class="filter" data-period="este_mes">Este mes</div>
                 <div class="filter" data-period="todo">Todo</div>
+                <div class="month-select">
+                    <div class="month-select-btn" id="month-btn">📅 Mes <span style="font-size:10px">▼</span></div>
+                    <div class="month-dropdown" id="month-dropdown">
+                        <div class="month-option" data-month="1">Enero</div>
+                        <div class="month-option" data-month="2">Febrero</div>
+                        <div class="month-option" data-month="3">Marzo</div>
+                        <div class="month-option" data-month="4">Abril</div>
+                        <div class="month-option" data-month="5">Mayo</div>
+                        <div class="month-option" data-month="6">Junio</div>
+                        <div class="month-option" data-month="7">Julio</div>
+                        <div class="month-option" data-month="8">Agosto</div>
+                        <div class="month-option" data-month="9">Septiembre</div>
+                        <div class="month-option" data-month="10">Octubre</div>
+                        <div class="month-option" data-month="11">Noviembre</div>
+                        <div class="month-option" data-month="12">Diciembre</div>
+                    </div>
+                </div>
             </div>
             <div class="date-range">
                 <label>DESDE</label>
@@ -331,14 +357,51 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
     document.getElementById('tab-' + t.dataset.tab).classList.add('active');
 }));
 
+// Clear all active states
+function clearAllFilters() {
+    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    document.getElementById('month-btn').classList.remove('active');
+    document.querySelectorAll('.month-option').forEach(x => x.classList.remove('selected'));
+}
+
 // Preset filters
 let currentFrom, currentTo;
 document.querySelectorAll('.filter').forEach(f => f.addEventListener('click', () => {
-    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    clearAllFilters();
     f.classList.add('active');
     [currentFrom, currentTo] = getDateRange(f.dataset.period);
     document.getElementById('date-from').value = currentFrom;
     document.getElementById('date-to').value = currentTo;
+    if (RAW) renderAll();
+}));
+
+// Month dropdown
+const monthBtn = document.getElementById('month-btn');
+const monthDropdown = document.getElementById('month-dropdown');
+const monthNames = ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+
+monthBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    monthDropdown.classList.toggle('open');
+});
+
+document.addEventListener('click', () => monthDropdown.classList.remove('open'));
+monthDropdown.addEventListener('click', (e) => e.stopPropagation());
+
+document.querySelectorAll('.month-option').forEach(opt => opt.addEventListener('click', () => {
+    const month = parseInt(opt.dataset.month);
+    const year = 2026;
+    const lastDay = new Date(year, month, 0).getDate();
+    currentFrom = `${year}-${String(month).padStart(2,'0')}-01`;
+    currentTo = `${year}-${String(month).padStart(2,'0')}-${String(lastDay).padStart(2,'0')}`;
+    document.getElementById('date-from').value = currentFrom;
+    document.getElementById('date-to').value = currentTo;
+    clearAllFilters();
+    monthBtn.classList.add('active');
+    monthBtn.innerHTML = '📅 ' + monthNames[month] + ' <span style="font-size:10px">▼</span>';
+    document.querySelectorAll('.month-option').forEach(x => x.classList.remove('selected'));
+    opt.classList.add('selected');
+    monthDropdown.classList.remove('open');
     if (RAW) renderAll();
 }));
 
@@ -347,7 +410,7 @@ document.getElementById('apply-dates').addEventListener('click', () => {
     currentFrom = document.getElementById('date-from').value;
     currentTo = document.getElementById('date-to').value;
     if (!currentFrom || !currentTo) return;
-    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    clearAllFilters();
     if (RAW) renderAll();
 });
 

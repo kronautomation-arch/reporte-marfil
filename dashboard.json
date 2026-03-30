@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T18:31:16.989743",
+  "updated_at": "2026-03-30T18:44:53.926010",
   "config": {
     "costo_unitario_gafa": 33000.0,
     "pct_devoluciones": 0.07
@@ -7,40 +7,43 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 18558621,
+      "gasto": 18561157,
       "purchases": 530
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 7352570,
+      "gasto": 7359225,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 25911191,
+  "ads_gasto_total": 25920382,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
       "ciudad": "Bucaramanga",
       "costos_fijos": {
-        "Arriendo": 3758867.0
+        "Arriendo": 3758867.0,
+        "Salario Vendedor 1": 3000000.0
       },
-      "costos_fijos_total_mensual": 3758867.0
+      "costos_fijos_total_mensual": 6758867.0
     },
     "titan_plaza": {
       "nombre": "Titan Plaza",
       "ciudad": "Bogotá",
       "costos_fijos": {
-        "Arriendo": 5804036.0
+        "Arriendo": 5804036.0,
+        "Salario Vendedor 1": 3000000.0
       },
-      "costos_fijos_total_mensual": 5804036.0
+      "costos_fijos_total_mensual": 8804036.0
     },
     "fundadores": {
       "nombre": "Fundadores",
       "ciudad": "Manizales",
       "costos_fijos": {
-        "Arriendo": 3818253.0
+        "Arriendo": 3818253.0,
+        "Salario Vendedor 1": 3000000.0
       },
-      "costos_fijos_total_mensual": 3818253.0
+      "costos_fijos_total_mensual": 6818253.0
     }
   },
   "digital_costos_fijos": {},
@@ -1547,7 +1550,7 @@
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 102640.0,
-      "meta_gasto": 244836.0,
+      "meta_gasto": 254027.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

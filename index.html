@@ -163,11 +163,8 @@
         <div class="filters-row">
             <div class="filters">
                 <div class="filter" data-period="ayer">Ayer</div>
-                <div class="filter" data-period="7d">7D</div>
-                <div class="filter" data-period="14d">14D</div>
-                <div class="filter active" data-period="30d">30D</div>
                 <div class="filter" data-period="esta_semana">Esta semana</div>
-                <div class="filter" data-period="este_mes">Este mes</div>
+                <div class="filter active" data-period="este_mes">Este mes</div>
                 <div class="filter" data-period="todo">Todo</div>
                 <div class="month-select">
                     <div class="month-select-btn" id="month-btn">📅 Mes <span style="font-size:10px">▼</span></div>
@@ -188,7 +185,8 @@
                 </div>
             </div>
             <div class="date-range">
-                <label>DESDE</label>
+                <label>RANGO DE FECHAS</label>
+                <span class="date-range-sep">|</span>
                 <input type="date" id="date-from">
                 <span class="date-range-sep">→</span>
                 <label>HASTA</label>
@@ -415,7 +413,7 @@ document.getElementById('apply-dates').addEventListener('click', () => {
 });
 
 // Init dates
-[currentFrom, currentTo] = getDateRange('30d');
+[currentFrom, currentTo] = getDateRange('este_mes');
 document.getElementById('date-from').value = currentFrom;
 document.getElementById('date-to').value = currentTo;
 

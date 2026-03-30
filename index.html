@@ -9,184 +9,101 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --bg: #F4F5F7;
-            --card: #FFFFFF;
-            --border: #E5E7EB;
-            --text: #111827;
-            --text-secondary: #6B7280;
-            --text-muted: #9CA3AF;
-            --indigo: #6366F1;
-            --indigo-light: #EEF2FF;
-            --green: #059669;
-            --green-light: #ECFDF5;
-            --green-bright: #10B981;
-            --red: #DC2626;
-            --red-light: #FEE2E2;
-            --yellow: #F59E0B;
-            --yellow-light: #FEF3C7;
-            --pink: #EC4899;
-            --pink-light: #FCE7F3;
-            --active: #111827;
-            --radius: 14px;
+            --bg: #F4F5F7; --card: #FFFFFF; --border: #E5E7EB;
+            --text: #111827; --text-secondary: #6B7280; --text-muted: #9CA3AF;
+            --indigo: #6366F1; --indigo-light: #EEF2FF;
+            --green: #059669; --green-light: #ECFDF5; --green-bright: #10B981;
+            --red: #DC2626; --red-light: #FEE2E2;
+            --yellow: #F59E0B; --yellow-light: #FEF3C7;
+            --pink: #EC4899; --active: #111827; --radius: 14px;
         }
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-        }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
         .container { max-width: 1400px; margin: 0 auto; padding: 20px 24px; }
-
-        /* Header */
-        .header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border);
-        }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
         .header-left { display: flex; align-items: center; gap: 14px; }
-        .logo {
-            background: var(--active); color: #fff; padding: 8px 18px;
-            border-radius: 10px; font-size: 20px; font-weight: 800; letter-spacing: 5px;
-        }
+        .logo { background: var(--active); color: #fff; padding: 8px 18px; border-radius: 10px; font-size: 20px; font-weight: 800; letter-spacing: 5px; }
         .logo-sub { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
         .header-right { display: flex; align-items: center; gap: 8px; background: var(--card); padding: 8px 14px; border-radius: 10px; border: 1px solid var(--border); }
         .live-dot { width: 8px; height: 8px; background: var(--green-bright); border-radius: 50%; box-shadow: 0 0 6px var(--green-bright); animation: pulse 2s ease-in-out infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
         .header-time { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
-
-        /* Tabs */
-        .tabs {
-            display: flex; gap: 4px; margin-bottom: 20px; background: var(--card);
-            border-radius: 12px; padding: 4px; border: 1px solid var(--border); width: fit-content;
-        }
-        .tab {
-            padding: 10px 24px; font-size: 12px; font-weight: 600; letter-spacing: 1px;
-            border-radius: 9px; cursor: pointer; transition: all 0.2s;
-            color: var(--text-muted); user-select: none;
-        }
+        .tabs { display: flex; gap: 4px; margin-bottom: 20px; background: var(--card); border-radius: 12px; padding: 4px; border: 1px solid var(--border); width: fit-content; }
+        .tab { padding: 10px 24px; font-size: 12px; font-weight: 600; letter-spacing: 1px; border-radius: 9px; cursor: pointer; transition: all 0.2s; color: var(--text-muted); user-select: none; }
         .tab.active { background: var(--active); color: #fff; }
         .tab:hover:not(.active) { color: var(--text); background: var(--bg); }
-
-        /* Date filters */
-        .filters { display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
-        .filter {
-            padding: 7px 16px; border-radius: 10px; font-size: 12px; font-weight: 500;
-            background: var(--card); color: var(--text-secondary); border: 1px solid var(--border);
-            cursor: pointer; transition: all 0.2s; user-select: none;
-        }
+        /* Filters */
+        .filters-row { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; align-items: center; }
+        .filters { display: flex; gap: 6px; flex-wrap: wrap; }
+        .filter { padding: 7px 16px; border-radius: 10px; font-size: 12px; font-weight: 500; background: var(--card); color: var(--text-secondary); border: 1px solid var(--border); cursor: pointer; transition: all 0.2s; user-select: none; }
         .filter.active { background: var(--active); color: #fff; border-color: var(--active); }
         .filter:hover:not(.active) { border-color: var(--text-muted); }
-
-        /* KPI Grid */
+        .date-range { display: flex; align-items: center; gap: 8px; background: var(--card); padding: 4px 12px; border-radius: 10px; border: 1px solid var(--border); }
+        .date-range label { font-size: 11px; color: var(--text-secondary); font-weight: 600; letter-spacing: 0.5px; }
+        .date-range input[type="date"] { border: none; background: transparent; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: var(--text); outline: none; cursor: pointer; padding: 4px 2px; }
+        .date-range-sep { color: var(--text-muted); font-size: 12px; }
+        .date-range-btn { padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 600; background: var(--indigo); color: #fff; border: none; cursor: pointer; transition: all 0.2s; }
+        .date-range-btn:hover { background: #4F46E5; }
+        /* KPIs */
         .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 24px; }
-        .kpi-card {
-            background: var(--card); border-radius: var(--radius); padding: 20px;
-            border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s;
-        }
+        .kpi-card { background: var(--card); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
         .kpi-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         .kpi-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
         .kpi-icon { font-size: 18px; }
         .kpi-label { font-size: 10px; color: var(--text-secondary); letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; }
         .kpi-value { font-size: 28px; font-weight: 800; line-height: 1.1; }
-        .kpi-badge {
-            display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 10px;
-            border-radius: 6px; margin-top: 4px;
-        }
-        .kpi-sub { font-size: 10px; color: var(--text-muted); margin-top: 8px; font-weight: 400; }
-
-        /* Charts row */
+        .kpi-badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 6px; margin-top: 4px; }
+        .kpi-sub { font-size: 10px; color: var(--text-muted); margin-top: 8px; }
         .charts-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; margin-bottom: 24px; }
-        .chart-card {
-            background: var(--card); border-radius: var(--radius); padding: 24px;
-            border: 1px solid var(--border);
-        }
+        .chart-card { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); }
         .chart-title { font-size: 11px; color: var(--text-secondary); letter-spacing: 1.5px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; }
         .chart-container { position: relative; height: 220px; }
-
-        /* Donut legend */
         .donut-wrapper { display: flex; align-items: center; gap: 24px; }
         .donut-chart-container { width: 160px; height: 160px; flex-shrink: 0; position: relative; }
-        .donut-center {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            font-size: 13px; color: var(--text-secondary); font-weight: 700; text-align: center;
-        }
+        .donut-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 13px; color: var(--text-secondary); font-weight: 700; text-align: center; }
         .donut-legend { font-size: 12px; line-height: 2.4; }
         .donut-legend-item { display: flex; align-items: center; gap: 10px; }
         .donut-legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
         .donut-legend-label { flex: 1; color: var(--text); }
         .donut-legend-value { color: var(--text-muted); font-weight: 600; }
-
-        /* Ads section */
-        .ads-section {
-            background: var(--card); border-radius: var(--radius); padding: 24px;
-            border: 1px solid var(--border); margin-bottom: 24px;
-        }
+        .ads-section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
         .ads-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .ads-card {
-            background: var(--bg); border-radius: 12px; padding: 18px; border: 1px solid #F3F4F6;
-        }
+        .ads-card { background: var(--bg); border-radius: 12px; padding: 18px; border: 1px solid #F3F4F6; }
         .ads-card-name { font-size: 10px; color: var(--text-muted); font-weight: 500; }
         .ads-card-value { font-size: 24px; font-weight: 800; color: var(--text); margin: 6px 0; }
         .ads-card-pct { font-size: 11px; font-weight: 600; }
         .ads-bar { height: 6px; background: var(--border); border-radius: 3px; margin-top: 10px; }
         .ads-bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease-out; }
-
-        /* POS Cards */
         .pos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
-        .pos-card {
-            background: var(--card); border-radius: var(--radius); padding: 22px;
-            border: 1px solid var(--border); overflow: hidden; position: relative;
-        }
+        .pos-card { background: var(--card); border-radius: var(--radius); padding: 22px; border: 1px solid var(--border); overflow: hidden; position: relative; }
         .pos-bar { position: absolute; top: 0; left: 0; right: 0; height: 4px; }
         .pos-name { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; margin-top: 6px; }
         .pos-city { font-size: 10px; color: var(--text-muted); margin-bottom: 16px; }
         .pos-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
-        .pos-metric {
-            border-radius: 10px; padding: 12px; text-align: center;
-        }
-        .pos-metric-label { font-size: 9px; color: var(--text-secondary); font-weight: 600; letter-spacing: 0.5px; }
+        .pos-metric { border-radius: 10px; padding: 12px; text-align: center; }
+        .pos-metric-label { font-size: 9px; color: var(--text-secondary); font-weight: 600; }
         .pos-metric-value { font-size: 22px; font-weight: 800; margin-top: 2px; }
-        .pos-utilidad {
-            background: var(--bg); border-radius: 12px; padding: 14px; text-align: center; margin-bottom: 14px;
-        }
+        .pos-utilidad { background: var(--bg); border-radius: 12px; padding: 14px; text-align: center; margin-bottom: 14px; }
         .pos-utilidad-label { font-size: 9px; color: var(--text-secondary); letter-spacing: 1px; font-weight: 600; }
         .pos-utilidad-value { font-size: 24px; font-weight: 800; margin-top: 2px; }
         .pos-desglose { font-size: 11px; color: var(--text-muted); }
-        .pos-desglose-row {
-            display: flex; justify-content: space-between; padding: 6px 0;
-            border-bottom: 1px solid #F3F4F6;
-        }
+        .pos-desglose-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #F3F4F6; }
         .pos-desglose-row:last-child { border-bottom: none; }
         .pos-desglose-val { color: var(--text); font-weight: 600; }
-
-        /* 360 Cards */
         .pnl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
-        .pnl-card {
-            background: var(--card); border-radius: var(--radius); padding: 24px; text-align: center;
-            border: 1px solid var(--border); overflow: hidden; position: relative;
-        }
+        .pnl-card { background: var(--card); border-radius: var(--radius); padding: 24px; text-align: center; border: 1px solid var(--border); overflow: hidden; position: relative; }
         .pnl-bar { position: absolute; top: 0; left: 0; right: 0; height: 4px; }
         .pnl-label { font-size: 10px; color: var(--text-secondary); letter-spacing: 1.5px; font-weight: 600; margin-top: 6px; margin-bottom: 10px; }
         .pnl-value { font-size: 32px; font-weight: 900; }
         .pnl-sub { font-size: 10px; color: var(--text-muted); margin-top: 8px; }
-
-        .dist-section {
-            background: var(--card); border-radius: var(--radius); padding: 24px;
-            border: 1px solid var(--border); margin-bottom: 24px;
-        }
+        .dist-section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
         .dist-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-        .dist-card {
-            text-align: center; padding: 16px; background: var(--bg); border-radius: 12px;
-        }
+        .dist-card { text-align: center; padding: 16px; background: var(--bg); border-radius: 12px; }
         .dist-name { font-size: 10px; color: var(--text-muted); font-weight: 500; }
         .dist-pct { font-size: 26px; font-weight: 800; color: var(--text); margin: 4px 0; }
         .dist-bar { height: 6px; background: var(--border); border-radius: 3px; margin-top: 8px; }
         .dist-bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease-out; }
-
-        /* Tab content */
         .tab-content { display: none; }
         .tab-content.active { display: block; }
-
-        /* Responsive */
         @media (max-width: 900px) {
             .kpi-grid { grid-template-columns: repeat(3, 1fr); }
             .charts-row { grid-template-columns: 1fr; }
@@ -201,10 +118,11 @@
             .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             .kpi-card { padding: 14px; }
             .kpi-value { font-size: 22px; }
-            .kpi-label { font-size: 9px; }
             .tabs { width: 100%; overflow-x: auto; }
             .tab { padding: 8px 16px; font-size: 10px; white-space: nowrap; }
             .filter { padding: 6px 12px; font-size: 10px; }
+            .filters-row { flex-direction: column; align-items: flex-start; }
+            .date-range { flex-wrap: wrap; }
             .pos-metric-value { font-size: 18px; }
             .pos-utilidad-value { font-size: 20px; }
             .pnl-value { font-size: 24px; }
@@ -218,7 +136,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <div class="header">
             <div class="header-left">
                 <div class="logo">MARFIL</div>
@@ -229,26 +146,30 @@
                 <span class="header-time" id="update-time">Cargando...</span>
             </div>
         </div>
-
-        <!-- Tabs -->
         <div class="tabs">
             <div class="tab active" data-tab="digital">DIGITAL</div>
             <div class="tab" data-tab="pos">PUNTOS DE VENTA</div>
             <div class="tab" data-tab="360">VISTA 360°</div>
         </div>
-
-        <!-- Date filters -->
-        <div class="filters">
-            <div class="filter" data-period="ayer">Ayer</div>
-            <div class="filter" data-period="7d">7D</div>
-            <div class="filter" data-period="14d">14D</div>
-            <div class="filter active" data-period="30d">30D</div>
-            <div class="filter" data-period="esta_semana">Esta semana</div>
-            <div class="filter" data-period="este_mes">Este mes</div>
-            <div class="filter" data-period="todo">Todo</div>
+        <div class="filters-row">
+            <div class="filters">
+                <div class="filter" data-period="ayer">Ayer</div>
+                <div class="filter" data-period="7d">7D</div>
+                <div class="filter" data-period="14d">14D</div>
+                <div class="filter active" data-period="30d">30D</div>
+                <div class="filter" data-period="esta_semana">Esta semana</div>
+                <div class="filter" data-period="este_mes">Este mes</div>
+                <div class="filter" data-period="todo">Todo</div>
+            </div>
+            <div class="date-range">
+                <label>DESDE</label>
+                <input type="date" id="date-from">
+                <span class="date-range-sep">→</span>
+                <label>HASTA</label>
+                <input type="date" id="date-to">
+                <button class="date-range-btn" id="apply-dates">Aplicar</button>
+            </div>
         </div>
-
-        <!-- TAB: DIGITAL -->
         <div class="tab-content active" id="tab-digital">
             <div class="kpi-grid" id="kpi-grid"></div>
             <div class="charts-row">
@@ -259,10 +180,7 @@
                 <div class="chart-card">
                     <div class="chart-title">DESGLOSE DE COSTOS</div>
                     <div class="donut-wrapper">
-                        <div class="donut-chart-container">
-                            <canvas id="chart-costos"></canvas>
-                            <div class="donut-center" id="donut-center"></div>
-                        </div>
+                        <div class="donut-chart-container"><canvas id="chart-costos"></canvas><div class="donut-center" id="donut-center"></div></div>
                         <div class="donut-legend" id="donut-legend"></div>
                     </div>
                 </div>
@@ -272,13 +190,7 @@
                 <div class="ads-grid" id="ads-grid"></div>
             </div>
         </div>
-
-        <!-- TAB: PUNTOS DE VENTA -->
-        <div class="tab-content" id="tab-pos">
-            <div class="pos-grid" id="pos-grid"></div>
-        </div>
-
-        <!-- TAB: VISTA 360 -->
+        <div class="tab-content" id="tab-pos"><div class="pos-grid" id="pos-grid"></div></div>
         <div class="tab-content" id="tab-360">
             <div class="pnl-grid" id="pnl-grid"></div>
             <div class="dist-section">
@@ -287,287 +199,225 @@
             </div>
         </div>
     </div>
+<script>
+let RAW = null;
+let chartVentas = null, chartCostos = null;
 
-    <script>
-        let dashboardData = null;
-        let currentPeriod = '30d';
-        let chartVentas = null;
-        let chartCostos = null;
+function fmtMoney(n) {
+    if (n === 0) return '$0';
+    const abs = Math.abs(n), sign = n < 0 ? '-' : '';
+    if (abs >= 1000000) return sign + '$' + (abs / 1000000).toFixed(1) + 'M';
+    if (abs >= 1000) return sign + '$' + Math.round(abs).toLocaleString('es-CO');
+    return sign + '$' + Math.round(abs);
+}
+function fmtFull(n) { return (n < 0 ? '-' : '') + '$' + Math.abs(Math.round(n)).toLocaleString('es-CO'); }
 
-        // Format money COP
-        function fmtMoney(n) {
-            if (n === 0) return '$0';
-            const abs = Math.abs(n);
-            const sign = n < 0 ? '-' : '';
-            if (abs >= 1000000) return sign + '$' + (abs / 1000000).toFixed(1) + 'M';
-            if (abs >= 1000) return sign + '$' + Math.round(abs).toLocaleString('es-CO');
-            return sign + '$' + Math.round(abs);
+function getDateRange(period) {
+    const hoy = new Date(); hoy.setHours(0,0,0,0);
+    const fmt = d => d.toISOString().slice(0,10);
+    const sub = days => { const d = new Date(hoy); d.setDate(d.getDate() - days); return fmt(d); };
+    switch(period) {
+        case 'ayer': const a = new Date(hoy); a.setDate(a.getDate()-1); return [fmt(a), fmt(a)];
+        case '7d': return [sub(6), fmt(hoy)];
+        case '14d': return [sub(13), fmt(hoy)];
+        case '30d': return [sub(29), fmt(hoy)];
+        case 'esta_semana': const dow = hoy.getDay() === 0 ? 6 : hoy.getDay()-1; return [sub(dow), fmt(hoy)];
+        case 'este_mes': return [fmt(hoy).slice(0,8)+'01', fmt(hoy)];
+        case 'todo': return ['2026-01-01', fmt(hoy)];
+        default: return [sub(29), fmt(hoy)];
+    }
+}
+
+function aggregate(data, from, to) {
+    const config = data.config;
+    const costoUnit = config.costo_unitario_gafa || 0;
+    const pctDev = config.pct_devoluciones || 0.15;
+    const daily = data.daily;
+    const days = Object.keys(daily).filter(d => d >= from && d <= to).sort();
+    const numDays = days.length || 1;
+
+    // Digital
+    let envVentas=0, envOrdenes=0, envUnidades=0, envCostoEnvio=0, metaGasto=0;
+    const historial = [];
+    for (const d of days) {
+        const r = daily[d];
+        envVentas += r.envia_ventas || 0;
+        envOrdenes += r.envia_ordenes || 0;
+        envUnidades += r.envia_unidades || 0;
+        envCostoEnvio += r.envia_costo_envio || 0;
+        metaGasto += r.meta_gasto || 0;
+        historial.push({ fecha: d, ventas: r.envia_ventas || 0 });
+    }
+    const devoluciones = envVentas * pctDev;
+    const ventasNetas = envVentas - devoluciones;
+    const costoProducto = envUnidades * costoUnit;
+    const factor = numDays / 30;
+    const digitalFijos = (data.digital_costos_fijos_total_mensual || 0) * factor;
+    let digitalGastosVar = 0;
+    for (const d of days) digitalGastosVar += (daily[d] || {}).digital_gastos_var || 0;
+    const costoOps = digitalFijos + digitalGastosVar;
+    const utilidadDigital = ventasNetas - costoProducto - envCostoEnvio - metaGasto - costoOps - devoluciones;
+    const roas = metaGasto > 0 ? ventasNetas / metaGasto : 0;
+    const cpa = envOrdenes > 0 ? metaGasto / envOrdenes : 0;
+
+    // Último día
+    const lastDay = days.length > 0 ? daily[days[days.length-1]] : {};
+    const ldVentas = lastDay.envia_ventas || 0;
+    const ldOrdenes = lastDay.envia_ordenes || 0;
+    const ldGasto = lastDay.meta_gasto || 0;
+
+    // Ads por cuenta (proporcional al periodo)
+    const adsCuentas = (data.ads_cuentas || []).map(c => ({...c}));
+    const adsTotal = data.ads_gasto_total || 1;
+
+    const digital = {
+        ventas_netas: ventasNetas, ventas_brutas: envVentas, devoluciones, ordenes: envOrdenes,
+        unidades: envUnidades, costo_producto: costoProducto, costo_envio: envCostoEnvio,
+        costo_operaciones: costoOps, utilidad: utilidadDigital,
+        ads: {
+            gasto_total: metaGasto, roas: Math.round(roas*10)/10, cpa: Math.round(cpa),
+            cuentas: adsCuentas.map(c => ({ nombre: c.nombre, gasto: Math.round(c.gasto * (metaGasto / (adsTotal || 1))) }))
+        },
+        ultimo_dia: { ventas: ldVentas, ordenes: ldOrdenes, roas: ldGasto > 0 ? Math.round(ldVentas/ldGasto*10)/10 : 0, cpa: ldOrdenes > 0 ? Math.round(ldGasto/ldOrdenes) : 0, gasto_ads: ldGasto },
+        historial_diario: historial,
+    };
+
+    // POS
+    const posKeys = ['caracoli','titan_plaza','fundadores'];
+    const pos = {};
+    for (const key of posKeys) {
+        const info = data.pos_info[key] || {};
+        let ventas=0, unidades=0, gastos=0;
+        for (const d of days) {
+            ventas += (daily[d] || {})[`pos_${key}_ventas`] || 0;
+            unidades += (daily[d] || {})[`pos_${key}_unidades`] || 0;
+            gastos += (daily[d] || {})[`pos_${key}_gastos`] || 0;
         }
+        const costoGafas = unidades * costoUnit;
+        const fijosTotal = (info.costos_fijos_total_mensual || 0) * factor;
+        const cf = info.costos_fijos || {};
+        const arriendo = (cf['Arriendo'] || 0) * factor;
+        const salarios = Object.entries(cf).filter(([k])=>k.toLowerCase().includes('salario')).reduce((s,[,v])=>s+v,0) * factor;
+        const gastosTotal = fijosTotal + gastos + costoGafas;
+        const utilidad = ventas - gastosTotal;
+        const margen = ventas > 0 ? Math.round(utilidad/ventas*1000)/10 : 0;
+        pos[key] = { nombre: info.nombre||key, ciudad: info.ciudad||'', ventas, unidades, gastos: { arriendo: Math.round(arriendo), salarios: Math.round(salarios), costo_gafas: Math.round(costoGafas), otros: Math.round(gastos), total: Math.round(gastosTotal) }, utilidad: Math.round(utilidad), margen };
+    }
 
-        function fmtFull(n) {
-            const sign = n < 0 ? '-' : '';
-            return sign + '$' + Math.abs(Math.round(n)).toLocaleString('es-CO');
-        }
+    // Consolidado
+    const ingDigital = ventasNetas;
+    const ingPos = Object.values(pos).reduce((s,p)=>s+p.ventas,0);
+    const ingTotal = ingDigital + ingPos;
+    const costDigital = costoProducto + envCostoEnvio + costoOps + metaGasto + devoluciones;
+    const costPos = Object.values(pos).reduce((s,p)=>s+p.gastos.total,0);
+    const costTotal = costDigital + costPos;
+    const utilNeta = ingTotal - costTotal;
+    const margenTotal = ingTotal > 0 ? Math.round(utilNeta/ingTotal*1000)/10 : 0;
+    const dist = {};
+    if (ingTotal > 0) {
+        dist.digital = Math.round(ingDigital/ingTotal*1000)/10;
+        for (const k of posKeys) dist[k] = Math.round((pos[k].ventas)/ingTotal*1000)/10;
+    }
+    const consolidado = { ingresos_totales: Math.round(ingTotal), costos_totales: Math.round(costTotal), utilidad_neta: Math.round(utilNeta), margen: margenTotal, distribucion: dist };
 
-        // Tabs
-        document.querySelectorAll('.tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                tab.classList.add('active');
-                document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-            });
-        });
+    return { digital, pos, consolidado };
+}
 
-        // Filters
-        document.querySelectorAll('.filter').forEach(f => {
-            f.addEventListener('click', () => {
-                document.querySelectorAll('.filter').forEach(ff => ff.classList.remove('active'));
-                f.classList.add('active');
-                currentPeriod = f.dataset.period;
-                if (dashboardData) renderAll(dashboardData);
-            });
-        });
+// Tabs
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+}));
 
-        // Render KPIs
-        function renderKPIs(digital) {
-            const kpis = [
-                { icon: '💰', label: 'VENTAS NETAS', value: fmtMoney(digital.ventas_netas), color: 'var(--text)', sub: 'Último día: ' + fmtMoney(digital.ultimo_dia.ventas) },
-                { icon: '📊', label: 'UTILIDAD', value: fmtMoney(digital.utilidad), color: digital.utilidad >= 0 ? 'var(--green)' : 'var(--red)', badge: ((digital.utilidad / digital.ventas_netas * 100) || 0).toFixed(1) + '%', badgeColor: digital.utilidad >= 0 ? 'green' : 'red', sub: '' },
-                { icon: '📦', label: 'ÓRDENES', value: digital.ordenes.toLocaleString('es-CO'), color: 'var(--indigo)', sub: 'Último día: ' + digital.ultimo_dia.ordenes },
-                { icon: '🎯', label: 'ROAS', value: digital.ads.roas.toFixed(1) + 'x', color: 'var(--indigo)', sub: 'Último día: ' + digital.ultimo_dia.roas.toFixed(1) + 'x' },
-                { icon: '🏷️', label: 'CPA', value: fmtMoney(digital.ads.cpa), color: 'var(--yellow)', sub: 'Último día: ' + fmtMoney(digital.ultimo_dia.cpa) },
-                { icon: '📢', label: 'GASTO ADS', value: fmtMoney(digital.ads.gasto_total), color: 'var(--red)', sub: 'Último día: ' + fmtMoney(digital.ultimo_dia.gasto_ads) },
-            ];
+// Preset filters
+let currentFrom, currentTo;
+document.querySelectorAll('.filter').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    f.classList.add('active');
+    [currentFrom, currentTo] = getDateRange(f.dataset.period);
+    document.getElementById('date-from').value = currentFrom;
+    document.getElementById('date-to').value = currentTo;
+    if (RAW) renderAll();
+}));
 
-            document.getElementById('kpi-grid').innerHTML = kpis.map(k => `
-                <div class="kpi-card">
-                    <div class="kpi-header">
-                        <span class="kpi-icon">${k.icon}</span>
-                        <span class="kpi-label">${k.label}</span>
-                    </div>
-                    <div class="kpi-value" style="color: ${k.color}">${k.value}</div>
-                    ${k.badge ? `<div class="kpi-badge" style="background: var(--${k.badgeColor}-light); color: var(--${k.badgeColor})">${k.badge}</div>` : ''}
-                    <div class="kpi-sub">${k.sub}</div>
-                </div>
-            `).join('');
-        }
+// Custom date range
+document.getElementById('apply-dates').addEventListener('click', () => {
+    currentFrom = document.getElementById('date-from').value;
+    currentTo = document.getElementById('date-to').value;
+    if (!currentFrom || !currentTo) return;
+    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    if (RAW) renderAll();
+});
 
-        // Render Charts
-        function renderCharts(digital) {
-            // Ventas chart
-            const ctx1 = document.getElementById('chart-ventas').getContext('2d');
-            if (chartVentas) chartVentas.destroy();
+// Init dates
+[currentFrom, currentTo] = getDateRange('30d');
+document.getElementById('date-from').value = currentFrom;
+document.getElementById('date-to').value = currentTo;
 
-            const historial = digital.historial_diario || [];
-            const labels = historial.map(h => {
-                const d = new Date(h.fecha + 'T00:00:00');
-                return d.toLocaleDateString('es-CO', { day: '2-digit', month: '2-digit' });
-            });
+function renderAll() {
+    const { digital, pos, consolidado } = aggregate(RAW, currentFrom, currentTo);
+    const updatedAt = new Date(RAW.updated_at);
+    document.getElementById('update-time').textContent = updatedAt.toLocaleString('es-CO', { hour:'2-digit', minute:'2-digit', hour12:true }) + ' · ' + updatedAt.toLocaleDateString('es-CO', { day:'2-digit', month:'short', year:'numeric' });
+    renderKPIs(digital); renderCharts(digital); renderAds(digital); renderPOS(pos); render360(consolidado);
+}
 
-            chartVentas = new Chart(ctx1, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Ventas',
-                        data: historial.map(h => h.ventas),
-                        backgroundColor: 'rgba(99, 102, 241, 0.6)',
-                        borderColor: '#6366F1',
-                        borderWidth: 1,
-                        borderRadius: 4,
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: true, position: 'top', labels: { font: { size: 10, family: 'Inter' } } } },
-                    scales: {
-                        y: { ticks: { callback: v => fmtMoney(v), font: { size: 9 } }, grid: { color: '#F3F4F6' } },
-                        x: { ticks: { font: { size: 8 }, maxRotation: 45 }, grid: { display: false } }
-                    }
-                }
-            });
+function renderKPIs(d) {
+    const kpis = [
+        { icon:'💰', label:'VENTAS NETAS', value:fmtMoney(d.ventas_netas), color:'var(--text)', sub:'Último día: '+fmtMoney(d.ultimo_dia.ventas) },
+        { icon:'📊', label:'UTILIDAD', value:fmtMoney(d.utilidad), color:d.utilidad>=0?'var(--green)':'var(--red)', badge:((d.utilidad/(d.ventas_netas||1)*100)||0).toFixed(1)+'%', badgeColor:d.utilidad>=0?'green':'red' },
+        { icon:'📦', label:'ÓRDENES', value:d.ordenes.toLocaleString('es-CO'), color:'var(--indigo)', sub:'Último día: '+d.ultimo_dia.ordenes },
+        { icon:'🎯', label:'ROAS', value:d.ads.roas.toFixed(1)+'x', color:'var(--indigo)', sub:'Último día: '+d.ultimo_dia.roas.toFixed(1)+'x' },
+        { icon:'🏷️', label:'CPA', value:fmtMoney(d.ads.cpa), color:'var(--yellow)', sub:'Último día: '+fmtMoney(d.ultimo_dia.cpa) },
+        { icon:'📢', label:'GASTO ADS', value:fmtMoney(d.ads.gasto_total), color:'var(--red)', sub:'Último día: '+fmtMoney(d.ultimo_dia.gasto_ads) },
+    ];
+    document.getElementById('kpi-grid').innerHTML = kpis.map(k => `<div class="kpi-card"><div class="kpi-header"><span class="kpi-icon">${k.icon}</span><span class="kpi-label">${k.label}</span></div><div class="kpi-value" style="color:${k.color}">${k.value}</div>${k.badge?`<div class="kpi-badge" style="background:var(--${k.badgeColor}-light);color:var(--${k.badgeColor})">${k.badge}</div>`:''}<div class="kpi-sub">${k.sub||''}</div></div>`).join('');
+}
 
-            // Costos donut
-            const ctx2 = document.getElementById('chart-costos').getContext('2d');
-            if (chartCostos) chartCostos.destroy();
+function renderCharts(d) {
+    const ctx1 = document.getElementById('chart-ventas').getContext('2d');
+    if (chartVentas) chartVentas.destroy();
+    const hist = d.historial_diario || [];
+    chartVentas = new Chart(ctx1, { type:'bar', data:{ labels:hist.map(h=>{const p=h.fecha.split('-');return p[2]+'/'+p[1]}), datasets:[{label:'Ventas',data:hist.map(h=>h.ventas),backgroundColor:'rgba(99,102,241,0.6)',borderColor:'#6366F1',borderWidth:1,borderRadius:4}]}, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'top',labels:{font:{size:10,family:'Inter'}}}},scales:{y:{ticks:{callback:v=>fmtMoney(v),font:{size:9}},grid:{color:'#F3F4F6'}},x:{ticks:{font:{size:8},maxRotation:45},grid:{display:false}}}}});
+    const ctx2 = document.getElementById('chart-costos').getContext('2d');
+    if (chartCostos) chartCostos.destroy();
+    const costos = [{label:'Producto',value:d.costo_producto,color:'#6366F1'},{label:'Publicidad',value:d.ads.gasto_total,color:'#F59E0B'},{label:'Envío',value:d.costo_envio,color:'#EC4899'},{label:'Operaciones',value:d.costo_operaciones,color:'#9CA3AF'},{label:'Devoluciones',value:d.devoluciones,color:'#EF4444'}];
+    const totalC = costos.reduce((s,c)=>s+c.value,0);
+    chartCostos = new Chart(ctx2, {type:'doughnut',data:{labels:costos.map(c=>c.label),datasets:[{data:costos.map(c=>c.value),backgroundColor:costos.map(c=>c.color),borderWidth:0,cutout:'65%'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}});
+    document.getElementById('donut-center').innerHTML = fmtMoney(totalC);
+    document.getElementById('donut-legend').innerHTML = costos.map(c=>{const p=totalC>0?(c.value/totalC*100).toFixed(1):'0';return `<div class="donut-legend-item"><div class="donut-legend-dot" style="background:${c.color}"></div><span class="donut-legend-label">${c.label}</span><span class="donut-legend-value">${p}%</span></div>`}).join('');
+}
 
-            const costos = [
-                { label: 'Producto', value: digital.costo_producto, color: '#6366F1' },
-                { label: 'Publicidad', value: digital.ads.gasto_total, color: '#F59E0B' },
-                { label: 'Envío', value: digital.costo_envio, color: '#EC4899' },
-                { label: 'Operaciones', value: digital.costo_operaciones, color: '#9CA3AF' },
-                { label: 'Devoluciones', value: digital.devoluciones, color: '#EF4444' },
-            ];
-            const totalCostos = costos.reduce((s, c) => s + c.value, 0);
+function renderAds(d) {
+    const cuentas = d.ads.cuentas || [], total = d.ads.gasto_total || 1, colors = ['#6366F1','#F59E0B'];
+    document.getElementById('ads-grid').innerHTML = cuentas.map((c,i)=>{const pct=(c.gasto/total*100).toFixed(1);return `<div class="ads-card"><div class="ads-card-name">${c.nombre}</div><div class="ads-card-value">${fmtFull(c.gasto)}</div><div class="ads-card-pct" style="color:${colors[i]}">${pct}% del total</div><div class="ads-bar"><div class="ads-bar-fill" style="width:${pct}%;background:${colors[i]}"></div></div></div>`}).join('');
+}
 
-            chartCostos = new Chart(ctx2, {
-                type: 'doughnut',
-                data: {
-                    labels: costos.map(c => c.label),
-                    datasets: [{
-                        data: costos.map(c => c.value),
-                        backgroundColor: costos.map(c => c.color),
-                        borderWidth: 0,
-                        cutout: '65%',
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } }
-                }
-            });
+function renderPOS(pos) {
+    const gradients = {caracoli:'linear-gradient(to right,#10B981,#34D399)',titan_plaza:'linear-gradient(to right,#6366F1,#818CF8)',fundadores:'linear-gradient(to right,#F59E0B,#FCD34D)'};
+    document.getElementById('pos-grid').innerHTML = Object.entries(pos).map(([key,p])=>{
+        const isPos=p.utilidad>=0,uc=isPos?'var(--green)':'var(--red)',ub=isPos?'var(--green-light)':'var(--red-light)',ar=isPos?'▲':'▼',bg=isPos?gradients[key]:'linear-gradient(to right,#EF4444,#F87171)';
+        return `<div class="pos-card"><div class="pos-bar" style="background:${bg}"></div><div class="pos-name">${p.nombre}</div><div class="pos-city">📍 ${p.ciudad}</div><div class="pos-metrics"><div class="pos-metric" style="background:var(--green-light)"><div class="pos-metric-label">Ventas</div><div class="pos-metric-value" style="color:var(--green)">${fmtMoney(p.ventas)}</div></div><div class="pos-metric" style="background:var(--red-light)"><div class="pos-metric-label">Gastos</div><div class="pos-metric-value" style="color:var(--red)">${fmtMoney(p.gastos.total)}</div></div></div><div class="pos-utilidad" style="background:${ub}"><div class="pos-utilidad-label">UTILIDAD NETA</div><div class="pos-utilidad-value" style="color:${uc}">${fmtMoney(p.utilidad)}</div><div class="kpi-badge" style="background:${ub};color:${uc}">${ar} ${p.margen}%</div></div><div class="pos-desglose"><div class="pos-desglose-row"><span>Arriendo</span><span class="pos-desglose-val">${fmtMoney(p.gastos.arriendo)}</span></div><div class="pos-desglose-row"><span>Salarios</span><span class="pos-desglose-val">${fmtMoney(p.gastos.salarios)}</span></div><div class="pos-desglose-row"><span>Costo gafas</span><span class="pos-desglose-val">${fmtMoney(p.gastos.costo_gafas)}</span></div><div class="pos-desglose-row"><span>Otros</span><span class="pos-desglose-val">${fmtMoney(p.gastos.otros)}</span></div></div></div>`;
+    }).join('');
+}
 
-            document.getElementById('donut-center').innerHTML = fmtMoney(totalCostos);
+function render360(c) {
+    const items = [{label:'INGRESOS TOTALES',value:c.ingresos_totales,color:'var(--green)',gradient:'linear-gradient(to right,#10B981,#34D399)'},{label:'COSTOS TOTALES',value:c.costos_totales,color:'var(--red)',gradient:'linear-gradient(to right,#EF4444,#F87171)'},{label:'UTILIDAD NETA',value:c.utilidad_neta,color:c.utilidad_neta>=0?'var(--green)':'var(--red)',gradient:'linear-gradient(to right,#6366F1,#818CF8)',sub:'Margen: '+c.margen+'%'}];
+    document.getElementById('pnl-grid').innerHTML = items.map(p=>`<div class="pnl-card"><div class="pnl-bar" style="background:${p.gradient}"></div><div class="pnl-label">${p.label}</div><div class="pnl-value" style="color:${p.color}">${fmtMoney(p.value)}</div>${p.sub?`<div class="pnl-sub">${p.sub}</div>`:''}</div>`).join('');
+    const dist=c.distribucion||{},names={digital:'Digital',titan_plaza:'Titan Plaza',caracoli:'Caracolí',fundadores:'Fundadores'},dColors=['#6366F1','#F59E0B','#10B981','#EC4899'];
+    document.getElementById('dist-grid').innerHTML = Object.entries(dist).map(([k,pct],i)=>`<div class="dist-card"><div class="dist-name">${names[k]||k}</div><div class="dist-pct">${pct}%</div><div class="dist-bar"><div class="dist-bar-fill" style="width:${pct}%;background:${dColors[i%dColors.length]}"></div></div></div>`).join('');
+}
 
-            document.getElementById('donut-legend').innerHTML = costos.map(c => {
-                const pct = totalCostos > 0 ? (c.value / totalCostos * 100).toFixed(1) : '0';
-                return `
-                    <div class="donut-legend-item">
-                        <div class="donut-legend-dot" style="background: ${c.color}"></div>
-                        <span class="donut-legend-label">${c.label}</span>
-                        <span class="donut-legend-value">${pct}%</span>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // Render Ads
-        function renderAds(digital) {
-            const cuentas = digital.ads.cuentas || [];
-            const total = digital.ads.gasto_total || 1;
-            const colors = ['#6366F1', '#F59E0B', '#EC4899', '#10B981'];
-
-            document.getElementById('ads-grid').innerHTML = cuentas.map((c, i) => {
-                const pct = (c.gasto / total * 100).toFixed(1);
-                const color = colors[i % colors.length];
-                return `
-                    <div class="ads-card">
-                        <div class="ads-card-name">${c.nombre}</div>
-                        <div class="ads-card-value">${fmtFull(c.gasto)}</div>
-                        <div class="ads-card-pct" style="color: ${color}">${pct}% del total</div>
-                        <div class="ads-bar">
-                            <div class="ads-bar-fill" style="width: ${pct}%; background: linear-gradient(to right, ${color}88, ${color})"></div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // Render POS
-        function renderPOS(pos) {
-            const puntos = Object.entries(pos);
-            const colors = { caracoli: '#10B981', titan_plaza: '#6366F1', fundadores: '#F59E0B' };
-            const gradients = {
-                caracoli: 'linear-gradient(to right, #10B981, #34D399)',
-                titan_plaza: 'linear-gradient(to right, #6366F1, #818CF8)',
-                fundadores: 'linear-gradient(to right, #F59E0B, #FCD34D)',
-            };
-
-            document.getElementById('pos-grid').innerHTML = puntos.map(([key, p]) => {
-                const isPositive = p.utilidad >= 0;
-                const utilColor = isPositive ? 'var(--green)' : 'var(--red)';
-                const utilBg = isPositive ? 'var(--green-light)' : 'var(--red-light)';
-                const arrow = isPositive ? '▲' : '▼';
-                const barGradient = isPositive ? gradients[key] : 'linear-gradient(to right, #EF4444, #F87171)';
-
-                return `
-                    <div class="pos-card">
-                        <div class="pos-bar" style="background: ${barGradient}"></div>
-                        <div class="pos-name">${p.nombre}</div>
-                        <div class="pos-city">📍 ${p.ciudad}</div>
-                        <div class="pos-metrics">
-                            <div class="pos-metric" style="background: var(--green-light)">
-                                <div class="pos-metric-label">Ventas</div>
-                                <div class="pos-metric-value" style="color: var(--green)">${fmtMoney(p.ventas)}</div>
-                            </div>
-                            <div class="pos-metric" style="background: var(--red-light)">
-                                <div class="pos-metric-label">Gastos</div>
-                                <div class="pos-metric-value" style="color: var(--red)">${fmtMoney(p.gastos.total)}</div>
-                            </div>
-                        </div>
-                        <div class="pos-utilidad" style="background: ${utilBg}">
-                            <div class="pos-utilidad-label">UTILIDAD NETA</div>
-                            <div class="pos-utilidad-value" style="color: ${utilColor}">${fmtMoney(p.utilidad)}</div>
-                            <div class="kpi-badge" style="background: ${utilBg}; color: ${utilColor}">${arrow} ${p.margen}%</div>
-                        </div>
-                        <div class="pos-desglose">
-                            <div class="pos-desglose-row"><span>Arriendo</span><span class="pos-desglose-val">${fmtMoney(p.gastos.arriendo)}</span></div>
-                            <div class="pos-desglose-row"><span>Salarios</span><span class="pos-desglose-val">${fmtMoney(p.gastos.salarios)}</span></div>
-                            <div class="pos-desglose-row"><span>Costo gafas</span><span class="pos-desglose-val">${fmtMoney(p.gastos.costo_gafas)}</span></div>
-                            <div class="pos-desglose-row"><span>Otros</span><span class="pos-desglose-val">${fmtMoney(p.gastos.otros)}</span></div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // Render 360
-        function render360(consolidado) {
-            const pnlItems = [
-                { label: 'INGRESOS TOTALES', value: consolidado.ingresos_totales, color: 'var(--green)', gradient: 'linear-gradient(to right, #10B981, #34D399)', sub: '' },
-                { label: 'COSTOS TOTALES', value: consolidado.costos_totales, color: 'var(--red)', gradient: 'linear-gradient(to right, #EF4444, #F87171)', sub: '' },
-                { label: 'UTILIDAD NETA', value: consolidado.utilidad_neta, color: consolidado.utilidad_neta >= 0 ? 'var(--green)' : 'var(--red)', gradient: 'linear-gradient(to right, #6366F1, #818CF8)', sub: 'Margen: ' + consolidado.margen + '%' },
-            ];
-
-            document.getElementById('pnl-grid').innerHTML = pnlItems.map(p => `
-                <div class="pnl-card">
-                    <div class="pnl-bar" style="background: ${p.gradient}"></div>
-                    <div class="pnl-label">${p.label}</div>
-                    <div class="pnl-value" style="color: ${p.color}">${fmtMoney(p.value)}</div>
-                    ${p.sub ? `<div class="pnl-sub">${p.sub}</div>` : ''}
-                </div>
-            `).join('');
-
-            // Distribution
-            const dist = consolidado.distribucion || {};
-            const distNames = { digital: 'Digital', titan_plaza: 'Titan Plaza', caracoli: 'Caracolí', fundadores: 'Fundadores' };
-            const distColors = ['#6366F1', '#F59E0B', '#10B981', '#EC4899'];
-
-            document.getElementById('dist-grid').innerHTML = Object.entries(dist).map(([key, pct], i) => `
-                <div class="dist-card">
-                    <div class="dist-name">${distNames[key] || key}</div>
-                    <div class="dist-pct">${pct}%</div>
-                    <div class="dist-bar">
-                        <div class="dist-bar-fill" style="width: ${pct}%; background: ${distColors[i % distColors.length]}"></div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Render all
-        function renderAll(data) {
-            const periodo = data.periodos[currentPeriod];
-            if (!periodo) return;
-
-            // Update time
-            const updatedAt = new Date(data.updated_at);
-            document.getElementById('update-time').textContent =
-                updatedAt.toLocaleString('es-CO', { hour: '2-digit', minute: '2-digit', hour12: true }) +
-                ' · ' + updatedAt.toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric' });
-
-            renderKPIs(periodo.digital);
-            renderCharts(periodo.digital);
-            renderAds(periodo.digital);
-            renderPOS(periodo.pos);
-            render360(periodo.consolidado);
-        }
-
-        // Load data
-        async function loadData() {
-            try {
-                const res = await fetch('dashboard.json?t=' + Date.now());
-                dashboardData = await res.json();
-                renderAll(dashboardData);
-            } catch (err) {
-                console.error('Error cargando datos:', err);
-            }
-        }
-
-        loadData();
-        setInterval(loadData, 30000);
-    </script>
+async function loadData() {
+    try {
+        const res = await fetch('dashboard.json?t='+Date.now());
+        RAW = await res.json();
+        renderAll();
+    } catch(e) { console.error('Error cargando datos:', e); }
+}
+loadData();
+setInterval(loadData, 30000);
+</script>
 </body>
 </html>

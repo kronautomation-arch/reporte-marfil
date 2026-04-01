@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T21:00:19.006425",
+  "updated_at": "2026-04-01T16:15:25.896600",
   "config": {
     "costo_unitario_gafa": 33000.0,
     "pct_devoluciones": 0.07
@@ -7,16 +7,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 18769778,
+      "gasto": 18983868,
       "purchases": 534
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 7583201,
+      "gasto": 7719741,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 26352979,
+  "ads_gasto_total": 26703609,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -1550,7 +1550,7 @@
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 102640.0,
-      "meta_gasto": 397147.0,
+      "meta_gasto": 397350.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -1563,11 +1563,28 @@
       "digital_gastos_var": 0
     },
     "2026-03-31": {
-      "envia_ventas": 1328899.0,
-      "envia_ordenes": 11,
-      "envia_unidades": 11,
-      "envia_costo_envio": 146030.0,
-      "meta_gasto": 289477.0,
+      "envia_ventas": 1588699.0,
+      "envia_ordenes": 13,
+      "envia_unidades": 13,
+      "envia_costo_envio": 170990.0,
+      "meta_gasto": 418693.0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-04-01": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "meta_gasto": 221211.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

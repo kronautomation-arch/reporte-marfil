@@ -140,9 +140,33 @@
         .info-row-value { font-size: 12px; font-weight: 700; min-width: 80px; text-align: right; color: var(--text); }
         .info-row-units { font-size: 10px; color: var(--text-muted); min-width: 36px; text-align: right; }
         .three-col { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+        /* Cash Flow card */
+        .cashflow-section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .cashflow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+        .cashflow-card { padding: 18px; border-radius: 12px; position: relative; overflow: hidden; }
+        .cashflow-card.cobrado { background: var(--green-light); border: 1px solid #A7F3D0; }
+        .cashflow-card.pendiente { background: var(--yellow-light); border: 1px solid #FCD34D; }
+        .cashflow-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+        .cashflow-icon { font-size: 18px; }
+        .cashflow-card-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+        .cashflow-card.cobrado .cashflow-card-label { color: #047857; }
+        .cashflow-card.pendiente .cashflow-card-label { color: #92400E; }
+        .cashflow-card-value { font-size: 28px; font-weight: 900; line-height: 1.1; margin: 4px 0; }
+        .cashflow-card.cobrado .cashflow-card-value { color: var(--green); }
+        .cashflow-card.pendiente .cashflow-card-value { color: #D97706; }
+        .cashflow-card-meta { font-size: 11px; font-weight: 600; }
+        .cashflow-card.cobrado .cashflow-card-meta { color: #047857; }
+        .cashflow-card.pendiente .cashflow-card-meta { color: #92400E; }
+        .cashflow-bar-container { height: 14px; background: var(--bg); border-radius: 7px; overflow: hidden; display: flex; margin-top: 14px; }
+        .cashflow-bar-prepago { background: linear-gradient(to right, #10B981, #34D399); }
+        .cashflow-bar-cod { background: linear-gradient(to right, #F59E0B, #FCD34D); }
+        .cashflow-legend { display: flex; gap: 18px; margin-top: 10px; font-size: 11px; color: var(--text-secondary); }
+        .cashflow-legend-item { display: flex; align-items: center; gap: 6px; }
+        .cashflow-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
         @media (max-width: 900px) {
             .alert-grid { grid-template-columns: 1fr; }
             .three-col { grid-template-columns: 1fr; }
+            .cashflow-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 900px) {
             .kpi-grid { grid-template-columns: repeat(3, 1fr); }
@@ -227,6 +251,36 @@
         </div>
         <div class="tab-content active" id="tab-digital">
             <div class="kpi-grid" id="kpi-grid"></div>
+            <!-- Cash Flow: Cobrado vs Por cobrar -->
+            <div class="cashflow-section" id="cashflow-section">
+                <div class="chart-title">💰 CASH FLOW · COBRADO VS POR COBRAR</div>
+                <div class="cashflow-grid">
+                    <div class="cashflow-card cobrado">
+                        <div class="cashflow-card-header">
+                            <span class="cashflow-icon">🟢</span>
+                            <span class="cashflow-card-label">Ya cobrado · Prepagado</span>
+                        </div>
+                        <div class="cashflow-card-value" id="cf-prepago-value">$0</div>
+                        <div class="cashflow-card-meta" id="cf-prepago-meta">0 órdenes · 0%</div>
+                    </div>
+                    <div class="cashflow-card pendiente">
+                        <div class="cashflow-card-header">
+                            <span class="cashflow-icon">🟡</span>
+                            <span class="cashflow-card-label">Por cobrar · Contraentrega</span>
+                        </div>
+                        <div class="cashflow-card-value" id="cf-cod-value">$0</div>
+                        <div class="cashflow-card-meta" id="cf-cod-meta">0 órdenes · 0%</div>
+                    </div>
+                </div>
+                <div class="cashflow-bar-container">
+                    <div class="cashflow-bar-prepago" id="cf-bar-prepago" style="width:0%"></div>
+                    <div class="cashflow-bar-cod" id="cf-bar-cod" style="width:0%"></div>
+                </div>
+                <div class="cashflow-legend">
+                    <div class="cashflow-legend-item"><div class="cashflow-legend-dot" style="background:#10B981"></div><span>Prepagado (en banco)</span></div>
+                    <div class="cashflow-legend-item"><div class="cashflow-legend-dot" style="background:#F59E0B"></div><span>COD (al entregar)</span></div>
+                </div>
+            </div>
             <div class="charts-row">
                 <div class="chart-card">
                     <div class="chart-title">VENTAS VS UTILIDAD</div>
@@ -326,6 +380,7 @@ function aggregate(data, from, to) {
     // filtrado por ordenes despachadas)
     let envVentas=0, envOrdenes=0, envUnidades=0, envCostoEnvio=0, metaGasto=0;
     let descuentosOtorgados=0, ventasNetasShopify=0;
+    let codNeto=0, prepagoNeto=0, codOrdenes=0, prepagoOrdenes=0;
     const historial = [];
     for (const d of days) {
         const r = daily[d];
@@ -336,6 +391,10 @@ function aggregate(data, from, to) {
         metaGasto += r.meta_gasto || 0;
         descuentosOtorgados += r.digital_descuentos || 0;
         ventasNetasShopify += r.digital_ventas_netas || 0;
+        codNeto += r.digital_cod_neto || 0;
+        prepagoNeto += r.digital_prepago_neto || 0;
+        codOrdenes += r.digital_cod_ordenes || 0;
+        prepagoOrdenes += r.digital_prepago_ordenes || 0;
         historial.push({ fecha: d, ventas: r.envia_ventas || 0 });
     }
     // Devoluciones = % real (rechazos en destino) sobre ventas brutas
@@ -366,9 +425,16 @@ function aggregate(data, from, to) {
     const adsCuentas = (data.ads_cuentas || []).map(c => ({...c}));
     const adsTotal = data.ads_gasto_total || 1;
 
+    const totalCobrable = codNeto + prepagoNeto;
+    const codPct = totalCobrable > 0 ? codNeto / totalCobrable : 0;
     const digital = {
         ventas_netas: ventasNetas, ventas_brutas: envVentas, devoluciones, ordenes: envOrdenes,
         unidades: envUnidades, descuentos: descuentosOtorgados,
+        cash_flow: {
+            cod_neto: codNeto, prepago_neto: prepagoNeto,
+            cod_ordenes: codOrdenes, prepago_ordenes: prepagoOrdenes,
+            cod_pct: codPct, prepago_pct: 1 - codPct,
+        },
         costo_producto: costoProducto, costo_envio: envCostoEnvio,
         costo_operaciones: costoOps, utilidad: utilidadDigital,
         ads: {
@@ -496,7 +562,7 @@ function renderAll() {
     const { digital, pos, consolidado } = aggregate(RAW, currentFrom, currentTo);
     const updatedAt = new Date(RAW.updated_at);
     document.getElementById('update-time').textContent = updatedAt.toLocaleString('es-CO', { hour:'2-digit', minute:'2-digit', hour12:true }) + ' · ' + updatedAt.toLocaleDateString('es-CO', { day:'2-digit', month:'short', year:'numeric' });
-    renderKPIs(digital); renderCharts(digital); renderAds(digital); renderPOS(pos); render360(consolidado);
+    renderKPIs(digital); renderCashFlow(digital); renderCharts(digital); renderAds(digital); renderPOS(pos); render360(consolidado);
     renderNoDespachadas(); renderTopProductos(); renderCanales(); renderDescuentos();
 }
 
@@ -529,6 +595,23 @@ function renderCharts(d) {
 function renderAds(d) {
     const cuentas = d.ads.cuentas || [], total = d.ads.gasto_total || 1, colors = ['#6366F1','#F59E0B'];
     document.getElementById('ads-grid').innerHTML = cuentas.map((c,i)=>{const pct=(c.gasto/total*100).toFixed(1);return `<div class="ads-card"><div class="ads-card-name">${c.nombre}</div><div class="ads-card-value">${fmtFull(c.gasto)}</div><div class="ads-card-pct" style="color:${colors[i]}">${pct}% del total</div><div class="ads-bar"><div class="ads-bar-fill" style="width:${pct}%;background:${colors[i]}"></div></div></div>`}).join('');
+}
+
+function renderCashFlow(d) {
+    const cf = d.cash_flow || {cod_neto:0, prepago_neto:0, cod_ordenes:0, prepago_ordenes:0, cod_pct:0, prepago_pct:0};
+    const total = cf.cod_neto + cf.prepago_neto;
+    const section = document.getElementById('cashflow-section');
+    if (total === 0) {
+        section.style.display = 'none';
+        return;
+    }
+    section.style.display = 'block';
+    document.getElementById('cf-prepago-value').textContent = fmtFull(cf.prepago_neto);
+    document.getElementById('cf-prepago-meta').textContent = `${cf.prepago_ordenes} órdenes · ${(cf.prepago_pct*100).toFixed(1)}% del total`;
+    document.getElementById('cf-cod-value').textContent = fmtFull(cf.cod_neto);
+    document.getElementById('cf-cod-meta').textContent = `${cf.cod_ordenes} órdenes · ${(cf.cod_pct*100).toFixed(1)}% del total`;
+    document.getElementById('cf-bar-prepago').style.width = (cf.prepago_pct*100).toFixed(1) + '%';
+    document.getElementById('cf-bar-cod').style.width = (cf.cod_pct*100).toFixed(1) + '%';
 }
 
 // Friendly names para canales de Shopify

@@ -41,6 +41,10 @@ PAID_STATUSES = {"paid", "partially_paid", "pending", "authorized"}
 # Status financieros que NO son venta (devuelta o anulada)
 REFUNDED_STATUSES = {"refunded", "voided"}
 
+# Status financieros donde el cliente YA pago (cash en banco / Shopify Payments)
+# pending = COD = se cobrara al entregar (NO esta cobrado todavia)
+PAID_NOW_STATUSES = {"paid", "partially_paid", "authorized"}
+
 
 class ShopifyClient:
     def __init__(self, shop: str, access_token: str, api_version: str = "2025-07"):
@@ -185,6 +189,16 @@ class ShopifyClient:
         unidades = 0
         ordenes_validas = 0
 
+        # Desglose COD vs Prepagado (clave para cash flow del dueno)
+        # COD = se cobra al entregar (financial_status pending)
+        # Prepago = ya esta en banco (paid, partially_paid, authorized)
+        cod_monto = 0.0          # bruto
+        cod_neto = 0.0           # total_price (lo que cobrara al entregar)
+        cod_ordenes = 0
+        prepago_monto = 0.0      # bruto
+        prepago_neto = 0.0       # total_price (lo que ya se cobro)
+        prepago_ordenes = 0
+
         # Drop-outs
         canceladas_count = 0
         canceladas_monto = 0.0
@@ -203,6 +217,10 @@ class ShopifyClient:
             "descuentos": 0.0,
             "unidades": 0,
             "ordenes": 0,
+            "cod_neto": 0.0,
+            "prepago_neto": 0.0,
+            "cod_ordenes": 0,
+            "prepago_ordenes": 0,
         })
         productos_top = defaultdict(lambda: {"unidades": 0, "ventas": 0.0, "vendor": ""})
         skus_top = defaultdict(lambda: {"unidades": 0, "ventas": 0.0, "title": ""})
@@ -248,6 +266,18 @@ class ShopifyClient:
             ventas_netas += total_price
             descuentos_total += total_discounts
 
+            # Clasificar como COD o Prepagado segun financial_status
+            es_prepago = financial_status in PAID_NOW_STATUSES
+            if es_prepago:
+                prepago_monto += bruto
+                prepago_neto += total_price
+                prepago_ordenes += 1
+            else:
+                # pending (COD), unknown, etc -> cuenta como COD por cobrar
+                cod_monto += bruto
+                cod_neto += total_price
+                cod_ordenes += 1
+
             # Unidades
             order_units = 0
             for li in o.get("line_items", []):
@@ -283,6 +313,12 @@ class ShopifyClient:
                 d["descuentos"] += total_discounts
                 d["unidades"] += order_units
                 d["ordenes"] += 1
+                if es_prepago:
+                    d["prepago_neto"] += total_price
+                    d["prepago_ordenes"] += 1
+                else:
+                    d["cod_neto"] += total_price
+                    d["cod_ordenes"] += 1
 
             # Canal de venta (solo despachadas)
             canales[source]["ordenes"] += 1
@@ -331,12 +367,27 @@ class ShopifyClient:
             no_despachadas_count / total_ordenes_vivas if total_ordenes_vivas > 0 else 0
         )
 
+        # Mix COD vs Prepagado (sobre ventas netas)
+        total_neto = cod_neto + prepago_neto
+        cod_pct = cod_neto / total_neto if total_neto > 0 else 0
+
         return {
             "ventas_brutas": round(ventas_brutas),
             "ventas_netas": round(ventas_netas),
             "descuentos_total": round(descuentos_total),
             "unidades": unidades,
             "ordenes": ordenes_validas,
+            # Cash flow: que esta cobrado vs que esta pendiente
+            "cash_flow": {
+                "cod_neto": round(cod_neto),       # Por cobrar al entregar
+                "cod_bruto": round(cod_monto),
+                "cod_ordenes": cod_ordenes,
+                "prepago_neto": round(prepago_neto),  # Ya cobrado online
+                "prepago_bruto": round(prepago_monto),
+                "prepago_ordenes": prepago_ordenes,
+                "cod_pct": round(cod_pct, 4),
+                "prepago_pct": round(1 - cod_pct, 4),
+            },
             "canceladas": {
                 "ordenes": canceladas_count,
                 "monto": round(canceladas_monto),

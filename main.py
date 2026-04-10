@@ -91,9 +91,16 @@ def main():
             inicio_ano, hoy, shipped_order_ids=shipped_shopify_ids
         )
         nd = shopify_data["no_despachadas"]
+        cf = shopify_data["cash_flow"]
         logger.info(
             f"Shopify (despachadas): {shopify_data['ordenes']} ordenes / "
             f"{shopify_data['unidades']} unidades / ${shopify_data['ventas_brutas']:,} brutas"
+        )
+        logger.info(
+            f"  COD por cobrar:    {cf['cod_ordenes']:>4} ord / ${cf['cod_neto']:>12,} ({cf['cod_pct']*100:.1f}%)"
+        )
+        logger.info(
+            f"  Prepago en banco:  {cf['prepago_ordenes']:>4} ord / ${cf['prepago_neto']:>12,} ({cf['prepago_pct']*100:.1f}%)"
         )
         logger.warning(
             f"NO DESPACHADAS (cliente no confirmo): {nd['ordenes']} ordenes / "
@@ -137,6 +144,10 @@ def main():
                 "descuentos": h["descuentos"],
                 "unidades": h["unidades"],
                 "ordenes": h["ordenes"],
+                "cod_neto": h.get("cod_neto", 0),
+                "prepago_neto": h.get("prepago_neto", 0),
+                "cod_ordenes": h.get("cod_ordenes", 0),
+                "prepago_ordenes": h.get("prepago_ordenes", 0),
             }
 
     # Envia: solo costo de envio (los demas datos de envia los usamos como fallback
@@ -218,12 +229,20 @@ def main():
             digital_descuentos = sp.get("descuentos", 0)
             digital_unidades = sp.get("unidades", 0)
             digital_ordenes = sp.get("ordenes", 0)
+            digital_cod_neto = sp.get("cod_neto", 0)
+            digital_prepago_neto = sp.get("prepago_neto", 0)
+            digital_cod_ordenes = sp.get("cod_ordenes", 0)
+            digital_prepago_ordenes = sp.get("prepago_ordenes", 0)
         else:
             digital_ventas = ev.get("ventas", 0)
             digital_ventas_netas = ev.get("ventas", 0)
             digital_descuentos = 0
             digital_unidades = ev.get("ordenes", 0)  # aproximacion
             digital_ordenes = ev.get("ordenes", 0)
+            digital_cod_neto = 0
+            digital_prepago_neto = 0
+            digital_cod_ordenes = 0
+            digital_prepago_ordenes = 0
 
         daily[fecha] = {
             # Ventas digitales (Shopify primario, envia fallback)
@@ -233,6 +252,11 @@ def main():
             "envia_costo_envio": costo_envio_por_dia.get(fecha, 0),
             "digital_ventas_netas": digital_ventas_netas,
             "digital_descuentos": digital_descuentos,
+            # Cash flow (COD vs Prepagado)
+            "digital_cod_neto": digital_cod_neto,
+            "digital_prepago_neto": digital_prepago_neto,
+            "digital_cod_ordenes": digital_cod_ordenes,
+            "digital_prepago_ordenes": digital_prepago_ordenes,
             # Cross-check info (envia paralelo cuando Shopify es fuente)
             "envia_ventas_raw": ev.get("ventas", 0),
             "envia_ordenes_raw": ev.get("ordenes", 0),
@@ -275,6 +299,11 @@ def main():
             "descuentos_ytd": shopify_data["descuentos_total"] if shopify_data else 0,
             "unidades_ytd": shopify_data["unidades"] if shopify_data else 0,
             "ordenes_ytd": shopify_data["ordenes"] if shopify_data else 0,
+            "cash_flow": shopify_data["cash_flow"] if shopify_data else {
+                "cod_neto": 0, "cod_bruto": 0, "cod_ordenes": 0,
+                "prepago_neto": 0, "prepago_bruto": 0, "prepago_ordenes": 0,
+                "cod_pct": 0, "prepago_pct": 0,
+            },
             "canceladas": shopify_data["canceladas"] if shopify_data else {"ordenes": 0, "monto": 0},
             "reembolsadas": shopify_data["reembolsadas"] if shopify_data else {"ordenes": 0, "monto": 0},
             "no_despachadas": shopify_data["no_despachadas"] if shopify_data else {"ordenes": 0, "monto": 0, "tasa": 0, "por_canal": []},

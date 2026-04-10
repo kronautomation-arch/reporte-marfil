@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-04-10T14:42:52.053811",
+  "updated_at": "2026-04-10T21:00:38.230462",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.044415855371413016,
+    "pct_devoluciones": 0.045728074642785076,
     "pct_devoluciones_fuente": "real"
   },
   "devoluciones": {
-    "monto_ytd": 3687200,
-    "ordenes_ytd": 26,
-    "tasa_por_monto": 0.0444,
-    "tasa_por_ordenes": 0.0459
+    "monto_ytd": 3807100,
+    "ordenes_ytd": 27,
+    "tasa_por_monto": 0.0457,
+    "tasa_por_ordenes": 0.0475
   },
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 20520217,
+      "gasto": 20548456,
       "purchases": 570
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 9476953,
+      "gasto": 9492861,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 29997170,
+  "ads_gasto_total": 30041317,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -1690,10 +1690,10 @@
       "digital_gastos_var": 0
     },
     "2026-04-08": {
-      "envia_ventas": 1508800.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 9,
-      "envia_costo_envio": 115120.0,
+      "envia_ventas": 1388900.0,
+      "envia_ordenes": 8,
+      "envia_unidades": 8,
+      "envia_costo_envio": 102640.0,
       "meta_gasto": 877323.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
@@ -1724,11 +1724,11 @@
       "digital_gastos_var": 0
     },
     "2026-04-10": {
-      "envia_ventas": 1049200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 7,
-      "envia_costo_envio": 92960.0,
-      "meta_gasto": 213609.0,
+      "envia_ventas": 1289000.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
+      "envia_costo_envio": 117920.0,
+      "meta_gasto": 256834.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

@@ -1,23 +1,30 @@
 {
-  "updated_at": "2026-04-10T18:09:04.275821",
+  "updated_at": "2026-04-10T14:42:52.053811",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.07
+    "pct_devoluciones": 0.044415855371413016,
+    "pct_devoluciones_fuente": "real"
+  },
+  "devoluciones": {
+    "monto_ytd": 3687200,
+    "ordenes_ytd": 26,
+    "tasa_por_monto": 0.0444,
+    "tasa_por_ordenes": 0.0459
   },
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 20489075,
+      "gasto": 20520217,
       "purchases": 570
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 9455246,
+      "gasto": 9476953,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 29944321,
+  "ads_gasto_total": 29997170,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -357,7 +364,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-19": {
-      "envia_ventas": 3381400.0,
+      "envia_ventas": 3467200.0,
       "envia_ordenes": 24,
       "envia_unidades": 24,
       "envia_costo_envio": 291620.0,
@@ -374,10 +381,10 @@
       "digital_gastos_var": 0
     },
     "2026-01-20": {
-      "envia_ventas": 2008400.0,
-      "envia_ordenes": 13,
-      "envia_unidades": 13,
-      "envia_costo_envio": 183860.0,
+      "envia_ventas": 1908500.0,
+      "envia_ordenes": 12,
+      "envia_unidades": 12,
+      "envia_costo_envio": 171380.0,
       "meta_gasto": 743584.0,
       "pos_caracoli_ventas": 290000.0,
       "pos_caracoli_unidades": 2,
@@ -425,7 +432,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-23": {
-      "envia_ventas": 1099100.0,
+      "envia_ventas": 1219000.0,
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 108130.0,
@@ -476,7 +483,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-26": {
-      "envia_ventas": 1600820.0,
+      "envia_ventas": 1648700.0,
       "envia_ordenes": 11,
       "envia_unidades": 11,
       "envia_costo_envio": 137280.0,
@@ -493,7 +500,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-27": {
-      "envia_ventas": 2388199.0,
+      "envia_ventas": 2388200.0,
       "envia_ordenes": 17,
       "envia_unidades": 17,
       "envia_costo_envio": 211380.0,
@@ -510,7 +517,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-28": {
-      "envia_ventas": 1061099.0,
+      "envia_ventas": 1079100.0,
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 102640.0,
@@ -527,7 +534,7 @@
       "digital_gastos_var": 0
     },
     "2026-01-29": {
-      "envia_ventas": 1978396.0,
+      "envia_ventas": 1978400.0,
       "envia_ordenes": 16,
       "envia_unidades": 16,
       "envia_costo_envio": 202480.0,
@@ -612,7 +619,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-03": {
-      "envia_ventas": 2712900.0,
+      "envia_ventas": 2757800.0,
       "envia_ordenes": 20,
       "envia_unidades": 20,
       "envia_costo_envio": 261460.0,
@@ -629,7 +636,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-04": {
-      "envia_ventas": 964300.0,
+      "envia_ventas": 1029200.0,
       "envia_ordenes": 7,
       "envia_unidades": 7,
       "envia_costo_envio": 87670.0,
@@ -663,7 +670,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-06": {
-      "envia_ventas": 1798598.0,
+      "envia_ventas": 1798600.0,
       "envia_ordenes": 14,
       "envia_unidades": 14,
       "envia_costo_envio": 173910.0,
@@ -714,7 +721,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-09": {
-      "envia_ventas": 1019200.0,
+      "envia_ventas": 1169100.0,
       "envia_ordenes": 7,
       "envia_unidades": 7,
       "envia_costo_envio": 90160.0,
@@ -748,7 +755,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-11": {
-      "envia_ventas": 979215.0,
+      "envia_ventas": 1127000.0,
       "envia_ordenes": 7,
       "envia_unidades": 7,
       "envia_costo_envio": 90160.0,
@@ -850,7 +857,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-17": {
-      "envia_ventas": 472550.0,
+      "envia_ventas": 547500.0,
       "envia_ordenes": 3,
       "envia_unidades": 3,
       "envia_costo_envio": 37440.0,
@@ -867,7 +874,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-18": {
-      "envia_ventas": 1414699.0,
+      "envia_ventas": 1414700.0,
       "envia_ordenes": 9,
       "envia_unidades": 9,
       "envia_costo_envio": 116520.0,
@@ -884,7 +891,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-19": {
-      "envia_ventas": 854350.0,
+      "envia_ventas": 929300.0,
       "envia_ordenes": 6,
       "envia_unidades": 6,
       "envia_costo_envio": 79080.0,
@@ -901,7 +908,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-20": {
-      "envia_ventas": 769400.0,
+      "envia_ventas": 809400.0,
       "envia_ordenes": 6,
       "envia_unidades": 6,
       "envia_costo_envio": 88820.0,
@@ -918,7 +925,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-21": {
-      "envia_ventas": 749399.0,
+      "envia_ventas": 799400.0,
       "envia_ordenes": 5,
       "envia_unidades": 5,
       "envia_costo_envio": 60190.0,
@@ -952,7 +959,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-23": {
-      "envia_ventas": 982150.0,
+      "envia_ventas": 1077100.0,
       "envia_ordenes": 7,
       "envia_unidades": 7,
       "envia_costo_envio": 91560.0,
@@ -969,7 +976,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-24": {
-      "envia_ventas": 1346797.0,
+      "envia_ventas": 1486800.0,
       "envia_ordenes": 10,
       "envia_unidades": 10,
       "envia_costo_envio": 127600.0,
@@ -986,7 +993,7 @@
       "digital_gastos_var": 0
     },
     "2026-02-25": {
-      "envia_ventas": 927099.0,
+      "envia_ventas": 967100.0,
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 104040.0,
@@ -1003,10 +1010,10 @@
       "digital_gastos_var": 0
     },
     "2026-02-26": {
-      "envia_ventas": 1213949.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 10,
-      "envia_costo_envio": 124800.0,
+      "envia_ventas": 1259000.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
+      "envia_costo_envio": 112320.0,
       "meta_gasto": 344829.0,
       "pos_caracoli_ventas": 860000.0,
       "pos_caracoli_unidades": 6,
@@ -1071,10 +1078,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-02": {
-      "envia_ventas": 1686503.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 14,
-      "envia_costo_envio": 190390.0,
+      "envia_ventas": 1646600.0,
+      "envia_ordenes": 13,
+      "envia_unidades": 13,
+      "envia_costo_envio": 175020.0,
       "meta_gasto": 0.0,
       "pos_caracoli_ventas": 140000.0,
       "pos_caracoli_unidades": 1,
@@ -1088,7 +1095,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-03": {
-      "envia_ventas": 1651550.0,
+      "envia_ventas": 1766500.0,
       "envia_ordenes": 13,
       "envia_unidades": 13,
       "envia_costo_envio": 160160.0,
@@ -1105,7 +1112,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-04": {
-      "envia_ventas": 702350.0,
+      "envia_ventas": 777300.0,
       "envia_ordenes": 5,
       "envia_unidades": 5,
       "envia_costo_envio": 65200.0,
@@ -1190,10 +1197,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-09": {
-      "envia_ventas": 1338900.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 10,
-      "envia_costo_envio": 126920.0,
+      "envia_ventas": 1259000.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
+      "envia_costo_envio": 120720.0,
       "meta_gasto": 266997.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
@@ -1207,7 +1214,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-10": {
-      "envia_ventas": 899300.0,
+      "envia_ventas": 919300.0,
       "envia_ordenes": 6,
       "envia_unidades": 6,
       "envia_costo_envio": 77680.0,
@@ -1224,10 +1231,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-11": {
-      "envia_ventas": 667399.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 5,
-      "envia_costo_envio": 68350.0,
+      "envia_ventas": 657400.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
+      "envia_costo_envio": 49920.0,
       "meta_gasto": 571025.0,
       "pos_caracoli_ventas": 290000.0,
       "pos_caracoli_unidades": 2,
@@ -1241,7 +1248,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-12": {
-      "envia_ventas": 1698700.0,
+      "envia_ventas": 1858600.0,
       "envia_ordenes": 10,
       "envia_unidades": 10,
       "envia_costo_envio": 122310.0,
@@ -1258,7 +1265,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-13": {
-      "envia_ventas": 1973449.0,
+      "envia_ventas": 2088400.0,
       "envia_ordenes": 14,
       "envia_unidades": 14,
       "envia_costo_envio": 171010.0,
@@ -1275,7 +1282,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-14": {
-      "envia_ventas": 489598.0,
+      "envia_ventas": 509600.0,
       "envia_ordenes": 4,
       "envia_unidades": 4,
       "envia_costo_envio": 39978.7,
@@ -1309,7 +1316,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-16": {
-      "envia_ventas": 3027598.0,
+      "envia_ventas": 3395200.0,
       "envia_ordenes": 22,
       "envia_unidades": 22,
       "envia_costo_envio": 286110.0,
@@ -1326,7 +1333,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-17": {
-      "envia_ventas": 855100.0,
+      "envia_ventas": 895100.0,
       "envia_ordenes": 6,
       "envia_unidades": 6,
       "envia_costo_envio": 74880.0,
@@ -1343,7 +1350,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-18": {
-      "envia_ventas": 572450.0,
+      "envia_ventas": 787300.0,
       "envia_ordenes": 4,
       "envia_unidades": 4,
       "envia_costo_envio": 51320.0,
@@ -1360,7 +1367,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-19": {
-      "envia_ventas": 379698.0,
+      "envia_ventas": 379700.0,
       "envia_ordenes": 2,
       "envia_unidades": 2,
       "envia_costo_envio": 24960.0,
@@ -1377,7 +1384,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-20": {
-      "envia_ventas": 1137000.0,
+      "envia_ventas": 1266900.0,
       "envia_ordenes": 9,
       "envia_unidades": 9,
       "envia_costo_envio": 127250.0,
@@ -1394,7 +1401,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-21": {
-      "envia_ventas": 1029200.0,
+      "envia_ventas": 1049200.0,
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 93460.0,
@@ -1445,10 +1452,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-24": {
-      "envia_ventas": 3826899.0,
-      "envia_ordenes": 29,
-      "envia_unidades": 29,
-      "envia_costo_envio": 417600.0,
+      "envia_ventas": 3857000.0,
+      "envia_ordenes": 27,
+      "envia_unidades": 27,
+      "envia_costo_envio": 392640.0,
       "meta_gasto": 508947.0,
       "pos_caracoli_ventas": 150000.0,
       "pos_caracoli_unidades": 1,
@@ -1462,10 +1469,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-25": {
-      "envia_ventas": 1039198.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 8,
-      "envia_costo_envio": 96360.0,
+      "envia_ventas": 899300.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 7,
+      "envia_costo_envio": 83880.0,
       "meta_gasto": 439053.0,
       "pos_caracoli_ventas": 280000.0,
       "pos_caracoli_unidades": 2,
@@ -1479,10 +1486,10 @@
       "digital_gastos_var": 0
     },
     "2026-03-26": {
-      "envia_ventas": 887200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 7,
-      "envia_costo_envio": 83470.0,
+      "envia_ventas": 787300.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
+      "envia_costo_envio": 70990.0,
       "meta_gasto": 474728.0,
       "pos_caracoli_ventas": 150000.0,
       "pos_caracoli_unidades": 1,
@@ -1496,7 +1503,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-27": {
-      "envia_ventas": 628600.0,
+      "envia_ventas": 649500.0,
       "envia_ordenes": 5,
       "envia_unidades": 5,
       "envia_costo_envio": 66707.57,
@@ -1547,7 +1554,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-30": {
-      "envia_ventas": 1209000.0,
+      "envia_ventas": 1289000.0,
       "envia_ordenes": 8,
       "envia_unidades": 8,
       "envia_costo_envio": 102640.0,
@@ -1564,7 +1571,7 @@
       "digital_gastos_var": 0
     },
     "2026-03-31": {
-      "envia_ventas": 1588699.0,
+      "envia_ventas": 1728700.0,
       "envia_ordenes": 13,
       "envia_unidades": 13,
       "envia_costo_envio": 170990.0,
@@ -1581,7 +1588,7 @@
       "digital_gastos_var": 0
     },
     "2026-04-01": {
-      "envia_ventas": 779400.0,
+      "envia_ventas": 849400.0,
       "envia_ordenes": 6,
       "envia_unidades": 6,
       "envia_costo_envio": 80480.0,
@@ -1666,10 +1673,10 @@
       "digital_gastos_var": 0
     },
     "2026-04-07": {
-      "envia_ventas": 4244399.0,
-      "envia_ordenes": 29,
-      "envia_unidades": 29,
-      "envia_costo_envio": 384940.0,
+      "envia_ventas": 4282500.0,
+      "envia_ordenes": 27,
+      "envia_unidades": 27,
+      "envia_costo_envio": 359980.0,
       "meta_gasto": 626749.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
@@ -1683,7 +1690,7 @@
       "digital_gastos_var": 0
     },
     "2026-04-08": {
-      "envia_ventas": 1288899.0,
+      "envia_ventas": 1508800.0,
       "envia_ordenes": 9,
       "envia_unidades": 9,
       "envia_costo_envio": 115120.0,
@@ -1700,7 +1707,7 @@
       "digital_gastos_var": 0
     },
     "2026-04-09": {
-      "envia_ventas": 1588600.0,
+      "envia_ventas": 1778600.0,
       "envia_ordenes": 13,
       "envia_unidades": 13,
       "envia_costo_envio": 200290.0,
@@ -1717,11 +1724,11 @@
       "digital_gastos_var": 0
     },
     "2026-04-10": {
-      "envia_ventas": 139900.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
-      "envia_costo_envio": 13880.0,
-      "meta_gasto": 159838.0,
+      "envia_ventas": 1049200.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 7,
+      "envia_costo_envio": 92960.0,
+      "meta_gasto": 213609.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

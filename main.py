@@ -46,11 +46,22 @@ def main():
     sheets_data = sheets_client.get_data(inicio_ano, hoy)
     config = sheets_data.get("config", {})
     costo_unitario = config.get("costo_unitario_gafa", 0)
-    pct_devoluciones = config.get("pct_devoluciones", 0.15)
+    # pct_devoluciones de Sheets queda solo como OVERRIDE manual opcional.
+    # Si no esta seteado (o es 0), usamos la tasa REAL calculada desde envia.
+    pct_devoluciones_override = config.get("pct_devoluciones_override", 0)
 
     # === 2. Envia.com: ventas digitales ===
     logger.info("Consultando envia.com...")
     envia_data = envia_client.get_ventas_digitales(inicio_ano, hoy)
+
+    # Tasa real de devolucion calculada desde status de envia
+    devoluciones_info = envia_data.get("devoluciones", {})
+    tasa_dev_real = devoluciones_info.get("tasa_por_monto", 0)
+    pct_devoluciones = pct_devoluciones_override if pct_devoluciones_override > 0 else tasa_dev_real
+    logger.info(
+        f"Devoluciones: {devoluciones_info.get('ordenes', 0)} ordenes / "
+        f"${devoluciones_info.get('monto', 0):,.0f} ({tasa_dev_real*100:.2f}% real)"
+    )
 
     # === 3. Meta Ads: por cuenta y diario ===
     # Si Meta falla (token expirado, permisos, etc.) seguimos generando el dashboard
@@ -170,6 +181,13 @@ def main():
         "config": {
             "costo_unitario_gafa": costo_unitario,
             "pct_devoluciones": pct_devoluciones,
+            "pct_devoluciones_fuente": "override" if pct_devoluciones_override > 0 else "real",
+        },
+        "devoluciones": {
+            "monto_ytd": round(devoluciones_info.get("monto", 0)),
+            "ordenes_ytd": devoluciones_info.get("ordenes", 0),
+            "tasa_por_monto": round(devoluciones_info.get("tasa_por_monto", 0), 4),
+            "tasa_por_ordenes": round(devoluciones_info.get("tasa_por_ordenes", 0), 4),
         },
         "ads_cuentas": [
             {"nombre": c["nombre"], "gasto": round(c["gasto"]), "purchases": c.get("purchases", 0)}

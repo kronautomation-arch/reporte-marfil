@@ -1,32 +1,23 @@
 {
-  "updated_at": "2026-04-10T21:28:36.235117",
+  "updated_at": "2026-04-10T16:47:26.658486",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.045728074642785076,
-    "pct_devoluciones_fuente": "real",
+    "pct_devoluciones": 0.04428792435787795,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 3807100,
-    "ordenes_ytd": 27,
-    "tasa_por_monto": 0.0457,
-    "tasa_por_ordenes": 0.0475
-  },
-  "cross_check": {
-    "shopify_ventas_brutas": 98440900,
-    "shopify_ordenes": 677,
-    "envia_ventas": 79448100,
-    "envia_ordenes": 541,
-    "drift_ventas": 18992800,
-    "drift_ordenes": 136
+    "monto_ytd": 3687200,
+    "ordenes_ytd": 26,
+    "tasa_por_monto": 0.0443,
+    "tasa_por_ordenes": 0.0458
   },
   "shopify": {
-    "ventas_brutas_ytd": 98440900,
-    "ventas_netas_ytd": 91048195,
-    "descuentos_ytd": 7392705,
-    "unidades_ytd": 791,
-    "ordenes_ytd": 677,
+    "ventas_brutas_ytd": 77301900,
+    "ventas_netas_ytd": 71275825,
+    "descuentos_ytd": 6026075,
+    "unidades_ytd": 621,
+    "ordenes_ytd": 531,
     "canceladas": {
       "ordenes": 16,
       "monto": 2463900
@@ -35,54 +26,64 @@
       "ordenes": 0,
       "monto": 0
     },
+    "no_despachadas": {
+      "ordenes": 146,
+      "monto": 21139000,
+      "tasa": 0.2157,
+      "por_canal": [
+        {
+          "canal": "5690175",
+          "ordenes": 75,
+          "monto": 9997700.0
+        },
+        {
+          "canal": "shopify_draft_order",
+          "ordenes": 31,
+          "monto": 5735700.0
+        },
+        {
+          "canal": "web",
+          "ordenes": 40,
+          "monto": 5405600.0
+        }
+      ]
+    },
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 534,
-        "ventas": 64026600.0,
+        "unidades": 406,
+        "ventas": 48679400.0,
         "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS AZUL ROJO",
-        "unidades": 86,
-        "ventas": 12891400.0,
-        "vendor": "MM"
-      },
-      {
-        "nombre": "GAFAS DE SOL MARFIL MONTOYA NEGRO ROJO",
-        "unidades": 23,
-        "ventas": 3447700.0,
-        "vendor": "MM"
-      },
-      {
-        "nombre": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
-        "unidades": 20,
-        "ventas": 2798000.0,
+        "unidades": 76,
+        "ventas": 11392400.0,
         "vendor": "MM"
       },
       {
         "nombre": "ENVIO PRIORITARIO",
-        "unidades": 20,
-        "ventas": 158000.0,
+        "unidades": 18,
+        "ventas": 142200.0,
         "vendor": ""
       },
       {
+        "nombre": "GAFAS DE SOL MARFIL MONTOYA NEGRO ROJO",
+        "unidades": 18,
+        "ventas": 2698200.0,
+        "vendor": "MM"
+      },
+      {
+        "nombre": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
+        "unidades": 16,
+        "ventas": 2238400.0,
+        "vendor": "MM"
+      },
+      {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 12,
-        "ventas": 1678800.0,
+        "unidades": 11,
+        "ventas": 1538900.0,
         "vendor": "MM"
-      },
-      {
-        "nombre": "GAFAS DE SOL MARFIL VENUS NEGRO MATE",
-        "unidades": 10,
-        "ventas": 1499000.0,
-        "vendor": "MM"
-      },
-      {
-        "nombre": "Gafas De Sol Marfil Centaurus",
-        "unidades": 10,
-        "ventas": 1459000.0,
-        "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL CALVIN DORADO",
@@ -91,21 +92,27 @@
         "vendor": "Marfil"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "nombre": "GAFAS DE SOL MARFIL VENUS NEGRO MATE",
         "unidades": 7,
-        "ventas": 979300.0,
+        "ventas": 1049300.0,
+        "vendor": "MM"
+      },
+      {
+        "nombre": "Gafas De Sol Marfil Centaurus",
+        "unidades": 7,
+        "ventas": 1029300.0,
+        "vendor": "Marfil"
+      },
+      {
+        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "unidades": 6,
+        "ventas": 839400.0,
         "vendor": "MM"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
         "unidades": 5,
         "ventas": 749500.0,
-        "vendor": "MM"
-      },
-      {
-        "nombre": "GAFAS DE SOL MARFIL TOUS BLANCO",
-        "unidades": 3,
-        "ventas": 419700.0,
         "vendor": "MM"
       },
       {
@@ -125,56 +132,50 @@
         "unidades": 2,
         "ventas": 279800.0,
         "vendor": "76350"
+      },
+      {
+        "nombre": "GAFAS DE SOL MARFIL TOUS MORADO",
+        "unidades": 2,
+        "ventas": 279800.0,
+        "vendor": "MM"
       }
     ],
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 534,
-        "ventas": 64026600.0,
+        "unidades": 406,
+        "ventas": 48679400.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
         "sku": "VENUS AZUL-ROJO-1",
-        "unidades": 86,
-        "ventas": 12891400.0,
+        "unidades": 76,
+        "ventas": 11392400.0,
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
+        "sku": "(sin SKU)",
+        "unidades": 18,
+        "ventas": 142200.0,
+        "title": "ENVIO PRIORITARIO"
+      },
+      {
         "sku": "MONTOYA NEGRO-ROJO-1",
-        "unidades": 23,
-        "ventas": 3447700.0,
+        "unidades": 18,
+        "ventas": 2698200.0,
         "title": "GAFAS DE SOL MARFIL MONTOYA NEGRO ROJO"
       },
       {
         "sku": "TOUS NEGRO-NARANJA-1",
-        "unidades": 20,
-        "ventas": 2798000.0,
+        "unidades": 16,
+        "ventas": 2238400.0,
         "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA"
       },
       {
-        "sku": "(sin SKU)",
-        "unidades": 20,
-        "ventas": 158000.0,
-        "title": "ENVIO PRIORITARIO"
-      },
-      {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 12,
-        "ventas": 1678800.0,
+        "unidades": 11,
+        "ventas": 1538900.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
-      },
-      {
-        "sku": "VENUS NEGRO MATE-1",
-        "unidades": 10,
-        "ventas": 1499000.0,
-        "title": "GAFAS DE SOL MARFIL VENUS NEGRO MATE"
-      },
-      {
-        "sku": "CENTAURUS - FUCSIA",
-        "unidades": 10,
-        "ventas": 1459000.0,
-        "title": "Gafas De Sol Marfil Centaurus"
       },
       {
         "sku": "CALVIN DORADO-1",
@@ -183,9 +184,21 @@
         "title": "GAFAS DE SOL MARFIL CALVIN DORADO"
       },
       {
-        "sku": "TAURUS NEGRO-AZUL-1",
+        "sku": "VENUS NEGRO MATE-1",
         "unidades": 7,
-        "ventas": 979300.0,
+        "ventas": 1049300.0,
+        "title": "GAFAS DE SOL MARFIL VENUS NEGRO MATE"
+      },
+      {
+        "sku": "CENTAURUS - FUCSIA",
+        "unidades": 7,
+        "ventas": 1029300.0,
+        "title": "Gafas De Sol Marfil Centaurus"
+      },
+      {
+        "sku": "TAURUS NEGRO-AZUL-1",
+        "unidades": 6,
+        "ventas": 839400.0,
         "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
       },
       {
@@ -193,12 +206,6 @@
         "unidades": 5,
         "ventas": 749500.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
-      },
-      {
-        "sku": "TOUS BLANCO-1",
-        "unidades": 3,
-        "ventas": 419700.0,
-        "title": "GAFAS DE SOL MARFIL TOUS BLANCO"
       },
       {
         "sku": "CROWD TORNASOL NARANJA-1 - GAFA DE SOL MARFIL CROWD",
@@ -231,51 +238,57 @@
         "title": "GAFAS DE SOL MARFIL ACUARIUS CAREY"
       },
       {
-        "sku": "CROWD DEGRADE-1 - GAFAS DE SOL MARFIL CROWD",
-        "unidades": 2,
-        "ventas": 279800.0,
-        "title": "GAFAS DE SOL MARFIL CROWD DEGRADE"
-      },
-      {
-        "sku": "CROWD TORNASOL ROSADO-1 - GAFA DE SOL MARFIL CROWD",
-        "unidades": 2,
-        "ventas": 279800.0,
-        "title": "GAFAS DE SOL MARFIL CROWD TORNASOL ROSADO"
-      },
-      {
         "sku": "HARRY TORNASOL NARANJA-1",
         "unidades": 2,
         "ventas": 279800.0,
         "title": "GAFAS DE SOL MARFIL HARRY TORNASOL NARANJA"
+      },
+      {
+        "sku": "CELINE NEGRO-BRILLANTE-1",
+        "unidades": 2,
+        "ventas": 279800.0,
+        "title": "GAFAS DE SOL MARFIL CELINE NEGRO BRILLANTE"
+      },
+      {
+        "sku": "ROMA BLANCO-1",
+        "unidades": 1,
+        "ventas": 139900.0,
+        "title": "GAFAS DE SOL MARFIL ROMA BLANCO"
+      },
+      {
+        "sku": "TOUS CAREY-1",
+        "unidades": 1,
+        "ventas": 139900.0,
+        "title": "GAFAS DE SOL MARFIL TOUS CAREY"
       }
     ],
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 347,
-        "ventas_brutas": 52439600.0
+        "ordenes": 316,
+        "ventas_brutas": 46703900.0
       },
       {
         "canal": "5690175",
-        "ordenes": 205,
-        "ventas_brutas": 28465300.0
+        "ordenes": 130,
+        "ventas_brutas": 18467600.0
       },
       {
         "canal": "web",
-        "ordenes": 125,
-        "ventas_brutas": 17536000.0
+        "ordenes": 85,
+        "ventas_brutas": 12130400.0
       }
     ],
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 123,
-        "monto": 5975600.0
+        "usos": 113,
+        "monto": 4916800.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
-        "usos": 14,
-        "monto": 1049300.0
+        "usos": 11,
+        "monto": 824450.0
       },
       {
         "codigo": "MARFIL20, CUSTOM DISCOUNT",
@@ -284,13 +297,8 @@
       },
       {
         "codigo": "QUANTITY DISCOUNT",
-        "usos": 6,
-        "monto": 108000.0
-      },
-      {
-        "codigo": "ADKHY",
-        "usos": 1,
-        "monto": 28980.0
+        "usos": 3,
+        "monto": 54000.0
       },
       {
         "codigo": "MARFIL20",
@@ -327,16 +335,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 20557113,
+      "gasto": 20563606,
       "purchases": 570
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 9500056,
+      "gasto": 9504465,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 30057169,
+  "ads_gasto_total": 30068071,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -370,12 +378,12 @@
   "digital_costos_fijos_total_mensual": 0,
   "daily": {
     "2026-01-01": {
-      "envia_ventas": 119900.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 119900.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 3367.0,
@@ -391,12 +399,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-02": {
-      "envia_ventas": 119900.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 119900.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 128855.0,
@@ -412,12 +420,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-03": {
-      "envia_ventas": 119900.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 119900.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 145435.0,
@@ -433,12 +441,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-04": {
-      "envia_ventas": 479600.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 4,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 479600.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 91536.0,
@@ -454,12 +462,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-05": {
-      "envia_ventas": 379700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 379700.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 82211.0,
@@ -496,12 +504,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-07": {
-      "envia_ventas": 619500.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 5,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 619500.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 119356.0,
@@ -538,12 +546,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-09": {
-      "envia_ventas": 289800.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 2,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 260820.0,
-      "digital_descuentos": 28980.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 123362.0,
@@ -559,12 +567,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-10": {
-      "envia_ventas": 1099100.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 9,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1099100.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 143750.0,
@@ -580,12 +588,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-11": {
-      "envia_ventas": 389700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 389700.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 44411.0,
@@ -601,12 +609,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-12": {
-      "envia_ventas": 239800.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 2,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 239800.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 57263.0,
@@ -622,12 +630,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-13": {
-      "envia_ventas": 379700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 379700.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 332775.0,
@@ -643,12 +651,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-14": {
-      "envia_ventas": 1199000.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 10,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1181000.0,
-      "digital_descuentos": 18000.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 218295.0,
@@ -664,12 +672,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-15": {
-      "envia_ventas": 359700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 359700.0,
-      "digital_descuentos": 0.0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 443164.0,
@@ -685,11 +693,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-16": {
-      "envia_ventas": 1358900.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 11,
+      "envia_ventas": 479600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1358900.0,
+      "digital_ventas_netas": 479600.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -706,11 +714,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-17": {
-      "envia_ventas": 1718600.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 14,
+      "envia_ventas": 1219000.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 10,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1718600.0,
+      "digital_ventas_netas": 1219000.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -748,11 +756,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-19": {
-      "envia_ventas": 1988400.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 16,
+      "envia_ventas": 1508800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
       "envia_costo_envio": 291620.0,
-      "digital_ventas_netas": 1920600.0,
+      "digital_ventas_netas": 1441000.0,
       "digital_descuentos": 67800.0,
       "envia_ventas_raw": 3467200.0,
       "envia_ordenes_raw": 24,
@@ -769,11 +777,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-20": {
-      "envia_ventas": 2627900.0,
-      "envia_ordenes": 18,
-      "envia_unidades": 21,
+      "envia_ventas": 2148300.0,
+      "envia_ordenes": 14,
+      "envia_unidades": 17,
       "envia_costo_envio": 171380.0,
-      "digital_ventas_netas": 2540100.0,
+      "digital_ventas_netas": 2060500.0,
       "digital_descuentos": 87800.0,
       "envia_ventas_raw": 1908500.0,
       "envia_ordenes_raw": 12,
@@ -811,11 +819,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-22": {
-      "envia_ventas": 3287500.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 25,
+      "envia_ventas": 2807900.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 21,
       "envia_costo_envio": 134480.0,
-      "digital_ventas_netas": 2504800.0,
+      "digital_ventas_netas": 2025200.0,
       "digital_descuentos": 782700.0,
       "envia_ventas_raw": 2807900.0,
       "envia_ordenes_raw": 10,
@@ -832,11 +840,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-23": {
-      "envia_ventas": 1698600.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 14,
+      "envia_ventas": 1458800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
       "envia_costo_envio": 108130.0,
-      "digital_ventas_netas": 1674700.0,
+      "digital_ventas_netas": 1434900.0,
       "digital_descuentos": 23900.0,
       "envia_ventas_raw": 1219000.0,
       "envia_ordenes_raw": 8,
@@ -874,11 +882,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-25": {
-      "envia_ventas": 509600.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 4,
+      "envia_ventas": 259800.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 2,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 509600.0,
+      "digital_ventas_netas": 259800.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -937,11 +945,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-28": {
-      "envia_ventas": 1918400.0,
-      "envia_ordenes": 15,
-      "envia_unidades": 16,
+      "envia_ventas": 1438800.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 12,
       "envia_costo_envio": 102640.0,
-      "digital_ventas_netas": 1900400.0,
+      "digital_ventas_netas": 1420800.0,
       "digital_descuentos": 18000.0,
       "envia_ventas_raw": 1079100.0,
       "envia_ordenes_raw": 8,
@@ -958,11 +966,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-29": {
-      "envia_ventas": 2358100.0,
-      "envia_ordenes": 18,
-      "envia_unidades": 19,
+      "envia_ventas": 1978400.0,
+      "envia_ordenes": 16,
+      "envia_unidades": 16,
       "envia_costo_envio": 202480.0,
-      "digital_ventas_netas": 2328100.0,
+      "digital_ventas_netas": 1948400.0,
       "digital_descuentos": 30000.0,
       "envia_ventas_raw": 1978400.0,
       "envia_ordenes_raw": 16,
@@ -979,12 +987,12 @@
       "digital_gastos_var": 0
     },
     "2026-01-30": {
-      "envia_ventas": 1948400.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 16,
+      "envia_ventas": 1468800.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 12,
       "envia_costo_envio": 126120.0,
-      "digital_ventas_netas": 1930400.0,
-      "digital_descuentos": 18000.0,
+      "digital_ventas_netas": 1468800.0,
+      "digital_descuentos": 0.0,
       "envia_ventas_raw": 1468800.0,
       "envia_ordenes_raw": 11,
       "meta_gasto": 458923.0,
@@ -1000,11 +1008,11 @@
       "digital_gastos_var": 0
     },
     "2026-01-31": {
-      "envia_ventas": 869300.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 7,
+      "envia_ventas": 749400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 869300.0,
+      "digital_ventas_netas": 749400.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -1021,11 +1029,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-01": {
-      "envia_ventas": 359700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 359700.0,
+      "digital_ventas_netas": 119900.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -1063,11 +1071,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-03": {
-      "envia_ventas": 2328100.0,
-      "envia_ordenes": 17,
-      "envia_unidades": 19,
+      "envia_ventas": 1488800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
       "envia_costo_envio": 261460.0,
-      "digital_ventas_netas": 2238300.0,
+      "digital_ventas_netas": 1399000.0,
       "digital_descuentos": 89800.0,
       "envia_ventas_raw": 2757800.0,
       "envia_ordenes_raw": 20,
@@ -1084,12 +1092,12 @@
       "digital_gastos_var": 0
     },
     "2026-02-04": {
-      "envia_ventas": 1798600.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 14,
+      "envia_ventas": 1149100.0,
+      "envia_ordenes": 8,
+      "envia_unidades": 9,
       "envia_costo_envio": 87670.0,
-      "digital_ventas_netas": 1658750.0,
-      "digital_descuentos": 139850.0,
+      "digital_ventas_netas": 1084200.0,
+      "digital_descuentos": 64900.0,
       "envia_ventas_raw": 1029200.0,
       "envia_ordenes_raw": 7,
       "meta_gasto": 722186.0,
@@ -1189,11 +1197,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-09": {
-      "envia_ventas": 1039200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 8,
+      "envia_ventas": 919300.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 7,
       "envia_costo_envio": 90160.0,
-      "digital_ventas_netas": 964250.0,
+      "digital_ventas_netas": 844350.0,
       "digital_descuentos": 74950.0,
       "envia_ventas_raw": 1169100.0,
       "envia_ordenes_raw": 7,
@@ -1210,11 +1218,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-10": {
-      "envia_ventas": 919300.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 7,
+      "envia_ventas": 679500.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 5,
       "envia_costo_envio": 93700.0,
-      "digital_ventas_netas": 919300.0,
+      "digital_ventas_netas": 679500.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 819400.0,
       "envia_ordenes_raw": 6,
@@ -1273,12 +1281,12 @@
       "digital_gastos_var": 0
     },
     "2026-02-13": {
-      "envia_ventas": 259800.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 2,
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
       "envia_costo_envio": 13880.0,
-      "digital_ventas_netas": 249800.0,
-      "digital_descuentos": 10000.0,
+      "digital_ventas_netas": 119900.0,
+      "digital_descuentos": 0.0,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 1,
       "meta_gasto": 204096.0,
@@ -1294,11 +1302,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-14": {
-      "envia_ventas": 1348900.0,
-      "envia_ordenes": 11,
-      "envia_unidades": 11,
+      "envia_ventas": 1109100.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
       "envia_costo_envio": 12480.0,
-      "digital_ventas_netas": 1348900.0,
+      "digital_ventas_netas": 1109100.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 1,
@@ -1357,11 +1365,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-17": {
-      "envia_ventas": 667400.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 6,
+      "envia_ventas": 547500.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 5,
       "envia_costo_envio": 37440.0,
-      "digital_ventas_netas": 592450.0,
+      "digital_ventas_netas": 472550.0,
       "digital_descuentos": 74950.0,
       "envia_ventas_raw": 547500.0,
       "envia_ordenes_raw": 3,
@@ -1378,12 +1386,12 @@
       "digital_gastos_var": 0
     },
     "2026-02-18": {
-      "envia_ventas": 1954300.0,
-      "envia_ordenes": 11,
-      "envia_unidades": 17,
+      "envia_ventas": 1684500.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 15,
       "envia_costo_envio": 116520.0,
-      "digital_ventas_netas": 1610590.0,
-      "digital_descuentos": 343710.0,
+      "digital_ventas_netas": 1415740.0,
+      "digital_descuentos": 268760.0,
       "envia_ventas_raw": 1414700.0,
       "envia_ordenes_raw": 9,
       "meta_gasto": 569149.0,
@@ -1399,11 +1407,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-19": {
-      "envia_ventas": 239800.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 2,
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
       "envia_costo_envio": 79080.0,
-      "digital_ventas_netas": 239800.0,
+      "digital_ventas_netas": 119900.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 929300.0,
       "envia_ordenes_raw": 6,
@@ -1420,11 +1428,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-20": {
-      "envia_ventas": 1319000.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 10,
+      "envia_ventas": 1199100.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
       "envia_costo_envio": 88820.0,
-      "digital_ventas_netas": 1129000.0,
+      "digital_ventas_netas": 1009100.0,
       "digital_descuentos": 190000.0,
       "envia_ventas_raw": 809400.0,
       "envia_ordenes_raw": 6,
@@ -1525,12 +1533,12 @@
       "digital_gastos_var": 0
     },
     "2026-02-25": {
-      "envia_ventas": 1476700.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 13,
+      "envia_ventas": 1236900.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 11,
       "envia_costo_envio": 104040.0,
-      "digital_ventas_netas": 1334710.0,
-      "digital_descuentos": 141990.0,
+      "digital_ventas_netas": 1134910.0,
+      "digital_descuentos": 101990.0,
       "envia_ventas_raw": 967100.0,
       "envia_ordenes_raw": 8,
       "meta_gasto": 393685.0,
@@ -1546,11 +1554,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-26": {
-      "envia_ventas": 1109100.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 9,
+      "envia_ventas": 989200.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 8,
       "envia_costo_envio": 112320.0,
-      "digital_ventas_netas": 1014150.0,
+      "digital_ventas_netas": 894250.0,
       "digital_descuentos": 94950.0,
       "envia_ventas_raw": 1259000.0,
       "envia_ordenes_raw": 9,
@@ -1567,11 +1575,11 @@
       "digital_gastos_var": 0
     },
     "2026-02-27": {
-      "envia_ventas": 1087000.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 10,
+      "envia_ventas": 719400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
       "envia_costo_envio": 51320.0,
-      "digital_ventas_netas": 1087000.0,
+      "digital_ventas_netas": 719400.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 479600.0,
       "envia_ordenes_raw": 4,
@@ -1651,12 +1659,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-03": {
-      "envia_ventas": 1646600.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 14,
+      "envia_ventas": 1406800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
       "envia_costo_envio": 160160.0,
-      "digital_ventas_netas": 1511650.0,
-      "digital_descuentos": 134950.0,
+      "digital_ventas_netas": 1291850.0,
+      "digital_descuentos": 114950.0,
       "envia_ventas_raw": 1766500.0,
       "envia_ordenes_raw": 13,
       "meta_gasto": 497600.0,
@@ -1672,11 +1680,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-04": {
-      "envia_ventas": 479600.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 4,
+      "envia_ventas": 239800.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 2,
       "envia_costo_envio": 65200.0,
-      "digital_ventas_netas": 479600.0,
+      "digital_ventas_netas": 239800.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 777300.0,
       "envia_ordenes_raw": 5,
@@ -1693,12 +1701,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-05": {
-      "envia_ventas": 2278300.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 17,
+      "envia_ventas": 479600.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 4,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1399500.0,
-      "digital_descuentos": 878800.0,
+      "digital_ventas_netas": 459600.0,
+      "digital_descuentos": 20000.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
@@ -1798,11 +1806,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-10": {
-      "envia_ventas": 1039200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 8,
+      "envia_ventas": 919300.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 7,
       "envia_costo_envio": 77680.0,
-      "digital_ventas_netas": 1019200.0,
+      "digital_ventas_netas": 899300.0,
       "digital_descuentos": 20000.0,
       "envia_ventas_raw": 919300.0,
       "envia_ordenes_raw": 6,
@@ -1819,12 +1827,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-11": {
-      "envia_ventas": 1316900.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 11,
+      "envia_ventas": 777300.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 7,
       "envia_costo_envio": 49920.0,
-      "digital_ventas_netas": 1102050.0,
-      "digital_descuentos": 214850.0,
+      "digital_ventas_netas": 637400.0,
+      "digital_descuentos": 139900.0,
       "envia_ventas_raw": 657400.0,
       "envia_ordenes_raw": 4,
       "meta_gasto": 571025.0,
@@ -1882,11 +1890,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-14": {
-      "envia_ventas": 1608700.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 13,
+      "envia_ventas": 1488800.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 12,
       "envia_costo_envio": 39978.7,
-      "digital_ventas_netas": 1500900.0,
+      "digital_ventas_netas": 1381000.0,
       "digital_descuentos": 107800.0,
       "envia_ventas_raw": 509600.0,
       "envia_ordenes_raw": 4,
@@ -1903,11 +1911,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-15": {
-      "envia_ventas": 699500.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 5,
+      "envia_ventas": 439700.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 3,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 699500.0,
+      "digital_ventas_netas": 439700.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -1924,11 +1932,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-16": {
-      "envia_ventas": 1736500.0,
-      "envia_ordenes": 13,
-      "envia_unidades": 15,
+      "envia_ventas": 1616600.0,
+      "envia_ordenes": 12,
+      "envia_unidades": 14,
       "envia_costo_envio": 286110.0,
-      "digital_ventas_netas": 1581600.0,
+      "digital_ventas_netas": 1461700.0,
       "digital_descuentos": 154900.0,
       "envia_ventas_raw": 3395200.0,
       "envia_ordenes_raw": 22,
@@ -1945,11 +1953,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-17": {
-      "envia_ventas": 1134900.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 11,
+      "envia_ventas": 1015000.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 10,
       "envia_costo_envio": 74880.0,
-      "digital_ventas_netas": 1030000.0,
+      "digital_ventas_netas": 910100.0,
       "digital_descuentos": 104900.0,
       "envia_ventas_raw": 895100.0,
       "envia_ordenes_raw": 6,
@@ -1966,11 +1974,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-18": {
-      "envia_ventas": 1067100.0,
-      "envia_ordenes": 6,
-      "envia_unidades": 9,
+      "envia_ventas": 807300.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 7,
       "envia_costo_envio": 51320.0,
-      "digital_ventas_netas": 907250.0,
+      "digital_ventas_netas": 647450.0,
       "digital_descuentos": 159850.0,
       "envia_ventas_raw": 787300.0,
       "envia_ordenes_raw": 4,
@@ -2050,11 +2058,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-22": {
-      "envia_ventas": 809400.0,
-      "envia_ordenes": 6,
-      "envia_unidades": 6,
+      "envia_ventas": 539600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 809400.0,
+      "digital_ventas_netas": 539600.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -2071,12 +2079,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-23": {
-      "envia_ventas": 1319000.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 10,
+      "envia_ventas": 1199100.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 1189000.0,
-      "digital_descuentos": 130000.0,
+      "digital_ventas_netas": 1089100.0,
+      "digital_descuentos": 110000.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 123194.0,
@@ -2113,11 +2121,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-25": {
-      "envia_ventas": 1458900.0,
-      "envia_ordenes": 11,
-      "envia_unidades": 11,
+      "envia_ventas": 1169100.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
       "envia_costo_envio": 83880.0,
-      "digital_ventas_netas": 1438900.0,
+      "digital_ventas_netas": 1149100.0,
       "digital_descuentos": 20000.0,
       "envia_ventas_raw": 899300.0,
       "envia_ordenes_raw": 7,
@@ -2134,11 +2142,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-26": {
-      "envia_ventas": 419700.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 3,
+      "envia_ventas": 269800.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 2,
       "envia_costo_envio": 70990.0,
-      "digital_ventas_netas": 369700.0,
+      "digital_ventas_netas": 219800.0,
       "digital_descuentos": 50000.0,
       "envia_ventas_raw": 787300.0,
       "envia_ordenes_raw": 6,
@@ -2155,12 +2163,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-27": {
-      "envia_ventas": 799400.0,
-      "envia_ordenes": 6,
-      "envia_unidades": 6,
+      "envia_ventas": 379700.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 3,
       "envia_costo_envio": 66707.57,
-      "digital_ventas_netas": 759400.0,
-      "digital_descuentos": 40000.0,
+      "digital_ventas_netas": 359700.0,
+      "digital_descuentos": 20000.0,
       "envia_ventas_raw": 649500.0,
       "envia_ordenes_raw": 5,
       "meta_gasto": 498505.0,
@@ -2176,11 +2184,11 @@
       "digital_gastos_var": 0
     },
     "2026-03-28": {
-      "envia_ventas": 239800.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 2,
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 239800.0,
+      "digital_ventas_netas": 119900.0,
       "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -2218,12 +2226,12 @@
       "digital_gastos_var": 0
     },
     "2026-03-30": {
-      "envia_ventas": 1528800.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 12,
+      "envia_ventas": 1259000.0,
+      "envia_ordenes": 8,
+      "envia_unidades": 10,
       "envia_costo_envio": 102640.0,
-      "digital_ventas_netas": 1321910.0,
-      "digital_descuentos": 206890.0,
+      "digital_ventas_netas": 1102110.0,
+      "digital_descuentos": 156890.0,
       "envia_ventas_raw": 1289000.0,
       "envia_ordenes_raw": 8,
       "meta_gasto": 397350.0,
@@ -2260,12 +2268,12 @@
       "digital_gastos_var": 0
     },
     "2026-04-01": {
-      "envia_ventas": 1376900.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 11,
+      "envia_ventas": 849400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
       "envia_costo_envio": 80480.0,
-      "digital_ventas_netas": 1216900.0,
-      "digital_descuentos": 160000.0,
+      "digital_ventas_netas": 729400.0,
+      "digital_descuentos": 120000.0,
       "envia_ventas_raw": 849400.0,
       "envia_ordenes_raw": 6,
       "meta_gasto": 432882.0,
@@ -2281,12 +2289,12 @@
       "digital_gastos_var": 0
     },
     "2026-04-02": {
-      "envia_ventas": 367600.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 4,
+      "envia_ventas": 127800.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 2,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 349600.0,
-      "digital_descuentos": 18000.0,
+      "digital_ventas_netas": 127800.0,
+      "digital_descuentos": 0.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
@@ -2302,11 +2310,11 @@
       "digital_gastos_var": 0
     },
     "2026-04-03": {
-      "envia_ventas": 749400.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 6,
+      "envia_ventas": 509600.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 4,
       "envia_costo_envio": 0,
-      "digital_ventas_netas": 674450.0,
+      "digital_ventas_netas": 434650.0,
       "digital_descuentos": 74950.0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
@@ -2386,11 +2394,11 @@
       "digital_gastos_var": 0
     },
     "2026-04-07": {
-      "envia_ventas": 2618000.0,
-      "envia_ordenes": 17,
-      "envia_unidades": 20,
+      "envia_ventas": 2328200.0,
+      "envia_ordenes": 15,
+      "envia_unidades": 18,
       "envia_costo_envio": 359980.0,
-      "digital_ventas_netas": 2228300.0,
+      "digital_ventas_netas": 1938500.0,
       "digital_descuentos": 389700.0,
       "envia_ventas_raw": 4282500.0,
       "envia_ordenes_raw": 27,
@@ -2410,11 +2418,11 @@
       "envia_ventas": 1149100.0,
       "envia_ordenes": 8,
       "envia_unidades": 9,
-      "envia_costo_envio": 102640.0,
+      "envia_costo_envio": 115120.0,
       "digital_ventas_netas": 1029100.0,
       "digital_descuentos": 120000.0,
-      "envia_ventas_raw": 1388900.0,
-      "envia_ordenes_raw": 8,
+      "envia_ventas_raw": 1508800.0,
+      "envia_ordenes_raw": 9,
       "meta_gasto": 877323.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
@@ -2457,7 +2465,7 @@
       "digital_descuentos": 150000.0,
       "envia_ventas_raw": 1289000.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 272686.0,
+      "meta_gasto": 283588.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

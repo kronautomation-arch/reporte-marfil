@@ -149,25 +149,36 @@ class ShopifyClient:
 
         return list(self._paginate_orders(params))
 
-    def get_resumen_ventas(self, fecha_inicio: date, fecha_fin: date) -> dict:
+    def get_resumen_ventas(
+        self,
+        fecha_inicio: date,
+        fecha_fin: date,
+        shipped_order_ids: Optional[set] = None,
+    ) -> dict:
         """
         Procesa las ordenes y devuelve metricas reales de Marfil.
 
         Reglas de calculo:
         - Una orden cancelada (cancelled_at != null) NO cuenta como venta.
         - Una orden con financial_status in {refunded, voided} NO cuenta.
-        - El "precio bruto" de una venta es subtotal_price + total_discounts
-          (= lo que cuesta el producto antes del descuento, equivalente a
-          total_declared_value en envia.com).
-        - El "precio neto cobrado" es total_price (lo que efectivamente paga
-          el cliente despues del descuento).
+        - Si se pasa shipped_order_ids: SOLO cuentan como ventas las ordenes
+          cuyo ID este en ese set (= ordenes despachadas via envia.com). Las
+          ordenes que pasaron filtros pero no se despacharon se reportan como
+          "no_despachadas" (clientes que no confirmaron compra).
+        - "Precio bruto" = subtotal_price + total_discounts (precio antes de
+          descuento, equivalente a total_declared_value en envia).
+        - "Precio neto" = total_price (lo que efectivamente cobramos).
         - Unidades = sum(line_items[].quantity) excluyendo gift cards.
 
-        Retorna estructura ya lista para inyectar en dashboard.json.
+        shipped_order_ids: set de strings con los IDs de Shopify que tienen
+            envio confirmado en envia.com. Si es None, todas las ordenes
+            no canceladas/refunded cuentan como venta.
+
+        Retorna estructura lista para inyectar en dashboard.json.
         """
         orders = self.get_orders(fecha_inicio, fecha_fin)
 
-        # Acumuladores
+        # Acumuladores ventas reales (despachadas)
         ventas_brutas = 0.0      # precio antes de descuento (declared)
         ventas_netas = 0.0       # precio efectivamente cobrado (total_price)
         descuentos_total = 0.0
@@ -180,7 +191,12 @@ class ShopifyClient:
         refunded_count = 0
         refunded_monto = 0.0
 
-        # Histogramas
+        # No despachadas: cliente compro pero nunca confirmo / nunca se envio
+        no_despachadas_count = 0
+        no_despachadas_monto = 0.0
+        no_despachadas_por_canal = defaultdict(lambda: {"ordenes": 0, "monto": 0.0})
+
+        # Histogramas (solo ventas reales)
         ventas_por_dia = defaultdict(lambda: {
             "ventas_brutas": 0.0,
             "ventas_netas": 0.0,
@@ -203,8 +219,10 @@ class ShopifyClient:
             subtotal = float(o.get("subtotal_price") or 0)
             total_discounts = float(o.get("total_discounts") or 0)
             bruto = subtotal + total_discounts  # equivalente a "declared value"
+            order_id_str = str(o.get("id"))
+            source = o.get("source_name") or "unknown"
 
-            # Saltar canceladas
+            # Saltar canceladas en Shopify
             if cancelled_at:
                 canceladas_count += 1
                 canceladas_monto += bruto
@@ -214,6 +232,15 @@ class ShopifyClient:
             if financial_status in REFUNDED_STATUSES:
                 refunded_count += 1
                 refunded_monto += bruto
+                continue
+
+            # Cross-check con envia: si tenemos shipped_order_ids y esta orden
+            # NO esta ahi, NO es venta real (cliente no confirmo / no se envio)
+            if shipped_order_ids is not None and order_id_str not in shipped_order_ids:
+                no_despachadas_count += 1
+                no_despachadas_monto += bruto
+                no_despachadas_por_canal[source]["ordenes"] += 1
+                no_despachadas_por_canal[source]["monto"] += bruto
                 continue
 
             ordenes_validas += 1
@@ -257,8 +284,7 @@ class ShopifyClient:
                 d["unidades"] += order_units
                 d["ordenes"] += 1
 
-            # Canal de venta
-            source = o.get("source_name") or "unknown"
+            # Canal de venta (solo despachadas)
             canales[source]["ordenes"] += 1
             canales[source]["ventas_brutas"] += bruto
 
@@ -293,6 +319,18 @@ class ShopifyClient:
             for fecha, datos in sorted(ventas_por_dia.items())
         ]
 
+        no_despachadas_canales = sorted(
+            [{"canal": k, **v} for k, v in no_despachadas_por_canal.items()],
+            key=lambda x: x["monto"], reverse=True,
+        )
+
+        # Tasa de no-despacho (sobre el total de ordenes "vivas" en Shopify
+        # despues de canceladas/refunded)
+        total_ordenes_vivas = ordenes_validas + no_despachadas_count
+        tasa_no_despacho = (
+            no_despachadas_count / total_ordenes_vivas if total_ordenes_vivas > 0 else 0
+        )
+
         return {
             "ventas_brutas": round(ventas_brutas),
             "ventas_netas": round(ventas_netas),
@@ -306,6 +344,12 @@ class ShopifyClient:
             "reembolsadas": {
                 "ordenes": refunded_count,
                 "monto": round(refunded_monto),
+            },
+            "no_despachadas": {
+                "ordenes": no_despachadas_count,
+                "monto": round(no_despachadas_monto),
+                "tasa": round(tasa_no_despacho, 4),
+                "por_canal": no_despachadas_canales,
             },
             "historial_diario": historial_diario,
             "top_productos": top_productos,

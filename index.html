@@ -113,6 +113,37 @@
         .dist-bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease-out; }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
+        /* Alerta no despachadas */
+        .alert-section { background: linear-gradient(135deg, #FEF3C7 0%, #FEE2E2 100%); border-radius: var(--radius); padding: 24px; border: 1px solid #FCD34D; margin-bottom: 24px; }
+        .alert-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+        .alert-icon { font-size: 28px; }
+        .alert-title { font-size: 13px; font-weight: 800; color: #92400E; letter-spacing: 1.2px; text-transform: uppercase; }
+        .alert-grid { display: grid; grid-template-columns: 1.2fr 2fr; gap: 20px; align-items: center; }
+        .alert-main { background: rgba(255,255,255,0.7); border-radius: 12px; padding: 18px; text-align: center; }
+        .alert-main-value { font-size: 38px; font-weight: 900; color: #DC2626; line-height: 1; }
+        .alert-main-label { font-size: 10px; color: #92400E; font-weight: 600; letter-spacing: 1px; margin-top: 8px; }
+        .alert-main-monto { font-size: 16px; font-weight: 700; color: #92400E; margin-top: 6px; }
+        .alert-main-tasa { font-size: 11px; color: #B45309; margin-top: 4px; }
+        .alert-canales { display: flex; flex-direction: column; gap: 8px; }
+        .alert-canal-row { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: rgba(255,255,255,0.6); border-radius: 10px; }
+        .alert-canal-name { flex: 1; font-size: 12px; font-weight: 600; color: #92400E; }
+        .alert-canal-pct { font-size: 11px; color: #B45309; font-weight: 700; }
+        .alert-canal-monto { font-size: 13px; font-weight: 700; color: #DC2626; min-width: 90px; text-align: right; }
+        /* Cards genericas para top productos / canales / descuentos */
+        .info-section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .info-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F3F4F6; }
+        .info-row:last-child { border-bottom: none; }
+        .info-row-rank { font-size: 11px; font-weight: 800; color: var(--text-muted); width: 22px; }
+        .info-row-name { flex: 1; font-size: 12px; font-weight: 600; color: var(--text); }
+        .info-row-bar { flex: 2; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+        .info-row-bar-fill { height: 100%; border-radius: 3px; }
+        .info-row-value { font-size: 12px; font-weight: 700; min-width: 80px; text-align: right; color: var(--text); }
+        .info-row-units { font-size: 10px; color: var(--text-muted); min-width: 36px; text-align: right; }
+        .three-col { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+        @media (max-width: 900px) {
+            .alert-grid { grid-template-columns: 1fr; }
+            .three-col { grid-template-columns: 1fr; }
+        }
         @media (max-width: 900px) {
             .kpi-grid { grid-template-columns: repeat(3, 1fr); }
             .charts-row { grid-template-columns: 1fr; }
@@ -213,6 +244,37 @@
                 <div class="chart-title">PUBLICIDAD POR CUENTA</div>
                 <div class="ads-grid" id="ads-grid"></div>
             </div>
+            <!-- Alerta órdenes no despachadas -->
+            <div class="alert-section" id="alert-no-despachadas" style="display:none">
+                <div class="alert-header">
+                    <span class="alert-icon">⚠️</span>
+                    <span class="alert-title">ÓRDENES NO DESPACHADAS · CLIENTES QUE NO CONFIRMARON</span>
+                </div>
+                <div class="alert-grid">
+                    <div class="alert-main">
+                        <div class="alert-main-value" id="nd-count">0</div>
+                        <div class="alert-main-label">ÓRDENES PERDIDAS (YTD)</div>
+                        <div class="alert-main-monto" id="nd-monto">$0</div>
+                        <div class="alert-main-tasa" id="nd-tasa">0% del total vivo</div>
+                    </div>
+                    <div class="alert-canales" id="nd-canales"></div>
+                </div>
+            </div>
+            <!-- Top productos / Canales / Descuentos -->
+            <div class="three-col">
+                <div class="info-section">
+                    <div class="chart-title">📊 TOP PRODUCTOS DEL AÑO</div>
+                    <div id="top-productos"></div>
+                </div>
+                <div class="info-section">
+                    <div class="chart-title">🛒 CANALES DE VENTA</div>
+                    <div id="canales-venta"></div>
+                </div>
+                <div class="info-section">
+                    <div class="chart-title">🎟️ DESCUENTOS APLICADOS</div>
+                    <div id="codigos-descuento"></div>
+                </div>
+            </div>
         </div>
         <div class="tab-content" id="tab-pos"><div class="pos-grid" id="pos-grid"></div></div>
         <div class="tab-content" id="tab-360">
@@ -255,32 +317,42 @@ function getDateRange(period) {
 function aggregate(data, from, to) {
     const config = data.config;
     const costoUnit = config.costo_unitario_gafa || 0;
-    const pctDev = config.pct_devoluciones || 0.15;
+    const pctDev = config.pct_devoluciones || 0.04;
     const daily = data.daily;
     const days = Object.keys(daily).filter(d => d >= from && d <= to).sort();
     const numDays = days.length || 1;
 
-    // Digital
+    // Digital — usa Shopify como fuente primaria (envia_ventas ya viene de Shopify
+    // filtrado por ordenes despachadas)
     let envVentas=0, envOrdenes=0, envUnidades=0, envCostoEnvio=0, metaGasto=0;
+    let descuentosOtorgados=0, ventasNetasShopify=0;
     const historial = [];
     for (const d of days) {
         const r = daily[d];
-        envVentas += r.envia_ventas || 0;
+        envVentas += r.envia_ventas || 0;             // ventas brutas (despachadas)
         envOrdenes += r.envia_ordenes || 0;
         envUnidades += r.envia_unidades || 0;
         envCostoEnvio += r.envia_costo_envio || 0;
         metaGasto += r.meta_gasto || 0;
+        descuentosOtorgados += r.digital_descuentos || 0;
+        ventasNetasShopify += r.digital_ventas_netas || 0;
         historial.push({ fecha: d, ventas: r.envia_ventas || 0 });
     }
+    // Devoluciones = % real (rechazos en destino) sobre ventas brutas
     const devoluciones = envVentas * pctDev;
-    const ventasNetas = envVentas - devoluciones;
+    // Ventas netas REAL = lo que Shopify cobro - devoluciones por rechazo
+    // Si no hay datos de Shopify (fallback), usa la formula vieja
+    const ventasNetas = (ventasNetasShopify > 0 ? ventasNetasShopify : envVentas) - devoluciones;
     const costoProducto = envUnidades * costoUnit;
     const factor = numDays / 30;
     const digitalFijos = (data.digital_costos_fijos_total_mensual || 0) * factor;
     let digitalGastosVar = 0;
     for (const d of days) digitalGastosVar += (daily[d] || {}).digital_gastos_var || 0;
     const costoOps = digitalFijos + digitalGastosVar;
-    const utilidadDigital = ventasNetas - costoProducto - envCostoEnvio - metaGasto - costoOps - devoluciones;
+    // ventasNetas ya tiene los descuentos descontados (vienen de Shopify),
+    // entonces NO restamos descuentos otra vez. Devoluciones SI se restan
+    // porque son rechazos en destino sobre las brutas.
+    const utilidadDigital = ventasNetas - costoProducto - envCostoEnvio - metaGasto - costoOps;
     const roas = metaGasto > 0 ? ventasNetas / metaGasto : 0;
     const cpa = envOrdenes > 0 ? metaGasto / envOrdenes : 0;
 
@@ -296,7 +368,8 @@ function aggregate(data, from, to) {
 
     const digital = {
         ventas_netas: ventasNetas, ventas_brutas: envVentas, devoluciones, ordenes: envOrdenes,
-        unidades: envUnidades, costo_producto: costoProducto, costo_envio: envCostoEnvio,
+        unidades: envUnidades, descuentos: descuentosOtorgados,
+        costo_producto: costoProducto, costo_envio: envCostoEnvio,
         costo_operaciones: costoOps, utilidad: utilidadDigital,
         ads: {
             gasto_total: metaGasto, roas: Math.round(roas*10)/10, cpa: Math.round(cpa),
@@ -332,7 +405,9 @@ function aggregate(data, from, to) {
     const ingDigital = ventasNetas;
     const ingPos = Object.values(pos).reduce((s,p)=>s+p.ventas,0);
     const ingTotal = ingDigital + ingPos;
-    const costDigital = costoProducto + envCostoEnvio + costoOps + metaGasto + devoluciones;
+    // Costo digital: incluye costo de producto + envio + ops + ads (devoluciones
+    // ya estan implicitas porque las venta_netas ya las descontaron via pctDev)
+    const costDigital = costoProducto + envCostoEnvio + costoOps + metaGasto;
     const costPos = Object.values(pos).reduce((s,p)=>s+p.gastos.total,0);
     const costTotal = costDigital + costPos;
     const utilNeta = ingTotal - costTotal;
@@ -422,6 +497,7 @@ function renderAll() {
     const updatedAt = new Date(RAW.updated_at);
     document.getElementById('update-time').textContent = updatedAt.toLocaleString('es-CO', { hour:'2-digit', minute:'2-digit', hour12:true }) + ' · ' + updatedAt.toLocaleDateString('es-CO', { day:'2-digit', month:'short', year:'numeric' });
     renderKPIs(digital); renderCharts(digital); renderAds(digital); renderPOS(pos); render360(consolidado);
+    renderNoDespachadas(); renderTopProductos(); renderCanales(); renderDescuentos();
 }
 
 function renderKPIs(d) {
@@ -443,7 +519,7 @@ function renderCharts(d) {
     chartVentas = new Chart(ctx1, { type:'bar', data:{ labels:hist.map(h=>{const p=h.fecha.split('-');return p[2]+'/'+p[1]}), datasets:[{label:'Ventas',data:hist.map(h=>h.ventas),backgroundColor:'rgba(99,102,241,0.6)',borderColor:'#6366F1',borderWidth:1,borderRadius:4}]}, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'top',labels:{font:{size:10,family:'Inter'}}}},scales:{y:{ticks:{callback:v=>fmtMoney(v),font:{size:9}},grid:{color:'#F3F4F6'}},x:{ticks:{font:{size:8},maxRotation:45},grid:{display:false}}}}});
     const ctx2 = document.getElementById('chart-costos').getContext('2d');
     if (chartCostos) chartCostos.destroy();
-    const costos = [{label:'Producto',value:d.costo_producto,color:'#6366F1'},{label:'Publicidad',value:d.ads.gasto_total,color:'#F59E0B'},{label:'Envío',value:d.costo_envio,color:'#EC4899'},{label:'Operaciones',value:d.costo_operaciones,color:'#9CA3AF'},{label:'Devoluciones',value:d.devoluciones,color:'#EF4444'}];
+    const costos = [{label:'Producto',value:d.costo_producto,color:'#6366F1'},{label:'Publicidad',value:d.ads.gasto_total,color:'#F59E0B'},{label:'Envío',value:d.costo_envio,color:'#EC4899'},{label:'Operaciones',value:d.costo_operaciones,color:'#9CA3AF'},{label:'Devoluciones',value:d.devoluciones,color:'#EF4444'},{label:'Descuentos',value:d.descuentos||0,color:'#A78BFA'}];
     const totalC = costos.reduce((s,c)=>s+c.value,0);
     chartCostos = new Chart(ctx2, {type:'doughnut',data:{labels:costos.map(c=>c.label),datasets:[{data:costos.map(c=>c.value),backgroundColor:costos.map(c=>c.color),borderWidth:0,cutout:'65%'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}});
     document.getElementById('donut-center').innerHTML = fmtMoney(totalC);
@@ -453,6 +529,110 @@ function renderCharts(d) {
 function renderAds(d) {
     const cuentas = d.ads.cuentas || [], total = d.ads.gasto_total || 1, colors = ['#6366F1','#F59E0B'];
     document.getElementById('ads-grid').innerHTML = cuentas.map((c,i)=>{const pct=(c.gasto/total*100).toFixed(1);return `<div class="ads-card"><div class="ads-card-name">${c.nombre}</div><div class="ads-card-value">${fmtFull(c.gasto)}</div><div class="ads-card-pct" style="color:${colors[i]}">${pct}% del total</div><div class="ads-bar"><div class="ads-bar-fill" style="width:${pct}%;background:${colors[i]}"></div></div></div>`}).join('');
+}
+
+// Friendly names para canales de Shopify
+const CHANNEL_NAMES = {
+    'web': 'Tienda Online (web)',
+    'shopify_draft_order': 'Manual / WhatsApp (Pancake)',
+    'pos': 'POS Físico',
+    'mobile_app': 'App Móvil',
+    'unknown': 'Desconocido',
+};
+function channelLabel(c) { return CHANNEL_NAMES[c] || c; }
+
+function renderNoDespachadas() {
+    const sh = RAW.shopify || {};
+    const nd = sh.no_despachadas || {ordenes: 0, monto: 0, tasa: 0, por_canal: []};
+    const section = document.getElementById('alert-no-despachadas');
+    if (!nd.ordenes || nd.ordenes === 0) {
+        section.style.display = 'none';
+        return;
+    }
+    section.style.display = 'block';
+    document.getElementById('nd-count').textContent = nd.ordenes.toLocaleString('es-CO');
+    document.getElementById('nd-monto').textContent = fmtFull(nd.monto);
+    document.getElementById('nd-tasa').textContent = (nd.tasa * 100).toFixed(1) + '% del total · No alcanzaron a confirmar la compra';
+    const totalMonto = nd.monto || 1;
+    document.getElementById('nd-canales').innerHTML = (nd.por_canal || []).map(c => {
+        const pct = (c.monto / totalMonto * 100).toFixed(1);
+        return `<div class="alert-canal-row">
+            <span class="alert-canal-name">${channelLabel(c.canal)}</span>
+            <span class="alert-canal-pct">${c.ordenes} órd · ${pct}%</span>
+            <span class="alert-canal-monto">${fmtFull(c.monto)}</span>
+        </div>`;
+    }).join('');
+}
+
+function renderTopProductos() {
+    const sh = RAW.shopify || {};
+    const productos = (sh.top_productos || []).slice(0, 8);
+    if (productos.length === 0) {
+        document.getElementById('top-productos').innerHTML = '<div style="font-size:11px;color:var(--text-muted);text-align:center;padding:20px">Sin datos</div>';
+        return;
+    }
+    const maxUnits = productos[0].unidades || 1;
+    document.getElementById('top-productos').innerHTML = productos.map((p, i) => {
+        const pct = (p.unidades / maxUnits * 100).toFixed(0);
+        const colors = ['#6366F1', '#10B981', '#F59E0B', '#EC4899', '#06B6D4', '#8B5CF6', '#F97316', '#84CC16'];
+        return `<div class="info-row">
+            <span class="info-row-rank">${i+1}</span>
+            <span class="info-row-name" title="${p.nombre}">${p.nombre.length > 28 ? p.nombre.slice(0,28)+'…' : p.nombre}</span>
+            <div class="info-row-bar"><div class="info-row-bar-fill" style="width:${pct}%;background:${colors[i % colors.length]}"></div></div>
+            <span class="info-row-units">${p.unidades}u</span>
+            <span class="info-row-value">${fmtMoney(p.ventas)}</span>
+        </div>`;
+    }).join('');
+}
+
+function renderCanales() {
+    const sh = RAW.shopify || {};
+    const canales = sh.canales || [];
+    if (canales.length === 0) {
+        document.getElementById('canales-venta').innerHTML = '<div style="font-size:11px;color:var(--text-muted);text-align:center;padding:20px">Sin datos</div>';
+        return;
+    }
+    const totalVentas = canales.reduce((s,c) => s + c.ventas_brutas, 0) || 1;
+    const colors = ['#10B981', '#6366F1', '#F59E0B', '#EC4899'];
+    document.getElementById('canales-venta').innerHTML = canales.map((c, i) => {
+        const pct = (c.ventas_brutas / totalVentas * 100).toFixed(1);
+        return `<div class="info-row">
+            <span class="info-row-rank">${i+1}</span>
+            <span class="info-row-name">${channelLabel(c.canal)}</span>
+            <div class="info-row-bar"><div class="info-row-bar-fill" style="width:${pct}%;background:${colors[i % colors.length]}"></div></div>
+            <span class="info-row-units">${c.ordenes}</span>
+            <span class="info-row-value">${pct}%</span>
+        </div>`;
+    }).join('');
+}
+
+function renderDescuentos() {
+    const sh = RAW.shopify || {};
+    const codigos = (sh.codigos_descuento || []).slice(0, 8);
+    const totalDesc = sh.descuentos_ytd || 0;
+    const ventasBrutas = sh.ventas_brutas_ytd || 1;
+    const pctDesc = (totalDesc / ventasBrutas * 100).toFixed(1);
+    let html = `<div style="background:var(--bg);border-radius:10px;padding:14px;text-align:center;margin-bottom:14px">
+        <div style="font-size:24px;font-weight:900;color:var(--pink)">${fmtMoney(totalDesc)}</div>
+        <div style="font-size:10px;color:var(--text-muted);font-weight:600;letter-spacing:0.5px;margin-top:4px">${pctDesc}% sobre ventas brutas</div>
+    </div>`;
+    if (codigos.length === 0) {
+        html += '<div style="font-size:11px;color:var(--text-muted);text-align:center;padding:8px">Sin códigos registrados</div>';
+    } else {
+        const maxMonto = codigos[0].monto || 1;
+        html += codigos.map((c, i) => {
+            const pct = (c.monto / maxMonto * 100).toFixed(0);
+            const nombre = c.codigo.length > 22 ? c.codigo.slice(0,22)+'…' : c.codigo;
+            return `<div class="info-row">
+                <span class="info-row-rank">${i+1}</span>
+                <span class="info-row-name" title="${c.codigo}">${nombre}</span>
+                <div class="info-row-bar"><div class="info-row-bar-fill" style="width:${pct}%;background:#EC4899"></div></div>
+                <span class="info-row-units">${c.usos}</span>
+                <span class="info-row-value">${fmtMoney(c.monto)}</span>
+            </div>`;
+        }).join('');
+    }
+    document.getElementById('codigos-descuento').innerHTML = html;
 }
 
 function renderPOS(pos) {

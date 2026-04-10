@@ -57,34 +57,47 @@ def main():
     sheets_data = sheets_client.get_data(inicio_ano, hoy)
     config = sheets_data.get("config", {})
     costo_unitario = config.get("costo_unitario_gafa", 0)
-    # pct_devoluciones de Sheets queda solo como OVERRIDE manual opcional.
-    # Si no esta seteado (o es 0), usamos la tasa REAL calculada desde envia.
-    pct_devoluciones_override = config.get("pct_devoluciones_override", 0)
 
-    # === 2. Envia.com: ventas digitales ===
+    # === 2. Envia.com: ventas digitales (fuente de verdad para "se despacho") ===
+    # Envia es el SOURCE OF TRUTH de "que se envio fisicamente". Una orden de
+    # Shopify que NO esta en envia significa que el cliente nunca confirmo /
+    # nunca se le envio el producto -> NO es venta real.
     logger.info("Consultando envia.com...")
     envia_data = envia_client.get_ventas_digitales(inicio_ano, hoy)
 
     # Tasa real de devolucion calculada desde status de envia
     devoluciones_info = envia_data.get("devoluciones", {})
-    tasa_dev_real = devoluciones_info.get("tasa_por_monto", 0)
-    pct_devoluciones = pct_devoluciones_override if pct_devoluciones_override > 0 else tasa_dev_real
+    pct_devoluciones = devoluciones_info.get("tasa_por_monto", 0)
     logger.info(
-        f"Devoluciones: {devoluciones_info.get('ordenes', 0)} ordenes / "
-        f"${devoluciones_info.get('monto', 0):,.0f} ({tasa_dev_real*100:.2f}% real)"
+        f"Devoluciones (rechazos en destino): {devoluciones_info.get('ordenes', 0)} ordenes / "
+        f"${devoluciones_info.get('monto', 0):,.0f} ({pct_devoluciones*100:.2f}%)"
     )
 
-    # === 2.5 Shopify: ventas digitales (fuente PRIMARIA) ===
-    # Shopify es la fuente de verdad de lo que se vendio: trae unidades reales
-    # por orden, descuentos, canales de venta, top productos. Envia se usa solo
-    # para costos de envio y cross-check.
+    # Set de IDs de Shopify que SI tienen envio confirmado en envia (no rechazados)
+    shipped_shopify_ids = {
+        od.get("shopify_order_id")
+        for od in envia_data.get("ordenes_detalle", [])
+        if od.get("shopify_order_id")
+    }
+    logger.info(f"Ordenes despachadas via envia: {len(shipped_shopify_ids)}")
+
+    # === 2.5 Shopify: ventas digitales (detalle, filtrado por despachadas) ===
+    # Shopify nos da unidades reales, descuentos, top productos, canales.
+    # Pero SOLO contamos como venta las ordenes que ya se despacharon (cross-ref con envia).
     logger.info("Consultando Shopify...")
     shopify_error = None
     try:
-        shopify_data = shopify_client.get_resumen_ventas(inicio_ano, hoy)
+        shopify_data = shopify_client.get_resumen_ventas(
+            inicio_ano, hoy, shipped_order_ids=shipped_shopify_ids
+        )
+        nd = shopify_data["no_despachadas"]
         logger.info(
-            f"Shopify: {shopify_data['ordenes']} ordenes / {shopify_data['unidades']} unidades / "
-            f"${shopify_data['ventas_brutas']:,} brutas"
+            f"Shopify (despachadas): {shopify_data['ordenes']} ordenes / "
+            f"{shopify_data['unidades']} unidades / ${shopify_data['ventas_brutas']:,} brutas"
+        )
+        logger.warning(
+            f"NO DESPACHADAS (cliente no confirmo): {nd['ordenes']} ordenes / "
+            f"${nd['monto']:,} ({nd['tasa']*100:.2f}% del total vivo)"
         )
     except (ShopifyAPIError, Exception) as e:
         shopify_error = str(e)
@@ -236,22 +249,6 @@ def main():
         # Digital gastos variables
         daily[fecha]["digital_gastos_var"] = digital_gastos_var.get(fecha, 0)
 
-    # === 9. Cross-check Shopify vs envia.com ===
-    # Shopify es la fuente primaria pero envia tiene los rechazos fisicos.
-    # Reportamos el drift YTD para que el dueno detecte si algo se desincroniza.
-    cross_check = {}
-    if shopify_data:
-        envia_ventas_ytd = sum(h["ventas"] for h in envia_data.get("historial_diario", []))
-        envia_ordenes_ytd = sum(h["ordenes"] for h in envia_data.get("historial_diario", []))
-        cross_check = {
-            "shopify_ventas_brutas": shopify_data["ventas_brutas"],
-            "shopify_ordenes": shopify_data["ordenes"],
-            "envia_ventas": round(envia_ventas_ytd),
-            "envia_ordenes": envia_ordenes_ytd,
-            "drift_ventas": shopify_data["ventas_brutas"] - round(envia_ventas_ytd),
-            "drift_ordenes": shopify_data["ordenes"] - envia_ordenes_ytd,
-        }
-
     errors = {}
     if meta_error:
         errors["meta"] = meta_error
@@ -264,7 +261,6 @@ def main():
         "config": {
             "costo_unitario_gafa": costo_unitario,
             "pct_devoluciones": pct_devoluciones,
-            "pct_devoluciones_fuente": "override" if pct_devoluciones_override > 0 else "real",
             "ventas_fuente_primaria": "shopify" if shopify_data else "envia",
         },
         "devoluciones": {
@@ -273,7 +269,6 @@ def main():
             "tasa_por_monto": round(devoluciones_info.get("tasa_por_monto", 0), 4),
             "tasa_por_ordenes": round(devoluciones_info.get("tasa_por_ordenes", 0), 4),
         },
-        "cross_check": cross_check,
         "shopify": {
             "ventas_brutas_ytd": shopify_data["ventas_brutas"] if shopify_data else 0,
             "ventas_netas_ytd": shopify_data["ventas_netas"] if shopify_data else 0,
@@ -282,6 +277,7 @@ def main():
             "ordenes_ytd": shopify_data["ordenes"] if shopify_data else 0,
             "canceladas": shopify_data["canceladas"] if shopify_data else {"ordenes": 0, "monto": 0},
             "reembolsadas": shopify_data["reembolsadas"] if shopify_data else {"ordenes": 0, "monto": 0},
+            "no_despachadas": shopify_data["no_despachadas"] if shopify_data else {"ordenes": 0, "monto": 0, "tasa": 0, "por_canal": []},
             "top_productos": shopify_data["top_productos"] if shopify_data else [],
             "top_skus": shopify_data["top_skus"] if shopify_data else [],
             "canales": shopify_data["canales"] if shopify_data else [],

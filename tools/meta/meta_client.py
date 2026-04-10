@@ -11,6 +11,11 @@ from datetime import date
 from typing import Optional
 
 
+class MetaAPIError(Exception):
+    """Error devuelto por la API de Meta. Incluye detalles útiles (no el token)."""
+    pass
+
+
 class MetaAdsClient:
     BASE_URL = "https://graph.facebook.com/v21.0"
 
@@ -29,7 +34,22 @@ class MetaAdsClient:
             params = {}
         params["access_token"] = self.access_token
         response = requests.get(url, params=params, timeout=30)
-        response.raise_for_status()
+        if not response.ok:
+            # Extraer mensaje de error de Meta sin exponer el token
+            try:
+                err = response.json().get("error", {})
+                meta_msg = err.get("message", response.text)
+                meta_type = err.get("type", "?")
+                meta_code = err.get("code", "?")
+                fbtrace = err.get("fbtrace_id", "?")
+                raise MetaAPIError(
+                    f"Meta API {response.status_code} en {endpoint} — "
+                    f"{meta_type} (code {meta_code}): {meta_msg} [fbtrace_id={fbtrace}]"
+                )
+            except ValueError:
+                raise MetaAPIError(
+                    f"Meta API {response.status_code} en {endpoint} — respuesta no-JSON: {response.text[:500]}"
+                )
         return response.json()
 
     def get_account_insights(self, account_id: str, fecha_inicio: date, fecha_fin: date) -> dict:

@@ -16,7 +16,7 @@ from tools.core.env_loader import load_env, get_env
 from tools.core.logger import setup_logger
 from tools.sheets.sheets_client import SheetsClient
 from tools.envia.envia_client import EnviaClient
-from tools.meta.meta_client import MetaAdsClient
+from tools.meta.meta_client import MetaAdsClient, MetaAPIError
 
 logger = setup_logger()
 
@@ -53,8 +53,25 @@ def main():
     envia_data = envia_client.get_ventas_digitales(inicio_ano, hoy)
 
     # === 3. Meta Ads: por cuenta y diario ===
+    # Si Meta falla (token expirado, permisos, etc.) seguimos generando el dashboard
+    # con el resto de datos para que no se quede congelado por completo.
     logger.info("Consultando Meta Ads...")
-    meta_data = meta_client.get_all_accounts_data(inicio_ano, hoy)
+    meta_error = None
+    try:
+        meta_data = meta_client.get_all_accounts_data(inicio_ano, hoy)
+    except (MetaAPIError, Exception) as e:
+        meta_error = str(e)
+        logger.error(f"Meta Ads falló, continuando sin datos publicitarios: {meta_error}")
+        meta_data = {
+            "gasto_total": 0,
+            "cuentas": [
+                {"nombre": f"Cuenta {str(i + 1).zfill(2)}", "gasto": 0, "purchases": 0}
+                for i in range(len(meta_client.account_ids))
+            ],
+            "cpa": 0,
+            "purchases_total": 0,
+            "historial_diario": [],
+        }
 
     # === 4. Construir datos diarios para envia ===
     envia_diario = {}
@@ -149,6 +166,7 @@ def main():
 
     dashboard = {
         "updated_at": datetime.now().isoformat(),
+        "errors": {"meta": meta_error} if meta_error else {},
         "config": {
             "costo_unitario_gafa": costo_unitario,
             "pct_devoluciones": pct_devoluciones,

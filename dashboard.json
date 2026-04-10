@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-10T17:00:08.322648",
+  "updated_at": "2026-04-10T22:00:34.281813",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
@@ -2875,7 +2875,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 1289000.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 289417.0,
+      "meta_gasto": 290706.0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

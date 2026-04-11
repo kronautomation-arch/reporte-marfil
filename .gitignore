@@ -8,3 +8,4 @@ venv/
 .venv/
 credentials.json
 service-account.json
+.meli_token_cache.json

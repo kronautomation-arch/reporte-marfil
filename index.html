@@ -105,7 +105,7 @@
         .pnl-value { font-size: 32px; font-weight: 900; }
         .pnl-sub { font-size: 10px; color: var(--text-muted); margin-top: 8px; }
         .dist-section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .dist-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+        .dist-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
         .dist-card { text-align: center; padding: 16px; background: var(--bg); border-radius: 12px; }
         .dist-name { font-size: 10px; color: var(--text-muted); font-weight: 500; }
         .dist-pct { font-size: 26px; font-weight: 800; color: var(--text); margin: 4px 0; }
@@ -163,10 +163,26 @@
         .cashflow-legend { display: flex; gap: 18px; margin-top: 10px; font-size: 11px; color: var(--text-secondary); }
         .cashflow-legend-item { display: flex; align-items: center; gap: 6px; }
         .cashflow-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+        /* MercadoLibre tab */
+        .meli-header { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3C4 100%); border-radius: var(--radius); padding: 20px 24px; border: 1px solid #FCD34D; margin-bottom: 20px; display: flex; align-items: center; gap: 18px; }
+        .meli-logo { width: 52px; height: 52px; background: #FFE600; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 900; color: #2D3277; flex-shrink: 0; }
+        .meli-header-info { flex: 1; }
+        .meli-nickname { font-size: 18px; font-weight: 800; color: #2D3277; letter-spacing: 0.5px; }
+        .meli-sub { font-size: 11px; color: #6B6B6B; margin-top: 2px; font-weight: 500; }
+        .meli-reputation { display: flex; align-items: center; gap: 8px; }
+        .meli-rep-dot { width: 14px; height: 14px; border-radius: 50%; }
+        .meli-rep-label { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
+        .meli-status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+        .meli-status-card { background: var(--card); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); text-align: center; }
+        .meli-status-icon { font-size: 22px; margin-bottom: 6px; }
+        .meli-status-label { font-size: 10px; color: var(--text-secondary); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+        .meli-status-count { font-size: 32px; font-weight: 900; line-height: 1; }
+        .meli-status-monto { font-size: 12px; color: var(--text-muted); margin-top: 6px; font-weight: 600; }
         @media (max-width: 900px) {
             .alert-grid { grid-template-columns: 1fr; }
             .three-col { grid-template-columns: 1fr; }
             .cashflow-grid { grid-template-columns: 1fr; }
+            .meli-status-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 900px) {
             .kpi-grid { grid-template-columns: repeat(3, 1fr); }
@@ -212,6 +228,7 @@
         </div>
         <div class="tabs">
             <div class="tab active" data-tab="digital">DIGITAL</div>
+            <div class="tab" data-tab="meli">MERCADOLIBRE</div>
             <div class="tab" data-tab="pos">PUNTOS DE VENTA</div>
             <div class="tab" data-tab="360">VISTA 360°</div>
         </div>
@@ -330,6 +347,33 @@
                 </div>
             </div>
         </div>
+        <div class="tab-content" id="tab-meli">
+            <!-- Header info cuenta ML -->
+            <div class="meli-header" id="meli-header"></div>
+            <!-- KPIs ML -->
+            <div class="kpi-grid" id="meli-kpi-grid"></div>
+            <!-- Charts: ventas diarias + desglose comisiones -->
+            <div class="charts-row">
+                <div class="chart-card">
+                    <div class="chart-title">VENTAS ML VS NETO</div>
+                    <div class="chart-container"><canvas id="chart-meli-ventas"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-title">¿QUÉ PASA CON CADA $100 VENDIDO?</div>
+                    <div class="donut-wrapper">
+                        <div class="donut-chart-container"><canvas id="chart-meli-costos"></canvas><div class="donut-center" id="meli-donut-center"></div></div>
+                        <div class="donut-legend" id="meli-donut-legend"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Entregadas / en transito / canceladas -->
+            <div class="meli-status-grid" id="meli-status-grid"></div>
+            <!-- Top productos -->
+            <div class="info-section">
+                <div class="chart-title">📊 TOP PRODUCTOS EN MERCADOLIBRE</div>
+                <div id="meli-top-productos"></div>
+            </div>
+        </div>
         <div class="tab-content" id="tab-pos"><div class="pos-grid" id="pos-grid"></div></div>
         <div class="tab-content" id="tab-360">
             <div class="pnl-grid" id="pnl-grid"></div>
@@ -381,6 +425,9 @@ function aggregate(data, from, to) {
     let envVentas=0, envOrdenes=0, envUnidades=0, envCostoEnvio=0, metaGasto=0;
     let descuentosOtorgados=0, ventasNetasShopify=0;
     let codNeto=0, prepagoNeto=0, codOrdenes=0, prepagoOrdenes=0;
+    // MercadoLibre acumuladores
+    let mlBrutas=0, mlNetas=0, mlComisiones=0, mlOrdenes=0, mlUnidades=0;
+    const mlHistorial = [];
     const historial = [];
     for (const d of days) {
         const r = daily[d];
@@ -396,6 +443,13 @@ function aggregate(data, from, to) {
         codOrdenes += r.digital_cod_ordenes || 0;
         prepagoOrdenes += r.digital_prepago_ordenes || 0;
         historial.push({ fecha: d, ventas: r.envia_ventas || 0 });
+        // Meli
+        mlBrutas += r.meli_ventas_brutas || 0;
+        mlNetas += r.meli_ventas_netas || 0;
+        mlComisiones += r.meli_comisiones || 0;
+        mlOrdenes += r.meli_ordenes || 0;
+        mlUnidades += r.meli_unidades || 0;
+        mlHistorial.push({ fecha: d, brutas: r.meli_ventas_brutas || 0, netas: r.meli_ventas_netas || 0 });
     }
     // Devoluciones = % real (rechazos en destino) sobre ventas brutas
     const devoluciones = envVentas * pctDev;
@@ -467,25 +521,43 @@ function aggregate(data, from, to) {
         pos[key] = { nombre: info.nombre||key, ciudad: info.ciudad||'', ventas, unidades, gastos: { arriendo: Math.round(arriendo), salarios: Math.round(salarios), costo_gafas: Math.round(costoGafas), otros: Math.round(gastos), total: Math.round(gastosTotal) }, utilidad: Math.round(utilidad), margen };
     }
 
-    // Consolidado
+    // Consolidado (Digital + POS + MercadoLibre)
     const ingDigital = ventasNetas;
     const ingPos = Object.values(pos).reduce((s,p)=>s+p.ventas,0);
-    const ingTotal = ingDigital + ingPos;
+    const ingMeli = mlNetas;
+    const ingTotal = ingDigital + ingPos + ingMeli;
     // Costo digital: incluye costo de producto + envio + ops + ads (devoluciones
     // ya estan implicitas porque las venta_netas ya las descontaron via pctDev)
     const costDigital = costoProducto + envCostoEnvio + costoOps + metaGasto;
     const costPos = Object.values(pos).reduce((s,p)=>s+p.gastos.total,0);
-    const costTotal = costDigital + costPos;
+    // Costo Meli: solo producto (la comision ya esta descontada de mlNetas)
+    const costMeli = mlUnidades * costoUnit;
+    const costTotal = costDigital + costPos + costMeli;
     const utilNeta = ingTotal - costTotal;
     const margenTotal = ingTotal > 0 ? Math.round(utilNeta/ingTotal*1000)/10 : 0;
     const dist = {};
     if (ingTotal > 0) {
         dist.digital = Math.round(ingDigital/ingTotal*1000)/10;
+        dist.meli = Math.round(ingMeli/ingTotal*1000)/10;
         for (const k of posKeys) dist[k] = Math.round((pos[k].ventas)/ingTotal*1000)/10;
     }
     const consolidado = { ingresos_totales: Math.round(ingTotal), costos_totales: Math.round(costTotal), utilidad_neta: Math.round(utilNeta), margen: margenTotal, distribucion: dist };
 
-    return { digital, pos, consolidado };
+    // MercadoLibre del periodo
+    const mlTicket = mlOrdenes > 0 ? Math.round(mlBrutas/mlOrdenes) : 0;
+    const mlPctComision = mlBrutas > 0 ? mlComisiones/mlBrutas : 0;
+    const mlCostoProducto = mlUnidades * costoUnit;
+    const mlUtilidad = mlNetas - mlCostoProducto;
+    const mlMargen = mlBrutas > 0 ? Math.round(mlUtilidad/mlBrutas*1000)/10 : 0;
+    const meli = {
+        ventas_brutas: mlBrutas, ventas_netas: mlNetas, comisiones: mlComisiones,
+        pct_comision: mlPctComision, ticket_promedio: mlTicket,
+        ordenes: mlOrdenes, unidades: mlUnidades,
+        costo_producto: mlCostoProducto, utilidad: mlUtilidad, margen: mlMargen,
+        historial_diario: mlHistorial,
+    };
+
+    return { digital, pos, consolidado, meli };
 }
 
 // Tabs
@@ -559,11 +631,12 @@ document.getElementById('date-from').value = currentFrom;
 document.getElementById('date-to').value = currentTo;
 
 function renderAll() {
-    const { digital, pos, consolidado } = aggregate(RAW, currentFrom, currentTo);
+    const { digital, pos, consolidado, meli } = aggregate(RAW, currentFrom, currentTo);
     const updatedAt = new Date(RAW.updated_at);
     document.getElementById('update-time').textContent = updatedAt.toLocaleString('es-CO', { hour:'2-digit', minute:'2-digit', hour12:true }) + ' · ' + updatedAt.toLocaleDateString('es-CO', { day:'2-digit', month:'short', year:'numeric' });
     renderKPIs(digital); renderCashFlow(digital); renderCharts(digital); renderAds(digital); renderPOS(pos); render360(consolidado);
     renderNoDespachadas(); renderTopProductos(); renderCanales(); renderDescuentos();
+    renderMeli(meli);
 }
 
 function renderKPIs(d) {
@@ -729,8 +802,146 @@ function renderPOS(pos) {
 function render360(c) {
     const items = [{label:'INGRESOS TOTALES',value:c.ingresos_totales,color:'var(--green)',gradient:'linear-gradient(to right,#10B981,#34D399)'},{label:'COSTOS TOTALES',value:c.costos_totales,color:'var(--red)',gradient:'linear-gradient(to right,#EF4444,#F87171)'},{label:'UTILIDAD NETA',value:c.utilidad_neta,color:c.utilidad_neta>=0?'var(--green)':'var(--red)',gradient:'linear-gradient(to right,#6366F1,#818CF8)',sub:'Margen: '+c.margen+'%'}];
     document.getElementById('pnl-grid').innerHTML = items.map(p=>`<div class="pnl-card"><div class="pnl-bar" style="background:${p.gradient}"></div><div class="pnl-label">${p.label}</div><div class="pnl-value" style="color:${p.color}">${fmtMoney(p.value)}</div>${p.sub?`<div class="pnl-sub">${p.sub}</div>`:''}</div>`).join('');
-    const dist=c.distribucion||{},names={digital:'Digital',titan_plaza:'Titan Plaza',caracoli:'Caracolí',fundadores:'Fundadores'},dColors=['#6366F1','#F59E0B','#10B981','#EC4899'];
+    const dist=c.distribucion||{},names={digital:'Digital (Shopify)',meli:'MercadoLibre',titan_plaza:'Titan Plaza',caracoli:'Caracolí',fundadores:'Fundadores'},dColors=['#6366F1','#FFE600','#F59E0B','#10B981','#EC4899'];
     document.getElementById('dist-grid').innerHTML = Object.entries(dist).map(([k,pct],i)=>`<div class="dist-card"><div class="dist-name">${names[k]||k}</div><div class="dist-pct">${pct}%</div><div class="dist-bar"><div class="dist-bar-fill" style="width:${pct}%;background:${dColors[i%dColors.length]}"></div></div></div>`).join('');
+}
+
+// ======================= MERCADOLIBRE =======================
+let chartMeliVentas = null, chartMeliCostos = null;
+
+// Mapeo del nivel_id de ML a color + label
+const MELI_LEVEL_COLORS = {
+    '5_green': {color:'#39B54A', label:'MercadoLíder Platinum'},
+    '4_light_green': {color:'#78D878', label:'MercadoLíder Gold'},
+    '3_yellow': {color:'#F59E0B', label:'MercadoLíder'},
+    '2_orange': {color:'#F97316', label:'Precaución · Naranja'},
+    '1_red': {color:'#DC2626', label:'Rojo · Riesgo'},
+    'newbie': {color:'#9CA3AF', label:'Nuevo vendedor'},
+};
+
+function renderMeli(d) {
+    const meliRaw = RAW.meli || {};
+    const user = meliRaw.user || {};
+
+    // --- Header: nickname, reputacion, total transacciones ---
+    const levelId = user.level_id || 'newbie';
+    const lv = MELI_LEVEL_COLORS[levelId] || MELI_LEVEL_COLORS.newbie;
+    document.getElementById('meli-header').innerHTML = `
+        <div class="meli-logo">ML</div>
+        <div class="meli-header-info">
+            <div class="meli-nickname">${user.nickname || '(sin nickname)'} · Mercadolibre ${user.country || 'CO'}</div>
+            <div class="meli-sub">${user.transactions_total || 0} transacciones históricas · ${user.transactions_completed || 0} completadas · ${user.transactions_canceled || 0} canceladas</div>
+        </div>
+        <div class="meli-reputation">
+            <div class="meli-rep-dot" style="background:${lv.color}"></div>
+            <div class="meli-rep-label" style="color:${lv.color}">${lv.label}</div>
+        </div>
+    `;
+
+    // --- KPIs ---
+    const kpis = [
+        { icon:'💰', label:'VENTAS NETAS ML', value:fmtMoney(d.ventas_netas), color:'var(--green)', sub:'Bruto: '+fmtMoney(d.ventas_brutas) },
+        { icon:'📊', label:'UTILIDAD ML', value:fmtMoney(d.utilidad), color:d.utilidad>=0?'var(--green)':'var(--red)', badge:d.margen.toFixed(1)+'%', badgeColor:d.utilidad>=0?'green':'red' },
+        { icon:'📦', label:'ÓRDENES', value:d.ordenes.toLocaleString('es-CO'), color:'var(--indigo)', sub:'Unidades: '+d.unidades },
+        { icon:'🎫', label:'TICKET PROM.', value:fmtMoney(d.ticket_promedio), color:'var(--indigo)', sub:'Por orden' },
+        { icon:'💸', label:'COMISIONES ML', value:fmtMoney(d.comisiones), color:'var(--red)', sub:(d.pct_comision*100).toFixed(1)+'% de las brutas' },
+        { icon:'🏷️', label:'COSTO PRODUCTO', value:fmtMoney(d.costo_producto), color:'var(--yellow)', sub:d.unidades+' unidades' },
+    ];
+    document.getElementById('meli-kpi-grid').innerHTML = kpis.map(k =>
+        `<div class="kpi-card"><div class="kpi-header"><span class="kpi-icon">${k.icon}</span><span class="kpi-label">${k.label}</span></div><div class="kpi-value" style="color:${k.color}">${k.value}</div>${k.badge?`<div class="kpi-badge" style="background:var(--${k.badgeColor}-light);color:var(--${k.badgeColor})">${k.badge}</div>`:''}<div class="kpi-sub">${k.sub||''}</div></div>`
+    ).join('');
+
+    // --- Chart ventas diarias (brutas vs netas) ---
+    const ctx1 = document.getElementById('chart-meli-ventas').getContext('2d');
+    if (chartMeliVentas) chartMeliVentas.destroy();
+    const hist = d.historial_diario || [];
+    chartMeliVentas = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: hist.map(h=>{const p=h.fecha.split('-');return p[2]+'/'+p[1]}),
+            datasets: [
+                { label:'Bruto', data: hist.map(h=>h.brutas), backgroundColor:'rgba(255,230,0,0.75)', borderColor:'#E6CE00', borderWidth:1, borderRadius:4 },
+                { label:'Neto (lo que te queda)', data: hist.map(h=>h.netas), backgroundColor:'rgba(16,185,129,0.75)', borderColor:'#059669', borderWidth:1, borderRadius:4 },
+            ],
+        },
+        options: {
+            responsive:true, maintainAspectRatio:false,
+            plugins:{ legend:{ display:true, position:'top', labels:{ font:{size:10, family:'Inter'} } } },
+            scales:{
+                y:{ ticks:{ callback:v=>fmtMoney(v), font:{size:9} }, grid:{color:'#F3F4F6'} },
+                x:{ ticks:{ font:{size:8}, maxRotation:45 }, grid:{display:false} },
+            },
+        },
+    });
+
+    // --- Donut "¿qué pasa con cada $100 vendido?" ---
+    // Divide el bruto en: Comisiones, Costo producto, Utilidad
+    const ctx2 = document.getElementById('chart-meli-costos').getContext('2d');
+    if (chartMeliCostos) chartMeliCostos.destroy();
+    const desglose = [
+        { label:'Comisión ML', value:d.comisiones, color:'#F59E0B' },
+        { label:'Costo producto', value:d.costo_producto, color:'#6366F1' },
+        { label:'Utilidad bruta', value:Math.max(0,d.utilidad), color:'#10B981' },
+    ];
+    const totalD = desglose.reduce((s,x)=>s+x.value, 0);
+    chartMeliCostos = new Chart(ctx2, {
+        type:'doughnut',
+        data:{
+            labels: desglose.map(x=>x.label),
+            datasets: [{ data: desglose.map(x=>x.value), backgroundColor: desglose.map(x=>x.color), borderWidth:0, cutout:'65%' }],
+        },
+        options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}} },
+    });
+    document.getElementById('meli-donut-center').innerHTML = fmtMoney(d.ventas_brutas);
+    document.getElementById('meli-donut-legend').innerHTML = desglose.map(x => {
+        const p = totalD > 0 ? (x.value/totalD*100).toFixed(1) : '0';
+        return `<div class="donut-legend-item"><div class="donut-legend-dot" style="background:${x.color}"></div><span class="donut-legend-label">${x.label}</span><span class="donut-legend-value">${p}%</span></div>`;
+    }).join('');
+
+    // --- Status grid (entregadas / en transito / canceladas) - usa YTD del RAW ---
+    const entregadas = meliRaw.entregadas || {ordenes:0, monto:0};
+    const enTransito = meliRaw.en_transito || {ordenes:0, monto:0};
+    const canceladas = meliRaw.canceladas || {ordenes:0, monto:0};
+    document.getElementById('meli-status-grid').innerHTML = `
+        <div class="meli-status-card">
+            <div class="meli-status-icon">✅</div>
+            <div class="meli-status-label">Entregadas (YTD)</div>
+            <div class="meli-status-count" style="color:var(--green)">${entregadas.ordenes}</div>
+            <div class="meli-status-monto">${fmtMoney(entregadas.monto)}</div>
+        </div>
+        <div class="meli-status-card">
+            <div class="meli-status-icon">🚚</div>
+            <div class="meli-status-label">En tránsito (YTD)</div>
+            <div class="meli-status-count" style="color:var(--yellow)">${enTransito.ordenes}</div>
+            <div class="meli-status-monto">${fmtMoney(enTransito.monto)}</div>
+        </div>
+        <div class="meli-status-card">
+            <div class="meli-status-icon">❌</div>
+            <div class="meli-status-label">Canceladas (YTD)</div>
+            <div class="meli-status-count" style="color:var(--red)">${canceladas.ordenes}</div>
+            <div class="meli-status-monto">${fmtMoney(canceladas.monto)}</div>
+        </div>
+    `;
+
+    // --- Top productos ML (YTD) ---
+    const productos = (meliRaw.top_productos || []).slice(0, 10);
+    if (productos.length === 0) {
+        document.getElementById('meli-top-productos').innerHTML = '<div style="font-size:11px;color:var(--text-muted);text-align:center;padding:20px">Sin datos</div>';
+    } else {
+        const maxUnits = productos[0].unidades || 1;
+        const colors = ['#FFE600','#10B981','#6366F1','#F59E0B','#EC4899','#06B6D4','#8B5CF6','#F97316','#84CC16','#EF4444'];
+        document.getElementById('meli-top-productos').innerHTML = productos.map((p, i) => {
+            const pct = (p.unidades / maxUnits * 100).toFixed(0);
+            const nombre = p.nombre.length > 45 ? p.nombre.slice(0,45)+'…' : p.nombre;
+            return `<div class="info-row">
+                <span class="info-row-rank">${i+1}</span>
+                <span class="info-row-name" title="${p.nombre}">${nombre}</span>
+                <div class="info-row-bar"><div class="info-row-bar-fill" style="width:${pct}%;background:${colors[i%colors.length]}"></div></div>
+                <span class="info-row-units">${p.unidades}u</span>
+                <span class="info-row-value">${fmtMoney(p.ventas_netas||p.ventas)}</span>
+            </div>`;
+        }).join('');
+    }
 }
 
 async function loadData() {

@@ -24,6 +24,7 @@ from tools.sheets.sheets_client import SheetsClient
 from tools.envia.envia_client import EnviaClient
 from tools.meta.meta_client import MetaAdsClient, MetaAPIError
 from tools.shopify.shopify_client import ShopifyClient, ShopifyAPIError
+from tools.meli.meli_client import MeliClient, MeliAPIError
 
 logger = setup_logger()
 
@@ -50,6 +51,12 @@ def main():
     shopify_client = ShopifyClient(
         shop=get_env("SHOPIFY_STORE"),
         access_token=get_env("SHOPIFY_ACCESS_TOKEN"),
+    )
+    meli_client = MeliClient(
+        client_id=get_env("MELI_CLIENT_ID"),
+        client_secret=get_env("MELI_CLIENT_SECRET"),
+        refresh_token=get_env("MELI_REFRESH_TOKEN"),
+        user_id=get_env("MELI_USER_ID"),
     )
 
     # === 1. Sheets: todo el año ===
@@ -114,6 +121,36 @@ def main():
         logger.error(f"Shopify fallo, fallback a envia: {shopify_error}")
         shopify_data = None
 
+    # === 2.7 MercadoLibre Colombia ===
+    # Canal de venta independiente. Tiene su propia estructura de comisiones
+    # y no se cruza con envia ni con Shopify.
+    logger.info("Consultando MercadoLibre...")
+    meli_error = None
+    meli_user_info = None
+    try:
+        meli_user_info = meli_client.get_user_info()
+        meli_data = meli_client.get_resumen_ventas(inicio_ano, hoy)
+        logger.info(
+            f"MercadoLibre: {meli_data['ordenes']} ordenes / "
+            f"{meli_data['unidades']} unidades / ${meli_data['ventas_brutas']:,} brutas"
+        )
+        logger.info(
+            f"  Comisiones ML:   ${meli_data['comisiones_total']:>12,} ({meli_data['pct_comision']*100:.2f}%)"
+        )
+        logger.info(
+            f"  Ventas netas ML: ${meli_data['ventas_netas']:>12,} (lo que te queda)"
+        )
+        # Si el refresh_token rota, lo logueamos para que el usuario lo actualice
+        if meli_client.refresh_token != get_env("MELI_REFRESH_TOKEN"):
+            logger.warning(
+                f"MELI_REFRESH_TOKEN rotó. Nuevo valor (actualizar .env/secrets): "
+                f"{meli_client.refresh_token}"
+            )
+    except (MeliAPIError, Exception) as e:
+        meli_error = str(e)
+        logger.error(f"MercadoLibre fallo: {meli_error}")
+        meli_data = None
+
     # === 3. Meta Ads: por cuenta y diario ===
     # Si Meta falla (token expirado, permisos, etc.) seguimos generando el dashboard
     # con el resto de datos para que no se quede congelado por completo.
@@ -164,6 +201,18 @@ def main():
         f = od["fecha"]
         costo_envio_por_dia[f] = costo_envio_por_dia.get(f, 0) + od.get("costo_envio", 0)
 
+    # === 4.5 MercadoLibre diario ===
+    meli_diario = {}
+    if meli_data:
+        for h in meli_data.get("historial_diario", []):
+            meli_diario[h["fecha"]] = {
+                "ventas_brutas": h["ventas_brutas"],
+                "ventas_netas": h["ventas_netas"],
+                "comisiones": h["comisiones"],
+                "unidades": h["unidades"],
+                "ordenes": h["ordenes"],
+            }
+
     # === 5. Construir datos diarios para meta (por cuenta) ===
     meta_diario_total = {}
     for h in meta_data.get("historial_diario", []):
@@ -213,6 +262,7 @@ def main():
     all_dates.update(shopify_diario.keys())
     all_dates.update(envia_diario.keys())
     all_dates.update(meta_diario_total.keys())
+    all_dates.update(meli_diario.keys())
     for pd in pos_data.values():
         all_dates.update(pd["ventas_diarias"].keys())
         all_dates.update(pd["gastos_diarios"].keys())
@@ -247,6 +297,9 @@ def main():
             digital_cod_ordenes = 0
             digital_prepago_ordenes = 0
 
+        # MercadoLibre del dia
+        ml = meli_diario.get(fecha, {})
+
         daily[fecha] = {
             # Ventas digitales (Shopify primario, envia fallback)
             "envia_ventas": digital_ventas,           # nombre legacy mantenido para frontend
@@ -265,6 +318,12 @@ def main():
             "envia_ordenes_raw": ev.get("ordenes", 0),
             # Meta Ads
             "meta_gasto": meta_diario_total.get(fecha, 0),
+            # MercadoLibre
+            "meli_ventas_brutas": ml.get("ventas_brutas", 0),
+            "meli_ventas_netas": ml.get("ventas_netas", 0),
+            "meli_comisiones": ml.get("comisiones", 0),
+            "meli_ordenes": ml.get("ordenes", 0),
+            "meli_unidades": ml.get("unidades", 0),
         }
         # POS por punto
         for key in pos_nombres:
@@ -281,6 +340,8 @@ def main():
         errors["meta"] = meta_error
     if shopify_error:
         errors["shopify"] = shopify_error
+    if meli_error:
+        errors["meli"] = meli_error
 
     dashboard = {
         "updated_at": datetime.now().isoformat(),
@@ -314,6 +375,20 @@ def main():
             "top_skus": shopify_data["top_skus"] if shopify_data else [],
             "canales": shopify_data["canales"] if shopify_data else [],
             "codigos_descuento": shopify_data["codigos_descuento"] if shopify_data else [],
+        },
+        "meli": {
+            "user": meli_user_info or {},
+            "ventas_brutas_ytd": meli_data["ventas_brutas"] if meli_data else 0,
+            "ventas_netas_ytd": meli_data["ventas_netas"] if meli_data else 0,
+            "comisiones_ytd": meli_data["comisiones_total"] if meli_data else 0,
+            "pct_comision": meli_data["pct_comision"] if meli_data else 0,
+            "ticket_promedio": meli_data["ticket_promedio"] if meli_data else 0,
+            "unidades_ytd": meli_data["unidades"] if meli_data else 0,
+            "ordenes_ytd": meli_data["ordenes"] if meli_data else 0,
+            "entregadas": meli_data["entregadas"] if meli_data else {"ordenes": 0, "monto": 0},
+            "en_transito": meli_data["en_transito"] if meli_data else {"ordenes": 0, "monto": 0},
+            "canceladas": meli_data["canceladas"] if meli_data else {"ordenes": 0, "monto": 0},
+            "top_productos": meli_data["top_productos"] if meli_data else [],
         },
         "ads_cuentas": [
             {"nombre": c["nombre"], "gasto": round(c["gasto"]), "purchases": c.get("purchases", 0)}

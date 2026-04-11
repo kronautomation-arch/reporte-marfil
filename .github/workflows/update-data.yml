@@ -42,7 +42,32 @@ jobs:
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
           SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+          MELI_CLIENT_ID: ${{ secrets.MELI_CLIENT_ID }}
+          MELI_CLIENT_SECRET: ${{ secrets.MELI_CLIENT_SECRET }}
+          MELI_REFRESH_TOKEN: ${{ secrets.MELI_REFRESH_TOKEN }}
+          MELI_USER_ID: ${{ secrets.MELI_USER_ID }}
+          MELI_REDIRECT_URI: ${{ secrets.MELI_REDIRECT_URI }}
         run: python main.py
+
+      - name: Update MELI_REFRESH_TOKEN secret (rotated)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS || secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f .meli_token_cache.json ]; then
+            NEW_TOKEN=$(python -c "import json; print(json.load(open('.meli_token_cache.json'))['refresh_token'])")
+            if [ -n "$NEW_TOKEN" ]; then
+              echo "::add-mask::$NEW_TOKEN"
+              if [ -n "${{ secrets.GH_PAT_SECRETS }}" ]; then
+                echo "MELI_REFRESH_TOKEN rotó — actualizando secret del repo vía PAT"
+                echo -n "$NEW_TOKEN" | gh secret set MELI_REFRESH_TOKEN --repo ${{ github.repository }}
+              else
+                echo "⚠ GH_PAT_SECRETS no configurado — el secret no se actualizará automáticamente."
+                echo "Si el workflow empieza a fallar con invalid_grant, actualizar manualmente el secret."
+              fi
+            fi
+            rm -f .meli_token_cache.json
+          fi
 
       - name: Cleanup credentials
         if: always()

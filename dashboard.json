@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-11T16:02:08.999280",
+  "updated_at": "2026-04-11T17:51:04.995959",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.0471682249276922,
+    "pct_devoluciones": 0.04884860044777984,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 3927000,
-    "ordenes_ytd": 27,
-    "tasa_por_monto": 0.0472,
-    "tasa_por_ordenes": 0.0475
+    "monto_ytd": 4066900,
+    "ordenes_ytd": 28,
+    "tasa_por_monto": 0.0488,
+    "tasa_por_ordenes": 0.0493
   },
   "shopify": {
-    "ventas_brutas_ytd": 77301900,
-    "ventas_netas_ytd": 71275825,
+    "ventas_brutas_ytd": 77162000,
+    "ventas_netas_ytd": 71135925,
     "descuentos_ytd": 6026075,
-    "unidades_ytd": 621,
-    "ordenes_ytd": 531,
+    "unidades_ytd": 620,
+    "ordenes_ytd": 530,
     "cash_flow": {
-      "cod_neto": 48598385,
-      "cod_bruto": 52143500,
-      "cod_ordenes": 376,
+      "cod_neto": 48458485,
+      "cod_bruto": 52003600,
+      "cod_ordenes": 375,
       "prepago_neto": 22677440,
       "prepago_bruto": 25158400,
       "prepago_ordenes": 155,
-      "cod_pct": 0.6818,
-      "prepago_pct": 0.3182
+      "cod_pct": 0.6812,
+      "prepago_pct": 0.3188
     },
     "canceladas": {
       "ordenes": 16,
@@ -37,19 +37,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 150,
-      "monto": 21946300,
-      "tasa": 0.2203,
+      "ordenes": 152,
+      "monto": 22236100,
+      "tasa": 0.2229,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 78,
-          "monto": 10535200.0
+          "ordenes": 79,
+          "monto": 10685100.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 32,
-          "monto": 6005500.0
+          "ordenes": 33,
+          "monto": 6145400.0
         },
         {
           "canal": "web",
@@ -85,8 +85,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
-        "unidades": 16,
-        "ventas": 2238400.0,
+        "unidades": 15,
+        "ventas": 2098500.0,
         "vendor": "MM"
       },
       {
@@ -177,8 +177,8 @@
       },
       {
         "sku": "TOUS NEGRO-NARANJA-1",
-        "unidades": 16,
-        "ventas": 2238400.0,
+        "unidades": 15,
+        "ventas": 2098500.0,
         "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 316,
-        "ventas_brutas": 46703900.0
+        "ordenes": 315,
+        "ventas_brutas": 46564000.0
       },
       {
         "canal": "5690175",
@@ -435,16 +435,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 20752697,
+      "gasto": 20753472,
       "purchases": 574
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 9665465,
+      "gasto": 9675529,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 30418162,
+  "ads_gasto_total": 30429001,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -3388,18 +3388,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-08": {
-      "envia_ventas": 1269000.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 10,
-      "envia_costo_envio": 115120.0,
-      "digital_ventas_netas": 1151000.0,
+      "envia_ventas": 1129100.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 9,
+      "envia_costo_envio": 102640.0,
+      "digital_ventas_netas": 1011100.0,
       "digital_descuentos": 118000.0,
-      "digital_cod_neto": 829300.0,
+      "digital_cod_neto": 689400.0,
       "digital_prepago_neto": 321700.0,
-      "digital_cod_ordenes": 6,
+      "digital_cod_ordenes": 5,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 1508800.0,
-      "envia_ordenes_raw": 9,
+      "envia_ventas_raw": 1368900.0,
+      "envia_ordenes_raw": 8,
       "meta_gasto": 877323.0,
       "meli_ventas_brutas": 289800.0,
       "meli_ventas_netas": 227494.0,
@@ -3460,7 +3460,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1289000.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 536697.0,
+      "meta_gasto": 537348.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -3490,7 +3490,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 96982.0,
+      "meta_gasto": 107170.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

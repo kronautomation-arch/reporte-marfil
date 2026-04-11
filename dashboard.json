@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-11T14:31:59.054393",
+  "updated_at": "2026-04-11T14:33:28.859844",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
@@ -3460,7 +3460,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1289000.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 536302.0,
+      "meta_gasto": 536305.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -3490,7 +3490,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 85714.0,
+      "meta_gasto": 85976.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

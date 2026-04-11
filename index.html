@@ -259,6 +259,7 @@
         </div>
         <div class="filters-row">
             <div class="filters">
+                <div class="filter" data-period="hoy">Hoy</div>
                 <div class="filter" data-period="ayer">Ayer</div>
                 <div class="filter" data-period="esta_semana">Esta semana</div>
                 <div class="filter active" data-period="este_mes">Este mes</div>
@@ -426,6 +427,7 @@ function getDateRange(period) {
     const fmt = d => d.toISOString().slice(0,10);
     const sub = days => { const d = new Date(hoy); d.setDate(d.getDate() - days); return fmt(d); };
     switch(period) {
+        case 'hoy': return [fmt(hoy), fmt(hoy)];
         case 'ayer': const a = new Date(hoy); a.setDate(a.getDate()-1); return [fmt(a), fmt(a)];
         case '7d': return [sub(6), fmt(hoy)];
         case '14d': return [sub(13), fmt(hoy)];

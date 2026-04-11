@@ -73,12 +73,15 @@ def main():
         f"${devoluciones_info.get('monto', 0):,.0f} ({pct_devoluciones*100:.2f}%)"
     )
 
-    # Set de IDs de Shopify que SI tienen envio confirmado en envia (no rechazados)
-    shipped_shopify_ids = {
-        od.get("shopify_order_id")
-        for od in envia_data.get("ordenes_detalle", [])
-        if od.get("shopify_order_id")
-    }
+    # Mapa {shopify_order_id: fecha_despacho_envia} para las ordenes confirmadas
+    # en envia (no rechazadas). La fecha de despacho es la que se usara para
+    # agrupar el historial diario: asi el dashboard cuadra con el panel de envia.
+    shipped_shopify_ids = {}
+    for od in envia_data.get("ordenes_detalle", []):
+        sid = od.get("shopify_order_id")
+        fecha_despacho = od.get("fecha")  # YYYY-MM-DD de envia.created_at
+        if sid and fecha_despacho:
+            shipped_shopify_ids[sid] = fecha_despacho
     logger.info(f"Ordenes despachadas via envia: {len(shipped_shopify_ids)}")
 
     # === 2.5 Shopify: ventas digitales (detalle, filtrado por despachadas) ===

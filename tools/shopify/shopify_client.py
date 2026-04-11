@@ -157,7 +157,7 @@ class ShopifyClient:
         self,
         fecha_inicio: date,
         fecha_fin: date,
-        shipped_order_ids: Optional[set] = None,
+        shipped_order_ids=None,
     ) -> dict:
         """
         Procesa las ordenes y devuelve metricas reales de Marfil.
@@ -166,20 +166,33 @@ class ShopifyClient:
         - Una orden cancelada (cancelled_at != null) NO cuenta como venta.
         - Una orden con financial_status in {refunded, voided} NO cuenta.
         - Si se pasa shipped_order_ids: SOLO cuentan como ventas las ordenes
-          cuyo ID este en ese set (= ordenes despachadas via envia.com). Las
-          ordenes que pasaron filtros pero no se despacharon se reportan como
+          cuyo ID este ahi (= ordenes despachadas via envia.com). Las ordenes
+          que pasaron filtros pero no se despacharon se reportan como
           "no_despachadas" (clientes que no confirmaron compra).
-        - "Precio bruto" = subtotal_price + total_discounts (precio antes de
-          descuento, equivalente a total_declared_value en envia).
-        - "Precio neto" = total_price (lo que efectivamente cobramos).
+        - Para el HISTORIAL DIARIO usamos la FECHA DE DESPACHO de envia (no
+          la fecha de creacion en Shopify). Asi el dashboard cuadra 1:1 con
+          el panel de envia del dueno. Si no hay fecha de despacho (caso
+          edge), se cae al created_at de Shopify.
+        - "Precio bruto" = subtotal_price + total_discounts.
+        - "Precio neto" = total_price.
         - Unidades = sum(line_items[].quantity) excluyendo gift cards.
 
-        shipped_order_ids: set de strings con los IDs de Shopify que tienen
-            envio confirmado en envia.com. Si es None, todas las ordenes
-            no canceladas/refunded cuentan como venta.
+        shipped_order_ids: acepta 2 formas:
+            - dict {shopify_order_id: fecha_despacho_YYYY_MM_DD}  (recomendado)
+            - set {shopify_order_id, ...}  (legacy, usa created_at de Shopify)
+          Si es None, todas las ordenes no canceladas/refunded cuentan como
+          venta y el historial se agrupa por created_at de Shopify.
 
         Retorna estructura lista para inyectar en dashboard.json.
         """
+        # Normalizar: si viene un set, lo convertimos a dict con valor None
+        # asi el resto del codigo solo maneja dict.
+        shipped_map = None
+        if shipped_order_ids is not None:
+            if isinstance(shipped_order_ids, dict):
+                shipped_map = shipped_order_ids
+            else:
+                shipped_map = {sid: None for sid in shipped_order_ids}
         orders = self.get_orders(fecha_inicio, fecha_fin)
 
         # Acumuladores ventas reales (despachadas)
@@ -252,14 +265,19 @@ class ShopifyClient:
                 refunded_monto += bruto
                 continue
 
-            # Cross-check con envia: si tenemos shipped_order_ids y esta orden
+            # Cross-check con envia: si tenemos shipped_map y esta orden
             # NO esta ahi, NO es venta real (cliente no confirmo / no se envio)
-            if shipped_order_ids is not None and order_id_str not in shipped_order_ids:
+            if shipped_map is not None and order_id_str not in shipped_map:
                 no_despachadas_count += 1
                 no_despachadas_monto += bruto
                 no_despachadas_por_canal[source]["ordenes"] += 1
                 no_despachadas_por_canal[source]["monto"] += bruto
                 continue
+
+            # Fecha para agrupar diariamente: SIEMPRE preferir la fecha de
+            # despacho de envia (la que ve el dueno en su panel). Fallback a
+            # created_at de Shopify si no tenemos fecha de envia.
+            fecha_despacho = shipped_map.get(order_id_str) if shipped_map else None
 
             ordenes_validas += 1
             ventas_brutas += bruto
@@ -304,10 +322,15 @@ class ShopifyClient:
 
             unidades += order_units
 
-            # Por dia (en zona Colombia)
-            fecha_dia = self._parse_fecha_colombia(o.get("created_at", ""))
-            if fecha_dia:
-                d = ventas_por_dia[fecha_dia.isoformat()]
+            # Por dia: usar fecha de DESPACHO de envia (para cuadrar con el
+            # panel de envia), fallback a created_at de Shopify (zona CO).
+            if fecha_despacho:
+                fecha_key = fecha_despacho
+            else:
+                fecha_dia = self._parse_fecha_colombia(o.get("created_at", ""))
+                fecha_key = fecha_dia.isoformat() if fecha_dia else None
+            if fecha_key:
+                d = ventas_por_dia[fecha_key]
                 d["ventas_brutas"] += bruto
                 d["ventas_netas"] += total_price
                 d["descuentos"] += total_discounts

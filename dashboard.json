@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-13T18:54:27.100050",
+  "updated_at": "2026-04-13T19:57:56.000086",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.04596829987796558,
+    "pct_devoluciones": 0.04567773629584364,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 3827100,
     "ordenes_ytd": 27,
-    "tasa_por_monto": 0.046,
-    "tasa_por_ordenes": 0.0475
+    "tasa_por_monto": 0.0457,
+    "tasa_por_ordenes": 0.0472
   },
   "shopify": {
-    "ventas_brutas_ytd": 77401800,
-    "ventas_netas_ytd": 71357725,
+    "ventas_brutas_ytd": 77931400,
+    "ventas_netas_ytd": 71887325,
     "descuentos_ytd": 6044075,
-    "unidades_ytd": 622,
-    "ordenes_ytd": 531,
+    "unidades_ytd": 626,
+    "ordenes_ytd": 535,
     "cash_flow": {
-      "cod_neto": 48680285,
-      "cod_bruto": 52243400,
-      "cod_ordenes": 376,
+      "cod_neto": 49209885,
+      "cod_bruto": 52773000,
+      "cod_ordenes": 380,
       "prepago_neto": 22677440,
       "prepago_bruto": 25158400,
       "prepago_ordenes": 155,
-      "cod_pct": 0.6822,
-      "prepago_pct": 0.3178
+      "cod_pct": 0.6845,
+      "prepago_pct": 0.3155
     },
     "canceladas": {
       "ordenes": 17,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 156,
-      "monto": 22595800,
-      "tasa": 0.2271,
+      "ordenes": 153,
+      "monto": 22186100,
+      "tasa": 0.2224,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 80,
-          "monto": 10685100.0
+          "ordenes": 77,
+          "monto": 10275400.0
         },
         {
           "canal": "shopify_draft_order",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 408,
-        "ventas": 48919200.0,
+        "unidades": 410,
+        "ventas": 49159000.0,
         "vendor": "Marfil"
       },
       {
@@ -85,8 +85,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
-        "unidades": 15,
-        "ventas": 2098500.0,
+        "unidades": 16,
+        "ventas": 2238400.0,
         "vendor": "MM"
       },
       {
@@ -114,15 +114,15 @@
         "vendor": "Marfil"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
         "unidades": 6,
-        "ventas": 839400.0,
+        "ventas": 899400.0,
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 5,
-        "ventas": 749500.0,
+        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "unidades": 6,
+        "ventas": 839400.0,
         "vendor": "MM"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 408,
-        "ventas": 48919200.0,
+        "unidades": 410,
+        "ventas": 49159000.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -177,8 +177,8 @@
       },
       {
         "sku": "TOUS NEGRO-NARANJA-1",
-        "unidades": 15,
-        "ventas": 2098500.0,
+        "unidades": 16,
+        "ventas": 2238400.0,
         "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA"
       },
       {
@@ -206,16 +206,16 @@
         "title": "Gafas De Sol Marfil Centaurus"
       },
       {
+        "sku": "VENUS CAFÉ-1",
+        "unidades": 6,
+        "ventas": 899400.0,
+        "title": "GAFAS DE SOL MARFIL VENUS CAFE"
+      },
+      {
         "sku": "TAURUS NEGRO-AZUL-1",
         "unidades": 6,
         "ventas": 839400.0,
         "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
-      },
-      {
-        "sku": "VENUS CAFÉ-1",
-        "unidades": 5,
-        "ventas": 749500.0,
-        "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
         "sku": "CROWD TORNASOL NARANJA-1 - GAFA DE SOL MARFIL CROWD",
@@ -280,8 +280,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 131,
-        "ventas_brutas": 18707400.0
+        "ordenes": 135,
+        "ventas_brutas": 19237000.0
       },
       {
         "canal": "web",
@@ -435,16 +435,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 20862574,
-      "purchases": 578
+      "gasto": 20876583,
+      "purchases": 582
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 9706794,
+      "gasto": 9730440,
       "purchases": 20
     }
   ],
-  "ads_gasto_total": 30569368,
+  "ads_gasto_total": 30607023,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -3538,19 +3538,19 @@
       "digital_gastos_var": 0
     },
     "2026-04-13": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
-      "digital_cod_ordenes": 0,
+      "envia_ventas": 529600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
+      "envia_costo_envio": 49920.0,
+      "digital_ventas_netas": 529600.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 529600.0,
+      "digital_prepago_neto": 0.0,
+      "digital_cod_ordenes": 4,
       "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 127885.0,
+      "envia_ventas_raw": 529600.0,
+      "envia_ordenes_raw": 4,
+      "meta_gasto": 165540.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

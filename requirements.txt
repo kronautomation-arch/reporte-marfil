@@ -3,3 +3,4 @@ google-auth>=2.23.0
 google-api-python-client>=2.100.0
 gspread>=5.12.0
 python-dotenv>=1.0.0
+python-amazon-sp-api>=2.1.0

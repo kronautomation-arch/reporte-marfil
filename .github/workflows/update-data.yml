@@ -47,6 +47,13 @@ jobs:
           MELI_REFRESH_TOKEN: ${{ secrets.MELI_REFRESH_TOKEN }}
           MELI_USER_ID: ${{ secrets.MELI_USER_ID }}
           MELI_REDIRECT_URI: ${{ secrets.MELI_REDIRECT_URI }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AMAZON_SELLER_ID: ${{ secrets.AMAZON_SELLER_ID }}
+          AMAZON_MARKETPLACE_ID: ${{ secrets.AMAZON_MARKETPLACE_ID }}
+          AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
+          AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
+          AMAZON_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_LWA_CLIENT_SECRET }}
         run: python main.py
 
       - name: Update MELI_REFRESH_TOKEN secret (rotated)

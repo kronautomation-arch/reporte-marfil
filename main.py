@@ -25,6 +25,7 @@ from tools.envia.envia_client import EnviaClient
 from tools.meta.meta_client import MetaAdsClient, MetaAPIError
 from tools.shopify.shopify_client import ShopifyClient, ShopifyAPIError
 from tools.meli.meli_client import MeliClient, MeliAPIError
+from tools.amazon.amazon_client import AmazonClient, AmazonAPIError
 
 logger = setup_logger()
 
@@ -57,6 +58,15 @@ def main():
         client_secret=get_env("MELI_CLIENT_SECRET"),
         refresh_token=get_env("MELI_REFRESH_TOKEN"),
         user_id=get_env("MELI_USER_ID"),
+    )
+    amazon_client = AmazonClient(
+        refresh_token=get_env("AMAZON_REFRESH_TOKEN"),
+        lwa_app_id=get_env("AMAZON_LWA_CLIENT_ID"),
+        lwa_client_secret=get_env("AMAZON_LWA_CLIENT_SECRET"),
+        aws_access_key=get_env("AWS_ACCESS_KEY_ID"),
+        aws_secret_key=get_env("AWS_SECRET_ACCESS_KEY"),
+        role_arn="arn:aws:iam::631801797313:role/sp-api-role-marfil",
+        seller_id=get_env("AMAZON_SELLER_ID"),
     )
 
     # === 1. Sheets: todo el año ===
@@ -151,6 +161,29 @@ def main():
         logger.error(f"MercadoLibre fallo: {meli_error}")
         meli_data = None
 
+    # === 2.8 Amazon USA ===
+    logger.info("Consultando Amazon USA...")
+    amazon_error = None
+    try:
+        amazon_data = amazon_client.get_resumen_ventas(inicio_ano, hoy)
+        logger.info(
+            f"Amazon USA: {amazon_data['ordenes']} ordenes / {amazon_data['unidades']} unidades / "
+            f"${amazon_data['ventas_brutas']:,.2f} USD brutas"
+        )
+        logger.info(
+            f"  Comisiones Amazon: ${amazon_data['comisiones_amazon']:,.2f} ({amazon_data['pct_comision']*100:.1f}%)"
+        )
+        logger.info(
+            f"  Amazon Ads:        ${amazon_data['ads_spend']:,.2f} USD"
+        )
+        logger.info(
+            f"  Ventas netas:      ${amazon_data['ventas_netas']:,.2f} USD (lo que queda)"
+        )
+    except (AmazonAPIError, Exception) as e:
+        amazon_error = str(e)
+        logger.error(f"Amazon USA fallo: {amazon_error}")
+        amazon_data = None
+
     # === 3. Meta Ads: por cuenta y diario ===
     # Si Meta falla (token expirado, permisos, etc.) seguimos generando el dashboard
     # con el resto de datos para que no se quede congelado por completo.
@@ -200,6 +233,16 @@ def main():
     for od in envia_data.get("ordenes_detalle", []):
         f = od["fecha"]
         costo_envio_por_dia[f] = costo_envio_por_dia.get(f, 0) + od.get("costo_envio", 0)
+
+    # === 4.4 Amazon diario ===
+    amazon_diario = {}
+    if amazon_data:
+        for h in amazon_data.get("historial_diario", []):
+            amazon_diario[h["fecha"]] = {
+                "ventas_brutas": h["ventas_brutas"],
+                "ordenes": h["ordenes"],
+                "unidades": h["unidades"],
+            }
 
     # === 4.5 MercadoLibre diario ===
     meli_diario = {}
@@ -263,6 +306,7 @@ def main():
     all_dates.update(envia_diario.keys())
     all_dates.update(meta_diario_total.keys())
     all_dates.update(meli_diario.keys())
+    all_dates.update(amazon_diario.keys())
     for pd in pos_data.values():
         all_dates.update(pd["ventas_diarias"].keys())
         all_dates.update(pd["gastos_diarios"].keys())
@@ -297,6 +341,9 @@ def main():
             digital_cod_ordenes = 0
             digital_prepago_ordenes = 0
 
+        # Amazon del dia
+        amz = amazon_diario.get(fecha, {})
+
         # MercadoLibre del dia
         ml = meli_diario.get(fecha, {})
 
@@ -324,6 +371,10 @@ def main():
             "meli_comisiones": ml.get("comisiones", 0),
             "meli_ordenes": ml.get("ordenes", 0),
             "meli_unidades": ml.get("unidades", 0),
+            # Amazon USA (en USD)
+            "amazon_ventas_brutas": amz.get("ventas_brutas", 0),
+            "amazon_ordenes": amz.get("ordenes", 0),
+            "amazon_unidades": amz.get("unidades", 0),
         }
         # POS por punto
         for key in pos_nombres:
@@ -342,6 +393,8 @@ def main():
         errors["shopify"] = shopify_error
     if meli_error:
         errors["meli"] = meli_error
+    if amazon_error:
+        errors["amazon"] = amazon_error
 
     dashboard = {
         "updated_at": datetime.now().isoformat(),
@@ -389,6 +442,21 @@ def main():
             "en_transito": meli_data["en_transito"] if meli_data else {"ordenes": 0, "monto": 0},
             "canceladas": meli_data["canceladas"] if meli_data else {"ordenes": 0, "monto": 0},
             "top_productos": meli_data["top_productos"] if meli_data else [],
+        },
+        "amazon": {
+            "ventas_brutas_ytd": amazon_data["ventas_brutas"] if amazon_data else 0,
+            "ventas_netas_ytd": amazon_data["ventas_netas"] if amazon_data else 0,
+            "comisiones_ytd": amazon_data["comisiones_amazon"] if amazon_data else 0,
+            "ads_spend_ytd": amazon_data["ads_spend"] if amazon_data else 0,
+            "refunds_ytd": amazon_data["refunds"] if amazon_data else 0,
+            "pct_comision": amazon_data["pct_comision"] if amazon_data else 0,
+            "ticket_promedio": amazon_data["ticket_promedio"] if amazon_data else 0,
+            "unidades_ytd": amazon_data["unidades"] if amazon_data else 0,
+            "ordenes_ytd": amazon_data["ordenes"] if amazon_data else 0,
+            "canceladas": amazon_data["canceladas"] if amazon_data else 0,
+            "currency": "USD",
+            "financials": amazon_data["financials"] if amazon_data else {},
+            "top_productos": amazon_data["top_productos"] if amazon_data else [],
         },
         "ads_cuentas": [
             {"nombre": c["nombre"], "gasto": round(c["gasto"]), "purchases": c.get("purchases", 0)}

@@ -49,11 +49,39 @@
         .logo { display: flex; align-items: center; }
         .logo-img { height: 34px; width: auto; display: block; }
         .logo-sub { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
-        /* Brand switcher (Marfil <-> Guffo) */
+        /* Brand switcher (Marfil <-> Guffo) — desktop */
         .brand-switcher { display: flex; gap: 3px; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 3px; margin-left: 6px; }
         .brand-btn { padding: 7px 14px; border-radius: 7px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--text-muted); cursor: pointer; transition: all 0.2s; user-select: none; -webkit-tap-highlight-color: transparent; }
         .brand-btn.active { background: var(--active); color: #fff; }
         .brand-btn:hover:not(.active) { color: var(--text); }
+        /* Brand dropdown compacto — mobile only */
+        .brand-dropdown { display: none; position: relative; margin-left: 4px; }
+        .brand-dropdown-btn {
+            display: flex; align-items: center; gap: 6px;
+            padding: 7px 12px; border-radius: 9px;
+            background: var(--active); color: #fff;
+            border: none; cursor: pointer; font-family: inherit;
+            font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+            user-select: none; -webkit-tap-highlight-color: transparent;
+        }
+        .brand-dropdown-btn svg { width: 10px; height: 10px; transition: transform 0.2s; }
+        .brand-dropdown.open .brand-dropdown-btn svg { transform: rotate(180deg); }
+        .brand-dropdown-menu {
+            position: absolute; top: 100%; left: 0; margin-top: 6px;
+            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 4px; min-width: 120px;
+            z-index: 50;
+            opacity: 0; transform: translateY(-4px); pointer-events: none;
+            transition: opacity 0.18s ease, transform 0.18s ease;
+        }
+        .brand-dropdown.open .brand-dropdown-menu { opacity: 1; transform: translateY(0); pointer-events: auto; }
+        .brand-dropdown-item {
+            padding: 10px 14px; border-radius: 7px;
+            font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+            color: var(--text-secondary); cursor: pointer; user-select: none;
+        }
+        .brand-dropdown-item:hover { background: var(--bg); color: var(--text); }
+        .brand-dropdown-item.active { background: var(--active); color: #fff; }
         /* Modo GUFFO: oculta tabs de Marfil y fuerza el contenido Guffo */
         body.brand-guffo .tabs { display: none; }
         body.brand-guffo .tab-content { display: none !important; }
@@ -258,7 +286,17 @@
         }
         @media (max-width: 600px) {
             .container { padding: 12px; }
-            .header { flex-direction: column; gap: 10px; align-items: flex-start; }
+            .header { flex-direction: row; flex-wrap: wrap; gap: 10px; align-items: center; padding-bottom: 12px; }
+            .header-left { gap: 8px; flex-wrap: wrap; flex: 1; min-width: 0; }
+            .header-right { flex-wrap: wrap; gap: 6px; }
+            .header-status { padding: 6px 10px; font-size: 10px; }
+            .logo-sub { display: none; }
+            .logo-img { height: 28px; }
+            body.brand-guffo .logo-img { height: 36px; }
+            .brand-switcher { display: none; }
+            .brand-dropdown { display: block; }
+            .refresh-btn { width: 34px; height: 34px; }
+            .refresh-btn svg { width: 16px; height: 16px; }
             .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             .kpi-card { padding: 14px; }
             .kpi-value { font-size: 22px; }
@@ -357,6 +395,16 @@
                 <div class="brand-switcher" role="tablist" aria-label="Seleccionar marca">
                     <div class="brand-btn active" data-brand="marfil" role="tab">MARFIL</div>
                     <div class="brand-btn" data-brand="guffo" role="tab">GUFFO</div>
+                </div>
+                <div class="brand-dropdown" id="brand-dropdown">
+                    <button class="brand-dropdown-btn" id="brand-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        <span id="brand-dropdown-label">MARFIL</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="brand-dropdown-menu" id="brand-dropdown-menu" role="menu">
+                        <div class="brand-dropdown-item active" data-brand="marfil" role="menuitem">MARFIL</div>
+                        <div class="brand-dropdown-item" data-brand="guffo" role="menuitem">GUFFO</div>
+                    </div>
                 </div>
             </div>
             <div class="header-right">
@@ -867,12 +915,16 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
 }));
 
 // Brand switcher (Marfil <-> Guffo). Cambia todo el contexto del dashboard.
+// Funciona desde los pills de desktop o desde el dropdown compacto de mobile.
 let currentBrand = 'marfil';
-document.querySelectorAll('.brand-btn').forEach(btn => btn.addEventListener('click', () => {
-    const brand = btn.dataset.brand;
+function setBrand(brand) {
     if (brand === currentBrand) return;
     currentBrand = brand;
+    // Sincronizar ambos widgets (pill + dropdown)
     document.querySelectorAll('.brand-btn').forEach(b => b.classList.toggle('active', b.dataset.brand === brand));
+    document.querySelectorAll('.brand-dropdown-item').forEach(b => b.classList.toggle('active', b.dataset.brand === brand));
+    const label = document.getElementById('brand-dropdown-label');
+    if (label) label.textContent = brand === 'guffo' ? 'GUFFO' : 'MARFIL';
     const logoSub = document.getElementById('logo-sub');
     const logoImg = document.querySelector('.logo-img');
     if (brand === 'guffo') {
@@ -890,7 +942,28 @@ document.querySelectorAll('.brand-btn').forEach(btn => btn.addEventListener('cli
         const target = document.getElementById('tab-' + activeKey);
         if (target) target.classList.add('active');
     }
-}));
+}
+document.querySelectorAll('.brand-btn').forEach(btn => btn.addEventListener('click', () => setBrand(btn.dataset.brand)));
+
+// Brand dropdown (mobile)
+const brandDropdown = document.getElementById('brand-dropdown');
+const brandDropdownBtn = document.getElementById('brand-dropdown-btn');
+if (brandDropdownBtn) {
+    brandDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = brandDropdown.classList.toggle('open');
+        brandDropdownBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.querySelectorAll('.brand-dropdown-item').forEach(item => item.addEventListener('click', () => {
+        setBrand(item.dataset.brand);
+        brandDropdown.classList.remove('open');
+        brandDropdownBtn.setAttribute('aria-expanded', 'false');
+    }));
+    document.addEventListener('click', () => {
+        brandDropdown.classList.remove('open');
+        brandDropdownBtn.setAttribute('aria-expanded', 'false');
+    });
+}
 
 // Clear all active states
 function clearAllFilters() {

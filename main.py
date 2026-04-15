@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tools.core.env_loader import load_env, get_env
 from tools.core.logger import setup_logger
 from tools.sheets.sheets_client import SheetsClient
+from tools.sheets.guffo_sheets_client import GuffoSheetsClient
 from tools.envia.envia_client import EnviaClient
 from tools.meta.meta_client import MetaAdsClient, MetaAPIError
 from tools.shopify.shopify_client import ShopifyClient, ShopifyAPIError
@@ -386,6 +387,100 @@ def main():
         # Digital gastos variables
         daily[fecha]["digital_gastos_var"] = digital_gastos_var.get(fecha, 0)
 
+    # === 9. GUFFO ECUADOR (digital-only) ===
+    # Se activa cuando GUFFO_SPREADSHEET_ID y META_GUFFO_ACCOUNT_IDS estan definidos.
+    # Sin esas envs, la seccion guffo queda vacia y el resto del dashboard corre igual.
+    guffo_section = None
+    guffo_errors = {}
+    guffo_spreadsheet_id = get_env("GUFFO_SPREADSHEET_ID", required=False)
+    guffo_meta_ids_raw = get_env("META_GUFFO_ACCOUNT_IDS", required=False)
+    if guffo_spreadsheet_id or guffo_meta_ids_raw:
+        logger.info("=== GUFFO ECUADOR ===")
+        # 9.1 Meta Ads de Guffo (mismo token, 3 cuentas distintas)
+        guffo_meta = {
+            "gasto_total": 0, "cuentas": [], "cpa": 0, "purchases_total": 0,
+            "historial_diario": [],
+        }
+        if guffo_meta_ids_raw:
+            guffo_account_ids = [a.strip() for a in guffo_meta_ids_raw.split(",") if a.strip()]
+            try:
+                g_meta_client = MetaAdsClient(
+                    access_token=get_env("META_ACCESS_TOKEN"),
+                    account_ids=guffo_account_ids,
+                )
+                guffo_meta = g_meta_client.get_all_accounts_data(inicio_ano, hoy)
+                logger.info(f"Guffo Meta Ads: ${guffo_meta['gasto_total']:,.0f} COP en {len(guffo_account_ids)} cuentas")
+            except (MetaAPIError, Exception) as e:
+                guffo_errors["meta"] = str(e)
+                logger.error(f"Guffo Meta Ads fallo: {e}")
+
+        # 9.2 Sheets de Guffo
+        guffo_ventas_raw = []
+        guffo_costos_fijos = {}
+        guffo_config = {"costo_unitario_zapato_cop": 41550.0, "comision_ventas_pct": 0.02}
+        if guffo_spreadsheet_id:
+            try:
+                g_sheets_client = GuffoSheetsClient(
+                    credentials_path=get_env("GOOGLE_SHEETS_CREDENTIALS_PATH"),
+                    spreadsheet_id=guffo_spreadsheet_id,
+                )
+                g_data = g_sheets_client.get_data(inicio_ano, hoy)
+                guffo_ventas_raw = g_data["ventas"]
+                guffo_costos_fijos = g_data["costos_fijos"]
+                guffo_config.update(g_data["config"])
+                logger.info(f"Guffo Sheets: {len(guffo_ventas_raw)} filas de ventas, {len(guffo_costos_fijos)} costos fijos")
+            except Exception as e:
+                guffo_errors["sheets"] = str(e)
+                logger.error(f"Guffo Sheets fallo: {e}")
+
+        # 9.3 Construir daily de Guffo (por fecha, agregado sobre plataformas)
+        guffo_daily = {}
+        plataformas_set = set()
+        for v in guffo_ventas_raw:
+            f = v["fecha"]
+            plat = v["plataforma"]
+            plataformas_set.add(plat)
+            d = guffo_daily.setdefault(f, {
+                "ordenes": 0, "unidades": 0, "ventas_usd": 0.0, "descuentos_usd": 0.0,
+                "por_plataforma": {},
+            })
+            d["ordenes"] += v["ordenes"]
+            d["unidades"] += v["unidades"]
+            d["ventas_usd"] += v["ventas_usd"]
+            d["descuentos_usd"] += v["descuentos_usd"]
+            pp = d["por_plataforma"].setdefault(plat, {"ordenes": 0, "unidades": 0, "ventas_usd": 0.0})
+            pp["ordenes"] += v["ordenes"]
+            pp["unidades"] += v["unidades"]
+            pp["ventas_usd"] += v["ventas_usd"]
+
+        # 9.4 Mezclar gasto ads diario de Guffo
+        g_meta_diario = {h["fecha"]: h["gasto"] for h in guffo_meta.get("historial_diario", [])}
+        for f, gasto in g_meta_diario.items():
+            d = guffo_daily.setdefault(f, {
+                "ordenes": 0, "unidades": 0, "ventas_usd": 0.0, "descuentos_usd": 0.0,
+                "por_plataforma": {},
+            })
+            d["meta_gasto_cop"] = gasto
+        # Garantizar el campo meta_gasto_cop en todos los dias
+        for f, d in guffo_daily.items():
+            d.setdefault("meta_gasto_cop", 0)
+
+        guffo_section = {
+            "daily": guffo_daily,
+            "plataformas": sorted(plataformas_set),
+            "costos_fijos": guffo_costos_fijos,
+            "costos_fijos_total_mensual": sum(guffo_costos_fijos.values()),
+            "config": guffo_config,
+            "ads_cuentas": [
+                {"nombre": c["nombre"], "account_id": c.get("account_id", ""), "gasto": round(c["gasto"]), "purchases": c.get("purchases", 0)}
+                for c in guffo_meta.get("cuentas", [])
+            ],
+            "ads_gasto_total": round(guffo_meta.get("gasto_total", 0)),
+            "errors": guffo_errors,
+            "currency_ventas": "USD",
+            "currency_display": "COP",
+        }
+
     errors = {}
     if meta_error:
         errors["meta"] = meta_error
@@ -475,6 +570,7 @@ def main():
         "digital_costos_fijos": digital_costos_fijos,
         "digital_costos_fijos_total_mensual": sum(digital_costos_fijos.values()),
         "daily": daily,
+        "guffo": guffo_section,
     }
 
     output_path = Path(__file__).resolve().parent / "dashboard.json"

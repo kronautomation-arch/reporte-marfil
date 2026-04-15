@@ -885,7 +885,7 @@ function renderKPIs(d) {
         { icon:'📦', label:'ÓRDENES', value:d.ordenes.toLocaleString('es-CO'), color:'var(--indigo)', sub:'Último día: '+d.ultimo_dia.ordenes },
         { icon:'🎯', label:'ROAS', value:d.ads.roas.toFixed(1)+'x', color:'var(--indigo)', sub:'Último día: '+d.ultimo_dia.roas.toFixed(1)+'x' },
         { icon:'🏷️', label:'CPA', value:fmtMoney(d.ads.cpa), color:'var(--yellow)', sub:'Último día: '+fmtMoney(d.ultimo_dia.cpa) },
-        { icon:'📢', label:'GASTO ADS', value:fmtMoney(d.ads.gasto_total), color:'var(--red)', sub:'Último día: '+fmtMoney(d.ultimo_dia.gasto_ads) },
+        { icon:'📢', label:'GASTO ADS', value:fmtMoney(d.ads.gasto_total), color:'var(--red)', badge:((d.ads.gasto_total/(d.ventas_netas||1)*100)||0).toFixed(1)+'% de ventas', badgeColor:'red', sub:'Último día: '+fmtMoney(d.ultimo_dia.gasto_ads) },
     ];
     document.getElementById('kpi-grid').innerHTML = kpis.map(k => `<div class="kpi-card"><div class="kpi-header"><span class="kpi-icon">${k.icon}</span><span class="kpi-label">${k.label}</span></div><div class="kpi-value" style="color:${k.color}">${k.value}</div>${k.badge?`<div class="kpi-badge" style="background:var(--${k.badgeColor}-light);color:var(--${k.badgeColor})">${k.badge}</div>`:''}<div class="kpi-sub">${k.sub||''}</div></div>`).join('');
 }

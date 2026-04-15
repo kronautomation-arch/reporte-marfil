@@ -15,6 +15,7 @@ import json
 import sys
 from datetime import date, timedelta, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -492,7 +493,9 @@ def main():
         errors["amazon"] = amazon_error
 
     dashboard = {
-        "updated_at": datetime.now().isoformat(),
+        # ISO timezone-aware (Bogota). Antes era datetime.now() naive, que en
+        # GitHub Actions es UTC y al parsear en el browser se interpretaba mal.
+        "updated_at": datetime.now(ZoneInfo("America/Bogota")).isoformat(),
         "errors": errors,
         "config": {
             "costo_unitario_gafa": costo_unitario,

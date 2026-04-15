@@ -7,7 +7,7 @@
 // Version: subir el numero cada vez que cambies index.html o el SW mismo
 // para forzar que los usuarios bajen la nueva version.
 
-const VERSION = 'marfil-v8';
+const VERSION = 'marfil-v9';
 const STATIC_CACHE = `${VERSION}-static`;
 const DATA_CACHE = `${VERSION}-data`;
 

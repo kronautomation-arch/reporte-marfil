@@ -58,6 +58,8 @@
         body.brand-guffo .tabs { display: none; }
         body.brand-guffo .tab-content { display: none !important; }
         body.brand-guffo #tab-guffo { display: block !important; animation: tabSwap 0.28s ease both; }
+        /* El logo de Guffo es cuadrado — ajustamos altura para que pese visualmente igual que el wordmark de Marfil */
+        body.brand-guffo .logo-img { height: 44px; }
         .header-right { display: flex; align-items: center; gap: 10px; }
         .header-status { display: flex; align-items: center; gap: 8px; background: var(--card); padding: 8px 14px; border-radius: 10px; border: 1px solid var(--border); }
         .refresh-btn {
@@ -872,12 +874,15 @@ document.querySelectorAll('.brand-btn').forEach(btn => btn.addEventListener('cli
     currentBrand = brand;
     document.querySelectorAll('.brand-btn').forEach(b => b.classList.toggle('active', b.dataset.brand === brand));
     const logoSub = document.getElementById('logo-sub');
+    const logoImg = document.querySelector('.logo-img');
     if (brand === 'guffo') {
         document.body.classList.add('brand-guffo');
         logoSub.textContent = 'Reporte Guffo Ecuador';
+        if (logoImg) { logoImg.src = 'assets/GuffoLogo.png'; logoImg.alt = 'Guffo'; }
     } else {
         document.body.classList.remove('brand-guffo');
         logoSub.textContent = 'Reporte Ejecutivo';
+        if (logoImg) { logoImg.src = 'assets/logo-marfil.png'; logoImg.alt = 'Marfil'; }
         // Al volver a Marfil, asegurarnos de que el tab activo tenga contenido visible
         const activeTab = document.querySelector('.tab.active');
         const activeKey = activeTab ? activeTab.dataset.tab : 'digital';

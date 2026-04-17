@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-17T11:38:57.437294-05:00",
+  "updated_at": "2026-04-17T12:37:19.799790-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 33000.0,
-    "pct_devoluciones": 0.03718028641897942,
+    "pct_devoluciones": 0.0403332234483644,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 3417400,
-    "ordenes_ytd": 24,
-    "tasa_por_monto": 0.0372,
-    "tasa_por_ordenes": 0.0385
+    "monto_ytd": 3707200,
+    "ordenes_ytd": 26,
+    "tasa_por_monto": 0.0403,
+    "tasa_por_ordenes": 0.0417
   },
   "shopify": {
-    "ventas_brutas_ytd": 85871100,
-    "ventas_netas_ytd": 79080575,
-    "descuentos_ytd": 6790525,
-    "unidades_ytd": 689,
-    "ordenes_ytd": 586,
+    "ventas_brutas_ytd": 85581300,
+    "ventas_netas_ytd": 78800775,
+    "descuentos_ytd": 6780525,
+    "unidades_ytd": 687,
+    "ordenes_ytd": 584,
     "cash_flow": {
-      "cod_neto": 53682085,
-      "cod_bruto": 57737100,
-      "cod_ordenes": 416,
+      "cod_neto": 53402285,
+      "cod_bruto": 57447300,
+      "cod_ordenes": 414,
       "prepago_neto": 25398490,
       "prepago_bruto": 28134000,
       "prepago_ordenes": 170,
-      "cod_pct": 0.6788,
-      "prepago_pct": 0.3212
+      "cod_pct": 0.6777,
+      "prepago_pct": 0.3223
     },
     "canceladas": {
       "ordenes": 22,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 148,
-      "monto": 21686500,
-      "tasa": 0.2016,
+      "ordenes": 150,
+      "monto": 21976300,
+      "tasa": 0.2044,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 30,
-          "monto": 5615800.0
+          "ordenes": 32,
+          "monto": 5905600.0
         },
         {
           "canal": "web",
@@ -78,15 +78,15 @@
         "vendor": ""
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 18,
-        "ventas": 2518200.0,
-        "vendor": "MM"
-      },
-      {
         "nombre": "GAFAS DE SOL MARFIL MONTOYA NEGRO ROJO",
         "unidades": 18,
         "ventas": 2698200.0,
+        "vendor": "MM"
+      },
+      {
+        "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
+        "unidades": 17,
+        "ventas": 2378300.0,
         "vendor": "MM"
       },
       {
@@ -108,16 +108,16 @@
         "vendor": "MM"
       },
       {
-        "nombre": "Gafas De Sol Marfil Centaurus",
-        "unidades": 8,
-        "ventas": 1179200.0,
-        "vendor": "Marfil"
-      },
-      {
         "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
         "unidades": 7,
         "ventas": 979300.0,
         "vendor": "MM"
+      },
+      {
+        "nombre": "Gafas De Sol Marfil Centaurus",
+        "unidades": 7,
+        "ventas": 1029300.0,
+        "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
@@ -170,16 +170,16 @@
         "title": "ENVIO PRIORITARIO"
       },
       {
-        "sku": "JUSTIN NEGRO-1",
-        "unidades": 18,
-        "ventas": 2518200.0,
-        "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
-      },
-      {
         "sku": "MONTOYA NEGRO-ROJO-1",
         "unidades": 18,
         "ventas": 2698200.0,
         "title": "GAFAS DE SOL MARFIL MONTOYA NEGRO ROJO"
+      },
+      {
+        "sku": "JUSTIN NEGRO-1",
+        "unidades": 17,
+        "ventas": 2378300.0,
+        "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
         "sku": "TOUS NEGRO-NARANJA-1",
@@ -200,16 +200,16 @@
         "title": "GAFAS DE SOL MARFIL VENUS NEGRO MATE"
       },
       {
-        "sku": "CENTAURUS - FUCSIA",
-        "unidades": 8,
-        "ventas": 1179200.0,
-        "title": "Gafas De Sol Marfil Centaurus"
-      },
-      {
         "sku": "TAURUS NEGRO-AZUL-1",
         "unidades": 7,
         "ventas": 979300.0,
         "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
+      },
+      {
+        "sku": "CENTAURUS - FUCSIA",
+        "unidades": 7,
+        "ventas": 1029300.0,
+        "title": "Gafas De Sol Marfil Centaurus"
       },
       {
         "sku": "VENUS CAFÉ-1",
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 352,
-        "ventas_brutas": 52617300.0
+        "ordenes": 350,
+        "ventas_brutas": 52327500.0
       },
       {
         "canal": "5690175",
@@ -292,8 +292,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 128,
-        "monto": 5531350.0
+        "usos": 127,
+        "monto": 5521350.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -466,7 +466,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 21855906,
+      "gasto": 21856198,
       "purchases": 594
     },
     {
@@ -475,7 +475,7 @@
       "purchases": 24
     }
   ],
-  "ads_gasto_total": 32441100,
+  "ads_gasto_total": 32441392,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -3941,18 +3941,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-15": {
-      "envia_ventas": 2238300.0,
-      "envia_ordenes": 16,
-      "envia_unidades": 17,
-      "envia_costo_envio": 217438.9,
-      "digital_ventas_netas": 2053350.0,
-      "digital_descuentos": 184950.0,
-      "digital_cod_neto": 1773550.0,
+      "envia_ventas": 1948500.0,
+      "envia_ordenes": 14,
+      "envia_unidades": 15,
+      "envia_costo_envio": 192478.9,
+      "digital_ventas_netas": 1773550.0,
+      "digital_descuentos": 174950.0,
+      "digital_cod_neto": 1493750.0,
       "digital_prepago_neto": 279800.0,
-      "digital_cod_ordenes": 14,
+      "digital_cod_ordenes": 12,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 2358200.0,
-      "envia_ordenes_raw": 17,
+      "envia_ventas_raw": 2068400.0,
+      "envia_ordenes_raw": 15,
       "meta_gasto": 530823.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
@@ -4019,7 +4019,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1378900.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 82610.0,
+      "meta_gasto": 82902.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

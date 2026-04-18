@@ -505,7 +505,7 @@
                     <div class="chart-container"><canvas id="chart-ventas"></canvas></div>
                 </div>
                 <div class="chart-card">
-                    <div class="chart-title">DESGLOSE DE COSTOS</div>
+                    <div class="chart-title">DESGLOSE DE INGRESOS</div>
                     <div class="donut-wrapper">
                         <div class="donut-chart-container"><canvas id="chart-costos"></canvas><div class="donut-center" id="donut-center"></div></div>
                         <div class="donut-legend" id="donut-legend"></div>
@@ -1062,9 +1062,12 @@ function renderCharts(d) {
     if (chartCostos) chartCostos.destroy();
     const costos = [{label:'Producto',value:d.costo_producto,color:'#6366F1'},{label:'Publicidad',value:d.ads.gasto_total,color:'#F59E0B'},{label:'Envío',value:d.costo_envio,color:'#EC4899'},{label:'Operaciones',value:d.costo_operaciones,color:'#9CA3AF'},{label:'Devoluciones',value:d.devoluciones,color:'#EF4444'}];
     const totalC = costos.reduce((s,c)=>s+c.value,0);
-    chartCostos = new Chart(ctx2, {type:'doughnut',data:{labels:costos.map(c=>c.label),datasets:[{data:costos.map(c=>c.value),backgroundColor:costos.map(c=>c.color),borderWidth:0,cutout:'65%'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}});
-    document.getElementById('donut-center').innerHTML = fmtMoney(totalC);
-    document.getElementById('donut-legend').innerHTML = costos.map(c=>{const p=totalC>0?(c.value/totalC*100).toFixed(1):'0';return `<div class="donut-legend-item"><div class="donut-legend-dot" style="background:${c.color}"></div><span class="donut-legend-label">${c.label}</span><span class="donut-legend-value">${p}%</span></div>`}).join('');
+    const utilidad = d.utilidad || 0;
+    const segments = utilidad > 0 ? [...costos, {label:'Utilidad',value:utilidad,color:'#10B981'}] : costos;
+    const totalDonut = segments.reduce((s,c)=>s+c.value,0);
+    chartCostos = new Chart(ctx2, {type:'doughnut',data:{labels:segments.map(c=>c.label),datasets:[{data:segments.map(c=>c.value),backgroundColor:segments.map(c=>c.color),borderWidth:0,cutout:'65%'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}});
+    document.getElementById('donut-center').innerHTML = fmtMoney(d.ventas_netas||totalDonut);
+    document.getElementById('donut-legend').innerHTML = segments.map(c=>{const p=totalDonut>0?(c.value/totalDonut*100).toFixed(1):'0';return `<div class="donut-legend-item"><div class="donut-legend-dot" style="background:${c.color}"></div><span class="donut-legend-label">${c.label}</span><span class="donut-legend-value">${p}%</span></div>`}).join('');
 }
 
 function renderAds(d) {

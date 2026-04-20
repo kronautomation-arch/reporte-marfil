@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-20T09:53:28.106242-05:00",
+  "updated_at": "2026-04-20T11:08:57.199807-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -434,22 +434,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 5495.91,
-    "ventas_netas_ytd": 2487.43,
-    "comisiones_ytd": 1122.36,
+    "ventas_netas_ytd": 2476.49,
+    "comisiones_ytd": 1133.3,
     "ads_spend_ytd": 1407.22,
     "refunds_ytd": 478.9,
-    "pct_comision": 0.2042,
+    "pct_comision": 0.2062,
     "ticket_promedio": 48.21,
     "unidades_ytd": 119,
     "ordenes_ytd": 114,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4489.8,
+      "ventas_principal": 4534.7,
       "shipping_income": 112.53,
-      "tax_collected": 229.5,
-      "commission": 673.98,
-      "fba_fees": 428.86,
+      "tax_collected": 233.59,
+      "commission": 680.72,
+      "fba_fees": 433.06,
       "other_fees": 19.52,
       "refunds": 478.9,
       "ads_spend": 1407.22
@@ -466,16 +466,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 22675023,
+      "gasto": 22698607,
       "purchases": 602
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 10885194,
+      "gasto": 10901989,
       "purchases": 24
     }
   ],
-  "ads_gasto_total": 33560217,
+  "ads_gasto_total": 33600596,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4103,6 +4103,39 @@
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
       "pos_fundadores_gastos": 80000.0,
+      "digital_gastos_var": 0
+    },
+    "2026-04-20": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 16795.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
       "digital_gastos_var": 0
     }
   },

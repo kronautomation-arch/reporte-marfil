@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-19T14:42:52.025469-05:00",
+  "updated_at": "2026-04-20T09:53:28.106242-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 153,
-      "monto": 22336000,
-      "tasa": 0.2056,
+      "ordenes": 154,
+      "monto": 22595800,
+      "tasa": 0.2067,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 33,
-          "monto": 6025500.0
+          "ordenes": 34,
+          "monto": 6285300.0
         },
         {
           "canal": "web",
@@ -350,8 +350,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 203,
-      "transactions_completed": 199,
+      "transactions_total": 202,
+      "transactions_completed": 198,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 9493600,
@@ -466,7 +466,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 22522450,
+      "gasto": 22675023,
       "purchases": 602
     },
     {
@@ -475,7 +475,7 @@
       "purchases": 24
     }
   ],
-  "ads_gasto_total": 33407644,
+  "ads_gasto_total": 33560217,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4052,7 +4052,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 379700.0,
       "envia_ordenes_raw": 3,
-      "meta_gasto": 186782.0,
+      "meta_gasto": 186922.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4061,15 +4061,48 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 1110000.0,
+      "pos_caracoli_unidades": 8,
       "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_ventas": 450000.0,
+      "pos_titan_plaza_unidades": 5,
+      "pos_titan_plaza_gastos": 100000.0,
+      "pos_fundadores_ventas": 280000.0,
+      "pos_fundadores_unidades": 2,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-04-19": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 140000.0,
+      "pos_caracoli_unidades": 1,
+      "pos_caracoli_gastos": 80000.0,
+      "pos_titan_plaza_ventas": 450000.0,
+      "pos_titan_plaza_unidades": 6,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
-      "pos_fundadores_gastos": 0,
+      "pos_fundadores_gastos": 80000.0,
       "digital_gastos_var": 0
     }
   },

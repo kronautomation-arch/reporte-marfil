@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-23T11:28:31.495904-05:00",
+  "updated_at": "2026-04-23T12:14:29.330603-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.041283110885290346,
+    "pct_devoluciones": 0.04117090625557211,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 4086900,
     "ordenes_ytd": 29,
-    "tasa_por_monto": 0.0413,
-    "tasa_por_ordenes": 0.0433
+    "tasa_por_monto": 0.0412,
+    "tasa_por_ordenes": 0.0432
   },
   "shopify": {
-    "ventas_brutas_ytd": 92004400,
-    "ventas_netas_ytd": 84484095,
-    "descuentos_ytd": 7520305,
-    "unidades_ytd": 736,
-    "ordenes_ytd": 626,
+    "ventas_brutas_ytd": 92274200,
+    "ventas_netas_ytd": 84733895,
+    "descuentos_ytd": 7540305,
+    "unidades_ytd": 738,
+    "ordenes_ytd": 628,
     "cash_flow": {
-      "cod_neto": 57636685,
-      "cod_bruto": 62251600,
-      "cod_ordenes": 447,
+      "cod_neto": 57886485,
+      "cod_bruto": 62521400,
+      "cod_ordenes": 449,
       "prepago_neto": 26847410,
       "prepago_bruto": 29752800,
       "prepago_ordenes": 179,
-      "cod_pct": 0.6822,
-      "prepago_pct": 0.3178
+      "cod_pct": 0.6832,
+      "prepago_pct": 0.3168
     },
     "canceladas": {
       "ordenes": 23,
@@ -39,7 +39,7 @@
     "no_despachadas": {
       "ordenes": 158,
       "monto": 22995500,
-      "tasa": 0.2015,
+      "tasa": 0.201,
       "por_canal": [
         {
           "canal": "5690175",
@@ -61,14 +61,14 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 461,
-        "ventas": 55273900.0,
+        "unidades": 462,
+        "ventas": 55393800.0,
         "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS AZUL ROJO",
-        "unidades": 90,
-        "ventas": 13491000.0,
+        "unidades": 91,
+        "ventas": 13640900.0,
         "vendor": "MM"
       },
       {
@@ -153,14 +153,14 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 461,
-        "ventas": 55273900.0,
+        "unidades": 462,
+        "ventas": 55393800.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
         "sku": "VENUS AZUL-ROJO-1",
-        "unidades": 90,
-        "ventas": 13491000.0,
+        "unidades": 91,
+        "ventas": 13640900.0,
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 379,
-        "ventas_brutas": 56974100.0
+        "ordenes": 381,
+        "ventas_brutas": 57243900.0
       },
       {
         "canal": "5690175",
@@ -292,8 +292,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 140,
-        "monto": 6231150.0
+        "usos": 141,
+        "monto": 6251150.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -471,16 +471,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 23528566,
+      "gasto": 23541648,
       "purchases": 634
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 11626550,
+      "gasto": 11636388,
       "purchases": 24
     }
   ],
-  "ads_gasto_total": 35155116,
+  "ads_gasto_total": 35178036,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4189,7 +4189,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 1928500.0,
       "envia_ordenes_raw": 15,
-      "meta_gasto": 168459.0,
+      "meta_gasto": 168510.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4210,19 +4210,19 @@
       "digital_gastos_var": 0
     },
     "2026-04-23": {
-      "envia_ventas": 1516800.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 12,
-      "envia_costo_envio": 119790.0,
-      "digital_ventas_netas": 1386800.0,
-      "digital_descuentos": 130000.0,
-      "digital_cod_neto": 977100.0,
+      "envia_ventas": 1786600.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 14,
+      "envia_costo_envio": 138470.0,
+      "digital_ventas_netas": 1636600.0,
+      "digital_descuentos": 150000.0,
+      "digital_cod_neto": 1226900.0,
       "digital_prepago_neto": 409700.0,
-      "digital_cod_ordenes": 7,
+      "digital_cod_ordenes": 9,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 1796600.0,
-      "envia_ordenes_raw": 10,
-      "meta_gasto": 111149.0,
+      "envia_ventas_raw": 2066400.0,
+      "envia_ordenes_raw": 12,
+      "meta_gasto": 120936.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

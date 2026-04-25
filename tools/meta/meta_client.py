@@ -117,7 +117,7 @@ class MetaAdsClient:
             "time_range": f'{{"since":"{fecha_inicio.isoformat()}","until":"{fecha_fin.isoformat()}"}}',
             "time_increment": 1,
             "level": "account",
-            "limit": 100,
+            "limit": 400,  # cubre un año completo (365 días) con margen
         }
 
         data = self._get(f"{account_id}/insights", params)

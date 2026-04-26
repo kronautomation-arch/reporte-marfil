@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25T14:45:43.551922-05:00",
+  "updated_at": "2026-04-26T09:05:32.762101-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 199,
-      "transactions_completed": 195,
+      "transactions_total": 198,
+      "transactions_completed": 194,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 9793400,
@@ -367,12 +367,12 @@
     "unidades_ytd": 66,
     "ordenes_ytd": 66,
     "entregadas": {
-      "ordenes": 64,
-      "monto": 9493600
+      "ordenes": 65,
+      "monto": 9643500
     },
     "en_transito": {
-      "ordenes": 2,
-      "monto": 299800
+      "ordenes": 1,
+      "monto": 149900
     },
     "canceladas": {
       "ordenes": 2,
@@ -471,7 +471,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 24097986,
+      "gasto": 24105617,
       "purchases": 638
     },
     {
@@ -480,7 +480,7 @@
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 36246712,
+  "ads_gasto_total": 36254343,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26T09:37:58.765661-05:00",
+  "updated_at": "2026-04-26T10:41:13.746924-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 158,
-      "monto": 22965500,
-      "tasa": 0.1975,
+      "ordenes": 159,
+      "monto": 23105400,
+      "tasa": 0.1985,
       "por_canal": [
         {
           "canal": "5690175",
@@ -53,8 +53,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 44,
-          "monto": 5905200.0
+          "ordenes": 45,
+          "monto": 6045100.0
         }
       ]
     },

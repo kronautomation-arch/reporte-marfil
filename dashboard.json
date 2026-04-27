@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26T14:49:19.996437-05:00",
+  "updated_at": "2026-04-27T10:08:57.052976-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 159,
-      "monto": 23105400,
-      "tasa": 0.1985,
+      "ordenes": 161,
+      "monto": 23734900,
+      "tasa": 0.2005,
       "por_canal": [
         {
           "canal": "5690175",
@@ -47,14 +47,14 @@
           "monto": 10515200.0
         },
         {
+          "canal": "web",
+          "ordenes": 47,
+          "monto": 6674600.0
+        },
+        {
           "canal": "shopify_draft_order",
           "ordenes": 37,
           "monto": 6545100.0
-        },
-        {
-          "canal": "web",
-          "ordenes": 45,
-          "monto": 6045100.0
         }
       ]
     },
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 198,
-      "transactions_completed": 194,
+      "transactions_total": 197,
+      "transactions_completed": 193,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 9793400,
@@ -438,15 +438,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 5836.12,
-    "ventas_netas_ytd": 2745.29,
+    "ventas_brutas_ytd": 5934.24,
+    "ventas_netas_ytd": 2843.41,
     "comisiones_ytd": 1174.81,
     "ads_spend_ytd": 1407.22,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.2013,
-    "ticket_promedio": 48.23,
-    "unidades_ytd": 127,
-    "ordenes_ytd": 121,
+    "pct_comision": 0.198,
+    "ticket_promedio": 48.25,
+    "unidades_ytd": 129,
+    "ordenes_ytd": 123,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -462,8 +462,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 127,
-        "ventas": 5836.119999999998,
+        "unidades": 129,
+        "ventas": 5934.239999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -4297,15 +4297,48 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
-      "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
+      "pos_caracoli_ventas": 150000.0,
+      "pos_caracoli_unidades": 1,
+      "pos_caracoli_gastos": 70000.0,
+      "pos_titan_plaza_ventas": 600000.0,
+      "pos_titan_plaza_unidades": 8,
+      "pos_titan_plaza_gastos": 100000.0,
+      "pos_fundadores_ventas": 140000.0,
+      "pos_fundadores_unidades": 1,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-04-26": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 98.12,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
+      "pos_caracoli_ventas": 300000.0,
+      "pos_caracoli_unidades": 2,
+      "pos_caracoli_gastos": 80000.0,
+      "pos_titan_plaza_ventas": 1500000.0,
+      "pos_titan_plaza_unidades": 20,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
-      "pos_fundadores_gastos": 0,
+      "pos_fundadores_gastos": 80000.0,
       "digital_gastos_var": 0
     }
   },

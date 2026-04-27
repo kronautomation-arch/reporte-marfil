@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-27T15:09:35.414877-05:00",
+  "updated_at": "2026-04-27T15:50:18.251423-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04039823931723625,
+    "pct_devoluciones": 0.04035041644781271,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 4086900,
     "ordenes_ytd": 29,
     "tasa_por_monto": 0.0404,
-    "tasa_por_ordenes": 0.042
+    "tasa_por_ordenes": 0.0419
   },
   "shopify": {
-    "ventas_brutas_ytd": 95192000,
-    "ventas_netas_ytd": 87406745,
+    "ventas_brutas_ytd": 95311900,
+    "ventas_netas_ytd": 87526645,
     "descuentos_ytd": 7785255,
-    "unidades_ytd": 760,
-    "ordenes_ytd": 645,
+    "unidades_ytd": 761,
+    "ordenes_ytd": 646,
     "cash_flow": {
-      "cod_neto": 59055485,
-      "cod_bruto": 63810400,
-      "cod_ordenes": 458,
+      "cod_neto": 59175385,
+      "cod_bruto": 63930300,
+      "cod_ordenes": 459,
       "prepago_neto": 28351260,
       "prepago_bruto": 31381600,
       "prepago_ordenes": 187,
-      "cod_pct": 0.6756,
-      "prepago_pct": 0.3244
+      "cod_pct": 0.6761,
+      "prepago_pct": 0.3239
     },
     "canceladas": {
       "ordenes": 24,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 158,
-      "monto": 22825600,
-      "tasa": 0.1968,
+      "ordenes": 157,
+      "monto": 22705700,
+      "tasa": 0.1955,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 38,
-          "monto": 6645000.0
+          "ordenes": 37,
+          "monto": 6525100.0
         },
         {
           "canal": "web",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 472,
-        "ventas": 56592800.0,
+        "unidades": 473,
+        "ventas": 56712700.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 472,
-        "ventas": 56592800.0,
+        "unidades": 473,
+        "ventas": 56712700.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 391,
-        "ventas_brutas": 58722800.0
+        "ordenes": 392,
+        "ventas_brutas": 58842700.0
       },
       {
         "canal": "5690175",
@@ -471,16 +471,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 24176250,
+      "gasto": 24192273,
       "purchases": 638
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 12196215,
+      "gasto": 12207778,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 36372465,
+  "ads_gasto_total": 36400051,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4090,7 +4090,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 0,
+      "meta_gasto": 288861.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4123,7 +4123,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1728700.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 238287.0,
+      "meta_gasto": 498257.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4156,7 +4156,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 559600.0,
       "envia_ordenes_raw": 4,
-      "meta_gasto": 223461.0,
+      "meta_gasto": 442764.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -4189,7 +4189,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 1788600.0,
       "envia_ordenes_raw": 14,
-      "meta_gasto": 168791.0,
+      "meta_gasto": 500554.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4222,7 +4222,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 2476100.0,
       "envia_ordenes_raw": 14,
-      "meta_gasto": 281345.0,
+      "meta_gasto": 544427.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4255,7 +4255,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 1089200.0,
       "envia_ordenes_raw": 8,
-      "meta_gasto": 0,
+      "meta_gasto": 515650.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -4288,7 +4288,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 279800.0,
       "envia_ordenes_raw": 4,
-      "meta_gasto": 0,
+      "meta_gasto": 241900.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4321,7 +4321,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 0,
+      "meta_gasto": 0.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4342,19 +4342,19 @@
       "digital_gastos_var": 0
     },
     "2026-04-27": {
-      "envia_ventas": 909300.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 7,
-      "envia_costo_envio": 51320.0,
-      "digital_ventas_netas": 909300.0,
+      "envia_ventas": 1029200.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 8,
+      "envia_costo_envio": 63800.0,
+      "digital_ventas_netas": 1029200.0,
       "digital_descuentos": 0.0,
-      "digital_cod_neto": 0.0,
+      "digital_cod_neto": 119900.0,
       "digital_prepago_neto": 909300.0,
-      "digital_cod_ordenes": 0,
+      "digital_cod_ordenes": 1,
       "digital_prepago_ordenes": 4,
-      "envia_ventas_raw": 0.0,
-      "envia_ordenes_raw": 4,
-      "meta_gasto": 0,
+      "envia_ventas_raw": 119900.0,
+      "envia_ordenes_raw": 5,
+      "meta_gasto": 145708.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

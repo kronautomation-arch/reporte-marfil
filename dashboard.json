@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27T10:30:06.881211-05:00",
+  "updated_at": "2026-04-27T11:26:28.072057-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -471,7 +471,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 24105617,
+      "gasto": 24105671,
       "purchases": 638
     },
     {
@@ -480,7 +480,7 @@
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 36254343,
+  "ads_gasto_total": 36254397,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",

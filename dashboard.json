@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-04-29T12:22:35.161461-05:00",
+  "updated_at": "2026-04-29T15:11:12.930077-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04269222156307335,
+    "pct_devoluciones": 0.04262945901866038,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 4346700,
     "ordenes_ytd": 30,
-    "tasa_por_monto": 0.0427,
+    "tasa_por_monto": 0.0426,
     "tasa_por_ordenes": 0.0429
   },
   "shopify": {
-    "ventas_brutas_ytd": 96091300,
-    "ventas_netas_ytd": 88241095,
+    "ventas_brutas_ytd": 96241200,
+    "ventas_netas_ytd": 88390995,
     "descuentos_ytd": 7850205,
-    "unidades_ytd": 767,
-    "ordenes_ytd": 652,
+    "unidades_ytd": 768,
+    "ordenes_ytd": 653,
     "cash_flow": {
-      "cod_neto": 59769935,
-      "cod_bruto": 64589800,
-      "cod_ordenes": 464,
+      "cod_neto": 59919835,
+      "cod_bruto": 64739700,
+      "cod_ordenes": 465,
       "prepago_neto": 28471160,
       "prepago_bruto": 31501500,
       "prepago_ordenes": 188,
-      "cod_pct": 0.6773,
-      "prepago_pct": 0.3227
+      "cod_pct": 0.6779,
+      "prepago_pct": 0.3221
     },
     "canceladas": {
       "ordenes": 26,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 160,
-      "monto": 23265300,
-      "tasa": 0.197,
+      "ordenes": 162,
+      "monto": 23645000,
+      "tasa": 0.1988,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 40,
-          "monto": 7084700.0
+          "ordenes": 42,
+          "monto": 7464400.0
         },
         {
           "canal": "web",
@@ -67,8 +67,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS AZUL ROJO",
-        "unidades": 95,
-        "ventas": 14240500.0,
+        "unidades": 96,
+        "ventas": 14390400.0,
         "vendor": "MM"
       },
       {
@@ -159,8 +159,8 @@
       },
       {
         "sku": "VENUS AZUL-ROJO-1",
-        "unidades": 95,
-        "ventas": 14240500.0,
+        "unidades": 96,
+        "ventas": 14390400.0,
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 396,
-        "ventas_brutas": 59232400.0
+        "ordenes": 397,
+        "ventas_brutas": 59382300.0
       },
       {
         "canal": "5690175",
@@ -4414,18 +4414,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-29": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
-      "digital_cod_ordenes": 0,
+      "envia_ventas": 149900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
+      "envia_costo_envio": 31300.0,
+      "digital_ventas_netas": 149900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 149900.0,
+      "digital_prepago_neto": 0.0,
+      "digital_cod_ordenes": 1,
       "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
+      "envia_ventas_raw": 149900.0,
+      "envia_ordenes_raw": 1,
       "meta_gasto": 0.0,
       "meli_ventas_brutas": 139900.0,
       "meli_ventas_netas": 109822.0,

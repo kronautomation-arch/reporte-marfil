@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T10:15:56.919793-05:00",
+  "updated_at": "2026-04-29T10:52:48.334671-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -367,12 +367,12 @@
     "unidades_ytd": 70,
     "ordenes_ytd": 70,
     "entregadas": {
-      "ordenes": 66,
-      "monto": 9793400
+      "ordenes": 67,
+      "monto": 9943300
     },
     "en_transito": {
-      "ordenes": 4,
-      "monto": 589600
+      "ordenes": 3,
+      "monto": 439700
     },
     "canceladas": {
       "ordenes": 2,

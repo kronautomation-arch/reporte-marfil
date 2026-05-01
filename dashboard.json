@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-01T09:48:22.220349-05:00",
+  "updated_at": "2026-05-01T10:57:27.420656-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -439,23 +439,23 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 6122.86,
-    "ventas_netas_ytd": 2987.67,
-    "comisiones_ytd": 1219.17,
+    "ventas_netas_ytd": 2975.49,
+    "comisiones_ytd": 1231.35,
     "ads_spend_ytd": 1407.22,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.1991,
+    "pct_comision": 0.2011,
     "ticket_promedio": 48.21,
     "unidades_ytd": 133,
     "ordenes_ytd": 127,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4878.9,
-      "shipping_income": 115.62,
-      "tax_collected": 253.7,
-      "commission": 732.39,
-      "fba_fees": 467.26,
-      "other_fees": 19.52,
+      "ventas_principal": 4923.8,
+      "shipping_income": 116.71,
+      "tax_collected": 256.84,
+      "commission": 739.13,
+      "fba_fees": 471.61,
+      "other_fees": 20.61,
       "refunds": 508.8,
       "ads_spend": 1407.22
     },
@@ -477,16 +477,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 25025888,
+      "gasto": 25060961,
       "purchases": 642
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 12869620,
+      "gasto": 12887227,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 37895508,
+  "ads_gasto_total": 37948188,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4459,7 +4459,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 4,
-      "meta_gasto": 749852.0,
+      "meta_gasto": 750765.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -4492,7 +4492,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 191186.0,
+      "meta_gasto": 242953.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

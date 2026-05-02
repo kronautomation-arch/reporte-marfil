@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T11:40:12.899927-05:00",
+  "updated_at": "2026-05-02T14:55:04.793981-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -10,23 +10,23 @@
     "monto_ytd": 4206800,
     "ordenes_ytd": 30,
     "tasa_por_monto": 0.0408,
-    "tasa_por_ordenes": 0.0419
+    "tasa_por_ordenes": 0.0418
   },
   "shopify": {
-    "ventas_brutas_ytd": 98849200,
-    "ventas_netas_ytd": 90714095,
+    "ventas_brutas_ytd": 99007000,
+    "ventas_netas_ytd": 90871895,
     "descuentos_ytd": 8135105,
-    "unidades_ytd": 788,
-    "ordenes_ytd": 669,
+    "unidades_ytd": 790,
+    "ordenes_ytd": 670,
     "cash_flow": {
-      "cod_neto": 61263735,
-      "cod_bruto": 66318500,
-      "cod_ordenes": 475,
+      "cod_neto": 61421535,
+      "cod_bruto": 66476300,
+      "cod_ordenes": 476,
       "prepago_neto": 29450360,
       "prepago_bruto": 32530700,
       "prepago_ordenes": 194,
-      "cod_pct": 0.6753,
-      "prepago_pct": 0.3247
+      "cod_pct": 0.6759,
+      "prepago_pct": 0.3241
     },
     "canceladas": {
       "ordenes": 27,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 161,
-      "monto": 23283200,
-      "tasa": 0.194,
+      "ordenes": 160,
+      "monto": 23125400,
+      "tasa": 0.1928,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 77,
-          "monto": 10433200.0
+          "ordenes": 76,
+          "monto": 10275400.0
         },
         {
           "canal": "shopify_draft_order",
@@ -85,8 +85,8 @@
       },
       {
         "nombre": "ENVIO PRIORITARIO",
-        "unidades": 21,
-        "ventas": 165900.0,
+        "unidades": 22,
+        "ventas": 173800.0,
         "vendor": ""
       },
       {
@@ -115,8 +115,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 9,
-        "ventas": 1349100.0,
+        "unidades": 10,
+        "ventas": 1499000.0,
         "vendor": "MM"
       },
       {
@@ -177,8 +177,8 @@
       },
       {
         "sku": "(sin SKU)",
-        "unidades": 21,
-        "ventas": 165900.0,
+        "unidades": 22,
+        "ventas": 173800.0,
         "title": "ENVIO PRIORITARIO"
       },
       {
@@ -207,8 +207,8 @@
       },
       {
         "sku": "VENUS CAFÉ-1",
-        "unidades": 9,
-        "ventas": 1349100.0,
+        "unidades": 10,
+        "ventas": 1499000.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
@@ -280,8 +280,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 159,
-        "ventas_brutas": 22630100.0
+        "ordenes": 160,
+        "ventas_brutas": 22787900.0
       },
       {
         "canal": "web",
@@ -482,11 +482,11 @@
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 13148219,
+      "gasto": 13216852,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 38254305,
+  "ads_gasto_total": 38322938,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4492,7 +4492,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 393407.0,
+      "meta_gasto": 393580.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4513,19 +4513,19 @@
       "digital_gastos_var": 0
     },
     "2026-05-02": {
-      "envia_ventas": 1339000.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 10,
-      "envia_costo_envio": 125620.0,
-      "digital_ventas_netas": 1249000.0,
+      "envia_ventas": 1496800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
+      "envia_costo_envio": 139500.0,
+      "digital_ventas_netas": 1406800.0,
       "digital_descuentos": 90000.0,
-      "digital_cod_neto": 629500.0,
+      "digital_cod_neto": 787300.0,
       "digital_prepago_neto": 619500.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 6,
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 549600.0,
-      "envia_ordenes_raw": 9,
-      "meta_gasto": 154326.0,
+      "envia_ordenes_raw": 10,
+      "meta_gasto": 222786.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

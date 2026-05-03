@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T10:46:09.297227-05:00",
+  "updated_at": "2026-05-03T11:41:28.682091-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 160,
-      "monto": 23125400,
-      "tasa": 0.1928,
+      "ordenes": 161,
+      "monto": 23245300,
+      "tasa": 0.1937,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 76,
-          "monto": 10275400.0
+          "ordenes": 77,
+          "monto": 10395300.0
         },
         {
           "canal": "shopify_draft_order",
@@ -439,22 +439,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 6220.18,
-    "ventas_netas_ytd": 2689.62,
-    "comisiones_ytd": 1242.44,
+    "ventas_netas_ytd": 2678.53,
+    "comisiones_ytd": 1253.53,
     "ads_spend_ytd": 1779.32,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.1997,
+    "pct_comision": 0.2015,
     "ticket_promedio": 48.22,
     "unidades_ytd": 135,
     "ordenes_ytd": 129,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4968.7,
+      "ventas_principal": 5013.6,
       "shipping_income": 116.71,
-      "tax_collected": 260.32,
-      "commission": 745.87,
-      "fba_fees": 475.96,
+      "tax_collected": 264.08,
+      "commission": 752.61,
+      "fba_fees": 480.31,
       "other_fees": 20.61,
       "refunds": 508.8,
       "ads_spend": 1779.32

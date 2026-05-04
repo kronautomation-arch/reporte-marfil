@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T12:26:17.617615-05:00",
+  "updated_at": "2026-05-04T15:17:21.564756-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 160,
-      "monto": 23035500,
-      "tasa": 0.1918,
+      "ordenes": 161,
+      "monto": 23175400,
+      "tasa": 0.1928,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 41,
-          "monto": 7094700.0
+          "ordenes": 42,
+          "monto": 7234600.0
         },
         {
           "canal": "web",
@@ -438,15 +438,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 6220.18,
-    "ventas_netas_ytd": 2645.27,
+    "ventas_brutas_ytd": 6250.08,
+    "ventas_netas_ytd": 2675.17,
     "comisiones_ytd": 1286.79,
     "ads_spend_ytd": 1779.32,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.2069,
-    "ticket_promedio": 48.22,
-    "unidades_ytd": 135,
-    "ordenes_ytd": 129,
+    "pct_comision": 0.2059,
+    "ticket_promedio": 48.08,
+    "unidades_ytd": 136,
+    "ordenes_ytd": 130,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -462,8 +462,8 @@
     "top_productos": [
       {
         "nombre": "null",
-        "unidades": 135,
-        "ventas": 6220.1799999999985,
+        "unidades": 136,
+        "ventas": 6250.079999999998,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -471,16 +471,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 25244300,
+      "gasto": 25292111,
       "purchases": 642
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 13360359,
+      "gasto": 13429588,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 38604659,
+  "ads_gasto_total": 38721699,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4492,9 +4492,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 29.9,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 450000.0,
       "pos_caracoli_unidades": 6,
       "pos_caracoli_gastos": 89000.0,
@@ -4585,7 +4585,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 259800.0,
       "envia_ordenes_raw": 4,
-      "meta_gasto": 213856.0,
+      "meta_gasto": 330896.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

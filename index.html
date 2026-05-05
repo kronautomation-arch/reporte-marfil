@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>MARFIL — Reporte Ejecutivo</title>
 
+    <!-- Kronautomation auth -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+    <script>requireAuth('marfil');</script>
+
     <!-- PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#FFFFFF">
@@ -1516,6 +1521,7 @@ function hideSplash() {
     await fetchTRM();              // tasa USD->COP antes del primer render
     await loadData();              // pinta el dashboard
     hideSplash();                  // quita el splash
+    if (typeof mountLogoutButton === 'function') mountLogoutButton();
     setInterval(loadData, 30000);  // refresco silencioso cada 30s (sin splash)
     setInterval(fetchTRM, 6 * 60 * 60 * 1000); // TRM cada 6 horas
 })();

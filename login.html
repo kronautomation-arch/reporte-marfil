@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080c18" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Acceso · Kronautomation</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237c3aed'/%3E%3Ctext x='50' y='68' font-family='-apple-system,sans-serif' font-size='62' font-weight='900' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="auth.js"></script>
+  <style>
+    :root {
+      --bg: #080c18;
+      --glass: rgba(255,255,255,0.04);
+      --glass2: rgba(255,255,255,0.07);
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.14);
+      --p1: #7c3aed; --p2: #a855f7;
+      --b1: #1d4ed8; --b2: #60a5fa;
+      --r1: #be123c; --r2: #fb7185;
+      --g2: #34d399;
+      --txt: #f1f5f9; --txt2: #94a3b8; --txt3: #475569;
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+    body {
+      background: var(--bg);
+      color: var(--txt);
+      font-family: -apple-system,'SF Pro Display',BlinkMacSystemFont,'Segoe UI',sans-serif;
+      min-height: 100dvh;
+      display:flex; align-items:center; justify-content:center;
+      padding: 20px;
+      overflow:hidden;
+      position:relative;
+    }
+    body::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(124,58,237,.22) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 100%, rgba(29,78,216,.18) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(168,85,247,.10) 0%, transparent 60%);
+      z-index:0;
+    }
+    .orb {
+      position:absolute; border-radius:50%; pointer-events:none; z-index:0;
+      filter:blur(48px);
+    }
+    .orb.a { width:340px; height:340px; background:rgba(124,58,237,.18); top:-120px; right:-100px; }
+    .orb.b { width:240px; height:240px; background:rgba(29,78,216,.16); bottom:-80px; left:-80px; }
+
+    .card {
+      position:relative; z-index:1;
+      width:100%; max-width:420px;
+      background: var(--glass);
+      border:1px solid var(--border2);
+      border-radius:24px;
+      padding:36px 32px 30px;
+      backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px);
+      box-shadow: 0 24px 60px rgba(0,0,0,.5);
+    }
+    .brand {
+      display:flex; align-items:center; gap:10px; justify-content:center;
+      margin-bottom:30px;
+    }
+    .brand-mark {
+      width:38px; height:38px; border-radius:11px;
+      background: linear-gradient(135deg, var(--p1), var(--p2));
+      display:flex; align-items:center; justify-content:center;
+      font-size:18px; font-weight:900; color:#fff;
+      box-shadow:0 6px 20px rgba(124,58,237,.5);
+    }
+    .brand-txt { font-size:15px; font-weight:700; letter-spacing:.3px; color:var(--txt); }
+
+    h1 {
+      font-size:24px; font-weight:800; letter-spacing:-.6px;
+      text-align:center; margin-bottom:6px;
+    }
+    .sub {
+      font-size:13px; color:var(--txt2); text-align:center;
+      margin-bottom:26px;
+    }
+    .project-pill {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:5px 12px; border-radius:99px;
+      background: rgba(124,58,237,.14);
+      border:1px solid rgba(124,58,237,.3);
+      font-size:11px; font-weight:700; color:var(--p2);
+      letter-spacing:.4px; text-transform:uppercase;
+      margin-bottom:8px;
+    }
+    .project-row {
+      display:flex; justify-content:center; margin-bottom:20px;
+    }
+
+    .field {
+      margin-bottom:14px;
+    }
+    .field label {
+      display:block; font-size:11px; font-weight:700;
+      color:var(--txt2); margin-bottom:7px;
+      letter-spacing:.4px; text-transform:uppercase;
+    }
+    .field input {
+      width:100%; padding:13px 14px;
+      border-radius:11px;
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--border);
+      color:var(--txt); font-size:14px; font-weight:500;
+      font-family:inherit;
+      transition: border-color .15s, background .15s;
+    }
+    .field input::placeholder { color:var(--txt3); }
+    .field input:focus {
+      outline:none;
+      background:rgba(255,255,255,.06);
+      border-color:var(--p1);
+      box-shadow:0 0 0 3px rgba(124,58,237,.15);
+    }
+
+    .btn {
+      width:100%; padding:14px; margin-top:6px;
+      border-radius:11px; border:none; cursor:pointer;
+      background: linear-gradient(135deg, var(--p1), var(--p2));
+      color:#fff; font-size:14px; font-weight:700;
+      letter-spacing:.2px;
+      font-family:inherit;
+      transition: all .15s;
+      box-shadow:0 8px 22px rgba(124,58,237,.35);
+    }
+    .btn:hover { transform:translateY(-1px); box-shadow:0 12px 28px rgba(124,58,237,.45); }
+    .btn:active { transform:scale(.98); }
+    .btn:disabled {
+      opacity:.6; cursor:not-allowed; transform:none;
+    }
+
+    .err {
+      margin-top:14px;
+      padding:11px 14px; border-radius:10px;
+      background:rgba(190,18,60,.12);
+      border:1px solid rgba(190,18,60,.28);
+      color:var(--r2); font-size:12px; font-weight:600;
+      display:none;
+    }
+    .err.show { display:block; animation: shake .35s; }
+    @keyframes shake {
+      0%,100% { transform:translateX(0); }
+      25% { transform:translateX(-4px); }
+      75% { transform:translateX(4px); }
+    }
+
+    .foot {
+      margin-top:24px; padding-top:20px;
+      border-top:1px solid var(--border);
+      text-align:center;
+    }
+    .foot a {
+      font-size:11px; color:var(--txt3); text-decoration:none;
+      transition: color .15s;
+    }
+    .foot a:hover { color:var(--txt2); }
+    .foot-link { display:block; margin-bottom:8px; }
+
+    .spinner {
+      display:inline-block; width:14px; height:14px;
+      border:2px solid rgba(255,255,255,.3);
+      border-top-color:#fff; border-radius:50%;
+      animation: spin .7s linear infinite; vertical-align:-2px;
+      margin-right:6px;
+    }
+    @keyframes spin { to { transform:rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+
+  <div class="card">
+    <div class="brand">
+      <div class="brand-mark">K</div>
+      <div class="brand-txt">Kronautomation</div>
+    </div>
+
+    <div class="project-row">
+      <span class="project-pill" id="proj-pill">● Cargando…</span>
+    </div>
+
+    <h1>Bienvenido</h1>
+    <div class="sub">Ingresa con las credenciales de tu cuenta</div>
+
+    <form id="login-form">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="email"
+               placeholder="tu@correo.com" required />
+      </div>
+      <div class="field">
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" autocomplete="current-password"
+               placeholder="••••••••" required />
+      </div>
+      <button class="btn" type="submit" id="submit-btn">Entrar</button>
+      <div class="err" id="err"></div>
+    </form>
+
+    <div class="foot">
+      <a class="foot-link" href="https://kronautomation.co">← Volver al inicio</a>
+      <a href="mailto:kronautomation@gmail.com">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+
+<script>
+  // Detectar proyecto desde query (?p=bareno) o desde subdominio
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId =
+    urlParams.get('p') ||
+    (window.location.hostname.split('.').length >= 3
+      ? window.location.hostname.split('.')[0]
+      : null);
+
+  // Setear pill con nombre amigable
+  const PROJECT_LABELS = {
+    bareno:   '🏥 Dr. John Bareño',
+    marfil:   '👓 Marfil',
+    research: '🧪 Research Lab',
+    seo:      '🔍 SEO Toolkit',
+    cerebro:  '🧠 Cerebro',
+    metric:   '📱 Metric',
+  };
+  const pill = document.getElementById('proj-pill');
+  if (projectId && PROJECT_LABELS[projectId]) {
+    pill.textContent = PROJECT_LABELS[projectId];
+  } else if (projectId) {
+    pill.textContent = '● ' + projectId;
+  } else {
+    pill.style.display = 'none';
+  }
+
+  // Manejar errores pasados por query (?e=no_access)
+  const errBox = document.getElementById('err');
+  const errReason = urlParams.get('e');
+  if (errReason === 'no_access') {
+    errBox.textContent = 'Tu cuenta no tiene acceso a este proyecto.';
+    errBox.classList.add('show');
+  }
+
+  // Submit
+  const form = document.getElementById('login-form');
+  const submitBtn = document.getElementById('submit-btn');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errBox.classList.remove('show');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner"></span>Validando…';
+
+    const email = document.getElementById('email').value.trim();
+    const pass  = document.getElementById('password').value;
+
+    try {
+      await window.signIn(email, pass);
+      // Login OK → recargar a index.html (que ahora pasará requireAuth)
+      window.location.replace('index.html');
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Entrar';
+      const msg = (err.message || '').toLowerCase();
+      if (msg.includes('invalid') || msg.includes('credentials')) {
+        errBox.textContent = 'Email o contraseña incorrectos.';
+      } else {
+        errBox.textContent = 'Error al iniciar sesión. Intenta de nuevo.';
+      }
+      errBox.classList.add('show');
+    }
+  });
+</script>
+</body>
+</html>

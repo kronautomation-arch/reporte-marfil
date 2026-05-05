@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05T11:23:55.900373-05:00",
+  "updated_at": "2026-05-05T15:09:31.902031-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -438,15 +438,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 6250.08,
-    "ventas_netas_ytd": 2675.17,
+    "ventas_brutas_ytd": 6345.8,
+    "ventas_netas_ytd": 2770.89,
     "comisiones_ytd": 1286.79,
     "ads_spend_ytd": 1779.32,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.2059,
-    "ticket_promedio": 48.08,
-    "unidades_ytd": 136,
-    "ordenes_ytd": 130,
+    "pct_comision": 0.2028,
+    "ticket_promedio": 48.44,
+    "unidades_ytd": 138,
+    "ordenes_ytd": 131,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -462,14 +462,14 @@
     "top_productos": [
       {
         "nombre": "null",
-        "unidades": 136,
-        "ventas": 6250.079999999998,
+        "unidades": 138,
+        "ventas": 6345.799999999998,
         "asin": "B09JN7BXLZ"
       },
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 136,
-        "ventas": 6250.079999999998,
+        "unidades": 138,
+        "ventas": 6345.799999999998,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -477,7 +477,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 25405466,
+      "gasto": 25406072,
       "purchases": 642
     },
     {
@@ -486,7 +486,7 @@
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 38840176,
+  "ads_gasto_total": 38840782,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4591,15 +4591,15 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 509600.0,
       "envia_ordenes_raw": 8,
-      "meta_gasto": 398816.0,
+      "meta_gasto": 398824.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 95.72,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -4624,7 +4624,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 50557.0,
+      "meta_gasto": 51155.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

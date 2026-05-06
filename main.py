@@ -38,7 +38,8 @@ def _load_seo_section(logger):
     Path is relative: ../seo-system/output/marfil/reports/seo_dashboard.json
     Returns None if not found (graceful degradation).
     """
-    seo_path = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil" / "reports" / "seo_dashboard.json"
+    seo_root = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil"
+    seo_path = seo_root / "reports" / "seo_dashboard.json"
     if not seo_path.exists():
         logger.warning(f"SEO data not found at {seo_path} - skipping")
         return None
@@ -46,15 +47,16 @@ def _load_seo_section(logger):
         with open(seo_path, encoding="utf-8") as f:
             seo = json.load(f)
         # Also pull last audit for avg score
-        audit_path = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil" / "audits" / "latest_blog_audit.json"
+        audit_path = seo_root / "audits" / "latest_blog_audit.json"
         if audit_path.exists():
             with open(audit_path, encoding="utf-8") as f:
                 audit = json.load(f)
             valid = [a for a in audit.get("audits", []) if "seo_score" in a]
+            avg_score = round(sum(a["seo_score"] for a in valid) / max(len(valid), 1), 1)
             seo["audit_summary"] = {
                 "audited_at": audit.get("audited_at"),
                 "total_articles": len(valid),
-                "avg_score": round(sum(a["seo_score"] for a in valid) / max(len(valid), 1), 1),
+                "avg_score": avg_score,
                 "score_distribution": {
                     "90+":     sum(1 for a in valid if a["seo_score"] >= 90),
                     "80-89":   sum(1 for a in valid if 80 <= a["seo_score"] < 90),
@@ -68,7 +70,105 @@ def _load_seo_section(logger):
                     for a in sorted(valid, key=lambda x: x["seo_score"])[:5]
                 ],
             }
-        logger.info(f"SEO section loaded: {seo.get('summary',{}).get('opportunity_keywords', '?')} oportunidades")
+
+        # ─── Progress: count work done + score evolution ───────────────────────
+        rewrites_dir = seo_root / "auto_rewrites"
+        n_rewrites = len(list(rewrites_dir.glob("*.json"))) if rewrites_dir.exists() else 0
+
+        pub_log = seo_root / "reports" / "published_log.json"
+        n_published = 0
+        if pub_log.exists():
+            with open(pub_log, encoding="utf-8") as f:
+                n_published = len(json.load(f))
+
+        faq_log = seo_root / "reports" / "faq_injection_log.json"
+        n_faq = 0
+        if faq_log.exists():
+            with open(faq_log, encoding="utf-8") as f:
+                n_faq = json.load(f).get("updated", 0)
+
+        # Score evolution (full audits only, ignoring small test runs)
+        audits_dir = seo_root / "audits"
+        evolution = []
+        if audits_dir.exists():
+            for ap in sorted(audits_dir.glob("2026*_blog_audit.json")):
+                with open(ap, encoding="utf-8") as f:
+                    a_data = json.load(f)
+                a_valid = [x for x in a_data.get("audits", []) if "seo_score" in x]
+                if len(a_valid) >= 20:  # ignore test/partial audits
+                    a_avg = round(sum(x["seo_score"] for x in a_valid) / len(a_valid), 1)
+                    evolution.append({
+                        "audit": ap.stem,
+                        "audited_at": a_data.get("audited_at", ""),
+                        "score": a_avg,
+                        "articles": len(a_valid),
+                    })
+
+        starting_score = evolution[0]["score"] if evolution else avg_score
+        improvement_pct = round((avg_score - starting_score) / max(starting_score, 1) * 100, 1)
+
+        seo["progress"] = {
+            "starting_avg_score": starting_score,
+            "current_avg_score": avg_score,
+            "improvement_pct": improvement_pct,
+            "score_evolution": evolution,
+            "achievements": [
+                {"icon": "📊", "label": "Blogs auditados",                   "count": len(valid)},
+                {"icon": "✍️",  "label": "Blogs reescritos con DataForSEO",  "count": n_rewrites},
+                {"icon": "🆕", "label": "Blogs nuevos publicados",           "count": n_published},
+                {"icon": "❓", "label": "Blogs con FAQ schema (PAA real)",   "count": n_faq},
+                {"icon": "🎯", "label": "Blogs con score 70+",               "count": sum(1 for a in valid if a["seo_score"] >= 70)},
+                {"icon": "⭐", "label": "Blogs con score 80+",               "count": sum(1 for a in valid if a["seo_score"] >= 80)},
+            ],
+        }
+
+        # ─── Projections: traffic + revenue scenarios ──────────────────────────
+        opps = seo.get("top_opportunities", [])
+        rankings = seo.get("current_rankings", [])
+
+        # CTR by SERP position (Google avg)
+        CTR = {1: 0.30, 2: 0.15, 3: 0.10, 4: 0.07, 5: 0.05, 6: 0.04, 7: 0.03,
+               8: 0.025, 9: 0.02, 10: 0.018}
+
+        def ctr(pos): return CTR.get(pos, 0.005) if pos <= 10 else 0.005
+
+        current_clicks = round(sum(r.get("volume", 0) * ctr(r.get("position", 999)) for r in rankings))
+        opp_volume = sum(o.get("volume", 0) for o in opps)
+
+        TICKET_COP = 120_000
+        CONV_RATE  = 0.02
+
+        def scenario(name, target_pos, timeframe):
+            additional = round(opp_volume * ctr(target_pos))
+            total = current_clicks + additional
+            sales = round(total * CONV_RATE)
+            revenue = sales * TICKET_COP
+            return {
+                "name": name,
+                "target_position": target_pos,
+                "timeframe": timeframe,
+                "additional_clicks_per_month": additional,
+                "total_clicks_per_month": total,
+                "estimated_sales_per_month": sales,
+                "estimated_revenue_cop_per_month": revenue,
+            }
+
+        seo["projections"] = {
+            "current_estimated_clicks_per_month": current_clicks,
+            "opportunity_volume_per_month": opp_volume,
+            "assumptions": {
+                "ticket_promedio_cop": TICKET_COP,
+                "conversion_rate": CONV_RATE,
+                "ctr_table": "Google avg (pos 1=30%, pos 5=5%, pos 10=1.8%)",
+            },
+            "scenarios": [
+                scenario("Conservador", 10, "6 meses"),
+                scenario("Realista",     5, "6-12 meses"),
+                scenario("Optimista",    3, "12-18 meses"),
+            ],
+        }
+
+        logger.info(f"SEO section loaded: avg score {avg_score}/100, {len(opps)} oportunidades")
         return seo
     except Exception as e:
         logger.warning(f"Error loading SEO section: {e}")

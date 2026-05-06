@@ -5230,6 +5230,113 @@
           "handle": "lentes-de-sol-espejados-guia-colombia"
         }
       ]
+    },
+    "progress": {
+      "starting_avg_score": 60.7,
+      "current_avg_score": 75.6,
+      "improvement_pct": 24.5,
+      "score_evolution": [
+        {
+          "audit": "20260505_1106_blog_audit",
+          "audited_at": "2026-05-05T11:06:56.612179",
+          "score": 60.7,
+          "articles": 3
+        },
+        {
+          "audit": "20260505_1113_blog_audit",
+          "audited_at": "2026-05-05T11:13:17.622525",
+          "score": 52.6,
+          "articles": 33
+        },
+        {
+          "audit": "20260505_1222_blog_audit",
+          "audited_at": "2026-05-05T12:22:29.545141",
+          "score": 63.7,
+          "articles": 36
+        },
+        {
+          "audit": "20260506_0926_blog_audit",
+          "audited_at": "2026-05-06T09:26:24.324201",
+          "score": 69.6,
+          "articles": 37
+        },
+        {
+          "audit": "20260506_1527_blog_audit",
+          "audited_at": "2026-05-06T15:27:42.226776",
+          "score": 75.6,
+          "articles": 37
+        }
+      ],
+      "achievements": [
+        {
+          "icon": "📊",
+          "label": "Blogs auditados",
+          "count": 37
+        },
+        {
+          "icon": "✍️",
+          "label": "Blogs reescritos con DataForSEO",
+          "count": 22
+        },
+        {
+          "icon": "🆕",
+          "label": "Blogs nuevos publicados",
+          "count": 3
+        },
+        {
+          "icon": "❓",
+          "label": "Blogs con FAQ schema (PAA real)",
+          "count": 23
+        },
+        {
+          "icon": "🎯",
+          "label": "Blogs con score 70+",
+          "count": 32
+        },
+        {
+          "icon": "⭐",
+          "label": "Blogs con score 80+",
+          "count": 9
+        }
+      ]
+    },
+    "projections": {
+      "current_estimated_clicks_per_month": 2583,
+      "opportunity_volume_per_month": 60500,
+      "assumptions": {
+        "ticket_promedio_cop": 120000,
+        "conversion_rate": 0.02,
+        "ctr_table": "Google avg (pos 1=30%, pos 5=5%, pos 10=1.8%)"
+      },
+      "scenarios": [
+        {
+          "name": "Conservador",
+          "target_position": 10,
+          "timeframe": "6 meses",
+          "additional_clicks_per_month": 1089,
+          "total_clicks_per_month": 3672,
+          "estimated_sales_per_month": 73,
+          "estimated_revenue_cop_per_month": 8760000
+        },
+        {
+          "name": "Realista",
+          "target_position": 5,
+          "timeframe": "6-12 meses",
+          "additional_clicks_per_month": 3025,
+          "total_clicks_per_month": 5608,
+          "estimated_sales_per_month": 112,
+          "estimated_revenue_cop_per_month": 13440000
+        },
+        {
+          "name": "Optimista",
+          "target_position": 3,
+          "timeframe": "12-18 meses",
+          "additional_clicks_per_month": 6050,
+          "total_clicks_per_month": 8633,
+          "estimated_sales_per_month": 173,
+          "estimated_revenue_cop_per_month": 20760000
+        }
+      ]
     }
   }
 }

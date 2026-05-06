@@ -32,6 +32,49 @@ from tools.amazon.amazon_client import AmazonClient, AmazonAPIError
 logger = setup_logger()
 
 
+def _load_seo_section(logger):
+    """Read seo-system output for Marfil and pull into dashboard.
+
+    Path is relative: ../seo-system/output/marfil/reports/seo_dashboard.json
+    Returns None if not found (graceful degradation).
+    """
+    seo_path = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil" / "reports" / "seo_dashboard.json"
+    if not seo_path.exists():
+        logger.warning(f"SEO data not found at {seo_path} - skipping")
+        return None
+    try:
+        with open(seo_path, encoding="utf-8") as f:
+            seo = json.load(f)
+        # Also pull last audit for avg score
+        audit_path = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil" / "audits" / "latest_blog_audit.json"
+        if audit_path.exists():
+            with open(audit_path, encoding="utf-8") as f:
+                audit = json.load(f)
+            valid = [a for a in audit.get("audits", []) if "seo_score" in a]
+            seo["audit_summary"] = {
+                "audited_at": audit.get("audited_at"),
+                "total_articles": len(valid),
+                "avg_score": round(sum(a["seo_score"] for a in valid) / max(len(valid), 1), 1),
+                "score_distribution": {
+                    "90+":     sum(1 for a in valid if a["seo_score"] >= 90),
+                    "80-89":   sum(1 for a in valid if 80 <= a["seo_score"] < 90),
+                    "70-79":   sum(1 for a in valid if 70 <= a["seo_score"] < 80),
+                    "60-69":   sum(1 for a in valid if 60 <= a["seo_score"] < 70),
+                    "50-59":   sum(1 for a in valid if 50 <= a["seo_score"] < 60),
+                    "under_50": sum(1 for a in valid if a["seo_score"] < 50),
+                },
+                "worst_5": [
+                    {"title": a["title"], "score": a["seo_score"], "handle": a["handle"]}
+                    for a in sorted(valid, key=lambda x: x["seo_score"])[:5]
+                ],
+            }
+        logger.info(f"SEO section loaded: {seo.get('summary',{}).get('opportunity_keywords', '?')} oportunidades")
+        return seo
+    except Exception as e:
+        logger.warning(f"Error loading SEO section: {e}")
+        return None
+
+
 def main():
     logger.info("=== REPORTE MARFIL — Inicio de actualización ===")
 
@@ -574,6 +617,7 @@ def main():
         "digital_costos_fijos_total_mensual": sum(digital_costos_fijos.values()),
         "daily": daily,
         "guffo": guffo_section,
+        "seo": _load_seo_section(logger),
     }
 
     output_path = Path(__file__).resolve().parent / "dashboard.json"

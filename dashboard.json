@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-05-06T15:25:08.539424-05:00",
+  "updated_at": "2026-05-05T15:09:31.902031-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.03942091221084675,
+    "pct_devoluciones": 0.035951362644612794,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 4086900,
-    "ordenes_ytd": 29,
-    "tasa_por_monto": 0.0394,
-    "tasa_por_ordenes": 0.04
+    "monto_ytd": 3727200,
+    "ordenes_ytd": 27,
+    "tasa_por_monto": 0.036,
+    "tasa_por_ordenes": 0.0372
   },
   "shopify": {
-    "ventas_brutas_ytd": 100166100,
-    "ventas_netas_ytd": 91986045,
-    "descuentos_ytd": 8190055,
-    "unidades_ytd": 799,
-    "ordenes_ytd": 678,
+    "ventas_brutas_ytd": 100525800,
+    "ventas_netas_ytd": 92267745,
+    "descuentos_ytd": 8268055,
+    "unidades_ytd": 802,
+    "ordenes_ytd": 680,
     "cash_flow": {
-      "cod_neto": 62415785,
-      "cod_bruto": 67515500,
-      "cod_ordenes": 483,
+      "cod_neto": 62697485,
+      "cod_bruto": 67875200,
+      "cod_ordenes": 485,
       "prepago_neto": 29570260,
       "prepago_bruto": 32650600,
       "prepago_ordenes": 195,
-      "cod_pct": 0.6785,
-      "prepago_pct": 0.3215
+      "cod_pct": 0.6795,
+      "prepago_pct": 0.3205
     },
     "canceladas": {
       "ordenes": 27,
@@ -37,32 +37,32 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 166,
-      "monto": 23934800,
-      "tasa": 0.1967,
+      "ordenes": 160,
+      "monto": 23055500,
+      "tasa": 0.1905,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 76,
-          "monto": 10275400.0
+          "ordenes": 75,
+          "monto": 10035600.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 44,
-          "monto": 7514400.0
+          "ordenes": 40,
+          "monto": 6994800.0
         },
         {
           "canal": "web",
-          "ordenes": 46,
-          "monto": 6145000.0
+          "ordenes": 45,
+          "monto": 6025100.0
         }
       ]
     },
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 491,
-        "ventas": 58870900.0,
+        "unidades": 494,
+        "ventas": 59230600.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 491,
-        "ventas": 58870900.0,
+        "unidades": 494,
+        "ventas": 59230600.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -275,13 +275,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 413,
-        "ventas_brutas": 61760500.0
+        "ordenes": 414,
+        "ventas_brutas": 61880400.0
       },
       {
         "canal": "5690175",
-        "ordenes": 162,
-        "ventas_brutas": 23177600.0
+        "ordenes": 163,
+        "ventas_brutas": 23417400.0
       },
       {
         "canal": "web",
@@ -292,8 +292,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 153,
-        "monto": 6676050.0
+        "usos": 155,
+        "monto": 6736050.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -307,8 +307,8 @@
       },
       {
         "codigo": "QUANTITY DISCOUNT",
-        "usos": 3,
-        "monto": 54000.0
+        "usos": 4,
+        "monto": 72000.0
       },
       {
         "codigo": "ADKRU",
@@ -367,12 +367,12 @@
     "unidades_ytd": 72,
     "ordenes_ytd": 72,
     "entregadas": {
-      "ordenes": 70,
-      "monto": 10383000
+      "ordenes": 68,
+      "monto": 10093200
     },
     "en_transito": {
-      "ordenes": 2,
-      "monto": 299800
+      "ordenes": 4,
+      "monto": 589600
     },
     "canceladas": {
       "ordenes": 2,
@@ -439,22 +439,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 6345.8,
-    "ventas_netas_ytd": 2748.71,
-    "comisiones_ytd": 1308.97,
+    "ventas_netas_ytd": 2770.89,
+    "comisiones_ytd": 1286.79,
     "ads_spend_ytd": 1779.32,
     "refunds_ytd": 508.8,
-    "pct_comision": 0.2063,
+    "pct_comision": 0.2028,
     "ticket_promedio": 48.44,
     "unidades_ytd": 138,
     "ordenes_ytd": 131,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5238.1,
+      "ventas_principal": 5148.3,
       "shipping_income": 119.7,
-      "tax_collected": 280.5,
-      "commission": 786.31,
-      "fba_fees": 502.05,
+      "tax_collected": 275.88,
+      "commission": 772.83,
+      "fba_fees": 493.35,
       "other_fees": 20.61,
       "refunds": 508.8,
       "ads_spend": 1779.32
@@ -477,16 +477,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 25557810,
+      "gasto": 25406072,
       "purchases": 642
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 13512140,
+      "gasto": 13434710,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 39069950,
+  "ads_gasto_total": 38840782,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -3688,18 +3688,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-07": {
-      "envia_ventas": 4142600.0,
-      "envia_ordenes": 27,
-      "envia_unidades": 34,
-      "envia_costo_envio": 372460.0,
-      "digital_ventas_netas": 3603000.0,
-      "digital_descuentos": 539600.0,
-      "digital_cod_neto": 2363900.0,
+      "envia_ventas": 4382400.0,
+      "envia_ordenes": 28,
+      "envia_unidades": 36,
+      "envia_costo_envio": 384940.0,
+      "digital_ventas_netas": 3824800.0,
+      "digital_descuentos": 557600.0,
+      "digital_cod_neto": 2585700.0,
       "digital_prepago_neto": 1239100.0,
-      "digital_cod_ordenes": 18,
+      "digital_cod_ordenes": 19,
       "digital_prepago_ordenes": 9,
-      "envia_ventas_raw": 4422400.0,
-      "envia_ordenes_raw": 28,
+      "envia_ventas_raw": 4662200.0,
+      "envia_ordenes_raw": 29,
       "meta_gasto": 626749.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
@@ -3754,18 +3754,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-09": {
-      "envia_ventas": 1658700.0,
-      "envia_ordenes": 12,
-      "envia_unidades": 13,
-      "envia_costo_envio": 169980.0,
-      "digital_ventas_netas": 1348800.0,
-      "digital_descuentos": 309900.0,
-      "digital_cod_neto": 1079000.0,
+      "envia_ventas": 1778600.0,
+      "envia_ordenes": 13,
+      "envia_unidades": 14,
+      "envia_costo_envio": 200290.0,
+      "digital_ventas_netas": 1448700.0,
+      "digital_descuentos": 329900.0,
+      "digital_cod_neto": 1178900.0,
       "digital_prepago_neto": 269800.0,
-      "digital_cod_ordenes": 10,
+      "digital_cod_ordenes": 11,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 1658700.0,
-      "envia_ordenes_raw": 12,
+      "envia_ventas_raw": 1778600.0,
+      "envia_ordenes_raw": 13,
       "meta_gasto": 706000.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -3952,18 +3952,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-15": {
-      "envia_ventas": 1998500.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 15,
-      "envia_costo_envio": 192478.9,
-      "digital_ventas_netas": 1813550.0,
+      "envia_ventas": 1858600.0,
+      "envia_ordenes": 13,
+      "envia_unidades": 14,
+      "envia_costo_envio": 179998.9,
+      "digital_ventas_netas": 1673650.0,
       "digital_descuentos": 184950.0,
-      "digital_cod_neto": 1533750.0,
+      "digital_cod_neto": 1393850.0,
       "digital_prepago_neto": 279800.0,
-      "digital_cod_ordenes": 12,
+      "digital_cod_ordenes": 11,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 2118400.0,
-      "envia_ordenes_raw": 15,
+      "envia_ventas_raw": 1978500.0,
+      "envia_ordenes_raw": 14,
       "meta_gasto": 530823.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
@@ -4513,18 +4513,18 @@
       "digital_gastos_var": 0
     },
     "2026-05-02": {
-      "envia_ventas": 1356900.0,
-      "envia_ordenes": 9,
-      "envia_unidades": 11,
-      "envia_costo_envio": 127020.0,
-      "digital_ventas_netas": 1306900.0,
-      "digital_descuentos": 50000.0,
-      "digital_cod_neto": 687400.0,
+      "envia_ventas": 1496800.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 12,
+      "envia_costo_envio": 139500.0,
+      "digital_ventas_netas": 1406800.0,
+      "digital_descuentos": 90000.0,
+      "digital_cod_neto": 787300.0,
       "digital_prepago_neto": 619500.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 6,
       "digital_prepago_ordenes": 4,
-      "envia_ventas_raw": 409700.0,
-      "envia_ordenes_raw": 9,
+      "envia_ventas_raw": 549600.0,
+      "envia_ordenes_raw": 10,
       "meta_gasto": 290570.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -4633,39 +4633,6 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 150000.0,
-      "pos_caracoli_unidades": 2,
-      "pos_caracoli_gastos": 85000.0,
-      "pos_titan_plaza_ventas": 300000.0,
-      "pos_titan_plaza_unidades": 4,
-      "pos_titan_plaza_gastos": 0,
-      "pos_fundadores_ventas": 260000.0,
-      "pos_fundadores_unidades": 2,
-      "pos_fundadores_gastos": 80000.0,
-      "digital_gastos_var": 0
-    },
-    "2026-05-06": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
-      "digital_cod_ordenes": 0,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 229168.0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -4678,5 +4645,591 @@
       "digital_gastos_var": 0
     }
   },
-  "guffo": null
+  "guffo": null,
+  "seo": {
+    "store_id": "marfil",
+    "store_name": "Marfil Colombia",
+    "domain": "modamarfil.com.co",
+    "country": "Colombia",
+    "generated_at": "2026-05-06T15:27:58.072069",
+    "summary": {
+      "opportunity_keywords": 30,
+      "currently_ranking": 30,
+      "pending_blog_topics": 11,
+      "published_blogs_total": 3,
+      "total_search_volume": 78600,
+      "avg_difficulty": 0.0
+    },
+    "top_opportunities": [
+      {
+        "keyword": "gafas de sol",
+        "volume": 9900,
+        "difficulty": 0,
+        "cpc": 0.4,
+        "competition": "HIGH",
+        "opportunity": 99000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "montura de gafas para mujer",
+        "volume": 4400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 44000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "monturas de gafas para mujer",
+        "volume": 4400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 44000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "montura de gafas para hombre",
+        "volume": 2900,
+        "difficulty": 0,
+        "cpc": 0.26,
+        "competition": "HIGH",
+        "opportunity": 29000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "monturas para gafas de hombre",
+        "volume": 2900,
+        "difficulty": 0,
+        "cpc": 0.26,
+        "competition": "HIGH",
+        "opportunity": 29000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "monturas de gafas para hombre",
+        "volume": 2900,
+        "difficulty": 0,
+        "cpc": 0.26,
+        "competition": "HIGH",
+        "opportunity": 29000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas para sol de hombre",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.4,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas de sol para hombres",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.4,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas de sol para mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.33,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas para hombre de sol",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.4,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas para sol de mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.33,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas hombre cartier",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas para hombre",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.28,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "cartier gafas hombre",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas cartier hombre",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "marco de gafas para mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "marcos de gafas para mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "marcos para gafas de mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "marcos de gafas para mujeres",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "marcos para gafas"
+      },
+      {
+        "keyword": "gafas hombre ray ban",
+        "volume": 1900,
+        "difficulty": 0,
+        "cpc": 0.1,
+        "competition": "HIGH",
+        "opportunity": 19000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      }
+    ],
+    "current_rankings": [
+      {
+        "keyword": "gafas marfil",
+        "position": 1,
+        "volume": 1000,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      },
+      {
+        "keyword": "marfil gafas",
+        "position": 1,
+        "volume": 1000,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      },
+      {
+        "keyword": "marfil",
+        "position": 2,
+        "volume": 12100,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de lujos",
+        "position": 3,
+        "volume": 480,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      },
+      {
+        "keyword": "celine gafas",
+        "position": 4,
+        "volume": 880,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
+        "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas tornasol",
+        "position": 6,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1",
+        "title": "GAFAS DE SOL MARFIL CROWD TORNASOL ROSADO",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas celine",
+        "position": 9,
+        "volume": 880,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
+        "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
+        "difficulty": 0
+      },
+      {
+        "keyword": "tous gafas",
+        "position": 10,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-1",
+        "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de hombre de moda",
+        "position": 12,
+        "volume": 390,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
+        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas rosas",
+        "position": 15,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-praga-rosado",
+        "title": "GAFAS DE SOL MARFIL PRAGA ROSA",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de sol para mujer de moda",
+        "position": 16,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas para sol de mujer",
+        "position": 16,
+        "volume": 2400,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de hombre",
+        "position": 17,
+        "volume": 590,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
+        "difficulty": 0
+      },
+      {
+        "keyword": "colombia gafas",
+        "position": 18,
+        "volume": 390,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas negras hombre",
+        "position": 18,
+        "volume": 390,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
+        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
+        "difficulty": 0
+      },
+      {
+        "keyword": "lentes de sol de mujer",
+        "position": 18,
+        "volume": 260,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "difficulty": 0
+      },
+      {
+        "keyword": "cuelga gafas",
+        "position": 20,
+        "volume": 260,
+        "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-zack",
+        "title": "Cordón Cuelga Gafas Zack",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas brasileñas precio",
+        "position": 20,
+        "volume": 170,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "difficulty": 0
+      },
+      {
+        "keyword": "tiendas de gafas",
+        "position": 20,
+        "volume": 140,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 6
+      },
+      {
+        "keyword": "gafas estilo",
+        "position": 22,
+        "volume": 260,
+        "url": "https://modamarfil.com.co/",
+        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "difficulty": 0
+      }
+    ],
+    "next_blog_topics": [
+      {
+        "keyword": "montura de gafas para mujer",
+        "volume": 4400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 44000.0,
+        "intent": "",
+        "source_seed": "gafas mujer",
+        "related_in_cluster": [
+          "montura de gafas para hombre"
+        ]
+      },
+      {
+        "keyword": "monturas de gafas para mujer",
+        "volume": 4400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 44000.0,
+        "intent": "",
+        "source_seed": "gafas mujer",
+        "related_in_cluster": [
+          "monturas de gafas para hombre"
+        ]
+      },
+      {
+        "keyword": "monturas para gafas de hombre",
+        "volume": 2900,
+        "difficulty": 0,
+        "cpc": 0.26,
+        "competition": "HIGH",
+        "opportunity": 29000.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": []
+      },
+      {
+        "keyword": "gafas de sol para hombres",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.4,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol",
+        "related_in_cluster": [
+          "gafas de sol para mujer"
+        ]
+      },
+      {
+        "keyword": "gafas para sol de mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.33,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas de sol",
+        "related_in_cluster": []
+      },
+      {
+        "keyword": "gafas hombre cartier",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": [
+          "gafas hombre ray-ban"
+        ]
+      },
+      {
+        "keyword": "cartier gafas hombre",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.23,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": [
+          "gafas cartier hombre"
+        ]
+      },
+      {
+        "keyword": "marco de gafas para mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer",
+        "related_in_cluster": [
+          "marco de gafas para hombre"
+        ]
+      },
+      {
+        "keyword": "marcos de gafas para mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer",
+        "related_in_cluster": [
+          "marcos de gafas para mujeres",
+          "marcos de gafas para hombre",
+          "marcos de gafas para hombres"
+        ]
+      },
+      {
+        "keyword": "marcos para gafas de mujer",
+        "volume": 2400,
+        "difficulty": 0,
+        "cpc": 0.24,
+        "competition": "HIGH",
+        "opportunity": 24000.0,
+        "intent": "",
+        "source_seed": "gafas mujer",
+        "related_in_cluster": [
+          "marcos para gafas de hombre"
+        ]
+      }
+    ],
+    "recent_publications": [
+      {
+        "published_at": "2026-05-05T12:16:56",
+        "article_id": 660794867959,
+        "title": "Alternativas a Ray-Ban en Colombia: Gafas de Sol con Calidad y Estilo",
+        "handle": "alternativas-a-ray-ban-en-colombia",
+        "source_brief": ""
+      },
+      {
+        "published_at": "2026-05-05T12:16:53",
+        "article_id": 660794835191,
+        "title": "Gafas de Sol para Cara Grande: Modelos que Equilibran tus Proporciones",
+        "handle": "gafas-de-sol-para-cara-grande-colombia",
+        "source_brief": ""
+      },
+      {
+        "published_at": "2026-05-05T12:16:49",
+        "article_id": 660794802423,
+        "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo Elegirlos",
+        "handle": "lentes-de-sol-espejados-guia-colombia",
+        "source_brief": ""
+      }
+    ],
+    "rank_distribution": {
+      "top_3": 4,
+      "4_10": 4,
+      "11_30": 22,
+      "31_50": 0,
+      "50_plus": 0
+    },
+    "opportunity_by_volume_band": {
+      "10k_plus": 0,
+      "1k_10k": 30,
+      "100_1k": 0,
+      "50_100": 0,
+      "under_50": 0
+    },
+    "audit_summary": {
+      "audited_at": "2026-05-06T15:27:42.230860",
+      "total_articles": 37,
+      "avg_score": 75.6,
+      "score_distribution": {
+        "90+": 0,
+        "80-89": 9,
+        "70-79": 23,
+        "60-69": 4,
+        "50-59": 1,
+        "under_50": 0
+      },
+      "worst_5": [
+        {
+          "title": "Catálogo Marfil 2025: Todos los Modelos de Gafas de Sol",
+          "score": 58,
+          "handle": "catalogo-marfil-2025-modelos-gafas-de-sol-colombia"
+        },
+        {
+          "title": "Gafas de Sol para Vacaciones de Mitad de Año en Colombia: Gu",
+          "score": 64,
+          "handle": "vacaciones-de-mitad-de-ano"
+        },
+        {
+          "title": "Lentes de Sol para Cara Triangular: Guía de Estilos Perfecto",
+          "score": 68,
+          "handle": "lentes-de-sol-para-cara-triangular"
+        },
+        {
+          "title": "Lentes de sol para cara cuadrada: marcos que suavizan tu man",
+          "score": 68,
+          "handle": "lentes-de-sol-para-cara-cuadrada"
+        },
+        {
+          "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo El",
+          "score": 69,
+          "handle": "lentes-de-sol-espejados-guia-colombia"
+        }
+      ]
+    }
+  }
 }

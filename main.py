@@ -168,6 +168,12 @@ def _load_seo_section(logger):
             ],
         }
 
+        # ─── Rankings evolution (snapshot vs snapshot) ────────────────────────
+        evo_path = seo_root / "rankings" / "evolution.json"
+        if evo_path.exists():
+            with open(evo_path, encoding="utf-8") as f:
+                seo["rankings_evolution"] = json.load(f)
+
         logger.info(f"SEO section loaded: avg score {avg_score}/100, {len(opps)} oportunidades")
         return seo
     except Exception as e:

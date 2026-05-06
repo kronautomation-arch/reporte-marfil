@@ -680,9 +680,30 @@
                     <div id="seo-opps" style="margin-top:10px"></div>
                 </div>
 
+                <!-- Rankings evolution -->
+                <div class="card" style="margin-bottom:14px;border-color:#8B5CF6">
+                    <div class="card-label" style="color:#8B5CF6">📊 EVOLUCIÓN DE RANKINGS · Cambios entre snapshots</div>
+                    <div id="seo-evo-summary" style="margin-top:8px;font-size:13px;color:var(--text-secondary)"></div>
+                    <div id="seo-evo-movements" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px" class="seo-evo-grid"></div>
+                    <div id="seo-evo-clicks" style="margin-top:14px"></div>
+
+                    <div style="margin-top:18px">
+                        <div class="card-label" style="font-size:11px">🆕 KEYWORDS NUEVAS (incluidas tras el SEO work)</div>
+                        <div id="seo-evo-new" style="margin-top:8px"></div>
+                    </div>
+                    <div style="margin-top:14px">
+                        <div class="card-label" style="font-size:11px">⬆️ TOP SUBIDAS · Mejores movimientos</div>
+                        <div id="seo-evo-ups" style="margin-top:8px"></div>
+                    </div>
+                    <div style="margin-top:14px">
+                        <div class="card-label" style="font-size:11px">⬇️ BAJADAS · Necesitan atención</div>
+                        <div id="seo-evo-downs" style="margin-top:8px"></div>
+                    </div>
+                </div>
+
                 <!-- Current rankings -->
                 <div class="card" style="margin-bottom:14px">
-                    <div class="card-label">RANKINGS ACTUALES · Top 20 keywords donde rankeamos</div>
+                    <div class="card-label">RANKINGS ACTUALES · Top 20 keywords con tráfico estimado</div>
                     <div id="seo-rankings" style="margin-top:10px"></div>
                 </div>
 
@@ -729,9 +750,20 @@
                 #tab-seo .seo-proj-revenue { font-size:22px; font-weight:800; color:#22C55E; margin:6px 0 2px }
                 #tab-seo .seo-proj-row { display:flex; justify-content:space-between; font-size:11px; padding:3px 0; color:var(--text-secondary) }
                 #tab-seo .seo-proj-row b { color:var(--text); font-weight:600 }
+                #tab-seo .seo-evo-card { background:var(--bg); padding:12px 10px; border-radius:8px; text-align:center; border:1px solid var(--border) }
+                #tab-seo .seo-evo-card-icon { font-size:18px; margin-bottom:2px }
+                #tab-seo .seo-evo-card-count { font-size:24px; font-weight:800; line-height:1.1 }
+                #tab-seo .seo-evo-card-label { font-size:9px; color:var(--text-muted); letter-spacing:0.5px; margin-top:2px }
+                #tab-seo .change-pill { display:inline-block; padding:1px 6px; border-radius:8px; font-size:10px; font-weight:700; margin-left:6px }
+                #tab-seo .change-up { background:rgba(34,197,94,0.15); color:#22C55E }
+                #tab-seo .change-down { background:rgba(239,68,68,0.15); color:#EF4444 }
+                #tab-seo .change-new { background:rgba(139,92,246,0.15); color:#8B5CF6 }
+                #tab-seo .clicks-banner { background:rgba(139,92,246,0.04); padding:10px 14px; border-radius:8px; border:1px solid rgba(139,92,246,0.3); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px }
+                #tab-seo .clicks-num { font-size:24px; font-weight:800; color:#8B5CF6 }
                 @media (max-width:720px) {
                     #tab-seo .seo-progress-grid { grid-template-columns:1fr !important; }
                     #tab-seo .seo-proj-grid { grid-template-columns:1fr !important; }
+                    #tab-seo .seo-evo-grid { grid-template-columns:repeat(2,1fr) !important; }
                 }
             </style>
         </div>
@@ -1289,17 +1321,118 @@ function renderSEO(seo) {
             </tr>`).join('')}
         </table>`;
 
-    // Current rankings
-    const rankings = (seo.current_rankings || []).slice(0,15);
+    // Rankings evolution
+    const evo = seo.rankings_evolution;
+    if (evo) {
+        const m = evo.movements || {};
+        const ec = evo.estimated_clicks || {};
+        const fmtCli = n => (n||0).toLocaleString('es-CO');
+
+        let summary = `Snapshot actual: <b>${evo.snapshot_date || '—'}</b>`;
+        if (evo.previous_date) summary += ` · vs anterior: <b>${evo.previous_date}</b>`;
+        summary += ` · Total keywords rankeando: <b>${evo.total_keywords_now}</b>`;
+        if (evo.total_keywords_prev) {
+            const dKw = evo.total_keywords_now - evo.total_keywords_prev;
+            const sign = dKw > 0 ? '+' : '';
+            summary += ` (${sign}${dKw} vs anterior)`;
+        }
+        document.getElementById('seo-evo-summary').innerHTML = summary;
+
+        const movCards = [
+            { icon:'⬆️', label:'SUBIERON',  count:m.up||0,     color:'#22C55E' },
+            { icon:'⬇️', label:'BAJARON',   count:m.down||0,   color:'#EF4444' },
+            { icon:'➡️', label:'ESTABLES',  count:m.stable||0, color:'var(--text-muted)' },
+            { icon:'🆕', label:'NUEVAS',    count:m.new||0,    color:'#8B5CF6' },
+            { icon:'❌', label:'PERDIDAS',  count:m.lost||0,   color:'#EAB308' },
+        ];
+        document.getElementById('seo-evo-movements').innerHTML = movCards.map(c =>
+            `<div class="seo-evo-card">
+                <div class="seo-evo-card-icon">${c.icon}</div>
+                <div class="seo-evo-card-count" style="color:${c.color}">${c.count}</div>
+                <div class="seo-evo-card-label">${c.label}</div>
+            </div>`
+        ).join('');
+
+        // Clicks banner
+        if (ec.current_per_month != null) {
+            const delta = ec.delta || 0;
+            const deltaStr = delta >= 0 ? `+${fmtCli(delta)}` : fmtCli(delta);
+            const deltaColor = delta > 0 ? '#22C55E' : (delta < 0 ? '#EF4444' : 'var(--text-muted)');
+            document.getElementById('seo-evo-clicks').innerHTML =
+                `<div class="clicks-banner">
+                    <div>
+                        <div style="font-size:11px;color:var(--text-muted)">TRÁFICO ORGÁNICO ESTIMADO</div>
+                        <div class="clicks-num">${fmtCli(ec.current_per_month)} clicks/mes</div>
+                    </div>
+                    <div style="text-align:right">
+                        <div style="font-size:11px;color:var(--text-muted)">vs snapshot anterior</div>
+                        <div style="font-size:18px;font-weight:700;color:${deltaColor}">${deltaStr}</div>
+                    </div>
+                </div>`;
+        }
+
+        // New keywords (gracias al SEO work)
+        const newKws = (evo.keywords || []).filter(k => k.status==='new').sort((a,b)=>(b.volume||0)-(a.volume||0)).slice(0,10);
+        document.getElementById('seo-evo-new').innerHTML = newKws.length === 0
+            ? '<div style="color:var(--text-muted);font-size:12px">Sin keywords nuevas en este período. La data de Google tarda unos días en reflejar cambios.</div>'
+            : `<table class="seo-table">
+                <tr><th class="num">POS</th><th>KEYWORD</th><th class="num">VOL/MES</th><th class="num">CLICKS EST.</th></tr>
+                ${newKws.map(k => `<tr>
+                    <td class="num"><span class="score-pill ${k.current_position<=10?'score-high':(k.current_position<=30?'score-mid':'score-low')}">#${k.current_position}</span></td>
+                    <td>${k.keyword} <span class="change-pill change-new">NUEVA</span></td>
+                    <td class="num">${(k.volume||0).toLocaleString('es-CO')}</td>
+                    <td class="num">${(k.estimated_clicks_per_month||0).toLocaleString('es-CO')}</td>
+                </tr>`).join('')}
+            </table>`;
+
+        // Top ups
+        const ups = (evo.keywords || []).filter(k => k.status==='up').sort((a,b)=>(b.change||0)-(a.change||0)).slice(0,8);
+        document.getElementById('seo-evo-ups').innerHTML = ups.length === 0
+            ? '<div style="color:var(--text-muted);font-size:12px">Sin movimientos al alza aún. Espera unos días para ver el efecto del SEO work.</div>'
+            : `<table class="seo-table">
+                <tr><th class="num">CAMBIO</th><th class="num">ANTES</th><th class="num">AHORA</th><th>KEYWORD</th><th class="num">VOL/MES</th></tr>
+                ${ups.map(k => `<tr>
+                    <td class="num"><span class="change-pill change-up">+${k.change}</span></td>
+                    <td class="num">#${k.previous_position}</td>
+                    <td class="num"><span class="score-pill ${k.current_position<=10?'score-high':'score-mid'}">#${k.current_position}</span></td>
+                    <td>${k.keyword}</td>
+                    <td class="num">${(k.volume||0).toLocaleString('es-CO')}</td>
+                </tr>`).join('')}
+            </table>`;
+
+        // Downs
+        const downs = (evo.keywords || []).filter(k => k.status==='down').sort((a,b)=>(a.change||0)-(b.change||0)).slice(0,5);
+        document.getElementById('seo-evo-downs').innerHTML = downs.length === 0
+            ? '<div style="color:var(--text-muted);font-size:12px">Sin bajadas. ✓</div>'
+            : `<table class="seo-table">
+                <tr><th class="num">CAMBIO</th><th class="num">ANTES</th><th class="num">AHORA</th><th>KEYWORD</th><th class="num">VOL/MES</th></tr>
+                ${downs.map(k => `<tr>
+                    <td class="num"><span class="change-pill change-down">${k.change}</span></td>
+                    <td class="num">#${k.previous_position}</td>
+                    <td class="num"><span class="score-pill score-low">#${k.current_position}</span></td>
+                    <td>${k.keyword}</td>
+                    <td class="num">${(k.volume||0).toLocaleString('es-CO')}</td>
+                </tr>`).join('')}
+            </table>`;
+    }
+
+    // Current rankings (with traffic estimate)
+    const rankings = (seo.current_rankings || []).slice(0,20);
+    const ctrTable = {1:0.30,2:0.15,3:0.10,4:0.07,5:0.05,6:0.04,7:0.03,8:0.025,9:0.02,10:0.018};
+    const ctr = p => ctrTable[p] !== undefined ? ctrTable[p] : (p>10 ? 0.005 : 0.018);
     document.getElementById('seo-rankings').innerHTML =
         `<table class="seo-table">
-            <tr><th class="num">POS</th><th>KEYWORD</th><th class="num">VOL/MES</th><th>URL</th></tr>
-            ${rankings.map(r => `<tr>
-                <td class="num"><span class="score-pill ${r.position<=10?'score-high':(r.position<=30?'score-mid':'score-low')}">#${r.position}</span></td>
-                <td>${r.keyword}</td>
-                <td class="num">${(r.volume||0).toLocaleString('es-CO')}</td>
-                <td style="font-size:10px;color:var(--text-muted)">${(r.url||'').replace('https://modamarfil.com.co','').slice(0,60)}</td>
-            </tr>`).join('')}
+            <tr><th class="num">POS</th><th>KEYWORD</th><th class="num">VOL/MES</th><th class="num">CLICKS EST.</th><th>URL</th></tr>
+            ${rankings.map(r => {
+                const clicks = Math.round((r.volume||0) * ctr(r.position));
+                return `<tr>
+                    <td class="num"><span class="score-pill ${r.position<=10?'score-high':(r.position<=30?'score-mid':'score-low')}">#${r.position}</span></td>
+                    <td>${r.keyword}</td>
+                    <td class="num">${(r.volume||0).toLocaleString('es-CO')}</td>
+                    <td class="num"><b style="color:#22C55E">${clicks.toLocaleString('es-CO')}</b></td>
+                    <td style="font-size:10px;color:var(--text-muted)">${(r.url||'').replace('https://modamarfil.com.co','').slice(0,50)}</td>
+                </tr>`;
+            }).join('')}
         </table>`;
 
     // Worst blogs

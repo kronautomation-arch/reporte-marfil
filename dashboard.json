@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-06T10:28:21.349663-05:00",
+  "updated_at": "2026-05-06T10:59:01.367690-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -477,7 +477,7 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 25406072,
+      "gasto": 25406678,
       "purchases": 642
     },
     {
@@ -486,7 +486,7 @@
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 38840782,
+  "ads_gasto_total": 38841388,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4642,6 +4642,39 @@
       "pos_fundadores_ventas": 260000.0,
       "pos_fundadores_unidades": 2,
       "pos_fundadores_gastos": 80000.0,
+      "digital_gastos_var": 0
+    },
+    "2026-05-06": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 606.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
       "digital_gastos_var": 0
     }
   },

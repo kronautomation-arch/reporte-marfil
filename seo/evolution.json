@@ -1,0 +1,560 @@
+{
+  "snapshot_date": "20260506",
+  "previous_date": "20260505",
+  "total_keywords_now": 54,
+  "total_keywords_prev": 54,
+  "movements": {
+    "up": 0,
+    "down": 0,
+    "stable": 54,
+    "new": 0,
+    "lost": 0
+  },
+  "estimated_clicks": {
+    "current_per_month": 2709,
+    "previous_per_month": 2709,
+    "delta": 0
+  },
+  "keywords": [
+    {
+      "keyword": "marfil",
+      "current_position": 2,
+      "previous_position": 2,
+      "change": 0,
+      "status": "stable",
+      "volume": 12100,
+      "estimated_clicks_per_month": 1815,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas para sol de mujer",
+      "current_position": 16,
+      "previous_position": 16,
+      "change": 0,
+      "status": "stable",
+      "volume": 2400,
+      "estimated_clicks_per_month": 12,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas de sol para mujer",
+      "current_position": 34,
+      "previous_position": 34,
+      "change": 0,
+      "status": "stable",
+      "volume": 2400,
+      "estimated_clicks_per_month": 12,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas para hombre de sol",
+      "current_position": 49,
+      "previous_position": 49,
+      "change": 0,
+      "status": "stable",
+      "volume": 2400,
+      "estimated_clicks_per_month": 12,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "gafas hombre de sol",
+      "current_position": 24,
+      "previous_position": 24,
+      "change": 0,
+      "status": "stable",
+      "volume": 1600,
+      "estimated_clicks_per_month": 8,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "gafas de sol de hombre",
+      "current_position": 27,
+      "previous_position": 27,
+      "change": 0,
+      "status": "stable",
+      "volume": 1600,
+      "estimated_clicks_per_month": 8,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "gafas negras",
+      "current_position": 27,
+      "previous_position": 27,
+      "change": 0,
+      "status": "stable",
+      "volume": 1600,
+      "estimated_clicks_per_month": 8,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas de hombre de sol",
+      "current_position": 41,
+      "previous_position": 41,
+      "change": 0,
+      "status": "stable",
+      "volume": 1600,
+      "estimated_clicks_per_month": 8,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "gafas para mujer",
+      "current_position": 25,
+      "previous_position": 25,
+      "change": 0,
+      "status": "stable",
+      "volume": 1300,
+      "estimated_clicks_per_month": 6,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas marfil",
+      "current_position": 1,
+      "previous_position": 1,
+      "change": 0,
+      "status": "stable",
+      "volume": 1000,
+      "estimated_clicks_per_month": 300,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "marfil gafas",
+      "current_position": 1,
+      "previous_position": 1,
+      "change": 0,
+      "status": "stable",
+      "volume": 1000,
+      "estimated_clicks_per_month": 300,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas mujeres",
+      "current_position": 29,
+      "previous_position": 29,
+      "change": 0,
+      "status": "stable",
+      "volume": 1000,
+      "estimated_clicks_per_month": 5,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas de sol mujeres",
+      "current_position": 37,
+      "previous_position": 37,
+      "change": 0,
+      "status": "stable",
+      "volume": 1000,
+      "estimated_clicks_per_month": 5,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas mujer",
+      "current_position": 47,
+      "previous_position": 47,
+      "change": 0,
+      "status": "stable",
+      "volume": 1000,
+      "estimated_clicks_per_month": 5,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "celine gafas",
+      "current_position": 4,
+      "previous_position": 4,
+      "change": 0,
+      "status": "stable",
+      "volume": 880,
+      "estimated_clicks_per_month": 62,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5"
+    },
+    {
+      "keyword": "gafas celine",
+      "current_position": 9,
+      "previous_position": 9,
+      "change": 0,
+      "status": "stable",
+      "volume": 880,
+      "estimated_clicks_per_month": 18,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5"
+    },
+    {
+      "keyword": "gafas de marca",
+      "current_position": 47,
+      "previous_position": 47,
+      "change": 0,
+      "status": "stable",
+      "volume": 880,
+      "estimated_clicks_per_month": 4,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "marcas de gafas",
+      "current_position": 51,
+      "previous_position": 51,
+      "change": 0,
+      "status": "stable",
+      "volume": 880,
+      "estimated_clicks_per_month": 4,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "modelos de gafas para mujer",
+      "current_position": 73,
+      "previous_position": 73,
+      "change": 0,
+      "status": "stable",
+      "volume": 720,
+      "estimated_clicks_per_month": 4,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "estilo de gafas para mujer",
+      "current_position": 77,
+      "previous_position": 77,
+      "change": 0,
+      "status": "stable",
+      "volume": 720,
+      "estimated_clicks_per_month": 4,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas de hombre",
+      "current_position": 17,
+      "previous_position": 17,
+      "change": 0,
+      "status": "stable",
+      "volume": 590,
+      "estimated_clicks_per_month": 3,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "gafas de hombres",
+      "current_position": 30,
+      "previous_position": 30,
+      "change": 0,
+      "status": "stable",
+      "volume": 590,
+      "estimated_clicks_per_month": 3,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "gafas de lujos",
+      "current_position": 3,
+      "previous_position": 3,
+      "change": 0,
+      "status": "stable",
+      "volume": 480,
+      "estimated_clicks_per_month": 48,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas de hombre de moda",
+      "current_position": 12,
+      "previous_position": 12,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "colombia gafas",
+      "current_position": 18,
+      "previous_position": 18,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas negras hombre",
+      "current_position": 18,
+      "previous_position": 18,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "gafas colombia",
+      "current_position": 23,
+      "previous_position": 23,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas de mujer",
+      "current_position": 28,
+      "previous_position": 28,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "lentes para hombres",
+      "current_position": 43,
+      "previous_position": 43,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "gafas amarillas",
+      "current_position": 62,
+      "previous_position": 62,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-galaxy-1"
+    },
+    {
+      "keyword": "gafas modernas",
+      "current_position": 65,
+      "previous_position": 65,
+      "change": 0,
+      "status": "stable",
+      "volume": 390,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "azul tornasol",
+      "current_position": 28,
+      "previous_position": 28,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-harry"
+    },
+    {
+      "keyword": "gafas de sol marca",
+      "current_position": 31,
+      "previous_position": 31,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas sol hombre",
+      "current_position": 32,
+      "previous_position": 32,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "marcas gafas de sol",
+      "current_position": 49,
+      "previous_position": 49,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas de sol de marca",
+      "current_position": 81,
+      "previous_position": 81,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas de sol marcas",
+      "current_position": 89,
+      "previous_position": 89,
+      "change": 0,
+      "status": "stable",
+      "volume": 320,
+      "estimated_clicks_per_month": 2,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "lentes de sol de mujer",
+      "current_position": 18,
+      "previous_position": 18,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "cuelga gafas",
+      "current_position": 20,
+      "previous_position": 20,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-zack"
+    },
+    {
+      "keyword": "gafas estilo",
+      "current_position": 22,
+      "previous_position": 22,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/"
+    },
+    {
+      "keyword": "gafas sol mujer",
+      "current_position": 24,
+      "previous_position": 24,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "lentes de sol mujer",
+      "current_position": 33,
+      "previous_position": 33,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas elegantes para mujer",
+      "current_position": 51,
+      "previous_position": 51,
+      "change": 0,
+      "status": "stable",
+      "volume": 260,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas tornasol",
+      "current_position": 6,
+      "previous_position": 6,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 8,
+      "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1"
+    },
+    {
+      "keyword": "tous gafas",
+      "current_position": 10,
+      "previous_position": 10,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 4,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-1"
+    },
+    {
+      "keyword": "gafas rosas",
+      "current_position": 15,
+      "previous_position": 15,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-praga-rosado"
+    },
+    {
+      "keyword": "gafas de sol para mujer de moda",
+      "current_position": 16,
+      "previous_position": 16,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "gafas oscuras para hombre",
+      "current_position": 24,
+      "previous_position": 24,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "lentes de sol para hombres",
+      "current_position": 34,
+      "previous_position": 34,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
+    },
+    {
+      "keyword": "gafas para dama",
+      "current_position": 49,
+      "previous_position": 49,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "cordon para las gafas",
+      "current_position": 68,
+      "previous_position": 68,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-dennise"
+    },
+    {
+      "keyword": "lentes de sol para hombre",
+      "current_position": 92,
+      "previous_position": 92,
+      "change": 0,
+      "status": "stable",
+      "volume": 210,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
+    },
+    {
+      "keyword": "gafas brasileñas precio",
+      "current_position": 20,
+      "previous_position": 20,
+      "change": 0,
+      "status": "stable",
+      "volume": 170,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
+    },
+    {
+      "keyword": "tiendas de gafas",
+      "current_position": 20,
+      "previous_position": 20,
+      "change": 0,
+      "status": "stable",
+      "volume": 140,
+      "estimated_clicks_per_month": 1,
+      "url": "https://modamarfil.com.co/"
+    }
+  ]
+}

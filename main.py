@@ -35,10 +35,22 @@ logger = setup_logger()
 def _load_seo_section(logger):
     """Read seo-system output for Marfil and pull into dashboard.
 
-    Path is relative: ../seo-system/output/marfil/reports/seo_dashboard.json
-    Returns None if not found (graceful degradation).
+    Sources (in priority order):
+      1. ./seo/evolution.json (snapshot diario tomado por el cron)
+      2. ../seo-system/output/marfil/* (datos manuales de research/audit)
+
+    Returns None if no data found.
     """
-    seo_root = Path(__file__).resolve().parent.parent / "seo-system" / "output" / "marfil"
+    repo_root = Path(__file__).resolve().parent
+    seo_root = repo_root.parent / "seo-system" / "output" / "marfil"
+
+    # Trigger daily rank snapshot (idempotent - only takes 1/day)
+    try:
+        from tools.seo.rank_tracker import update_evolution
+        update_evolution(repo_root)
+    except Exception as e:
+        logger.warning(f"rank_tracker error (non-fatal): {e}")
+
     seo_path = seo_root / "reports" / "seo_dashboard.json"
     if not seo_path.exists():
         logger.warning(f"SEO data not found at {seo_path} - skipping")
@@ -168,11 +180,14 @@ def _load_seo_section(logger):
             ],
         }
 
-        # ─── Rankings evolution (snapshot vs snapshot) ────────────────────────
-        evo_path = seo_root / "rankings" / "evolution.json"
-        if evo_path.exists():
-            with open(evo_path, encoding="utf-8") as f:
+        # ─── Rankings evolution: prefer local seo/ over seo-system/ ───────────
+        local_evo = repo_root / "seo" / "evolution.json"
+        seo_system_evo = seo_root / "rankings" / "evolution.json"
+        evo_to_use = local_evo if local_evo.exists() else seo_system_evo
+        if evo_to_use.exists():
+            with open(evo_to_use, encoding="utf-8") as f:
                 seo["rankings_evolution"] = json.load(f)
+            logger.info(f"Rankings evolution loaded from {evo_to_use.name}")
 
         logger.info(f"SEO section loaded: avg score {avg_score}/100, {len(opps)} oportunidades")
         return seo

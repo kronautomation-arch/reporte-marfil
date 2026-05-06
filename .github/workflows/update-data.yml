@@ -54,6 +54,11 @@ jobs:
           AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
           AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
           AMAZON_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_LWA_CLIENT_SECRET }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          SEO_DOMAIN: modamarfil.com.co
+          SEO_LOCATION_CODE: '2170'
+          SEO_LANGUAGE: es
         run: python main.py
 
       - name: Update MELI_REFRESH_TOKEN secret (rotated)
@@ -84,6 +89,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard.json
+          git add dashboard.json seo/
           git diff --staged --quiet || git commit -m "📊 Actualización automática $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push

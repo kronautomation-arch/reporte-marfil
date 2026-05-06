@@ -130,7 +130,7 @@ function _redirectToLogin(projectId, reason) {
   if (projectId) params.set('p', projectId);
   if (reason)    params.set('e', reason);
   const qs = params.toString();
-  window.location.replace('login.html' + (qs ? '?' + qs : ''));
+  window.location.replace('/login' + (qs ? '?' + qs : ''));
 }
 
 function _detectProjectFromHost() {

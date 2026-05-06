@@ -258,8 +258,8 @@
 
     try {
       await window.signIn(email, pass);
-      // Login OK → recargar a index.html (que ahora pasará requireAuth)
-      window.location.replace('index.html');
+      // Login OK → recargar a / (que ahora pasará requireAuth)
+      window.location.replace('/');
     } catch (err) {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Entrar';

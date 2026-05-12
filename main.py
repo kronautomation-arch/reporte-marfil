@@ -36,7 +36,7 @@ def _load_seo_section(logger):
     """Read pre-built SEO payload committed to this repo.
 
     El payload `seo/payload.json` lo genera el script
-    `seo-system/tools/build_marfil_payload.py` (corrida local) y se
+    `seo-platform/tools/build_marfil_payload.py` (corrida local) y se
     commitea junto con el dashboard. En CI no se intenta regenerar — solo
     se lee el archivo committeado, asi el cron jamas escribe seo:null.
 

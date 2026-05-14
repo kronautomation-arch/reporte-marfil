@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-05-14T11:07:08.067650-05:00",
+  "updated_at": "2026-05-14T12:01:03.741805-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.029883997921672806,
+    "pct_devoluciones": 0.028559963430526993,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 3157600,
-    "ordenes_ytd": 23,
-    "tasa_por_monto": 0.0299,
-    "tasa_por_ordenes": 0.0309
+    "monto_ytd": 3017700,
+    "ordenes_ytd": 22,
+    "tasa_por_monto": 0.0286,
+    "tasa_por_ordenes": 0.0295
   },
   "shopify": {
-    "ventas_brutas_ytd": 104083100,
-    "ventas_netas_ytd": 95469245,
+    "ventas_brutas_ytd": 104223000,
+    "ventas_netas_ytd": 95609145,
     "descuentos_ytd": 8613855,
-    "unidades_ytd": 829,
-    "ordenes_ytd": 703,
+    "unidades_ytd": 830,
+    "ordenes_ytd": 704,
     "cash_flow": {
-      "cod_neto": 65539285,
-      "cod_bruto": 71072800,
-      "cod_ordenes": 505,
+      "cod_neto": 65679185,
+      "cod_bruto": 71212700,
+      "cod_ordenes": 506,
       "prepago_neto": 29929960,
       "prepago_bruto": 33010300,
       "prepago_ordenes": 198,
-      "cod_pct": 0.6865,
-      "prepago_pct": 0.3135
+      "cod_pct": 0.687,
+      "prepago_pct": 0.313
     },
     "canceladas": {
       "ordenes": 29,
@@ -38,18 +38,18 @@
     },
     "no_despachadas": {
       "ordenes": 173,
-      "monto": 24734200,
-      "tasa": 0.1975,
+      "monto": 24714200,
+      "tasa": 0.1973,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 78,
-          "monto": 10415300.0
+          "ordenes": 79,
+          "monto": 10535200.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 47,
-          "monto": 7914100.0
+          "ordenes": 46,
+          "monto": 7774200.0
         },
         {
           "canal": "web",
@@ -109,8 +109,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
-        "unidades": 13,
-        "ventas": 1818700.0,
+        "unidades": 14,
+        "ventas": 1958600.0,
         "vendor": "MM"
       },
       {
@@ -201,8 +201,8 @@
       },
       {
         "sku": "TAURUS NEGRO-AZUL-1",
-        "unidades": 13,
-        "ventas": 1818700.0,
+        "unidades": 14,
+        "ventas": 1958600.0,
         "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 431,
-        "ventas_brutas": 64698300.0
+        "ordenes": 432,
+        "ventas_brutas": 64838200.0
       },
       {
         "canal": "5690175",
@@ -471,16 +471,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 27234844,
+      "gasto": 27269536,
       "purchases": 654
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 14659687,
+      "gasto": 14677415,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 41894531,
+  "ads_gasto_total": 41946951,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4177,18 +4177,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-22": {
-      "envia_ventas": 1788600.0,
-      "envia_ordenes": 14,
-      "envia_unidades": 14,
-      "envia_costo_envio": 178180.0,
-      "digital_ventas_netas": 1688600.0,
+      "envia_ventas": 1928500.0,
+      "envia_ordenes": 15,
+      "envia_unidades": 15,
+      "envia_costo_envio": 190660.0,
+      "digital_ventas_netas": 1828500.0,
       "digital_descuentos": 100000.0,
-      "digital_cod_neto": 1448800.0,
+      "digital_cod_neto": 1588700.0,
       "digital_prepago_neto": 239800.0,
-      "digital_cod_ordenes": 12,
+      "digital_cod_ordenes": 13,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 1788600.0,
-      "envia_ordenes_raw": 14,
+      "envia_ventas_raw": 1928500.0,
+      "envia_ordenes_raw": 15,
       "meta_gasto": 500554.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -4915,7 +4915,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 205616.0,
+      "meta_gasto": 258036.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

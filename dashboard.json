@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T09:22:30.369703-05:00",
+  "updated_at": "2026-05-16T09:49:18.099654-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -471,16 +471,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 27665173,
+      "gasto": 27665788,
       "purchases": 656
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 15169802,
+      "gasto": 15182945,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 42834975,
+  "ads_gasto_total": 42848733,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4948,7 +4948,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 899300.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 360292.0,
+      "meta_gasto": 360391.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -4981,7 +4981,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 79136.0,
+      "meta_gasto": 92795.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

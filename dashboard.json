@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28T12:32:34.922844-05:00",
+  "updated_at": "2026-05-28T13:11:19.232555-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -447,22 +447,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 7418.46,
-    "ventas_netas_ytd": 4162.95,
-    "comisiones_ytd": 1277.35,
+    "ventas_netas_ytd": 4151.86,
+    "comisiones_ytd": 1288.44,
     "ads_spend_ytd": 1559.16,
     "refunds_ytd": 419.0,
-    "pct_comision": 0.1722,
+    "pct_comision": 0.1737,
     "ticket_promedio": 48.81,
     "unidades_ytd": 161,
     "ordenes_ytd": 152,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5148.3,
+      "ventas_principal": 5193.2,
       "shipping_income": 99.18,
-      "tax_collected": 292.81,
-      "commission": 772.83,
-      "fba_fees": 495.88,
+      "tax_collected": 297.34,
+      "commission": 779.57,
+      "fba_fees": 500.23,
       "other_fees": 8.64,
       "refunds": 419.0,
       "ads_spend": 1559.16
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 30147040,
+      "gasto": 30154411,
       "purchases": 662
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 17193388,
+      "gasto": 17202126,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 47340428,
+  "ads_gasto_total": 47356537,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -5352,7 +5352,7 @@
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 1139200.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 604773.0,
+      "meta_gasto": 604777.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -5385,7 +5385,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 305214.0,
+      "meta_gasto": 321319.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

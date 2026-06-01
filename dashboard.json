@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-06-01T15:13:05.946956-05:00",
+  "updated_at": "2026-06-01T17:11:43.558374-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.055263052946601984,
+    "pct_devoluciones": 0.0568686732579879,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6512900,
-    "ordenes_ytd": 47,
-    "tasa_por_monto": 0.0553,
-    "tasa_por_ordenes": 0.0532
+    "monto_ytd": 6752700,
+    "ordenes_ytd": 48,
+    "tasa_por_monto": 0.0569,
+    "tasa_por_ordenes": 0.0538
   },
   "shopify": {
-    "ventas_brutas_ytd": 121463500,
-    "ventas_netas_ytd": 111535295,
+    "ventas_brutas_ytd": 122492700,
+    "ventas_netas_ytd": 112564495,
     "descuentos_ytd": 9928205,
-    "unidades_ytd": 965,
-    "ordenes_ytd": 824,
+    "unidades_ytd": 973,
+    "ordenes_ytd": 832,
     "cash_flow": {
-      "cod_neto": 76869035,
-      "cod_bruto": 83567000,
-      "cod_ordenes": 591,
-      "prepago_neto": 34666260,
-      "prepago_bruto": 37896500,
-      "prepago_ordenes": 233,
-      "cod_pct": 0.6892,
-      "prepago_pct": 0.3108
+      "cod_neto": 77518535,
+      "cod_bruto": 84216500,
+      "cod_ordenes": 596,
+      "prepago_neto": 35045960,
+      "prepago_bruto": 38276200,
+      "prepago_ordenes": 236,
+      "cod_pct": 0.6887,
+      "prepago_pct": 0.3113
     },
     "canceladas": {
       "ordenes": 31,
@@ -38,18 +38,18 @@
     },
     "no_despachadas": {
       "ordenes": 185,
-      "monto": 26450800,
-      "tasa": 0.1833,
+      "monto": 26550700,
+      "tasa": 0.1819,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 83,
-          "monto": 11182600.0
+          "ordenes": 82,
+          "monto": 11042700.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 55,
-          "monto": 8983300.0
+          "ordenes": 56,
+          "monto": 9223100.0
         },
         {
           "canal": "web",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 579,
-        "ventas": 69422100.0,
+        "unidades": 584,
+        "ventas": 70021600.0,
         "vendor": "Marfil"
       },
       {
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 48,
-        "ventas": 6715200.0,
+        "unidades": 50,
+        "ventas": 6995000.0,
         "vendor": "MM"
       },
       {
@@ -90,15 +90,15 @@
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
         "unidades": 19,
-        "ventas": 2658100.0,
+        "ventas": 2848100.0,
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 18,
-        "ventas": 2698200.0,
+        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
+        "unidades": 19,
+        "ventas": 2658100.0,
         "vendor": "MM"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 579,
-        "ventas": 69422100.0,
+        "unidades": 584,
+        "ventas": 70021600.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 48,
-        "ventas": 6715200.0,
+        "unidades": 50,
+        "ventas": 6995000.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -182,16 +182,16 @@
         "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA"
       },
       {
+        "sku": "VENUS CAFÉ-1",
+        "unidades": 19,
+        "ventas": 2848100.0,
+        "title": "GAFAS DE SOL MARFIL VENUS CAFE"
+      },
+      {
         "sku": "TAURUS NEGRO-AZUL-1",
         "unidades": 19,
         "ventas": 2658100.0,
         "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
-      },
-      {
-        "sku": "VENUS CAFÉ-1",
-        "unidades": 18,
-        "ventas": 2698200.0,
-        "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
         "sku": "CALVIN DORADO-1",
@@ -275,13 +275,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 520,
-        "ventas_brutas": 77558600.0
+        "ordenes": 526,
+        "ventas_brutas": 78328000.0
       },
       {
         "canal": "5690175",
-        "ordenes": 177,
-        "ventas_brutas": 25419500.0
+        "ordenes": 179,
+        "ventas_brutas": 25679300.0
       },
       {
         "canal": "web",
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 30644287,
-      "purchases": 662
+      "gasto": 30656177,
+      "purchases": 664
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 17581797,
+      "gasto": 17602060,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 48226084,
+  "ads_gasto_total": 48258237,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -5505,19 +5505,19 @@
       "digital_gastos_var": 0
     },
     "2026-06-01": {
-      "envia_ventas": 1049200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 8,
-      "envia_costo_envio": 99840.0,
-      "digital_ventas_netas": 979200.0,
+      "envia_ventas": 2078400.0,
+      "envia_ordenes": 15,
+      "envia_unidades": 16,
+      "envia_costo_envio": 200750.0,
+      "digital_ventas_netas": 2008400.0,
       "digital_descuentos": 70000.0,
-      "digital_cod_neto": 439600.0,
-      "digital_prepago_neto": 539600.0,
-      "digital_cod_ordenes": 4,
-      "digital_prepago_ordenes": 3,
-      "envia_ventas_raw": 269800.0,
-      "envia_ordenes_raw": 8,
-      "meta_gasto": 244321.0,
+      "digital_cod_neto": 1089100.0,
+      "digital_prepago_neto": 919300.0,
+      "digital_cod_ordenes": 9,
+      "digital_prepago_ordenes": 6,
+      "envia_ventas_raw": 919300.0,
+      "envia_ordenes_raw": 16,
+      "meta_gasto": 276474.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-06-01T14:16:51.564026-05:00",
+  "updated_at": "2026-06-01T14:55:07.604386-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.05424568126143907,
+    "pct_devoluciones": 0.055263052946601984,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6393000,
-    "ordenes_ytd": 46,
-    "tasa_por_monto": 0.0542,
-    "tasa_por_ordenes": 0.0521
+    "monto_ytd": 6512900,
+    "ordenes_ytd": 47,
+    "tasa_por_monto": 0.0553,
+    "tasa_por_ordenes": 0.0532
   },
   "shopify": {
-    "ventas_brutas_ytd": 121583400,
-    "ventas_netas_ytd": 111655195,
+    "ventas_brutas_ytd": 121463500,
+    "ventas_netas_ytd": 111535295,
     "descuentos_ytd": 9928205,
-    "unidades_ytd": 966,
-    "ordenes_ytd": 825,
+    "unidades_ytd": 965,
+    "ordenes_ytd": 824,
     "cash_flow": {
-      "cod_neto": 76988935,
-      "cod_bruto": 83686900,
-      "cod_ordenes": 592,
+      "cod_neto": 76869035,
+      "cod_bruto": 83567000,
+      "cod_ordenes": 591,
       "prepago_neto": 34666260,
       "prepago_bruto": 37896500,
       "prepago_ordenes": 233,
-      "cod_pct": 0.6895,
-      "prepago_pct": 0.3105
+      "cod_pct": 0.6892,
+      "prepago_pct": 0.3108
     },
     "canceladas": {
       "ordenes": 31,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 183,
-      "monto": 26203100,
-      "tasa": 0.1815,
+      "ordenes": 185,
+      "monto": 26450800,
+      "tasa": 0.1833,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 81,
-          "monto": 10934900.0
+          "ordenes": 83,
+          "monto": 11182600.0
         },
         {
           "canal": "shopify_draft_order",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 580,
-        "ventas": 69542000.0,
+        "unidades": 579,
+        "ventas": 69422100.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 580,
-        "ventas": 69542000.0,
+        "unidades": 579,
+        "ventas": 69422100.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -280,8 +280,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 178,
-        "ventas_brutas": 25539400.0
+        "ordenes": 177,
+        "ventas_brutas": 25419500.0
       },
       {
         "canal": "web",
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 30634355,
+      "gasto": 30642264,
       "purchases": 662
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 17555885,
+      "gasto": 17576398,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 48190240,
+  "ads_gasto_total": 48218662,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4218,18 +4218,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-23": {
-      "envia_ventas": 2196300.0,
-      "envia_ordenes": 13,
-      "envia_unidades": 17,
-      "envia_costo_envio": 168780.0,
-      "digital_ventas_netas": 1971350.0,
+      "envia_ventas": 2076400.0,
+      "envia_ordenes": 12,
+      "envia_unidades": 16,
+      "envia_costo_envio": 156300.0,
+      "digital_ventas_netas": 1851450.0,
       "digital_descuentos": 224950.0,
-      "digital_cod_neto": 1346800.0,
+      "digital_cod_neto": 1226900.0,
       "digital_prepago_neto": 624550.0,
-      "digital_cod_ordenes": 10,
+      "digital_cod_ordenes": 9,
       "digital_prepago_ordenes": 3,
-      "envia_ventas_raw": 2196300.0,
-      "envia_ordenes_raw": 13,
+      "envia_ventas_raw": 2076400.0,
+      "envia_ordenes_raw": 12,
       "meta_gasto": 544427.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -5517,7 +5517,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 269800.0,
       "envia_ordenes_raw": 8,
-      "meta_gasto": 208477.0,
+      "meta_gasto": 236899.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

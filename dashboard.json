@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-06-02T16:49:19.332632-05:00",
+  "updated_at": "2026-06-03T13:01:04.021438-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.05323906363204837,
+    "pct_devoluciones": 0.055485880364087574,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6393000,
-    "ordenes_ytd": 46,
-    "tasa_por_monto": 0.0532,
-    "tasa_por_ordenes": 0.051
+    "monto_ytd": 6662800,
+    "ordenes_ytd": 48,
+    "tasa_por_monto": 0.0555,
+    "tasa_por_ordenes": 0.053
   },
   "shopify": {
-    "ventas_brutas_ytd": 124051500,
-    "ventas_netas_ytd": 114043295,
-    "descuentos_ytd": 10008205,
-    "unidades_ytd": 985,
-    "ordenes_ytd": 843,
+    "ventas_brutas_ytd": 124149300,
+    "ventas_netas_ytd": 114161095,
+    "descuentos_ytd": 9988205,
+    "unidades_ytd": 987,
+    "ordenes_ytd": 844,
     "cash_flow": {
-      "cod_neto": 78627635,
-      "cod_bruto": 85385600,
+      "cod_neto": 78625535,
+      "cod_bruto": 85363500,
       "cod_ordenes": 604,
-      "prepago_neto": 35415660,
-      "prepago_bruto": 38665900,
-      "prepago_ordenes": 239,
-      "cod_pct": 0.6895,
-      "prepago_pct": 0.3105
+      "prepago_neto": 35535560,
+      "prepago_bruto": 38785800,
+      "prepago_ordenes": 240,
+      "cod_pct": 0.6887,
+      "prepago_pct": 0.3113
     },
     "canceladas": {
       "ordenes": 32,
@@ -37,19 +37,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 184,
-      "monto": 26438700,
-      "tasa": 0.1792,
+      "ordenes": 186,
+      "monto": 26700600,
+      "tasa": 0.1806,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 83,
-          "monto": 11170500.0
+          "ordenes": 82,
+          "monto": 11042700.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 54,
-          "monto": 8983300.0
+          "ordenes": 57,
+          "monto": 9373000.0
         },
         {
           "canal": "web",
@@ -61,14 +61,14 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 592,
-        "ventas": 70980800.0,
+        "unidades": 594,
+        "ventas": 71220600.0,
         "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS AZUL ROJO",
-        "unidades": 115,
-        "ventas": 17238500.0,
+        "unidades": 114,
+        "ventas": 17088600.0,
         "vendor": "MM"
       },
       {
@@ -79,8 +79,8 @@
       },
       {
         "nombre": "ENVIO PRIORITARIO",
-        "unidades": 25,
-        "ventas": 197500.0,
+        "unidades": 26,
+        "ventas": 205400.0,
         "vendor": ""
       },
       {
@@ -153,14 +153,14 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 592,
-        "ventas": 70980800.0,
+        "unidades": 594,
+        "ventas": 71220600.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
         "sku": "VENUS AZUL-ROJO-1",
-        "unidades": 115,
-        "ventas": 17238500.0,
+        "unidades": 114,
+        "ventas": 17088600.0,
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
@@ -171,8 +171,8 @@
       },
       {
         "sku": "(sin SKU)",
-        "unidades": 25,
-        "ventas": 197500.0,
+        "unidades": 26,
+        "ventas": 205400.0,
         "title": "ENVIO PRIORITARIO"
       },
       {
@@ -275,25 +275,25 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 536,
-        "ventas_brutas": 79766900.0
+        "ordenes": 534,
+        "ventas_brutas": 79497100.0
       },
       {
         "canal": "5690175",
-        "ordenes": 179,
-        "ventas_brutas": 25679300.0
+        "ordenes": 181,
+        "ventas_brutas": 25927000.0
       },
       {
         "canal": "web",
-        "ordenes": 128,
-        "ventas_brutas": 18605300.0
+        "ordenes": 129,
+        "ventas_brutas": 18725200.0
       }
     ],
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 206,
-        "monto": 8401250.0
+        "usos": 205,
+        "monto": 8381250.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -359,20 +359,20 @@
       "transactions_completed": 185,
       "transactions_canceled": 4
     },
-    "ventas_brutas_ytd": 10952600,
-    "ventas_netas_ytd": 8597828,
-    "comisiones_ytd": 2354772,
+    "ventas_brutas_ytd": 11252400,
+    "ventas_netas_ytd": 8833172,
+    "comisiones_ytd": 2419228,
     "pct_comision": 0.215,
-    "ticket_promedio": 148008,
-    "unidades_ytd": 74,
-    "ordenes_ytd": 74,
+    "ticket_promedio": 148058,
+    "unidades_ytd": 76,
+    "ordenes_ytd": 76,
     "entregadas": {
       "ordenes": 74,
       "monto": 10952600
     },
     "en_transito": {
-      "ordenes": 0,
-      "monto": 0
+      "ordenes": 2,
+      "monto": 299800
     },
     "canceladas": {
       "ordenes": 2,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 62,
-        "ventas": 9293800.0,
-        "comisiones": 1998136.0,
+        "unidades": 64,
+        "ventas": 9593600.0,
+        "comisiones": 2062592.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 7295664.0
+        "ventas_netas": 7531008.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 31016761,
-      "purchases": 666
+      "gasto": 31207342,
+      "purchases": 668
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 17871987,
+      "gasto": 18063346,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 48888748,
+  "ads_gasto_total": 49270688,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -4251,18 +4251,18 @@
       "digital_gastos_var": 0
     },
     "2026-04-24": {
-      "envia_ventas": 1059200.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 8,
-      "envia_costo_envio": 90160.0,
-      "digital_ventas_netas": 949200.0,
+      "envia_ventas": 909300.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 7,
+      "envia_costo_envio": 77680.0,
+      "digital_ventas_netas": 799300.0,
       "digital_descuentos": 110000.0,
-      "digital_cod_neto": 809300.0,
+      "digital_cod_neto": 659400.0,
       "digital_prepago_neto": 139900.0,
-      "digital_cod_ordenes": 6,
+      "digital_cod_ordenes": 5,
       "digital_prepago_ordenes": 1,
-      "envia_ventas_raw": 939300.0,
-      "envia_ordenes_raw": 7,
+      "envia_ventas_raw": 789400.0,
+      "envia_ordenes_raw": 6,
       "meta_gasto": 515650.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
@@ -5307,18 +5307,18 @@
       "digital_gastos_var": 0
     },
     "2026-05-26": {
-      "envia_ventas": 929300.0,
-      "envia_ordenes": 7,
-      "envia_unidades": 7,
-      "envia_costo_envio": 83750.0,
-      "digital_ventas_netas": 909300.0,
-      "digital_descuentos": 20000.0,
-      "digital_cod_neto": 649500.0,
+      "envia_ventas": 809400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
+      "envia_costo_envio": 71270.0,
+      "digital_ventas_netas": 809400.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 549600.0,
       "digital_prepago_neto": 259800.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 4,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 669500.0,
-      "envia_ordenes_raw": 7,
+      "envia_ventas_raw": 549600.0,
+      "envia_ordenes_raw": 6,
       "meta_gasto": 618293.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -5517,7 +5517,7 @@
       "digital_prepago_ordenes": 6,
       "envia_ventas_raw": 919300.0,
       "envia_ordenes_raw": 16,
-      "meta_gasto": 403820.0,
+      "meta_gasto": 403938.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -5550,12 +5550,45 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1339000.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 503165.0,
+      "meta_gasto": 599900.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 560000.0,
+      "pos_titan_plaza_unidades": 4,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-06-03": {
+      "envia_ventas": 367600.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 4,
+      "envia_costo_envio": 37440.0,
+      "digital_ventas_netas": 367600.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 247700.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 2,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 0.0,
+      "envia_ordenes_raw": 3,
+      "meta_gasto": 285087.0,
+      "meli_ventas_brutas": 299800.0,
+      "meli_ventas_netas": 235344.0,
+      "meli_comisiones": 64456.0,
+      "meli_ordenes": 2,
+      "meli_unidades": 2,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

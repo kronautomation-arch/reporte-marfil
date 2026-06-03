@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T13:01:04.021438-05:00",
+  "updated_at": "2026-06-03T13:18:50.664669-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -447,25 +447,25 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 7712.7,
-    "ventas_netas_ytd": 4367.93,
-    "comisiones_ytd": 1321.71,
-    "ads_spend_ytd": 1559.16,
-    "refunds_ytd": 463.9,
-    "pct_comision": 0.1714,
+    "ventas_netas_ytd": 5011.9,
+    "comisiones_ytd": 1102.09,
+    "ads_spend_ytd": 1224.61,
+    "refunds_ytd": 374.1,
+    "pct_comision": 0.1429,
     "ticket_promedio": 48.81,
     "unidades_ytd": 168,
     "ordenes_ytd": 158,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5327.9,
-      "shipping_income": 99.18,
-      "tax_collected": 306.26,
-      "commission": 799.79,
-      "fba_fees": 513.28,
-      "other_fees": 8.64,
-      "refunds": 463.9,
-      "ads_spend": 1559.16
+      "ventas_principal": 4429.9,
+      "shipping_income": 76.28,
+      "tax_collected": 260.84,
+      "commission": 664.99,
+      "fba_fees": 429.28,
+      "other_fees": 7.82,
+      "refunds": 374.1,
+      "ads_spend": 1224.61
     },
     "top_productos": [
       {
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 31207342,
+      "gasto": 31217450,
       "purchases": 668
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 18063346,
+      "gasto": 18066825,
       "purchases": 28
     }
   ],
-  "ads_gasto_total": 49270688,
+  "ads_gasto_total": 49284275,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -5550,7 +5550,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1339000.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 599900.0,
+      "meta_gasto": 599914.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -5583,7 +5583,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 0.0,
       "envia_ordenes_raw": 3,
-      "meta_gasto": 285087.0,
+      "meta_gasto": 298660.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
       "meli_comisiones": 64456.0,

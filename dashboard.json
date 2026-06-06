@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T12:05:17.743563-05:00",
+  "updated_at": "2026-06-06T15:10:10.832338-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -447,25 +447,25 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 8048.9,
-    "ventas_netas_ytd": 5415.42,
-    "comisiones_ytd": 1232.17,
-    "ads_spend_ytd": 1057.11,
-    "refunds_ytd": 344.2,
-    "pct_comision": 0.1531,
+    "ventas_netas_ytd": 4681.95,
+    "comisiones_ytd": 1343.89,
+    "ads_spend_ytd": 1559.16,
+    "refunds_ytd": 463.9,
+    "pct_comision": 0.167,
     "ticket_promedio": 48.78,
     "unidades_ytd": 175,
     "ordenes_ytd": 165,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4968.7,
-      "shipping_income": 89.05,
-      "tax_collected": 297.67,
-      "commission": 745.87,
-      "fba_fees": 479.98,
-      "other_fees": 6.32,
-      "refunds": 344.2,
-      "ads_spend": 1057.11
+      "ventas_principal": 5417.7,
+      "shipping_income": 102.17,
+      "tax_collected": 313.89,
+      "commission": 813.27,
+      "fba_fees": 521.98,
+      "other_fees": 8.64,
+      "refunds": 463.9,
+      "ads_spend": 1559.16
     },
     "top_productos": [
       {
@@ -484,11 +484,11 @@
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 18696035,
+      "gasto": 18731787,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 50384259,
+  "ads_gasto_total": 50420011,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -5649,7 +5649,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 379700.0,
       "envia_ordenes_raw": 4,
-      "meta_gasto": 208231.0,
+      "meta_gasto": 208396.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -5682,7 +5682,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 223717.0,
+      "meta_gasto": 259304.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

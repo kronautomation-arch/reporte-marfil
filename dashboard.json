@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T12:09:06.155816-05:00",
+  "updated_at": "2026-06-07T15:13:50.398766-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 198,
-      "monto": 28597000,
-      "tasa": 0.1868,
+      "ordenes": 199,
+      "monto": 28724800,
+      "tasa": 0.1876,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 85,
-          "monto": 11410300.0
+          "ordenes": 86,
+          "monto": 11538100.0
         },
         {
           "canal": "shopify_draft_order",
@@ -355,24 +355,24 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 187,
-      "transactions_completed": 183,
+      "transactions_total": 188,
+      "transactions_completed": 184,
       "transactions_canceled": 4
     },
-    "ventas_brutas_ytd": 11402300,
-    "ventas_netas_ytd": 8950844,
-    "comisiones_ytd": 2451456,
+    "ventas_brutas_ytd": 11552200,
+    "ventas_netas_ytd": 9068516,
+    "comisiones_ytd": 2483684,
     "pct_comision": 0.215,
-    "ticket_promedio": 148082,
-    "unidades_ytd": 77,
-    "ordenes_ytd": 77,
+    "ticket_promedio": 148105,
+    "unidades_ytd": 78,
+    "ordenes_ytd": 78,
     "entregadas": {
       "ordenes": 77,
       "monto": 11402300
     },
     "en_transito": {
-      "ordenes": 0,
-      "monto": 0
+      "ordenes": 1,
+      "monto": 149900
     },
     "canceladas": {
       "ordenes": 2,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 65,
-        "ventas": 9743500.0,
-        "comisiones": 2094820.0,
+        "unidades": 66,
+        "ventas": 9893400.0,
+        "comisiones": 2127048.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 7648680.0
+        "ventas_netas": 7766352.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -446,15 +446,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 8096.94,
-    "ventas_netas_ytd": 4729.99,
+    "ventas_brutas_ytd": 8144.81,
+    "ventas_netas_ytd": 4777.86,
     "comisiones_ytd": 1343.89,
     "ads_spend_ytd": 1559.16,
     "refunds_ytd": 463.9,
-    "pct_comision": 0.166,
-    "ticket_promedio": 48.78,
-    "unidades_ytd": 176,
-    "ordenes_ytd": 166,
+    "pct_comision": 0.165,
+    "ticket_promedio": 48.77,
+    "unidades_ytd": 177,
+    "ordenes_ytd": 167,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -470,8 +470,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 176,
-        "ventas": 8096.939999999998,
+        "unidades": 177,
+        "ventas": 8144.809999999998,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -5688,9 +5688,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 47.87,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -5716,11 +5716,11 @@
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
+      "meli_ventas_brutas": 149900.0,
+      "meli_ventas_netas": 117672.0,
+      "meli_comisiones": 32228.0,
+      "meli_ordenes": 1,
+      "meli_unidades": 1,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

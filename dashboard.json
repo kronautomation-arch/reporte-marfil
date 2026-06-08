@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T13:21:45.595572-05:00",
+  "updated_at": "2026-06-08T16:11:12.934535-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 200,
-      "monto": 28844700,
-      "tasa": 0.1883,
+      "ordenes": 201,
+      "monto": 28964600,
+      "tasa": 0.1891,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 87,
-          "monto": 11658000.0
+          "ordenes": 88,
+          "monto": 11777900.0
         },
         {
           "canal": "shopify_draft_order",
@@ -355,24 +355,24 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 188,
-      "transactions_completed": 184,
+      "transactions_total": 189,
+      "transactions_completed": 185,
       "transactions_canceled": 4
     },
-    "ventas_brutas_ytd": 11552200,
-    "ventas_netas_ytd": 9068516,
-    "comisiones_ytd": 2483684,
+    "ventas_brutas_ytd": 11702100,
+    "ventas_netas_ytd": 9186188,
+    "comisiones_ytd": 2515912,
     "pct_comision": 0.215,
-    "ticket_promedio": 148105,
-    "unidades_ytd": 78,
-    "ordenes_ytd": 78,
+    "ticket_promedio": 148128,
+    "unidades_ytd": 79,
+    "ordenes_ytd": 79,
     "entregadas": {
       "ordenes": 77,
       "monto": 11402300
     },
     "en_transito": {
-      "ordenes": 1,
-      "monto": 149900
+      "ordenes": 2,
+      "monto": 299800
     },
     "canceladas": {
       "ordenes": 2,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 66,
-        "ventas": 9893400.0,
-        "comisiones": 2127048.0,
+        "unidades": 67,
+        "ventas": 10043300.0,
+        "comisiones": 2159276.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 7766352.0
+        "ventas_netas": 7884024.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -5749,11 +5749,11 @@
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
+      "meli_ventas_brutas": 149900.0,
+      "meli_ventas_netas": 117672.0,
+      "meli_comisiones": 32228.0,
+      "meli_ordenes": 1,
+      "meli_unidades": 1,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

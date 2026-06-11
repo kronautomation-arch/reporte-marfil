@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T11:55:40.122833-05:00",
+  "updated_at": "2026-06-11T12:32:58.411034-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -479,16 +479,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 32261873,
+      "gasto": 32274182,
       "purchases": 674
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 19383539,
+      "gasto": 19389473,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 51645412,
+  "ads_gasto_total": 51663655,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -5769,16 +5769,16 @@
       "digital_gastos_var": 0
     },
     "2026-06-09": {
-      "envia_ventas": 2835700.0,
-      "envia_ordenes": 18,
-      "envia_unidades": 23,
+      "envia_ventas": 2715800.0,
+      "envia_ordenes": 17,
+      "envia_unidades": 22,
       "envia_costo_envio": 229320.0,
-      "digital_ventas_netas": 2545000.0,
+      "digital_ventas_netas": 2425100.0,
       "digital_descuentos": 290700.0,
       "digital_cod_neto": 1825600.0,
-      "digital_prepago_neto": 719400.0,
+      "digital_prepago_neto": 599500.0,
       "digital_cod_ordenes": 12,
-      "digital_prepago_ordenes": 6,
+      "digital_prepago_ordenes": 5,
       "envia_ventas_raw": 389700.0,
       "envia_ordenes_raw": 18,
       "meta_gasto": 422162.0,
@@ -5814,7 +5814,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 939300.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 461286.0,
+      "meta_gasto": 461292.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
       "meli_comisiones": 64456.0,
@@ -5835,19 +5835,19 @@
       "digital_gastos_var": 0
     },
     "2026-06-11": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
+      "envia_costo_envio": 13880.0,
+      "digital_ventas_netas": 119900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 0.0,
+      "digital_prepago_neto": 119900.0,
       "digital_cod_ordenes": 0,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 327861.0,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 0.0,
+      "envia_ordenes_raw": 1,
+      "meta_gasto": 346098.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

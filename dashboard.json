@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T12:14:32.001458-05:00",
+  "updated_at": "2026-06-14T15:19:35.269135-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -355,24 +355,24 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 187,
-      "transactions_completed": 183,
+      "transactions_total": 188,
+      "transactions_completed": 184,
       "transactions_canceled": 4
     },
-    "ventas_brutas_ytd": 12281700,
-    "ventas_netas_ytd": 9641176,
-    "comisiones_ytd": 2640524,
+    "ventas_brutas_ytd": 12431600,
+    "ventas_netas_ytd": 9758848,
+    "comisiones_ytd": 2672752,
     "pct_comision": 0.215,
-    "ticket_promedio": 147972,
-    "unidades_ytd": 83,
-    "ordenes_ytd": 83,
+    "ticket_promedio": 147995,
+    "unidades_ytd": 84,
+    "ordenes_ytd": 84,
     "entregadas": {
       "ordenes": 80,
       "monto": 11852000
     },
     "en_transito": {
-      "ordenes": 3,
-      "monto": 429700
+      "ordenes": 4,
+      "monto": 579600
     },
     "canceladas": {
       "ordenes": 2,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 69,
-        "ventas": 10343100.0,
-        "comisiones": 2223732.0,
+        "unidades": 70,
+        "ventas": 10493000.0,
+        "comisiones": 2255960.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 8119368.0
+        "ventas_netas": 8237040.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -5963,11 +5963,11 @@
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0,
-      "meli_ventas_brutas": 139900.0,
-      "meli_ventas_netas": 109822.0,
-      "meli_comisiones": 30078.0,
-      "meli_ordenes": 1,
-      "meli_unidades": 1,
+      "meli_ventas_brutas": 289800.0,
+      "meli_ventas_netas": 227494.0,
+      "meli_comisiones": 62306.0,
+      "meli_ordenes": 2,
+      "meli_unidades": 2,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T10:34:17.323556-05:00",
+  "updated_at": "2026-06-24T11:10:08.936491-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -359,20 +359,20 @@
       "transactions_completed": 190,
       "transactions_canceled": 3
     },
-    "ventas_brutas_ytd": 13630800,
-    "ventas_netas_ytd": 10700224,
-    "comisiones_ytd": 2930576,
+    "ventas_brutas_ytd": 13780700,
+    "ventas_netas_ytd": 10817896,
+    "comisiones_ytd": 2962804,
     "pct_comision": 0.215,
-    "ticket_promedio": 148161,
-    "unidades_ytd": 92,
-    "ordenes_ytd": 92,
+    "ticket_promedio": 148180,
+    "unidades_ytd": 93,
+    "ordenes_ytd": 93,
     "entregadas": {
       "ordenes": 91,
       "monto": 13480900
     },
     "en_transito": {
-      "ordenes": 1,
-      "monto": 149900
+      "ordenes": 2,
+      "monto": 299800
     },
     "canceladas": {
       "ordenes": 2,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 78,
-        "ventas": 11692200.0,
-        "comisiones": 2513784.0,
+        "unidades": 79,
+        "ventas": 11842100.0,
+        "comisiones": 2546012.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 9178416.0
+        "ventas_netas": 9296088.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 33421142,
+      "gasto": 33426878,
       "purchases": 682
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 20815442,
+      "gasto": 20822533,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 54236584,
+  "ads_gasto_total": 54249411,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6259,7 +6259,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 499600.0,
       "envia_ordenes_raw": 6,
-      "meta_gasto": 466872.0,
+      "meta_gasto": 466959.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -6292,12 +6292,12 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 209637.0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
+      "meta_gasto": 222377.0,
+      "meli_ventas_brutas": 149900.0,
+      "meli_ventas_netas": 117672.0,
+      "meli_comisiones": 32228.0,
+      "meli_ordenes": 1,
+      "meli_unidades": 1,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

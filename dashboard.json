@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-06-26T11:09:25.038325-05:00",
+  "updated_at": "2026-06-26T12:00:23.856291-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04847082896718462,
+    "pct_devoluciones": 0.04963092177460921,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6263100,
-    "ordenes_ytd": 50,
-    "tasa_por_monto": 0.0485,
-    "tasa_por_ordenes": 0.0488
+    "monto_ytd": 6413000,
+    "ordenes_ytd": 51,
+    "tasa_por_monto": 0.0496,
+    "tasa_por_ordenes": 0.0498
   },
   "shopify": {
-    "ventas_brutas_ytd": 141227400,
-    "ventas_netas_ytd": 129998795,
+    "ventas_brutas_ytd": 141077500,
+    "ventas_netas_ytd": 129848895,
     "descuentos_ytd": 11238605,
-    "unidades_ytd": 1126,
-    "ordenes_ytd": 965,
+    "unidades_ytd": 1125,
+    "ordenes_ytd": 964,
     "cash_flow": {
-      "cod_neto": 90606435,
-      "cod_bruto": 98444800,
-      "cod_ordenes": 695,
+      "cod_neto": 90456535,
+      "cod_bruto": 98294900,
+      "cod_ordenes": 694,
       "prepago_neto": 39392360,
       "prepago_bruto": 42782600,
       "prepago_ordenes": 270,
-      "cod_pct": 0.697,
-      "prepago_pct": 0.303
+      "cod_pct": 0.6966,
+      "prepago_pct": 0.3034
     },
     "canceladas": {
       "ordenes": 39,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 192,
-      "monto": 27747700,
-      "tasa": 0.1659,
+      "ordenes": 193,
+      "monto": 27897600,
+      "tasa": 0.1668,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 54,
-          "monto": 9273100.0
+          "ordenes": 55,
+          "monto": 9423000.0
         },
         {
           "canal": "web",
@@ -67,8 +67,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS AZUL ROJO",
-        "unidades": 120,
-        "ventas": 17988000.0,
+        "unidades": 119,
+        "ventas": 17838100.0,
         "vendor": "MM"
       },
       {
@@ -159,8 +159,8 @@
       },
       {
         "sku": "VENUS AZUL-ROJO-1",
-        "unidades": 120,
-        "ventas": 17988000.0,
+        "unidades": 119,
+        "ventas": 17838100.0,
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 614,
-        "ventas_brutas": 91507700.0
+        "ordenes": 613,
+        "ventas_brutas": 91357800.0
       },
       {
         "canal": "5690175",
@@ -367,12 +367,12 @@
     "unidades_ytd": 95,
     "ordenes_ytd": 95,
     "entregadas": {
-      "ordenes": 94,
-      "monto": 13930600
+      "ordenes": 95,
+      "monto": 14080500
     },
     "en_transito": {
-      "ordenes": 1,
-      "monto": 149900
+      "ordenes": 0,
+      "monto": 0
     },
     "canceladas": {
       "ordenes": 2,
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 33937649,
+      "gasto": 33948356,
       "purchases": 694
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 21305348,
+      "gasto": 21312580,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 55242997,
+  "ads_gasto_total": 55260936,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6049,18 +6049,18 @@
       "digital_gastos_var": 0
     },
     "2026-06-17": {
-      "envia_ventas": 629500.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 5,
-      "envia_costo_envio": 57520.0,
-      "digital_ventas_netas": 609500.0,
+      "envia_ventas": 479600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
+      "envia_costo_envio": 51320.0,
+      "digital_ventas_netas": 459600.0,
       "digital_descuentos": 20000.0,
-      "digital_cod_neto": 609500.0,
+      "digital_cod_neto": 459600.0,
       "digital_prepago_neto": 0.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 4,
       "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 389700.0,
-      "envia_ordenes_raw": 5,
+      "envia_ventas_raw": 239800.0,
+      "envia_ordenes_raw": 4,
       "meta_gasto": 289248.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -6325,7 +6325,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 819400.0,
       "envia_ordenes_raw": 5,
-      "meta_gasto": 566471.0,
+      "meta_gasto": 566602.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -6358,7 +6358,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 279543.0,
+      "meta_gasto": 297351.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

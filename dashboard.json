@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-06-27T11:04:17.394088-05:00",
+  "updated_at": "2026-06-27T12:04:13.991047-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04980775725951741,
+    "pct_devoluciones": 0.04970173178912997,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 6532900,
     "ordenes_ytd": 51,
-    "tasa_por_monto": 0.0498,
-    "tasa_por_ordenes": 0.049
+    "tasa_por_monto": 0.0497,
+    "tasa_por_ordenes": 0.0489
   },
   "shopify": {
-    "ventas_brutas_ytd": 143125900,
-    "ventas_netas_ytd": 131657395,
-    "descuentos_ytd": 11478505,
-    "unidades_ytd": 1141,
-    "ordenes_ytd": 978,
+    "ventas_brutas_ytd": 143405700,
+    "ventas_netas_ytd": 131807295,
+    "descuentos_ytd": 11608405,
+    "unidades_ytd": 1143,
+    "ordenes_ytd": 979,
     "cash_flow": {
-      "cod_neto": 91425735,
-      "cod_bruto": 99484000,
-      "cod_ordenes": 701,
+      "cod_neto": 91575635,
+      "cod_bruto": 99763800,
+      "cod_ordenes": 702,
       "prepago_neto": 40231660,
       "prepago_bruto": 43641900,
       "prepago_ordenes": 277,
-      "cod_pct": 0.6944,
-      "prepago_pct": 0.3056
+      "cod_pct": 0.6948,
+      "prepago_pct": 0.3052
     },
     "canceladas": {
       "ordenes": 40,
@@ -39,7 +39,7 @@
     "no_despachadas": {
       "ordenes": 193,
       "monto": 27877600,
-      "tasa": 0.1648,
+      "tasa": 0.1647,
       "por_canal": [
         {
           "canal": "5690175",
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 68,
-        "ventas": 9513200.0,
+        "unidades": 69,
+        "ventas": 9653100.0,
         "vendor": "MM"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 68,
-        "ventas": 9513200.0,
+        "unidades": 69,
+        "ventas": 9653100.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 619,
-        "ventas_brutas": 92427000.0
+        "ordenes": 620,
+        "ventas_brutas": 92706800.0
       },
       {
         "canal": "5690175",
@@ -292,8 +292,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 245,
-        "monto": 9871550.0
+        "usos": 246,
+        "monto": 10001450.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 34091227,
+      "gasto": 34096658,
       "purchases": 700
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 21524172,
+      "gasto": 21533212,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 55615399,
+  "ads_gasto_total": 55629870,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6358,7 +6358,7 @@
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 519600.0,
       "envia_ordenes_raw": 6,
-      "meta_gasto": 465882.0,
+      "meta_gasto": 465967.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -6379,19 +6379,19 @@
       "digital_gastos_var": 0
     },
     "2026-06-27": {
-      "envia_ventas": 1169100.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 9,
-      "envia_costo_envio": 129000.0,
-      "digital_ventas_netas": 1019100.0,
-      "digital_descuentos": 150000.0,
-      "digital_cod_neto": 679400.0,
+      "envia_ventas": 1448900.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 11,
+      "envia_costo_envio": 141480.0,
+      "digital_ventas_netas": 1169000.0,
+      "digital_descuentos": 279900.0,
+      "digital_cod_neto": 829300.0,
       "digital_prepago_neto": 339700.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 6,
       "digital_prepago_ordenes": 3,
-      "envia_ventas_raw": 1428900.0,
-      "envia_ordenes_raw": 10,
-      "meta_gasto": 185653.0,
+      "envia_ventas_raw": 1708700.0,
+      "envia_ordenes_raw": 11,
+      "meta_gasto": 200039.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

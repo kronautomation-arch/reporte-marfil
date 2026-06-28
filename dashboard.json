@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T15:09:33.243897-05:00",
+  "updated_at": "2026-06-28T09:49:47.706097-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 194,
-      "monto": 27997500,
-      "tasa": 0.1655,
+      "ordenes": 196,
+      "monto": 28257300,
+      "tasa": 0.167,
       "por_canal": [
         {
           "canal": "5690175",
@@ -53,8 +53,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 47,
-          "monto": 6284900.0
+          "ordenes": 49,
+          "monto": 6544700.0
         }
       ]
     },
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 196,
-      "transactions_completed": 193,
+      "transactions_total": 194,
+      "transactions_completed": 191,
       "transactions_canceled": 3
     },
     "ventas_brutas_ytd": 14230400,
@@ -462,23 +462,23 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 9163.34,
-    "ventas_netas_ytd": 6695.36,
-    "comisiones_ytd": 1372.23,
+    "ventas_brutas_ytd": 9211.16,
+    "ventas_netas_ytd": 6732.09,
+    "comisiones_ytd": 1383.32,
     "ads_spend_ytd": 706.65,
     "refunds_ytd": 389.1,
-    "pct_comision": 0.1498,
+    "pct_comision": 0.1502,
     "ticket_promedio": 49.0,
-    "unidades_ytd": 198,
-    "ordenes_ytd": 187,
+    "unidades_ytd": 199,
+    "ordenes_ytd": 188,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5492.5,
+      "ventas_principal": 5537.4,
       "shipping_income": 118.01,
-      "tax_collected": 326.45,
-      "commission": 824.5,
-      "fba_fees": 534.42,
+      "tax_collected": 330.21,
+      "commission": 831.24,
+      "fba_fees": 538.77,
       "other_fees": 13.31,
       "refunds": 389.1,
       "ads_spend": 706.65
@@ -486,8 +486,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 198,
-        "ventas": 9163.339999999997,
+        "unidades": 199,
+        "ventas": 9211.159999999996,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 34100402,
+      "gasto": 34109113,
       "purchases": 700
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 21548642,
+      "gasto": 21598117,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 55649044,
+  "ads_gasto_total": 55707230,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6358,7 +6358,7 @@
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 519600.0,
       "envia_ordenes_raw": 6,
-      "meta_gasto": 466073.0,
+      "meta_gasto": 466648.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -6391,7 +6391,40 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 1708700.0,
       "envia_ordenes_raw": 11,
-      "meta_gasto": 219107.0,
+      "meta_gasto": 263685.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 47.82,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-06-28": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 13033.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

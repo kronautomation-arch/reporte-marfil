@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-07-03T12:18:23.598996-05:00",
+  "updated_at": "2026-07-03T15:16:08.877420-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.05049825441109112,
+    "pct_devoluciones": 0.050454061739550596,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 6912600,
     "ordenes_ytd": 52,
     "tasa_por_monto": 0.0505,
-    "tasa_por_ordenes": 0.0475
+    "tasa_por_ordenes": 0.0474
   },
   "shopify": {
-    "ventas_brutas_ytd": 150885700,
-    "ventas_netas_ytd": 138687595,
+    "ventas_brutas_ytd": 151125500,
+    "ventas_netas_ytd": 138927395,
     "descuentos_ytd": 12208105,
-    "unidades_ytd": 1203,
-    "ordenes_ytd": 1031,
+    "unidades_ytd": 1205,
+    "ordenes_ytd": 1033,
     "cash_flow": {
-      "cod_neto": 95897935,
-      "cod_bruto": 104485900,
-      "cod_ordenes": 736,
-      "prepago_neto": 42789660,
-      "prepago_bruto": 46399800,
-      "prepago_ordenes": 295,
-      "cod_pct": 0.6915,
-      "prepago_pct": 0.3085
+      "cod_neto": 96017835,
+      "cod_bruto": 104605800,
+      "cod_ordenes": 737,
+      "prepago_neto": 42909560,
+      "prepago_bruto": 46519700,
+      "prepago_ordenes": 296,
+      "cod_pct": 0.6911,
+      "prepago_pct": 0.3089
     },
     "canceladas": {
       "ordenes": 41,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 195,
-      "monto": 28089500,
-      "tasa": 0.1591,
+      "ordenes": 196,
+      "monto": 28237300,
+      "tasa": 0.1595,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 88,
-          "monto": 11782100.0
+          "ordenes": 89,
+          "monto": 11929900.0
         },
         {
           "canal": "shopify_draft_order",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 726,
-        "ventas": 87047400.0,
+        "unidades": 728,
+        "ventas": 87287200.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 726,
-        "ventas": 87047400.0,
+        "unidades": 728,
+        "ventas": 87287200.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -275,13 +275,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 651,
-        "ventas_brutas": 97393200.0
+        "ordenes": 652,
+        "ventas_brutas": 97513100.0
       },
       {
         "canal": "5690175",
-        "ordenes": 217,
-        "ventas_brutas": 30370800.0
+        "ordenes": 218,
+        "ventas_brutas": 30490700.0
       },
       {
         "canal": "web",
@@ -462,15 +462,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 9338.89,
-    "ventas_netas_ytd": 6786.3,
+    "ventas_brutas_ytd": 9388.95,
+    "ventas_netas_ytd": 6836.36,
     "comisiones_ytd": 1456.84,
     "ads_spend_ytd": 706.65,
     "refunds_ytd": 389.1,
-    "pct_comision": 0.156,
-    "ticket_promedio": 48.89,
-    "unidades_ytd": 202,
-    "ordenes_ytd": 191,
+    "pct_comision": 0.1552,
+    "ticket_promedio": 48.9,
+    "unidades_ytd": 203,
+    "ordenes_ytd": 192,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -486,8 +486,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 202,
-        "ventas": 9338.889999999996,
+        "unidades": 203,
+        "ventas": 9388.949999999995,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 34980879,
-      "purchases": 712
+      "gasto": 35032488,
+      "purchases": 714
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 22581086,
+      "gasto": 22609267,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 57561965,
+  "ads_gasto_total": 57641755,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6556,7 +6556,7 @@
       "digital_prepago_ordenes": 5,
       "envia_ventas_raw": 1329000.0,
       "envia_ordenes_raw": 15,
-      "meta_gasto": 529501.0,
+      "meta_gasto": 529631.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -6577,27 +6577,27 @@
       "digital_gastos_var": 0
     },
     "2026-07-03": {
-      "envia_ventas": 759400.0,
-      "envia_ordenes": 6,
-      "envia_unidades": 6,
-      "envia_costo_envio": 84950.0,
-      "digital_ventas_netas": 719400.0,
+      "envia_ventas": 999200.0,
+      "envia_ordenes": 8,
+      "envia_unidades": 8,
+      "envia_costo_envio": 109910.0,
+      "digital_ventas_netas": 959200.0,
       "digital_descuentos": 40000.0,
-      "digital_cod_neto": 719400.0,
-      "digital_prepago_neto": 0.0,
-      "digital_cod_ordenes": 6,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 759400.0,
-      "envia_ordenes_raw": 6,
-      "meta_gasto": 286759.0,
+      "digital_cod_neto": 839300.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 7,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 879300.0,
+      "envia_ordenes_raw": 8,
+      "meta_gasto": 366419.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 50.06,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

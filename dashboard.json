@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-04T09:58:59.728342-05:00",
+  "updated_at": "2026-07-04T11:02:33.246654-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04921398635698113,
+    "pct_devoluciones": 0.050045322717437835,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6742700,
+    "monto_ytd": 6862600,
     "ordenes_ytd": 51,
-    "tasa_por_monto": 0.0492,
+    "tasa_por_monto": 0.05,
     "tasa_por_ordenes": 0.0465
   },
   "shopify": {

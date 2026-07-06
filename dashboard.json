@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T13:06:56.727395-05:00",
+  "updated_at": "2026-07-06T15:53:06.243855-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -462,15 +462,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 9533.97,
-    "ventas_netas_ytd": 6959.2,
+    "ventas_brutas_ytd": 9581.12,
+    "ventas_netas_ytd": 7006.35,
     "comisiones_ytd": 1479.02,
     "ads_spend_ytd": 706.65,
     "refunds_ytd": 389.1,
-    "pct_comision": 0.1551,
-    "ticket_promedio": 48.89,
-    "unidades_ytd": 206,
-    "ordenes_ytd": 195,
+    "pct_comision": 0.1544,
+    "ticket_promedio": 48.88,
+    "unidades_ytd": 207,
+    "ordenes_ytd": 196,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -486,8 +486,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 206,
-        "ventas": 9533.969999999996,
+        "unidades": 207,
+        "ventas": 9581.119999999995,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 35277649,
+      "gasto": 35304327,
       "purchases": 716
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 22751851,
+      "gasto": 22785661,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 58029500,
+  "ads_gasto_total": 58089988,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6628,9 +6628,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 48.6,
-      "amazon_ordenes": 1,
-      "amazon_unidades": 1,
+      "amazon_ventas_brutas": 95.75,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 120000.0,
       "pos_caracoli_unidades": 1,
       "pos_caracoli_gastos": 0,
@@ -6688,7 +6688,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 195310.0,
+      "meta_gasto": 255798.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

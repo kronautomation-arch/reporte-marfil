@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-07-08T15:22:14.610507-05:00",
+  "updated_at": "2026-07-09T10:58:09.792611-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04978953646161958,
+    "pct_devoluciones": 0.04974657500235686,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 6912600,
     "ordenes_ytd": 54,
-    "tasa_por_monto": 0.0498,
-    "tasa_por_ordenes": 0.0482
+    "tasa_por_monto": 0.0497,
+    "tasa_por_ordenes": 0.0481
   },
   "shopify": {
-    "ventas_brutas_ytd": 153941200,
-    "ventas_netas_ytd": 141533095,
+    "ventas_brutas_ytd": 154061100,
+    "ventas_netas_ytd": 141652995,
     "descuentos_ytd": 12418105,
-    "unidades_ytd": 1228,
-    "ordenes_ytd": 1055,
+    "unidades_ytd": 1229,
+    "ordenes_ytd": 1056,
     "cash_flow": {
-      "cod_neto": 97804235,
-      "cod_bruto": 106582200,
-      "cod_ordenes": 752,
+      "cod_neto": 97924135,
+      "cod_bruto": 106702100,
+      "cod_ordenes": 753,
       "prepago_neto": 43728860,
       "prepago_bruto": 47359000,
       "prepago_ordenes": 303,
-      "cod_pct": 0.691,
-      "prepago_pct": 0.309
+      "cod_pct": 0.6913,
+      "prepago_pct": 0.3087
     },
     "canceladas": {
       "ordenes": 43,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 199,
-      "monto": 28729000,
-      "tasa": 0.1587,
+      "ordenes": 203,
+      "monto": 29368500,
+      "tasa": 0.1612,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 63,
-          "monto": 10522100.0
+          "ordenes": 67,
+          "monto": 11161600.0
         },
         {
           "canal": "web",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 741,
-        "ventas": 88845900.0,
+        "unidades": 742,
+        "ventas": 88965800.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 741,
-        "ventas": 88845900.0,
+        "unidades": 742,
+        "ventas": 88965800.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 666,
-        "ventas_brutas": 99341700.0
+        "ordenes": 667,
+        "ventas_brutas": 99461600.0
       },
       {
         "canal": "5690175",
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 194,
-      "transactions_completed": 191,
+      "transactions_total": 193,
+      "transactions_completed": 190,
       "transactions_canceled": 3
     },
     "ventas_brutas_ytd": 15279700,
@@ -463,25 +463,25 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 9662.91,
-    "ventas_netas_ytd": 7065.96,
-    "comisiones_ytd": 1501.2,
-    "ads_spend_ytd": 706.65,
-    "refunds_ytd": 389.1,
-    "pct_comision": 0.1554,
+    "ventas_netas_ytd": 7701.09,
+    "comisiones_ytd": 1290.42,
+    "ads_spend_ytd": 372.1,
+    "refunds_ytd": 299.3,
+    "pct_comision": 0.1335,
     "ticket_promedio": 48.8,
     "unidades_ytd": 209,
     "ordenes_ytd": 198,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5986.4,
-      "shipping_income": 138.98,
-      "tax_collected": 347.21,
-      "commission": 898.64,
-      "fba_fees": 582.26,
-      "other_fees": 20.3,
-      "refunds": 389.1,
-      "ads_spend": 706.65
+      "ventas_principal": 5118.3,
+      "shipping_income": 116.08,
+      "tax_collected": 301.79,
+      "commission": 768.33,
+      "fba_fees": 502.61,
+      "other_fees": 19.48,
+      "refunds": 299.3,
+      "ads_spend": 372.1
     },
     "top_productos": [
       {
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 35708207,
+      "gasto": 35858235,
       "purchases": 720
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 23279268,
+      "gasto": 23375027,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 58987475,
+  "ads_gasto_total": 59233262,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6742,24 +6742,57 @@
       "digital_gastos_var": 0
     },
     "2026-07-08": {
-      "envia_ventas": 1039200.0,
-      "envia_ordenes": 8,
-      "envia_unidades": 8,
-      "envia_costo_envio": 103430.0,
-      "digital_ventas_netas": 919200.0,
+      "envia_ventas": 1159100.0,
+      "envia_ordenes": 9,
+      "envia_unidades": 9,
+      "envia_costo_envio": 115910.0,
+      "digital_ventas_netas": 1039100.0,
       "digital_descuentos": 120000.0,
-      "digital_cod_neto": 699400.0,
+      "digital_cod_neto": 819300.0,
       "digital_prepago_neto": 219800.0,
-      "digital_cod_ordenes": 6,
+      "digital_cod_ordenes": 7,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 519600.0,
-      "envia_ordenes_raw": 8,
-      "meta_gasto": 423527.0,
+      "envia_ventas_raw": 639500.0,
+      "envia_ordenes_raw": 9,
+      "meta_gasto": 544997.0,
       "meli_ventas_brutas": 449700.0,
       "meli_ventas_netas": 353016.0,
       "meli_comisiones": 96684.0,
       "meli_ordenes": 3,
       "meli_unidades": 3,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 140000.0,
+      "pos_titan_plaza_unidades": 1,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 150000.0,
+      "pos_fundadores_unidades": 2,
+      "pos_fundadores_gastos": 184150.0,
+      "digital_gastos_var": 0
+    },
+    "2026-07-09": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 124317.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

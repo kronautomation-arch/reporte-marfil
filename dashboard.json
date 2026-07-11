@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T09:22:42.363293-05:00",
+  "updated_at": "2026-07-11T09:44:32.160379-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 202,
-      "monto": 29178600,
-      "tasa": 0.1586,
+      "ordenes": 204,
+      "monto": 29458400,
+      "tasa": 0.1599,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 91,
-          "monto": 12161800.0
+          "ordenes": 92,
+          "monto": 12301700.0
         },
         {
           "canal": "shopify_draft_order",
@@ -53,8 +53,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 48,
-          "monto": 6404800.0
+          "ordenes": 49,
+          "monto": 6544700.0
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T15:06:22.538560-05:00",
+  "updated_at": "2026-07-13T10:43:43.207028-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 208,
-      "monto": 30095800,
-      "tasa": 0.1626,
+      "ordenes": 209,
+      "monto": 30215700,
+      "tasa": 0.1633,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 95,
-          "monto": 12819200.0
+          "ordenes": 96,
+          "monto": 12939100.0
         },
         {
           "canal": "shopify_draft_order",
@@ -359,20 +359,20 @@
       "transactions_completed": 189,
       "transactions_canceled": 3
     },
-    "ventas_brutas_ytd": 15579500,
-    "ventas_netas_ytd": 12229960,
-    "comisiones_ytd": 3349540,
+    "ventas_brutas_ytd": 15729400,
+    "ventas_netas_ytd": 12347632,
+    "comisiones_ytd": 3381768,
     "pct_comision": 0.215,
-    "ticket_promedio": 148376,
-    "unidades_ytd": 105,
-    "ordenes_ytd": 105,
+    "ticket_promedio": 148391,
+    "unidades_ytd": 106,
+    "ordenes_ytd": 106,
     "entregadas": {
       "ordenes": 103,
       "monto": 15279700
     },
     "en_transito": {
-      "ordenes": 2,
-      "monto": 299800
+      "ordenes": 3,
+      "monto": 449700
     },
     "canceladas": {
       "ordenes": 3,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 91,
-        "ventas": 13640900.0,
-        "comisiones": 2932748.0,
+        "unidades": 92,
+        "ventas": 13790800.0,
+        "comisiones": 2964976.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 10708152.0
+        "ventas_netas": 10825824.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -463,23 +463,23 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 9707.81,
-    "ventas_netas_ytd": 7734.9,
-    "comisiones_ytd": 1301.51,
+    "ventas_netas_ytd": 7709.9,
+    "comisiones_ytd": 1326.51,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 299.3,
-    "pct_comision": 0.1341,
+    "pct_comision": 0.1366,
     "ticket_promedio": 48.78,
     "unidades_ytd": 210,
     "ordenes_ytd": 199,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5163.2,
-      "shipping_income": 116.08,
-      "tax_collected": 305.84,
-      "commission": 775.07,
-      "fba_fees": 506.96,
-      "other_fees": 19.48,
+      "ventas_principal": 5208.1,
+      "shipping_income": 129.99,
+      "tax_collected": 310.33,
+      "commission": 781.81,
+      "fba_fees": 511.31,
+      "other_fees": 33.39,
       "refunds": 299.3,
       "ads_spend": 372.1
     },
@@ -6887,11 +6887,11 @@
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
+      "meli_ventas_brutas": 149900.0,
+      "meli_ventas_netas": 117672.0,
+      "meli_comisiones": 32228.0,
+      "meli_ordenes": 1,
+      "meli_unidades": 1,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

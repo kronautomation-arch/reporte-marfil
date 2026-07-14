@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T09:53:22.791238-05:00",
+  "updated_at": "2026-07-14T10:17:58.490478-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -29,8 +29,8 @@
       "prepago_pct": 0.3085
     },
     "canceladas": {
-      "ordenes": 43,
-      "monto": 6845800
+      "ordenes": 44,
+      "monto": 6973600
     },
     "reembolsadas": {
       "ordenes": 0,
@@ -38,18 +38,18 @@
     },
     "no_despachadas": {
       "ordenes": 208,
-      "monto": 29975900,
+      "monto": 30115800,
       "tasa": 0.1625,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 96,
-          "monto": 12939100.0
+          "ordenes": 95,
+          "monto": 12811300.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 62,
-          "monto": 10372200.0
+          "ordenes": 63,
+          "monto": 10639900.0
         },
         {
           "canal": "web",
@@ -471,22 +471,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 9707.81,
-    "ventas_netas_ytd": 7687.72,
-    "comisiones_ytd": 1348.69,
+    "ventas_netas_ytd": 7892.87,
+    "comisiones_ytd": 1143.54,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 299.3,
-    "pct_comision": 0.1389,
+    "pct_comision": 0.1178,
     "ticket_promedio": 48.78,
     "unidades_ytd": 210,
     "ordenes_ytd": 199,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5297.9,
-      "shipping_income": 129.99,
-      "tax_collected": 317.17,
-      "commission": 795.29,
-      "fba_fees": 520.01,
+      "ventas_principal": 4474.8,
+      "shipping_income": 122.35,
+      "tax_collected": 262.37,
+      "commission": 671.73,
+      "fba_fees": 438.42,
       "other_fees": 33.39,
       "refunds": 299.3,
       "ads_spend": 372.1
@@ -503,16 +503,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 36160323,
+      "gasto": 36170340,
       "purchases": 726
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 23375955,
+      "gasto": 23556447,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 59536278,
+  "ads_gasto_total": 59726787,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6960,7 +6960,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 2088.0,
+      "meta_gasto": 192597.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-07-15T09:52:51.241717-05:00",
+  "updated_at": "2026-07-15T10:19:38.532538-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.04517417936768928,
+    "pct_devoluciones": 0.04616740075595578,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6363000,
-    "ordenes_ytd": 50,
-    "tasa_por_monto": 0.0452,
-    "tasa_por_ordenes": 0.0435
+    "monto_ytd": 6502900,
+    "ordenes_ytd": 51,
+    "tasa_por_monto": 0.0462,
+    "tasa_por_ordenes": 0.0444
   },
   "shopify": {
-    "ventas_brutas_ytd": 158363600,
-    "ventas_netas_ytd": 145665595,
+    "ventas_brutas_ytd": 158223700,
+    "ventas_netas_ytd": 145525695,
     "descuentos_ytd": 12718005,
-    "unidades_ytd": 1264,
-    "ordenes_ytd": 1087,
+    "unidades_ytd": 1263,
+    "ordenes_ytd": 1086,
     "cash_flow": {
-      "cod_neto": 101077435,
-      "cod_bruto": 110065300,
-      "cod_ordenes": 777,
+      "cod_neto": 100937535,
+      "cod_bruto": 109925400,
+      "cod_ordenes": 776,
       "prepago_neto": 44588160,
       "prepago_bruto": 48298300,
       "prepago_ordenes": 310,
-      "cod_pct": 0.6939,
-      "prepago_pct": 0.3061
+      "cod_pct": 0.6936,
+      "prepago_pct": 0.3064
     },
     "canceladas": {
       "ordenes": 48,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 197,
-      "monto": 28539100,
-      "tasa": 0.1534,
+      "ordenes": 198,
+      "monto": 28679000,
+      "tasa": 0.1542,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 60,
-          "monto": 10212300.0
+          "ordenes": 61,
+          "monto": 10352200.0
         },
         {
           "canal": "web",
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 100,
-        "ventas": 13990000.0,
+        "unidades": 99,
+        "ventas": 13850100.0,
         "vendor": "MM"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 100,
-        "ventas": 13990000.0,
+        "unidades": 99,
+        "ventas": 13850100.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 690,
-        "ventas_brutas": 102757000.0
+        "ordenes": 689,
+        "ventas_brutas": 102617100.0
       },
       {
         "canal": "5690175",
@@ -503,16 +503,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 36470187,
+      "gasto": 36474037,
       "purchases": 726
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 23852293,
+      "gasto": 23863129,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 60322480,
+  "ads_gasto_total": 60337166,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6519,18 +6519,18 @@
       "digital_gastos_var": 0
     },
     "2026-07-01": {
-      "envia_ventas": 4224600.0,
-      "envia_ordenes": 30,
-      "envia_unidades": 34,
-      "envia_costo_envio": 411880.0,
-      "digital_ventas_netas": 3924700.0,
+      "envia_ventas": 4084700.0,
+      "envia_ordenes": 29,
+      "envia_unidades": 33,
+      "envia_costo_envio": 399400.0,
+      "digital_ventas_netas": 3784800.0,
       "digital_descuentos": 299900.0,
-      "digital_cod_neto": 1986200.0,
+      "digital_cod_neto": 1846300.0,
       "digital_prepago_neto": 1938500.0,
-      "digital_cod_ordenes": 17,
+      "digital_cod_ordenes": 16,
       "digital_prepago_ordenes": 13,
-      "envia_ventas_raw": 2997700.0,
-      "envia_ordenes_raw": 30,
+      "envia_ventas_raw": 2857800.0,
+      "envia_ordenes_raw": 29,
       "meta_gasto": 367023.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
@@ -6993,7 +6993,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 142060.0,
+      "meta_gasto": 156746.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

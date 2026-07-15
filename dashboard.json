@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T11:21:35.689405-05:00",
+  "updated_at": "2026-07-15T12:10:24.295604-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -29,22 +29,22 @@
       "prepago_pct": 0.3064
     },
     "canceladas": {
-      "ordenes": 48,
-      "monto": 7623100
+      "ordenes": 49,
+      "monto": 7743000
     },
     "reembolsadas": {
       "ordenes": 0,
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 198,
-      "monto": 28679000,
-      "tasa": 0.1542,
+      "ordenes": 197,
+      "monto": 28559100,
+      "tasa": 0.1535,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 89,
-          "monto": 11922000.0
+          "ordenes": 88,
+          "monto": 11802100.0
         },
         {
           "canal": "shopify_draft_order",
@@ -503,16 +503,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 36501030,
+      "gasto": 36515518,
       "purchases": 726
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 23888290,
+      "gasto": 23911696,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 60389320,
+  "ads_gasto_total": 60427214,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6993,7 +6993,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 208892.0,
+      "meta_gasto": 246786.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T12:06:04.222478-05:00",
+  "updated_at": "2026-07-17T15:06:32.978111-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -470,15 +470,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 9847.22,
-    "ventas_netas_ytd": 7766.94,
+    "ventas_brutas_ytd": 9895.99,
+    "ventas_netas_ytd": 7815.71,
     "comisiones_ytd": 1408.88,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 299.3,
-    "pct_comision": 0.1431,
+    "pct_comision": 0.1424,
     "ticket_promedio": 48.75,
-    "unidades_ytd": 213,
-    "ordenes_ytd": 202,
+    "unidades_ytd": 214,
+    "ordenes_ytd": 203,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -494,8 +494,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 213,
-        "ventas": 9847.219999999994,
+        "unidades": 214,
+        "ventas": 9895.989999999994,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -503,16 +503,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 36946878,
+      "gasto": 36956233,
       "purchases": 730
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 24450527,
+      "gasto": 24510330,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 61397405,
+  "ads_gasto_total": 61466563,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7026,7 +7026,7 @@
       "digital_prepago_ordenes": 5,
       "envia_ventas_raw": 5014200.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 514888.0,
+      "meta_gasto": 514891.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -7059,15 +7059,15 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 261455.0,
+      "meta_gasto": 330610.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 48.77,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

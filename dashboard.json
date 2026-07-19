@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T09:48:20.773158-05:00",
+  "updated_at": "2026-07-19T10:57:21.690342-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -471,24 +471,24 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 9895.99,
-    "ventas_netas_ytd": 7815.71,
-    "comisiones_ytd": 1408.88,
+    "ventas_netas_ytd": 8354.32,
+    "comisiones_ytd": 915.17,
     "ads_spend_ytd": 372.1,
-    "refunds_ytd": 299.3,
-    "pct_comision": 0.1424,
+    "refunds_ytd": 254.4,
+    "pct_comision": 0.0925,
     "ticket_promedio": 48.75,
     "unidades_ytd": 214,
     "ordenes_ytd": 203,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 5507.4,
-      "shipping_income": 136.98,
-      "tax_collected": 328.06,
-      "commission": 826.74,
-      "fba_fees": 541.76,
-      "other_fees": 40.38,
-      "refunds": 299.3,
+      "ventas_principal": 3561.9,
+      "shipping_income": 98.39,
+      "tax_collected": 218.67,
+      "commission": 534.69,
+      "fba_fees": 347.09,
+      "other_fees": 33.39,
+      "refunds": 254.4,
       "ads_spend": 372.1
     },
     "top_productos": [

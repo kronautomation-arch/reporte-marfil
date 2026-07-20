@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T12:30:50.077225-05:00",
+  "updated_at": "2026-07-20T15:22:20.166443-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 205,
-      "monto": 29558300,
-      "tasa": 0.1568,
+      "ordenes": 206,
+      "monto": 29678200,
+      "tasa": 0.1575,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 88,
-          "monto": 11802100.0
+          "ordenes": 89,
+          "monto": 11922000.0
         },
         {
           "canal": "shopify_draft_order",

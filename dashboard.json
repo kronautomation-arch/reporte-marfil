@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21T12:10:35.920583-05:00",
+  "updated_at": "2026-07-21T15:19:40.910628-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -10,21 +10,21 @@
     "monto_ytd": 6742700,
     "ordenes_ytd": 53,
     "tasa_por_monto": 0.0458,
-    "tasa_por_ordenes": 0.0454
+    "tasa_por_ordenes": 0.0453
   },
   "shopify": {
-    "ventas_brutas_ytd": 164646800,
-    "ventas_netas_ytd": 149300895,
-    "descuentos_ytd": 15375905,
-    "unidades_ytd": 1312,
-    "ordenes_ytd": 1103,
+    "ventas_brutas_ytd": 165026500,
+    "ventas_netas_ytd": 149620595,
+    "descuentos_ytd": 15435905,
+    "unidades_ytd": 1315,
+    "ordenes_ytd": 1106,
     "cash_flow": {
-      "cod_neto": 102224235,
-      "cod_bruto": 111432100,
-      "cod_ordenes": 787,
-      "prepago_neto": 47076660,
-      "prepago_bruto": 53214700,
-      "prepago_ordenes": 316,
+      "cod_neto": 102444035,
+      "cod_bruto": 111671900,
+      "cod_ordenes": 789,
+      "prepago_neto": 47176560,
+      "prepago_bruto": 53354600,
+      "prepago_ordenes": 317,
       "cod_pct": 0.6847,
       "prepago_pct": 0.3153
     },
@@ -39,17 +39,17 @@
     "no_despachadas": {
       "ordenes": 205,
       "monto": 29538300,
-      "tasa": 0.1567,
+      "tasa": 0.1564,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 89,
-          "monto": 11922000.0
+          "ordenes": 90,
+          "monto": 12041900.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 67,
-          "monto": 11091600.0
+          "ordenes": 66,
+          "monto": 10971700.0
         },
         {
           "canal": "web",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 776,
-        "ventas": 93042400.0,
+        "unidades": 778,
+        "ventas": 93282200.0,
         "vendor": "Marfil"
       },
       {
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 105,
-        "ventas": 14689500.0,
+        "unidades": 106,
+        "ventas": 14829400.0,
         "vendor": "MM"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 776,
-        "ventas": 93042400.0,
+        "unidades": 778,
+        "ventas": 93282200.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 105,
-        "ventas": 14689500.0,
+        "unidades": 106,
+        "ventas": 14829400.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -275,13 +275,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 705,
-        "ventas_brutas": 108912400.0
+        "ordenes": 707,
+        "ventas_brutas": 109172200.0
       },
       {
         "canal": "5690175",
-        "ordenes": 227,
-        "ventas_brutas": 31633500.0
+        "ordenes": 228,
+        "ventas_brutas": 31753400.0
       },
       {
         "canal": "web",
@@ -292,8 +292,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 289,
-        "monto": 13768950.0
+        "usos": 291,
+        "monto": 13828950.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 37036271,
+      "gasto": 37086101,
       "purchases": 730
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 24797315,
+      "gasto": 24863747,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 61833586,
+  "ads_gasto_total": 61949848,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7171,19 +7171,19 @@
       "digital_gastos_var": 0
     },
     "2026-07-21": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
-      "digital_cod_ordenes": 0,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 149396.0,
+      "envia_ventas": 379700.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 3,
+      "envia_costo_envio": 43390.0,
+      "digital_ventas_netas": 319700.0,
+      "digital_descuentos": 60000.0,
+      "digital_cod_neto": 219800.0,
+      "digital_prepago_neto": 99900.0,
+      "digital_cod_ordenes": 2,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 0.0,
+      "envia_ordenes_raw": 3,
+      "meta_gasto": 265658.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

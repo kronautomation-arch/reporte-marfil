@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-22T12:10:41.087285-05:00",
+  "updated_at": "2026-07-22T15:12:12.580559-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.045791484971941875,
+    "pct_devoluciones": 0.04548895209516202,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 6742700,
     "ordenes_ytd": 53,
-    "tasa_por_monto": 0.0458,
-    "tasa_por_ordenes": 0.0452
+    "tasa_por_monto": 0.0455,
+    "tasa_por_ordenes": 0.0448
   },
   "shopify": {
     "ventas_brutas_ytd": 165286300,
@@ -29,17 +29,17 @@
       "prepago_pct": 0.3157
     },
     "canceladas": {
-      "ordenes": 49,
-      "monto": 7743000
+      "ordenes": 50,
+      "monto": 7862900
     },
     "reembolsadas": {
       "ordenes": 0,
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 206,
-      "monto": 29658200,
-      "tasa": 0.1568,
+      "ordenes": 208,
+      "monto": 30067900,
+      "tasa": 0.1581,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,8 +48,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 66,
-          "monto": 10971700.0
+          "ordenes": 68,
+          "monto": 11381400.0
         },
         {
           "canal": "web",
@@ -462,15 +462,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 10038.66,
-    "ventas_netas_ytd": 8321.59,
+    "ventas_brutas_ytd": 10083.56,
+    "ventas_netas_ytd": 8366.49,
     "comisiones_ytd": 1135.47,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 209.5,
-    "pct_comision": 0.1131,
-    "ticket_promedio": 48.73,
-    "unidades_ytd": 217,
-    "ordenes_ytd": 206,
+    "pct_comision": 0.1126,
+    "ticket_promedio": 48.71,
+    "unidades_ytd": 218,
+    "ordenes_ytd": 207,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -486,8 +486,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 217,
-        "ventas": 10038.659999999994,
+        "unidades": 218,
+        "ventas": 10083.559999999994,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 37277606,
-      "purchases": 732
+      "gasto": 37323799,
+      "purchases": 736
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 25055368,
+      "gasto": 25182506,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 62332974,
+  "ads_gasto_total": 62506305,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7024,9 +7024,9 @@
       "meli_comisiones": 32228.0,
       "meli_ordenes": 1,
       "meli_unidades": 1,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 44.9,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 400000.0,
       "pos_caracoli_unidades": 3,
       "pos_caracoli_gastos": 0,
@@ -7183,7 +7183,7 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 139900.0,
       "envia_ordenes_raw": 5,
-      "meta_gasto": 398729.0,
+      "meta_gasto": 398810.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
       "meli_comisiones": 32228.0,
@@ -7204,19 +7204,19 @@
       "digital_gastos_var": 0
     },
     "2026-07-22": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
+      "envia_ventas": 979300.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 11,
+      "envia_costo_envio": 200370.0,
+      "digital_ventas_netas": 979300.0,
       "digital_descuentos": 0,
       "digital_cod_neto": 0,
       "digital_prepago_neto": 0,
       "digital_cod_ordenes": 0,
       "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 250055.0,
+      "envia_ventas_raw": 979300.0,
+      "envia_ordenes_raw": 11,
+      "meta_gasto": 423305.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

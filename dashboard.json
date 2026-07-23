@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T10:10:31.014635-05:00",
+  "updated_at": "2026-07-23T10:49:12.364758-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 193,
-      "transactions_completed": 189,
+      "transactions_total": 195,
+      "transactions_completed": 191,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 16778700,
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 37560923,
+      "gasto": 37574635,
       "purchases": 742
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 25323149,
+      "gasto": 25325490,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 62884072,
+  "ads_gasto_total": 62900125,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7216,7 +7216,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 3677300.0,
       "envia_ordenes_raw": 29,
-      "meta_gasto": 615734.0,
+      "meta_gasto": 615873.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
       "meli_comisiones": 64456.0,
@@ -7225,15 +7225,15 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 120000.0,
+      "pos_caracoli_unidades": 1,
       "pos_caracoli_gastos": 0,
       "pos_titan_plaza_ventas": 0,
       "pos_titan_plaza_unidades": 0,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
-      "pos_fundadores_gastos": 0,
+      "pos_fundadores_gastos": 10000.0,
       "digital_gastos_var": 0
     },
     "2026-07-23": {
@@ -7249,7 +7249,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 185323.0,
+      "meta_gasto": 201237.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-07-23T12:13:28.212688-05:00",
+  "updated_at": "2026-07-23T15:13:40.200041-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.043086906626593834,
+    "pct_devoluciones": 0.042292473357663264,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6502900,
-    "ordenes_ytd": 53,
-    "tasa_por_monto": 0.0431,
-    "tasa_por_ordenes": 0.0441
+    "monto_ytd": 6383000,
+    "ordenes_ytd": 51,
+    "tasa_por_monto": 0.0423,
+    "tasa_por_ordenes": 0.0424
   },
   "shopify": {
-    "ventas_brutas_ytd": 166155600,
-    "ventas_netas_ytd": 150579895,
-    "descuentos_ytd": 15605705,
-    "unidades_ytd": 1324,
-    "ordenes_ytd": 1113,
+    "ventas_brutas_ytd": 166415400,
+    "ventas_netas_ytd": 150799695,
+    "descuentos_ytd": 15645705,
+    "unidades_ytd": 1326,
+    "ordenes_ytd": 1115,
     "cash_flow": {
-      "cod_neto": 103143535,
-      "cod_bruto": 112541200,
-      "cod_ordenes": 794,
+      "cod_neto": 103363335,
+      "cod_bruto": 112801000,
+      "cod_ordenes": 796,
       "prepago_neto": 47436360,
       "prepago_bruto": 53614400,
       "prepago_ordenes": 319,
-      "cod_pct": 0.685,
-      "prepago_pct": 0.315
+      "cod_pct": 0.6854,
+      "prepago_pct": 0.3146
     },
     "canceladas": {
       "ordenes": 50,
@@ -37,9 +37,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 208,
-      "monto": 29806000,
-      "tasa": 0.1575,
+      "ordenes": 206,
+      "monto": 29546200,
+      "tasa": 0.1559,
       "por_canal": [
         {
           "canal": "5690175",
@@ -48,21 +48,21 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 66,
-          "monto": 10871800.0
+          "ordenes": 65,
+          "monto": 10731900.0
         },
         {
           "canal": "web",
-          "ordenes": 50,
-          "monto": 6644600.0
+          "ordenes": 49,
+          "monto": 6524700.0
         }
       ]
     },
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 785,
-        "ventas": 94121500.0,
+        "unidades": 786,
+        "ventas": 94241400.0,
         "vendor": "Marfil"
       },
       {
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 107,
-        "ventas": 14969300.0,
+        "unidades": 108,
+        "ventas": 15109200.0,
         "vendor": "MM"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 785,
-        "ventas": 94121500.0,
+        "unidades": 786,
+        "ventas": 94241400.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 107,
-        "ventas": 14969300.0,
+        "unidades": 108,
+        "ventas": 15109200.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 711,
-        "ventas_brutas": 109941600.0
+        "ordenes": 712,
+        "ventas_brutas": 110081500.0
       },
       {
         "canal": "5690175",
@@ -285,15 +285,15 @@
       },
       {
         "canal": "web",
-        "ordenes": 172,
-        "ventas_brutas": 24220800.0
+        "ordenes": 173,
+        "ventas_brutas": 24340700.0
       }
     ],
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 292,
-        "monto": 13998750.0
+        "usos": 293,
+        "monto": 14038750.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -367,12 +367,12 @@
     "unidades_ytd": 113,
     "ordenes_ytd": 113,
     "entregadas": {
-      "ordenes": 110,
-      "monto": 16329000
+      "ordenes": 112,
+      "monto": 16628800
     },
     "en_transito": {
-      "ordenes": 3,
-      "monto": 449700
+      "ordenes": 1,
+      "monto": 149900
     },
     "canceladas": {
       "ordenes": 4,
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 37594121,
+      "gasto": 37624781,
       "purchases": 742
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 25363214,
+      "gasto": 25419127,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 62957335,
+  "ads_gasto_total": 63043908,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -6940,18 +6940,18 @@
       "digital_gastos_var": 0
     },
     "2026-07-14": {
-      "envia_ventas": 1594600.0,
-      "envia_ordenes": 10,
-      "envia_unidades": 14,
-      "envia_costo_envio": 118180.0,
-      "digital_ventas_netas": 1464700.0,
+      "envia_ventas": 1714500.0,
+      "envia_ordenes": 11,
+      "envia_unidades": 15,
+      "envia_costo_envio": 130660.0,
+      "digital_ventas_netas": 1584600.0,
       "digital_descuentos": 129900.0,
-      "digital_cod_neto": 1184900.0,
+      "digital_cod_neto": 1304800.0,
       "digital_prepago_neto": 279800.0,
-      "digital_cod_ordenes": 8,
+      "digital_cod_ordenes": 9,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 509600.0,
-      "envia_ordenes_raw": 10,
+      "envia_ventas_raw": 629500.0,
+      "envia_ordenes_raw": 11,
       "meta_gasto": 646297.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -6973,18 +6973,18 @@
       "digital_gastos_var": 0
     },
     "2026-07-15": {
-      "envia_ventas": 239800.0,
-      "envia_ordenes": 2,
-      "envia_unidades": 2,
-      "envia_costo_envio": 19950.0,
-      "digital_ventas_netas": 199800.0,
-      "digital_descuentos": 40000.0,
-      "digital_cod_neto": 199800.0,
+      "envia_ventas": 379700.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 3,
+      "envia_costo_envio": 38380.0,
+      "digital_ventas_netas": 299700.0,
+      "digital_descuentos": 80000.0,
+      "digital_cod_neto": 299700.0,
       "digital_prepago_neto": 0.0,
-      "digital_cod_ordenes": 2,
+      "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 239800.0,
-      "envia_ordenes_raw": 2,
+      "envia_ordenes_raw": 3,
       "meta_gasto": 440575.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,
@@ -7216,7 +7216,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 3677300.0,
       "envia_ordenes_raw": 29,
-      "meta_gasto": 616049.0,
+      "meta_gasto": 616300.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
       "meli_comisiones": 64456.0,
@@ -7249,7 +7249,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 258271.0,
+      "meta_gasto": 344593.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T11:09:29.633951-05:00",
+  "updated_at": "2026-07-27T11:56:15.531878-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -8,25 +8,25 @@
   },
   "devoluciones": {
     "monto_ytd": 6502900,
-    "ordenes_ytd": 51,
+    "ordenes_ytd": 50,
     "tasa_por_monto": 0.0425,
-    "tasa_por_ordenes": 0.0418
+    "tasa_por_ordenes": 0.041
   },
   "shopify": {
-    "ventas_brutas_ytd": 168781400,
-    "ventas_netas_ytd": 152975795,
+    "ventas_brutas_ytd": 168921300,
+    "ventas_netas_ytd": 153115695,
     "descuentos_ytd": 15835605,
-    "unidades_ytd": 1346,
-    "ordenes_ytd": 1134,
+    "unidades_ytd": 1347,
+    "ordenes_ytd": 1135,
     "cash_flow": {
-      "cod_neto": 104869935,
-      "cod_bruto": 114387600,
-      "cod_ordenes": 810,
+      "cod_neto": 105009835,
+      "cod_bruto": 114527500,
+      "cod_ordenes": 811,
       "prepago_neto": 48105860,
       "prepago_bruto": 54393800,
       "prepago_ordenes": 324,
-      "cod_pct": 0.6855,
-      "prepago_pct": 0.3145
+      "cod_pct": 0.6858,
+      "prepago_pct": 0.3142
     },
     "canceladas": {
       "ordenes": 50,
@@ -37,14 +37,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 207,
-      "monto": 30127900,
-      "tasa": 0.1544,
+      "ordenes": 206,
+      "monto": 29988000,
+      "tasa": 0.1536,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 89,
-          "monto": 11922000.0
+          "ordenes": 88,
+          "monto": 11782100.0
         },
         {
           "canal": "shopify_draft_order",
@@ -73,8 +73,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 112,
-        "ventas": 15668800.0,
+        "unidades": 113,
+        "ventas": 15808700.0,
         "vendor": "MM"
       },
       {
@@ -165,8 +165,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 112,
-        "ventas": 15668800.0,
+        "unidades": 113,
+        "ventas": 15808700.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -280,8 +280,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 235,
-        "ventas_brutas": 32600600.0
+        "ordenes": 236,
+        "ventas_brutas": 32740500.0
       },
       {
         "canal": "web",
@@ -6511,18 +6511,18 @@
       "digital_gastos_var": 0
     },
     "2026-07-01": {
-      "envia_ventas": 4464400.0,
-      "envia_ordenes": 31,
-      "envia_unidades": 36,
-      "envia_costo_envio": 424360.0,
-      "digital_ventas_netas": 4074600.0,
+      "envia_ventas": 4604300.0,
+      "envia_ordenes": 32,
+      "envia_unidades": 37,
+      "envia_costo_envio": 442790.0,
+      "digital_ventas_netas": 4214500.0,
       "digital_descuentos": 389800.0,
-      "digital_cod_neto": 2136100.0,
+      "digital_cod_neto": 2276000.0,
       "digital_prepago_neto": 1938500.0,
-      "digital_cod_ordenes": 18,
+      "digital_cod_ordenes": 19,
       "digital_prepago_ordenes": 13,
       "envia_ventas_raw": 3237500.0,
-      "envia_ordenes_raw": 31,
+      "envia_ordenes_raw": 32,
       "meta_gasto": 367023.0,
       "meli_ventas_brutas": 149900.0,
       "meli_ventas_netas": 117672.0,

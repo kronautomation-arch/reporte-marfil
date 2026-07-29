@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-29T10:08:50.407958-05:00",
+  "updated_at": "2026-07-29T10:46:04.209151-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.0412719251021258,
+    "pct_devoluciones": 0.06512376388541155,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 6363000,
-    "ordenes_ytd": 53,
-    "tasa_por_monto": 0.0413,
-    "tasa_por_ordenes": 0.0428
+    "monto_ytd": 10040300,
+    "ordenes_ytd": 76,
+    "tasa_por_monto": 0.0651,
+    "tasa_por_ordenes": 0.0614
   },
   "shopify": {
     "ventas_brutas_ytd": 171099600,
@@ -500,11 +500,11 @@
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 26149484,
+      "gasto": 26157451,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 64107718,
+  "ads_gasto_total": 64115685,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7207,15 +7207,15 @@
       "envia_ventas": 649500.0,
       "envia_ordenes": 4,
       "envia_unidades": 5,
-      "envia_costo_envio": 431610.0,
+      "envia_costo_envio": 77890.0,
       "digital_ventas_netas": 529600.0,
       "digital_descuentos": 119900.0,
       "digital_cod_neto": 409700.0,
       "digital_prepago_neto": 119900.0,
       "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 1,
-      "envia_ventas_raw": 3677300.0,
-      "envia_ordenes_raw": 28,
+      "envia_ventas_raw": 0.0,
+      "envia_ordenes_raw": 5,
       "meta_gasto": 616503.0,
       "meli_ventas_brutas": 299800.0,
       "meli_ventas_netas": 235344.0,
@@ -7414,7 +7414,7 @@
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 499600.0,
       "envia_ordenes_raw": 10,
-      "meta_gasto": 241226.0,
+      "meta_gasto": 241272.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -7423,9 +7423,9 @@
       "amazon_ventas_brutas": 44.9,
       "amazon_ordenes": 1,
       "amazon_unidades": 1,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
-      "pos_caracoli_gastos": 0,
+      "pos_caracoli_ventas": 140000.0,
+      "pos_caracoli_unidades": 1,
+      "pos_caracoli_gastos": 80000.0,
       "pos_titan_plaza_ventas": 140000.0,
       "pos_titan_plaza_unidades": 1,
       "pos_titan_plaza_gastos": 0,
@@ -7447,7 +7447,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 82340.0,
+      "meta_gasto": 90261.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T15:27:09.777370-05:00",
+  "updated_at": "2026-08-06T10:14:51.338541-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -37,19 +37,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 211,
-      "monto": 30347700,
-      "tasa": 0.151,
+      "ordenes": 214,
+      "monto": 30727400,
+      "tasa": 0.1529,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 95,
-          "monto": 12641400.0
+          "ordenes": 97,
+          "monto": 12881200.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 67,
-          "monto": 11161600.0
+          "ordenes": 68,
+          "monto": 11301500.0
         },
         {
           "canal": "web",
@@ -355,8 +355,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 197,
-      "transactions_completed": 193,
+      "transactions_total": 196,
+      "transactions_completed": 192,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 17828000,
@@ -463,22 +463,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 10400.11,
-    "ventas_netas_ytd": 8722.53,
-    "comisiones_ytd": 1125.88,
+    "ventas_netas_ytd": 8711.44,
+    "comisiones_ytd": 1136.97,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 179.6,
-    "pct_comision": 0.1083,
+    "pct_comision": 0.1093,
     "ticket_promedio": 48.6,
     "unidades_ytd": 225,
     "ordenes_ytd": 214,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4370.0,
+      "ventas_principal": 4414.9,
       "shipping_income": 101.23,
-      "tax_collected": 258.72,
-      "commission": 656.0,
-      "fba_fees": 433.91,
+      "tax_collected": 261.98,
+      "commission": 662.74,
+      "fba_fees": 438.26,
       "other_fees": 35.97,
       "refunds": 179.6,
       "ads_spend": 372.1
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 39033817,
+      "gasto": 39075625,
       "purchases": 752
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 27190695,
+      "gasto": 27294464,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 66224512,
+  "ads_gasto_total": 66370089,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7645,7 +7645,7 @@
       "digital_prepago_ordenes": 5,
       "envia_ventas_raw": 8223200.0,
       "envia_ordenes_raw": 11,
-      "meta_gasto": 343099.0,
+      "meta_gasto": 343114.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -7678,7 +7678,40 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 275395.0,
+      "meta_gasto": 301350.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-08-06": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 119607.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

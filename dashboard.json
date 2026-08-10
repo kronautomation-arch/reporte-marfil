@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T14:34:21.006862-05:00",
+  "updated_at": "2026-08-10T09:20:27.005846-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -355,24 +355,24 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 195,
-      "transactions_completed": 190,
+      "transactions_total": 196,
+      "transactions_completed": 191,
       "transactions_canceled": 5
     },
-    "ventas_brutas_ytd": 17828000,
-    "ventas_netas_ytd": 13995040,
-    "comisiones_ytd": 3832960,
+    "ventas_brutas_ytd": 17977900,
+    "ventas_netas_ytd": 14112712,
+    "comisiones_ytd": 3865188,
     "pct_comision": 0.215,
-    "ticket_promedio": 148567,
-    "unidades_ytd": 120,
-    "ordenes_ytd": 120,
+    "ticket_promedio": 148578,
+    "unidades_ytd": 121,
+    "ordenes_ytd": 121,
     "entregadas": {
       "ordenes": 118,
       "monto": 17528200
     },
     "en_transito": {
-      "ordenes": 2,
-      "monto": 299800
+      "ordenes": 3,
+      "monto": 449700
     },
     "canceladas": {
       "ordenes": 5,
@@ -381,11 +381,11 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 106,
-        "ventas": 15889400.0,
-        "comisiones": 3416168.0,
+        "unidades": 107,
+        "ventas": 16039300.0,
+        "comisiones": 3448396.0,
         "mlc_id": "MCO520240699",
-        "ventas_netas": 12473232.0
+        "ventas_netas": 12590904.0
       },
       {
         "nombre": "Gafas De Sol Marfil Vintage Tornasol Rosa Varilla Dorado Armazón Dorado Diseño Océano",
@@ -462,23 +462,23 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 10538.29,
-    "ventas_netas_ytd": 8827.44,
-    "comisiones_ytd": 1159.15,
+    "ventas_brutas_ytd": 10586.33,
+    "ventas_netas_ytd": 8864.39,
+    "comisiones_ytd": 1170.24,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 179.6,
-    "pct_comision": 0.11,
-    "ticket_promedio": 48.56,
-    "unidades_ytd": 228,
-    "ordenes_ytd": 217,
+    "pct_comision": 0.1105,
+    "ticket_promedio": 48.34,
+    "unidades_ytd": 230,
+    "ordenes_ytd": 219,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 4504.7,
+      "ventas_principal": 4549.6,
       "shipping_income": 101.23,
-      "tax_collected": 265.33,
-      "commission": 676.22,
-      "fba_fees": 446.96,
+      "tax_collected": 268.92,
+      "commission": 682.96,
+      "fba_fees": 451.31,
       "other_fees": 35.97,
       "refunds": 179.6,
       "ads_spend": 372.1
@@ -486,8 +486,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 228,
-        "ventas": 10538.289999999992,
+        "unidades": 230,
+        "ventas": 10586.329999999993,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -7811,11 +7811,44 @@
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
       "meta_gasto": 0.0,
-      "meli_ventas_brutas": 149900.0,
-      "meli_ventas_netas": 117672.0,
-      "meli_comisiones": 32228.0,
-      "meli_ordenes": 1,
-      "meli_unidades": 1,
+      "meli_ventas_brutas": 299800.0,
+      "meli_ventas_netas": 235344.0,
+      "meli_comisiones": 64456.0,
+      "meli_ordenes": 2,
+      "meli_unidades": 2,
+      "amazon_ventas_brutas": 48.04,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-08-10": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T09:45:18.657259-05:00",
+  "updated_at": "2026-08-14T10:50:13.142746-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -8,9 +8,9 @@
   },
   "devoluciones": {
     "monto_ytd": 10310100,
-    "ordenes_ytd": 79,
+    "ordenes_ytd": 81,
     "tasa_por_monto": 0.0612,
-    "tasa_por_ordenes": 0.0585
+    "tasa_por_ordenes": 0.06
   },
   "shopify": {
     "ventas_brutas_ytd": 188041700,
@@ -495,16 +495,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 40374805,
+      "gasto": 40387292,
       "purchases": 762
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 28272545,
+      "gasto": 28304980,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 68647350,
+  "ads_gasto_total": 68692272,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7832,9 +7832,9 @@
     },
     "2026-08-10": {
       "envia_ventas": 1079100.0,
-      "envia_ordenes": 21,
-      "envia_unidades": 21,
-      "envia_costo_envio": 205560.0,
+      "envia_ordenes": 19,
+      "envia_unidades": 19,
+      "envia_costo_envio": 180600.0,
       "digital_ventas_netas": 1079100.0,
       "digital_descuentos": 0,
       "digital_cod_neto": 0,
@@ -7842,7 +7842,7 @@
       "digital_cod_ordenes": 0,
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 1079100.0,
-      "envia_ordenes_raw": 21,
+      "envia_ordenes_raw": 19,
       "meta_gasto": 317526.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -7942,7 +7942,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 267700.0,
       "envia_ordenes_raw": 3,
-      "meta_gasto": 496737.0,
+      "meta_gasto": 496932.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -7975,7 +7975,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 142403.0,
+      "meta_gasto": 187130.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

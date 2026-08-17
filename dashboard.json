@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T10:23:41.245086-05:00",
+  "updated_at": "2026-08-17T11:19:48.987446-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -470,15 +470,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 10773.71,
-    "ventas_netas_ytd": 9040.68,
+    "ventas_brutas_ytd": 10821.18,
+    "ventas_netas_ytd": 9088.15,
     "comisiones_ytd": 1181.33,
     "ads_spend_ytd": 372.1,
     "refunds_ytd": 179.6,
-    "pct_comision": 0.1096,
+    "pct_comision": 0.1092,
     "ticket_promedio": 48.31,
-    "unidades_ytd": 235,
-    "ordenes_ytd": 223,
+    "unidades_ytd": 236,
+    "ordenes_ytd": 224,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -494,8 +494,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 235,
-        "ventas": 10773.709999999992,
+        "unidades": 236,
+        "ventas": 10821.179999999991,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -7989,9 +7989,9 @@
       "meli_comisiones": 30078.0,
       "meli_ordenes": 1,
       "meli_unidades": 1,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 47.47,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

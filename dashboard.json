@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T13:59:05.123811-05:00",
+  "updated_at": "2026-08-30T16:51:10.675518-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -475,15 +475,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11361.41,
-    "ventas_netas_ytd": 10268.25,
+    "ventas_brutas_ytd": 11409.61,
+    "ventas_netas_ytd": 10316.45,
     "comisiones_ytd": 958.46,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 134.7,
-    "pct_comision": 0.0844,
+    "pct_comision": 0.084,
     "ticket_promedio": 48.35,
-    "unidades_ytd": 247,
-    "ordenes_ytd": 235,
+    "unidades_ytd": 248,
+    "ordenes_ytd": 236,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -499,8 +499,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 247,
-        "ventas": 11361.409999999989,
+        "unidades": 248,
+        "ventas": 11409.60999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -513,11 +513,11 @@
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 30165029,
+      "gasto": 30166343,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 71724273,
+  "ads_gasto_total": 71725587,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -8483,15 +8483,15 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 2,
-      "meta_gasto": 137934.0,
+      "meta_gasto": 137939.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 48.2,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -8516,7 +8516,7 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 0,
       "envia_ordenes_raw": 0,
-      "meta_gasto": 12545.0,
+      "meta_gasto": 13854.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

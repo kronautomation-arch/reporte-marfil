@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T16:32:10.452790-05:00",
+  "updated_at": "2026-08-30T12:15:21.121119-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -475,15 +475,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11306.41,
-    "ventas_netas_ytd": 10213.25,
+    "ventas_brutas_ytd": 11361.41,
+    "ventas_netas_ytd": 10268.25,
     "comisiones_ytd": 958.46,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 134.7,
-    "pct_comision": 0.0848,
-    "ticket_promedio": 48.32,
-    "unidades_ytd": 246,
-    "ordenes_ytd": 234,
+    "pct_comision": 0.0844,
+    "ticket_promedio": 48.35,
+    "unidades_ytd": 247,
+    "ordenes_ytd": 235,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -499,8 +499,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 246,
-        "ventas": 11306.409999999989,
+        "unidades": 247,
+        "ventas": 11361.409999999989,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -513,11 +513,11 @@
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 30139973,
+      "gasto": 30163985,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 71699217,
+  "ads_gasto_total": 71723229,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -8450,15 +8450,15 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 1179100.0,
       "envia_ordenes_raw": 9,
-      "meta_gasto": 286534.0,
+      "meta_gasto": 286545.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 48.99,
-      "amazon_ordenes": 1,
-      "amazon_unidades": 1,
+      "amazon_ventas_brutas": 103.99000000000001,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -8483,7 +8483,40 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 2,
-      "meta_gasto": 125434.0,
+      "meta_gasto": 137932.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-08-30": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 11503.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

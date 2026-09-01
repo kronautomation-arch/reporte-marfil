@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-09-01T14:08:26.463807-05:00",
+  "updated_at": "2026-09-01T16:39:09.034351-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07962057963353562,
+    "pct_devoluciones": 0.07932391127755366,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13827300,
-    "ordenes_ytd": 138,
-    "tasa_por_monto": 0.0796,
-    "tasa_por_ordenes": 0.0974
+    "ordenes_ytd": 139,
+    "tasa_por_monto": 0.0793,
+    "tasa_por_ordenes": 0.0977
   },
   "shopify": {
-    "ventas_brutas_ytd": 196572900,
-    "ventas_netas_ytd": 178685045,
+    "ventas_brutas_ytd": 197102500,
+    "ventas_netas_ytd": 179214645,
     "descuentos_ytd": 17917855,
-    "unidades_ytd": 1571,
-    "ordenes_ytd": 1278,
+    "unidades_ytd": 1575,
+    "ordenes_ytd": 1281,
     "cash_flow": {
-      "cod_neto": 117427755,
-      "cod_bruto": 128342400,
-      "cod_ordenes": 908,
-      "prepago_neto": 61257290,
-      "prepago_bruto": 68230500,
-      "prepago_ordenes": 370,
-      "cod_pct": 0.6572,
-      "prepago_pct": 0.3428
+      "cod_neto": 117837455,
+      "cod_bruto": 128752100,
+      "cod_ordenes": 910,
+      "prepago_neto": 61377190,
+      "prepago_bruto": 68350400,
+      "prepago_ordenes": 371,
+      "cod_pct": 0.6575,
+      "prepago_pct": 0.3425
     },
     "canceladas": {
       "ordenes": 60,
@@ -39,7 +39,7 @@
     "no_despachadas": {
       "ordenes": 217,
       "monto": 31137100,
-      "tasa": 0.1452,
+      "tasa": 0.1449,
       "por_canal": [
         {
           "canal": "5690175",
@@ -61,14 +61,14 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 964,
-        "ventas": 115583600.0,
+        "unidades": 966,
+        "ventas": 115823400.0,
         "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 142,
-        "ventas": 19865800.0,
+        "unidades": 143,
+        "ventas": 20005700.0,
         "vendor": "MM"
       },
       {
@@ -79,8 +79,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 45,
-        "ventas": 6745500.0,
+        "unidades": 46,
+        "ventas": 6895400.0,
         "vendor": "MM"
       },
       {
@@ -153,14 +153,14 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 964,
-        "ventas": 115583600.0,
+        "unidades": 966,
+        "ventas": 115823400.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 142,
-        "ventas": 19865800.0,
+        "unidades": 143,
+        "ventas": 20005700.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -171,8 +171,8 @@
       },
       {
         "sku": "VENUS CAFÉ-1",
-        "unidades": 45,
-        "ventas": 6745500.0,
+        "unidades": 46,
+        "ventas": 6895400.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 810,
-        "ventas_brutas": 132064100.0
+        "ordenes": 813,
+        "ventas_brutas": 132593700.0
       },
       {
         "canal": "5690175",
@@ -475,15 +475,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11503.39,
-    "ventas_netas_ytd": 10399.14,
+    "ventas_brutas_ytd": 11548.29,
+    "ventas_netas_ytd": 10444.04,
     "comisiones_ytd": 969.55,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 134.7,
-    "pct_comision": 0.0843,
-    "ticket_promedio": 48.33,
-    "unidades_ytd": 250,
-    "ordenes_ytd": 238,
+    "pct_comision": 0.084,
+    "ticket_promedio": 48.32,
+    "unidades_ytd": 251,
+    "ordenes_ytd": 239,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -499,8 +499,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 250,
-        "ventas": 11503.389999999989,
+        "unidades": 251,
+        "ventas": 11548.289999999988,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -508,16 +508,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 41757736,
+      "gasto": 41759980,
       "purchases": 774
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 30262785,
+      "gasto": 30338070,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 72020521,
+  "ads_gasto_total": 72098050,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -7646,18 +7646,18 @@
       "digital_gastos_var": 0
     },
     "2026-08-04": {
-      "envia_ventas": 8463000.0,
-      "envia_ordenes": 11,
-      "envia_unidades": 70,
-      "envia_costo_envio": 180800.0,
-      "digital_ventas_netas": 8343100.0,
+      "envia_ventas": 8343100.0,
+      "envia_ordenes": 10,
+      "envia_unidades": 69,
+      "envia_costo_envio": 168320.0,
+      "digital_ventas_netas": 8223200.0,
       "digital_descuentos": 119900.0,
-      "digital_cod_neto": 789400.0,
+      "digital_cod_neto": 669500.0,
       "digital_prepago_neto": 7553700.0,
-      "digital_cod_ordenes": 6,
+      "digital_cod_ordenes": 5,
       "digital_prepago_ordenes": 5,
       "envia_ventas_raw": 8223200.0,
-      "envia_ordenes_raw": 11,
+      "envia_ordenes_raw": 10,
       "meta_gasto": 343114.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -8258,9 +8258,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 44.9,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 290000.0,
       "pos_caracoli_unidades": 2,
       "pos_caracoli_gastos": 70000.0,
@@ -8549,7 +8549,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 139900.0,
       "envia_ordenes_raw": 3,
-      "meta_gasto": 130807.0,
+      "meta_gasto": 130812.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -8570,19 +8570,19 @@
       "digital_gastos_var": 0
     },
     "2026-09-01": {
-      "envia_ventas": 0,
-      "envia_ordenes": 0,
-      "envia_unidades": 0,
-      "envia_costo_envio": 0,
-      "digital_ventas_netas": 0,
-      "digital_descuentos": 0,
-      "digital_cod_neto": 0,
-      "digital_prepago_neto": 0,
-      "digital_cod_ordenes": 0,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 0,
-      "envia_ordenes_raw": 0,
-      "meta_gasto": 162287.0,
+      "envia_ventas": 649500.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 5,
+      "envia_costo_envio": 98990.0,
+      "digital_ventas_netas": 649500.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 529600.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 3,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 649500.0,
+      "envia_ordenes_raw": 6,
+      "meta_gasto": 239811.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

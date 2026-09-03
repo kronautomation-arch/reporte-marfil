@@ -1,50 +1,50 @@
 {
-  "updated_at": "2026-09-02T16:37:38.529176-05:00",
+  "updated_at": "2026-09-03T11:58:11.959182-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07834618649476457,
+    "pct_devoluciones": 0.07829245412529172,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13687400,
     "ordenes_ytd": 136,
     "tasa_por_monto": 0.0783,
-    "tasa_por_ordenes": 0.0952
+    "tasa_por_ordenes": 0.0951
   },
   "shopify": {
-    "ventas_brutas_ytd": 198119600,
-    "ventas_netas_ytd": 180251745,
+    "ventas_brutas_ytd": 198239500,
+    "ventas_netas_ytd": 180371645,
     "descuentos_ytd": 17897855,
-    "unidades_ytd": 1584,
-    "ordenes_ytd": 1289,
+    "unidades_ytd": 1585,
+    "ordenes_ytd": 1290,
     "cash_flow": {
       "cod_neto": 118626855,
       "cod_bruto": 129521500,
       "cod_ordenes": 916,
-      "prepago_neto": 61624890,
-      "prepago_bruto": 68598100,
-      "prepago_ordenes": 373,
-      "cod_pct": 0.6581,
-      "prepago_pct": 0.3419
+      "prepago_neto": 61744790,
+      "prepago_bruto": 68718000,
+      "prepago_ordenes": 374,
+      "cod_pct": 0.6577,
+      "prepago_pct": 0.3423
     },
     "canceladas": {
-      "ordenes": 61,
-      "monto": 9219700
+      "ordenes": 62,
+      "monto": 9459500
     },
     "reembolsadas": {
       "ordenes": 0,
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 215,
-      "monto": 31157100,
-      "tasa": 0.143,
+      "ordenes": 216,
+      "monto": 31277000,
+      "tasa": 0.1434,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 91,
-          "monto": 12161800.0
+          "ordenes": 92,
+          "monto": 12281700.0
         },
         {
           "canal": "shopify_draft_order",
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 972,
-        "ventas": 116542800.0,
+        "unidades": 973,
+        "ventas": 116662700.0,
         "vendor": "Marfil"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 972,
-        "ventas": 116542800.0,
+        "unidades": 973,
+        "ventas": 116662700.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 819,
-        "ventas_brutas": 133363100.0
+        "ordenes": 820,
+        "ventas_brutas": 133483000.0
       },
       {
         "canal": "5690175",
@@ -360,8 +360,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 180,
-      "transactions_completed": 175,
+      "transactions_total": 179,
+      "transactions_completed": 174,
       "transactions_canceled": 5
     },
     "ventas_brutas_ytd": 18117800,
@@ -475,32 +475,32 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11548.29,
-    "ventas_netas_ytd": 10432.95,
-    "comisiones_ytd": 980.64,
+    "ventas_brutas_ytd": 11596.89,
+    "ventas_netas_ytd": 10655.02,
+    "comisiones_ytd": 852.07,
     "ads_spend_ytd": 0.0,
-    "refunds_ytd": 134.7,
-    "pct_comision": 0.0849,
+    "refunds_ytd": 89.8,
+    "pct_comision": 0.0735,
     "ticket_promedio": 48.32,
-    "unidades_ytd": 251,
-    "ordenes_ytd": 239,
+    "unidades_ytd": 252,
+    "ordenes_ytd": 240,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 3786.3,
-      "shipping_income": 105.07,
-      "tax_collected": 213.31,
-      "commission": 568.38,
-      "fba_fees": 377.38,
+      "ventas_principal": 3277.5,
+      "shipping_income": 95.09,
+      "tax_collected": 186.05,
+      "commission": 492.0,
+      "fba_fees": 325.19,
       "other_fees": 34.88,
-      "refunds": 134.7,
+      "refunds": 89.8,
       "ads_spend": 0.0
     },
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 251,
-        "ventas": 11548.289999999988,
+        "unidades": 252,
+        "ventas": 11596.889999999989,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -508,16 +508,16 @@
   "ads_cuentas": [
     {
       "nombre": "Cuenta 01",
-      "gasto": 41855432,
+      "gasto": 42070910,
       "purchases": 778
     },
     {
       "nombre": "Cuenta 02",
-      "gasto": 30497508,
+      "gasto": 30580351,
       "purchases": 30
     }
   ],
-  "ads_gasto_total": 72352940,
+  "ads_gasto_total": 72651261,
   "pos_info": {
     "caracoli": {
       "nombre": "Caracolí",
@@ -8582,7 +8582,7 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 649500.0,
       "envia_ordenes_raw": 6,
-      "meta_gasto": 300165.0,
+      "meta_gasto": 300210.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,
@@ -8615,7 +8615,40 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 389700.0,
       "envia_ordenes_raw": 6,
-      "meta_gasto": 194348.0,
+      "meta_gasto": 239872.0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 48.6,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-03": {
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
+      "envia_costo_envio": 14890.0,
+      "digital_ventas_netas": 119900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 0.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 119900.0,
+      "envia_ordenes_raw": 1,
+      "meta_gasto": 252752.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
       "meli_comisiones": 0,

@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-09-09T12:04:07.984327-05:00",
+  "updated_at": "2026-09-09T12:27:13.906207-05:00",
   "errors": {},
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07474230022329366,
+    "pct_devoluciones": 0.07266120413252583,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13767300,
     "ordenes_ytd": 138,
-    "tasa_por_monto": 0.0747,
-    "tasa_por_ordenes": 0.0946
+    "tasa_por_monto": 0.0727,
+    "tasa_por_ordenes": 0.0945
   },
   "shopify": {
-    "ventas_brutas_ytd": 209540900,
-    "ventas_netas_ytd": 191463045,
+    "ventas_brutas_ytd": 214816500,
+    "ventas_netas_ytd": 196738645,
     "descuentos_ytd": 18107855,
-    "unidades_ytd": 1724,
-    "ordenes_ytd": 1320,
+    "unidades_ytd": 1812,
+    "ordenes_ytd": 1321,
     "cash_flow": {
       "cod_neto": 120725155,
       "cod_bruto": 131699800,
       "cod_ordenes": 933,
-      "prepago_neto": 70737890,
-      "prepago_bruto": 77841100,
-      "prepago_ordenes": 387,
-      "cod_pct": 0.6305,
-      "prepago_pct": 0.3695
+      "prepago_neto": 76013490,
+      "prepago_bruto": 83116700,
+      "prepago_ordenes": 388,
+      "cod_pct": 0.6136,
+      "prepago_pct": 0.3864
     },
     "canceladas": {
       "ordenes": 67,
@@ -61,8 +61,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1012,
-        "ventas": 121338800.0,
+        "unidades": 1056,
+        "ventas": 126614400.0,
         "vendor": "Marfil"
       },
       {
@@ -78,15 +78,15 @@
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 54,
-        "ventas": 8094600.0,
+        "nombre": "ESTUCHES PORVISIONALES",
+        "unidades": 97,
+        "ventas": 0.0,
         "vendor": "MM"
       },
       {
-        "nombre": "ESTUCHES PORVISIONALES",
-        "unidades": 53,
-        "ventas": 0.0,
+        "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
+        "unidades": 54,
+        "ventas": 8094600.0,
         "vendor": "MM"
       },
       {
@@ -153,8 +153,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1012,
-        "ventas": 121338800.0,
+        "unidades": 1056,
+        "ventas": 126614400.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -170,16 +170,16 @@
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
+        "sku": "ESTUCHES POVISIONALES-1",
+        "unidades": 97,
+        "ventas": 0.0,
+        "title": "ESTUCHES PORVISIONALES"
+      },
+      {
         "sku": "VENUS CAFÉ-1",
         "unidades": 54,
         "ventas": 8094600.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
-      },
-      {
-        "sku": "ESTUCHES POVISIONALES-1",
-        "unidades": 53,
-        "ventas": 0.0,
-        "title": "ESTUCHES PORVISIONALES"
       },
       {
         "sku": "(sin SKU)",
@@ -275,8 +275,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 840,
-        "ventas_brutas": 143255600.0
+        "ordenes": 841,
+        "ventas_brutas": 148531200.0
       },
       {
         "canal": "5690175",
@@ -8834,18 +8834,18 @@
       "digital_gastos_var": 0
     },
     "2026-09-09": {
-      "envia_ventas": 779400.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 6,
-      "envia_costo_envio": 60740.0,
-      "digital_ventas_netas": 779400.0,
+      "envia_ventas": 6055000.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 94,
+      "envia_costo_envio": 94940.0,
+      "digital_ventas_netas": 6055000.0,
       "digital_descuentos": 0.0,
       "digital_cod_neto": 139900.0,
-      "digital_prepago_neto": 639500.0,
+      "digital_prepago_neto": 5915100.0,
       "digital_cod_ordenes": 1,
-      "digital_prepago_ordenes": 3,
-      "envia_ventas_raw": 259800.0,
-      "envia_ordenes_raw": 4,
+      "digital_prepago_ordenes": 4,
+      "envia_ventas_raw": 5535400.0,
+      "envia_ordenes_raw": 5,
       "meta_gasto": 0.0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

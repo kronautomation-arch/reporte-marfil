@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-10T13:52:35.042998-05:00",
+  "updated_at": "2026-09-10T16:28:15.347421-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ABMxCWzme_QBSpCHXKxURi8]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Aw2TGLowu72aF2mDDt1-P2W]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07334541411848593,
+    "pct_devoluciones": 0.07329906399701053,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
@@ -15,20 +15,20 @@
     "tasa_por_ordenes": 0.0951
   },
   "shopify": {
-    "ventas_brutas_ytd": 214816500,
-    "ventas_netas_ytd": 196738645,
+    "ventas_brutas_ytd": 214936400,
+    "ventas_netas_ytd": 196858545,
     "descuentos_ytd": 18107855,
-    "unidades_ytd": 1812,
-    "ordenes_ytd": 1321,
+    "unidades_ytd": 1813,
+    "ordenes_ytd": 1322,
     "cash_flow": {
-      "cod_neto": 120585255,
-      "cod_bruto": 131559900,
-      "cod_ordenes": 932,
+      "cod_neto": 120705155,
+      "cod_bruto": 131679800,
+      "cod_ordenes": 933,
       "prepago_neto": 76153390,
       "prepago_bruto": 83256600,
       "prepago_ordenes": 389,
-      "cod_pct": 0.6129,
-      "prepago_pct": 0.3871
+      "cod_pct": 0.6132,
+      "prepago_pct": 0.3868
     },
     "canceladas": {
       "ordenes": 67,
@@ -41,7 +41,7 @@
     "no_despachadas": {
       "ordenes": 214,
       "monto": 30737400,
-      "tasa": 0.1394,
+      "tasa": 0.1393,
       "por_canal": [
         {
           "canal": "5690175",
@@ -63,8 +63,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1056,
-        "ventas": 126614400.0,
+        "unidades": 1057,
+        "ventas": 126734300.0,
         "vendor": "Marfil"
       },
       {
@@ -155,8 +155,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1056,
-        "ventas": 126614400.0,
+        "unidades": 1057,
+        "ventas": 126734300.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -277,8 +277,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 841,
-        "ventas_brutas": 148531200.0
+        "ordenes": 842,
+        "ventas_brutas": 148651100.0
       },
       {
         "canal": "5690175",
@@ -8836,18 +8836,18 @@
       "digital_gastos_var": 0
     },
     "2026-09-10": {
-      "envia_ventas": 139900.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
-      "envia_costo_envio": 14890.0,
-      "digital_ventas_netas": 139900.0,
+      "envia_ventas": 259800.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 2,
+      "envia_costo_envio": 29780.0,
+      "digital_ventas_netas": 259800.0,
       "digital_descuentos": 0.0,
-      "digital_cod_neto": 0.0,
+      "digital_cod_neto": 119900.0,
       "digital_prepago_neto": 139900.0,
-      "digital_cod_ordenes": 0,
+      "digital_cod_ordenes": 1,
       "digital_prepago_ordenes": 1,
-      "envia_ventas_raw": 139900.0,
-      "envia_ordenes_raw": 1,
+      "envia_ventas_raw": 259800.0,
+      "envia_ordenes_raw": 2,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

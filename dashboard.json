@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-10T12:25:01.049481-05:00",
+  "updated_at": "2026-09-10T13:06:52.434407-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A03GMRjQciq05T09aHV_qzp]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Avoq7MMCXarTDuQUVAFjJi-]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07339956985842272,
+    "pct_devoluciones": 0.07334541411848593,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13907200,
     "ordenes_ytd": 139,
-    "tasa_por_monto": 0.0734,
-    "tasa_por_ordenes": 0.0952
+    "tasa_por_monto": 0.0733,
+    "tasa_por_ordenes": 0.0951
   },
   "shopify": {
-    "ventas_brutas_ytd": 214676600,
-    "ventas_netas_ytd": 196598745,
+    "ventas_brutas_ytd": 214816500,
+    "ventas_netas_ytd": 196738645,
     "descuentos_ytd": 18107855,
-    "unidades_ytd": 1811,
-    "ordenes_ytd": 1320,
+    "unidades_ytd": 1812,
+    "ordenes_ytd": 1321,
     "cash_flow": {
       "cod_neto": 120585255,
       "cod_bruto": 131559900,
       "cod_ordenes": 932,
-      "prepago_neto": 76013490,
-      "prepago_bruto": 83116700,
-      "prepago_ordenes": 388,
-      "cod_pct": 0.6134,
-      "prepago_pct": 0.3866
+      "prepago_neto": 76153390,
+      "prepago_bruto": 83256600,
+      "prepago_ordenes": 389,
+      "cod_pct": 0.6129,
+      "prepago_pct": 0.3871
     },
     "canceladas": {
       "ordenes": 67,
@@ -41,7 +41,7 @@
     "no_despachadas": {
       "ordenes": 214,
       "monto": 30737400,
-      "tasa": 0.1395,
+      "tasa": 0.1394,
       "por_canal": [
         {
           "canal": "5690175",
@@ -277,8 +277,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 840,
-        "ventas_brutas": 148391300.0
+        "ordenes": 841,
+        "ventas_brutas": 148531200.0
       },
       {
         "canal": "5690175",
@@ -8815,6 +8815,39 @@
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 5535400.0,
       "envia_ordenes_raw": 5,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-10": {
+      "envia_ventas": 139900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
+      "envia_costo_envio": 14890.0,
+      "digital_ventas_netas": 139900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 0.0,
+      "digital_prepago_neto": 139900.0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 139900.0,
+      "envia_ordenes_raw": 1,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

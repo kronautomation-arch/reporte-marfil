@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-12T13:01:25.389247-05:00",
+  "updated_at": "2026-09-12T16:16:52.800707-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ATzD7YOE3LWHNxesqlOvlb6]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AumEHGMgBZ27-_-QXcBxmD9]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -478,24 +478,24 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 11842.49,
-    "ventas_netas_ytd": 10816.0,
-    "comisiones_ytd": 936.69,
+    "ventas_netas_ytd": 10760.01,
+    "comisiones_ytd": 947.78,
     "ads_spend_ytd": 0.0,
-    "refunds_ytd": 89.8,
-    "pct_comision": 0.0791,
+    "refunds_ytd": 134.7,
+    "pct_comision": 0.08,
     "ticket_promedio": 48.34,
     "unidades_ytd": 257,
     "ordenes_ytd": 245,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 3591.8,
+      "ventas_principal": 3636.7,
       "shipping_income": 102.22,
-      "tax_collected": 200.11,
-      "commission": 539.18,
-      "fba_fees": 355.64,
+      "tax_collected": 203.81,
+      "commission": 545.92,
+      "fba_fees": 359.99,
       "other_fees": 41.87,
-      "refunds": 89.8,
+      "refunds": 134.7,
       "ads_spend": 0.0
     },
     "top_productos": [

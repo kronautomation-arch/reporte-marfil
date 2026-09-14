@@ -3,13 +3,13 @@
   "store_name": "Marfil Colombia",
   "domain": "modamarfil.com.co",
   "country": "Colombia",
-  "generated_at": "2026-05-06T15:27:58.072069",
+  "generated_at": "2026-09-09T16:29:37.171434",
   "summary": {
-    "opportunity_keywords": 30,
+    "opportunity_keywords": 60,
     "currently_ranking": 30,
-    "pending_blog_topics": 11,
-    "published_blogs_total": 3,
-    "total_search_volume": 78600,
+    "pending_blog_topics": 14,
+    "published_blogs_total": 112,
+    "total_search_volume": 74830,
     "avg_difficulty": 0.0
   },
   "top_opportunities": [
@@ -17,47 +17,17 @@
       "keyword": "gafas de sol",
       "volume": 9900,
       "difficulty": 0,
-      "cpc": 0.4,
+      "cpc": 0.44,
       "competition": "HIGH",
       "opportunity": 99000.0,
       "intent": "",
       "source_seed": "gafas de sol"
     },
     {
-      "keyword": "montura de gafas para mujer",
-      "volume": 4400,
-      "difficulty": 0,
-      "cpc": 0.23,
-      "competition": "HIGH",
-      "opportunity": 44000.0,
-      "intent": "",
-      "source_seed": "gafas mujer"
-    },
-    {
-      "keyword": "monturas de gafas para mujer",
-      "volume": 4400,
-      "difficulty": 0,
-      "cpc": 0.23,
-      "competition": "HIGH",
-      "opportunity": 44000.0,
-      "intent": "",
-      "source_seed": "gafas mujer"
-    },
-    {
       "keyword": "montura de gafas para hombre",
       "volume": 2900,
       "difficulty": 0,
-      "cpc": 0.26,
-      "competition": "HIGH",
-      "opportunity": 29000.0,
-      "intent": "",
-      "source_seed": "gafas hombre"
-    },
-    {
-      "keyword": "monturas para gafas de hombre",
-      "volume": 2900,
-      "difficulty": 0,
-      "cpc": 0.26,
+      "cpc": 0.23,
       "competition": "HIGH",
       "opportunity": 29000.0,
       "intent": "",
@@ -67,7 +37,7 @@
       "keyword": "monturas de gafas para hombre",
       "volume": 2900,
       "difficulty": 0,
-      "cpc": 0.26,
+      "cpc": 0.23,
       "competition": "HIGH",
       "opportunity": 29000.0,
       "intent": "",
@@ -77,17 +47,7 @@
       "keyword": "gafas para sol de hombre",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.4,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas de sol"
-    },
-    {
-      "keyword": "gafas de sol para hombres",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.4,
+      "cpc": 0.37,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
@@ -97,7 +57,7 @@
       "keyword": "gafas de sol para mujer",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.33,
+      "cpc": 0.32,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
@@ -107,7 +67,7 @@
       "keyword": "gafas para hombre de sol",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.4,
+      "cpc": 0.37,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
@@ -117,37 +77,27 @@
       "keyword": "gafas para sol de mujer",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.33,
+      "cpc": 0.32,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
       "source_seed": "gafas de sol"
     },
     {
-      "keyword": "gafas hombre cartier",
+      "keyword": "gafas de sol para hombre",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.23,
+      "cpc": 0.37,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
-      "source_seed": "gafas hombre"
+      "source_seed": "gafas de sol"
     },
     {
       "keyword": "gafas para hombre",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.28,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas hombre"
-    },
-    {
-      "keyword": "cartier gafas hombre",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.23,
+      "cpc": 0.31,
       "competition": "HIGH",
       "opportunity": 24000.0,
       "intent": "",
@@ -157,376 +107,501 @@
       "keyword": "gafas cartier hombre",
       "volume": 2400,
       "difficulty": 0,
-      "cpc": 0.23,
-      "competition": "HIGH",
+      "cpc": 0.12,
+      "competition": "MEDIUM",
       "opportunity": 24000.0,
       "intent": "",
       "source_seed": "gafas hombre"
     },
     {
-      "keyword": "marco de gafas para mujer",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.24,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas mujer"
-    },
-    {
-      "keyword": "marcos de gafas para mujer",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.24,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas mujer"
-    },
-    {
-      "keyword": "marcos para gafas de mujer",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.24,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas mujer"
-    },
-    {
-      "keyword": "marcos de gafas para mujeres",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.24,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "marcos para gafas"
-    },
-    {
-      "keyword": "gafas hombre ray ban",
+      "keyword": "marcos de gafas para hombre",
       "volume": 1900,
       "difficulty": 0,
-      "cpc": 0.1,
+      "cpc": 0.27,
       "competition": "HIGH",
       "opportunity": 19000.0,
       "intent": "",
       "source_seed": "gafas hombre"
+    },
+    {
+      "keyword": "gafas hombre",
+      "volume": 1600,
+      "difficulty": 0,
+      "cpc": 0.48,
+      "competition": "HIGH",
+      "opportunity": 16000.0,
+      "intent": "",
+      "source_seed": "gafas hombre"
+    },
+    {
+      "keyword": "gafas hombre ray ban",
+      "volume": 1600,
+      "difficulty": 0,
+      "cpc": 0.16,
+      "competition": "HIGH",
+      "opportunity": 16000.0,
+      "intent": "",
+      "source_seed": "gafas hombre"
+    },
+    {
+      "keyword": "gafas ray ban hombre",
+      "volume": 1600,
+      "difficulty": 0,
+      "cpc": 0.16,
+      "competition": "HIGH",
+      "opportunity": 16000.0,
+      "intent": "",
+      "source_seed": "gafas hombre"
+    },
+    {
+      "keyword": "gafas hombre de sol",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.41,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas de sol"
+    },
+    {
+      "keyword": "gafas de sol hombre",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.41,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas de sol"
+    },
+    {
+      "keyword": "gafas de sol de hombre",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.41,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas de sol"
+    },
+    {
+      "keyword": "gafas de hombre de sol",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.41,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas de sol"
+    },
+    {
+      "keyword": "gafas ray ban mujer",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.15,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas mujer"
+    },
+    {
+      "keyword": "gafas para mujer",
+      "volume": 1300,
+      "difficulty": 0,
+      "cpc": 0.41,
+      "competition": "HIGH",
+      "opportunity": 13000.0,
+      "intent": "",
+      "source_seed": "gafas mujer"
     }
   ],
   "current_rankings": [
     {
       "keyword": "gafas marfil",
       "position": 1,
-      "volume": 1000,
+      "volume": 720,
       "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+      "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
+      "difficulty": 0
+    },
+    {
+      "keyword": "marfil",
+      "position": 1,
+      "volume": 14800,
+      "url": "https://modamarfil.com.co/",
+      "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
       "difficulty": 0
     },
     {
       "keyword": "marfil gafas",
       "position": 1,
-      "volume": 1000,
+      "volume": 720,
       "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-      "difficulty": 0
-    },
-    {
-      "keyword": "marfil",
-      "position": 2,
-      "volume": 12100,
-      "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas de lujos",
-      "position": 3,
-      "volume": 480,
-      "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+      "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
       "difficulty": 0
     },
     {
       "keyword": "celine gafas",
-      "position": 4,
-      "volume": 880,
+      "position": 3,
+      "volume": 720,
       "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
-      "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
+      "title": "Gafas de Sol Marfil Celine Negro Mate",
       "difficulty": 0
     },
     {
       "keyword": "gafas tornasol",
-      "position": 6,
-      "volume": 210,
-      "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1",
-      "title": "GAFAS DE SOL MARFIL CROWD TORNASOL ROSADO",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas celine",
-      "position": 9,
-      "volume": 880,
-      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
-      "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
-      "difficulty": 0
-    },
-    {
-      "keyword": "tous gafas",
-      "position": 10,
-      "volume": 210,
-      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-1",
-      "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas de hombre de moda",
-      "position": 12,
-      "volume": 390,
-      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
-      "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas rosas",
-      "position": 15,
-      "volume": 210,
-      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-praga-rosado",
-      "title": "GAFAS DE SOL MARFIL PRAGA ROSA",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas de sol para mujer de moda",
-      "position": 16,
-      "volume": 210,
-      "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-      "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas para sol de mujer",
-      "position": 16,
-      "volume": 2400,
-      "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-      "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas de hombre",
-      "position": 17,
-      "volume": 590,
-      "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
-      "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-      "difficulty": 0
-    },
-    {
-      "keyword": "colombia gafas",
-      "position": 18,
-      "volume": 390,
-      "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-      "difficulty": 0
-    },
-    {
-      "keyword": "gafas negras hombre",
-      "position": 18,
-      "volume": 390,
-      "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
-      "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-      "difficulty": 0
-    },
-    {
-      "keyword": "lentes de sol de mujer",
-      "position": 18,
+      "position": 5,
       "volume": 260,
-      "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-      "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+      "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1",
+      "title": "Gafas de Sol Marfil Crowd Tornasol Rosado",
+      "difficulty": 0
+    },
+    {
+      "keyword": "lentes cartier hombre",
+      "position": 5,
+      "volume": 210,
+      "url": "https://modamarfil.com.co/blogs/news/cartier-gafas-hombre-guia-completa",
+      "title": "Cartier Gafas Hombre — Guía Completa de Estilos y Calidad",
       "difficulty": 0
     },
     {
       "keyword": "cuelga gafas",
-      "position": 20,
+      "position": 8,
       "volume": 260,
-      "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-zack",
-      "title": "Cordón Cuelga Gafas Zack",
+      "url": "https://modamarfil.com.co/collections/cuelga-gafas",
+      "title": "Cordones para Gafas | Marfil Colombia",
       "difficulty": 0
     },
     {
-      "keyword": "gafas brasileñas precio",
-      "position": 20,
-      "volume": 170,
+      "keyword": "gafas lentes rojos",
+      "position": 9,
+      "volume": 210,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-corvus-7",
+      "title": "Gafas de Sol Marfil Corvus Rojo",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas amarillas",
+      "position": 11,
+      "volume": 480,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-crowd-5",
+      "title": "Gafas de Sol Marfil Crowd Tornasol Amarillo",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas lente amarillo",
+      "position": 11,
+      "volume": 390,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-crowd-5",
+      "title": "Gafas de Sol Marfil Crowd Tornasol Amarillo",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas lente rojo",
+      "position": 11,
+      "volume": 210,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-corvus-7",
+      "title": "Gafas de Sol Marfil Corvus Rojo",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas para hombre",
+      "position": 11,
+      "volume": 2400,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+      "title": "Gafas de Sol Hombre UV400 | Marfil Colombia",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas de sol para hombres",
+      "position": 12,
+      "volume": 2400,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+      "title": "Gafas de Sol Hombre | Marfil Colombia",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas mujer",
+      "position": 13,
+      "volume": 1000,
       "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-      "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+      "title": "Gafas de Sol Mujer | Marfil Colombia",
       "difficulty": 0
     },
     {
-      "keyword": "tiendas de gafas",
-      "position": 20,
-      "volume": 140,
-      "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-      "difficulty": 6
+      "keyword": "gafas sol mujer",
+      "position": 13,
+      "volume": 320,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+      "title": "Gafas de Sol Mujer | Marfil Colombia",
+      "difficulty": 0
     },
     {
-      "keyword": "gafas estilo",
-      "position": 22,
-      "volume": 260,
-      "url": "https://modamarfil.com.co/",
-      "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+      "keyword": "gafas de hombre",
+      "position": 14,
+      "volume": 590,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+      "title": "Gafas de Sol Hombre | Marfil Colombia",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas jaguar",
+      "position": 14,
+      "volume": 170,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-jaguar",
+      "title": "Gafas de Sol Marfil Jaguar Negro | Lentes Polarizados ...",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas de hombre de sol",
+      "position": 15,
+      "volume": 1300,
+      "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+      "title": "Gafas de Sol Hombre | Marfil Colombia",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas de mujer",
+      "position": 15,
+      "volume": 390,
+      "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+      "title": "Gafas de Sol Mujer UV400 Polarizadas",
+      "difficulty": 0
+    },
+    {
+      "keyword": "gafas naranjas",
+      "position": 15,
+      "volume": 210,
+      "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-6",
+      "title": "GAFAS DE SOLMMARFIL TOUS NARANJA NEGRO",
       "difficulty": 0
     }
   ],
   "next_blog_topics": [
     {
-      "keyword": "montura de gafas para mujer",
-      "volume": 4400,
+      "keyword": "gafas transparentes hombre",
+      "volume": 590,
       "difficulty": 0,
-      "cpc": 0.23,
+      "cpc": 0.19,
       "competition": "HIGH",
-      "opportunity": 44000.0,
+      "opportunity": 5900.0,
+      "intent": "",
+      "source_seed": "gafas hombre",
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 5900.0
+    },
+    {
+      "keyword": "gafas hombre redondas",
+      "volume": 590,
+      "difficulty": 0,
+      "cpc": 0.31,
+      "competition": "HIGH",
+      "opportunity": 5900.0,
+      "intent": "",
+      "source_seed": "gafas hombre",
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 5900.0
+    },
+    {
+      "keyword": "gafas redondas hombre",
+      "volume": 590,
+      "difficulty": 0,
+      "cpc": 0.31,
+      "competition": "HIGH",
+      "opportunity": 5900.0,
+      "intent": "",
+      "source_seed": "gafas hombre",
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 5900.0
+    },
+    {
+      "keyword": "gafas cartier mujer",
+      "volume": 590,
+      "difficulty": 0,
+      "cpc": 0.21,
+      "competition": "HIGH",
+      "opportunity": 5900.0,
       "intent": "",
       "source_seed": "gafas mujer",
       "related_in_cluster": [
-        "montura de gafas para hombre"
-      ]
+        "cartier gafas mujer"
+      ],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 5900.0
     },
     {
-      "keyword": "monturas de gafas para mujer",
-      "volume": 4400,
+      "keyword": "gafas deportivas mujer",
+      "volume": 590,
       "difficulty": 0,
-      "cpc": 0.23,
+      "cpc": 0.36,
       "competition": "HIGH",
-      "opportunity": 44000.0,
+      "opportunity": 5900.0,
       "intent": "",
       "source_seed": "gafas mujer",
-      "related_in_cluster": [
-        "monturas de gafas para hombre"
-      ]
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 5900.0
     },
     {
-      "keyword": "monturas para gafas de hombre",
-      "volume": 2900,
+      "keyword": "gafas carrera hombre",
+      "volume": 480,
       "difficulty": 0,
-      "cpc": 0.26,
+      "cpc": 0.1,
       "competition": "HIGH",
-      "opportunity": 29000.0,
+      "opportunity": 4800.0,
       "intent": "",
       "source_seed": "gafas hombre",
-      "related_in_cluster": []
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 4800.0
     },
     {
-      "keyword": "gafas de sol para hombres",
-      "volume": 2400,
+      "keyword": "gafas cuadradas hombre",
+      "volume": 480,
       "difficulty": 0,
-      "cpc": 0.4,
+      "cpc": 0.19,
       "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas de sol",
-      "related_in_cluster": [
-        "gafas de sol para mujer"
-      ]
-    },
-    {
-      "keyword": "gafas para sol de mujer",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.33,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas de sol",
-      "related_in_cluster": []
-    },
-    {
-      "keyword": "gafas hombre cartier",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.23,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
+      "opportunity": 4800.0,
       "intent": "",
       "source_seed": "gafas hombre",
-      "related_in_cluster": [
-        "gafas hombre ray-ban"
-      ]
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 4800.0
     },
     {
-      "keyword": "cartier gafas hombre",
-      "volume": 2400,
-      "difficulty": 0,
-      "cpc": 0.23,
-      "competition": "HIGH",
-      "opportunity": 24000.0,
-      "intent": "",
-      "source_seed": "gafas hombre",
-      "related_in_cluster": [
-        "gafas cartier hombre"
-      ]
-    },
-    {
-      "keyword": "marco de gafas para mujer",
-      "volume": 2400,
+      "keyword": "gafas gucci mujer",
+      "volume": 480,
       "difficulty": 0,
       "cpc": 0.24,
       "competition": "HIGH",
-      "opportunity": 24000.0,
+      "opportunity": 4800.0,
       "intent": "",
       "source_seed": "gafas mujer",
-      "related_in_cluster": [
-        "marco de gafas para hombre"
-      ]
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 4800.0
     },
     {
-      "keyword": "marcos de gafas para mujer",
-      "volume": 2400,
+      "keyword": "gafas versace mujer",
+      "volume": 480,
       "difficulty": 0,
-      "cpc": 0.24,
+      "cpc": 0.17,
       "competition": "HIGH",
-      "opportunity": 24000.0,
+      "opportunity": 4800.0,
       "intent": "",
       "source_seed": "gafas mujer",
       "related_in_cluster": [
-        "marcos de gafas para mujeres",
-        "marcos de gafas para hombre",
-        "marcos de gafas para hombres"
-      ]
+        "versace gafas mujer"
+      ],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 4800.0
     },
     {
-      "keyword": "marcos para gafas de mujer",
-      "volume": 2400,
+      "keyword": "gafas negras mujer",
+      "volume": 480,
       "difficulty": 0,
-      "cpc": 0.24,
+      "cpc": 0.19,
       "competition": "HIGH",
-      "opportunity": 24000.0,
+      "opportunity": 4800.0,
       "intent": "",
       "source_seed": "gafas mujer",
-      "related_in_cluster": [
-        "marcos para gafas de hombre"
-      ]
+      "related_in_cluster": [],
+      "trend_velocity_90d": 0.0,
+      "opportunity_with_trend": 4800.0
     }
   ],
   "recent_publications": [
     {
-      "published_at": "2026-05-05T12:16:56",
-      "article_id": 660794867959,
-      "title": "Alternativas a Ray-Ban en Colombia: Gafas de Sol con Calidad y Estilo",
-      "handle": "alternativas-a-ray-ban-en-colombia",
-      "source_brief": ""
+      "published_at": "2026-08-13T00:00:00",
+      "article_id": 662930718967,
+      "title": "Lentes De Sol Unisex Que Le Quedan A Todos",
+      "handle": "lentes-de-sol-unisex",
+      "source_brief": "",
+      "primary_keyword": "lentes de sol unisex que le quedan a todos",
+      "migrated_from": "marfil-seo-blog"
     },
     {
-      "published_at": "2026-05-05T12:16:53",
-      "article_id": 660794835191,
-      "title": "Gafas de Sol para Cara Grande: Modelos que Equilibran tus Proporciones",
-      "handle": "gafas-de-sol-para-cara-grande-colombia",
-      "source_brief": ""
+      "published_at": "2026-08-12T00:00:00",
+      "article_id": 662924525815,
+      "title": "Lentes De Sol Para Regalar En Navidad",
+      "handle": "lentes-de-sol-regalo-navidad",
+      "source_brief": "",
+      "primary_keyword": "lentes de sol para regalar en navidad",
+      "migrated_from": "marfil-seo-blog"
     },
     {
-      "published_at": "2026-05-05T12:16:49",
-      "article_id": 660794802423,
-      "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo Elegirlos",
-      "handle": "lentes-de-sol-espejados-guia-colombia",
-      "source_brief": ""
+      "published_at": "2026-08-11T00:00:00",
+      "article_id": 662919184631,
+      "title": "Lentes De Sol Para Clima Calido Colombia",
+      "handle": "lentes-de-sol-clima-calido-colombia",
+      "source_brief": "",
+      "primary_keyword": "lentes de sol para clima calido colombia",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-09T00:00:00",
+      "article_id": 662908698871,
+      "title": "Cuanto Cuestan Unos Buenos Lentes De Sol En Colombia",
+      "handle": "precio-lentes-de-sol-colombia",
+      "source_brief": "",
+      "primary_keyword": "cuanto cuestan unos buenos lentes de sol en colombia",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-08T00:00:00",
+      "article_id": 662904045815,
+      "title": "Los Lentes De Sol Protegen De La Luz Azul",
+      "handle": "luz-azul-lentes-de-sol",
+      "source_brief": "",
+      "primary_keyword": "los lentes de sol protegen de la luz azul",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-07T00:00:00",
+      "article_id": 662898639095,
+      "title": "Lentes De Sol Con Formula Medica Se Pueden",
+      "handle": "lentes-de-sol-con-formula-medica",
+      "source_brief": "",
+      "primary_keyword": "lentes de sol con formula medica se pueden",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-06T00:00:00",
+      "article_id": 662892380407,
+      "title": "Usar Lentes De Sol Todos Los Dias Es Malo",
+      "handle": "usar-lentes-de-sol-todos-los-dias",
+      "source_brief": "",
+      "primary_keyword": "usar lentes de sol todos los dias es malo",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-05T00:00:00",
+      "article_id": 662886777079,
+      "title": "Colores De Lentes De Sol Que Estan De Moda",
+      "handle": "colores-lentes-de-sol-moda",
+      "source_brief": "",
+      "primary_keyword": "colores de lentes de sol que estan de moda",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-04T00:00:00",
+      "article_id": 662881796343,
+      "title": "Tendencias Lentes De Sol 2026",
+      "handle": "tendencias-lentes-de-sol-2026",
+      "source_brief": "",
+      "primary_keyword": "tendencias lentes de sol 2026",
+      "migrated_from": "marfil-seo-blog"
+    },
+    {
+      "published_at": "2026-08-03T00:00:00",
+      "article_id": 662876487927,
+      "title": "Lentes De Sol Negros Vs De Color Cual Elegir",
+      "handle": "lentes-de-sol-negros-vs-color",
+      "source_brief": "",
+      "primary_keyword": "lentes de sol negros vs de color cual elegir",
+      "migrated_from": "marfil-seo-blog"
     }
   ],
   "rank_distribution": {
@@ -538,96 +613,45 @@
   },
   "opportunity_by_volume_band": {
     "10k_plus": 0,
-    "1k_10k": 30,
-    "100_1k": 0,
+    "1k_10k": 28,
+    "100_1k": 32,
     "50_100": 0,
     "under_50": 0
   },
   "audit_summary": {
-    "audited_at": "2026-05-06T15:27:42.230860",
-    "total_articles": 37,
-    "avg_score": 75.6,
+    "audited_at": null,
+    "total_articles": 0,
+    "avg_score": 0,
     "score_distribution": {
       "90+": 0,
-      "80-89": 9,
-      "70-79": 23,
-      "60-69": 4,
-      "50-59": 1,
+      "80-89": 0,
+      "70-79": 0,
+      "60-69": 0,
+      "50-59": 0,
       "under_50": 0
     },
-    "worst_5": [
-      {
-        "title": "Catálogo Marfil 2025: Todos los Modelos de Gafas de Sol",
-        "score": 58,
-        "handle": "catalogo-marfil-2025-modelos-gafas-de-sol-colombia"
-      },
-      {
-        "title": "Gafas de Sol para Vacaciones de Mitad de Año en Colombia: Guía 2025",
-        "score": 64,
-        "handle": "vacaciones-de-mitad-de-ano"
-      },
-      {
-        "title": "Lentes de Sol para Cara Triangular: Guía de Estilos Perfectos",
-        "score": 68,
-        "handle": "lentes-de-sol-para-cara-triangular"
-      },
-      {
-        "title": "Lentes de sol para cara cuadrada: marcos que suavizan tu mandíbula",
-        "score": 68,
-        "handle": "lentes-de-sol-para-cara-cuadrada"
-      },
-      {
-        "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo Elegirlos",
-        "score": 69,
-        "handle": "lentes-de-sol-espejados-guia-colombia"
-      }
-    ]
+    "worst_5": []
   },
   "progress": {
-    "starting_avg_score": 52.6,
-    "current_avg_score": 75.6,
-    "improvement_pct": 43.7,
-    "score_evolution": [
-      {
-        "audit": "20260505_1113_blog_audit",
-        "audited_at": "2026-05-05T11:13:17.622525",
-        "score": 52.6,
-        "articles": 33
-      },
-      {
-        "audit": "20260505_1222_blog_audit",
-        "audited_at": "2026-05-05T12:22:29.545141",
-        "score": 63.7,
-        "articles": 36
-      },
-      {
-        "audit": "20260506_0926_blog_audit",
-        "audited_at": "2026-05-06T09:26:24.324201",
-        "score": 69.6,
-        "articles": 37
-      },
-      {
-        "audit": "20260506_1527_blog_audit",
-        "audited_at": "2026-05-06T15:27:42.226776",
-        "score": 75.6,
-        "articles": 37
-      }
-    ],
+    "starting_avg_score": 0,
+    "current_avg_score": 0,
+    "improvement_pct": 0.0,
+    "score_evolution": [],
     "achievements": [
       {
         "icon": "📊",
         "label": "Blogs auditados",
-        "count": 37
+        "count": 0
       },
       {
         "icon": "✍️",
         "label": "Blogs reescritos con DataForSEO",
-        "count": 22
+        "count": 0
       },
       {
         "icon": "🆕",
         "label": "Blogs nuevos publicados",
-        "count": 3
+        "count": 117
       },
       {
         "icon": "❓",
@@ -637,18 +661,18 @@
       {
         "icon": "🎯",
         "label": "Blogs con score 70+",
-        "count": 32
+        "count": 0
       },
       {
         "icon": "⭐",
         "label": "Blogs con score 80+",
-        "count": 9
+        "count": 0
       }
     ]
   },
   "projections": {
-    "current_estimated_clicks_per_month": 2583,
-    "opportunity_volume_per_month": 60500,
+    "current_estimated_clicks_per_month": 5028,
+    "opportunity_volume_per_month": 47000,
     "assumptions": {
       "ticket_promedio_cop": 120000,
       "conversion_rate": 0.02,
@@ -659,589 +683,82 @@
         "name": "Conservador",
         "target_position": 10,
         "timeframe": "6 meses",
-        "additional_clicks_per_month": 1089,
-        "total_clicks_per_month": 3672,
-        "estimated_sales_per_month": 73,
-        "estimated_revenue_cop_per_month": 8760000
+        "additional_clicks_per_month": 846,
+        "total_clicks_per_month": 5874,
+        "estimated_sales_per_month": 117,
+        "estimated_revenue_cop_per_month": 14040000
       },
       {
         "name": "Realista",
         "target_position": 5,
         "timeframe": "6-12 meses",
-        "additional_clicks_per_month": 3025,
-        "total_clicks_per_month": 5608,
-        "estimated_sales_per_month": 112,
-        "estimated_revenue_cop_per_month": 13440000
+        "additional_clicks_per_month": 2350,
+        "total_clicks_per_month": 7378,
+        "estimated_sales_per_month": 148,
+        "estimated_revenue_cop_per_month": 17760000
       },
       {
         "name": "Optimista",
         "target_position": 3,
         "timeframe": "12-18 meses",
-        "additional_clicks_per_month": 6050,
-        "total_clicks_per_month": 8633,
-        "estimated_sales_per_month": 173,
-        "estimated_revenue_cop_per_month": 20760000
+        "additional_clicks_per_month": 4700,
+        "total_clicks_per_month": 9728,
+        "estimated_sales_per_month": 195,
+        "estimated_revenue_cop_per_month": 23400000
       }
     ]
   },
-  "rankings_evolution": {
-    "snapshot_date": "20260506",
-    "previous_date": "20260505",
-    "total_keywords_now": 54,
-    "total_keywords_prev": 54,
-    "movements": {
-      "up": 0,
-      "down": 0,
-      "stable": 54,
-      "new": 0,
-      "lost": 0
+  "layer1_technical": {
+    "score": 50.4,
+    "crawled_at": "2026-09-14T09:34:52Z",
+    "pages_crawled": 267,
+    "issues": {
+      "broken_links": 0,
+      "missing_meta": 39,
+      "missing_title": 0,
+      "missing_h1": 1,
+      "orphan_pages": 3,
+      "duplicate_titles": 30,
+      "duplicate_metas": 30,
+      "thin_content": 67,
+      "no_canonical": 0,
+      "redirect_chains_long": 0,
+      "images_without_alt": 1090
     },
-    "estimated_clicks": {
-      "current_per_month": 2709,
-      "previous_per_month": 2709,
-      "delta": 0
+    "schema": {
+      "ok": 164,
+      "wrong_type": 64,
+      "skipped": 34,
+      "missing": 5,
+      "pending_proposals": 5
     },
-    "keywords": [
-      {
-        "keyword": "marfil",
-        "current_position": 2,
-        "previous_position": 2,
-        "change": 0,
-        "status": "stable",
-        "volume": 12100,
-        "estimated_clicks_per_month": 1815,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas para sol de mujer",
-        "current_position": 16,
-        "previous_position": 16,
-        "change": 0,
-        "status": "stable",
-        "volume": 2400,
-        "estimated_clicks_per_month": 12,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas de sol para mujer",
-        "current_position": 34,
-        "previous_position": 34,
-        "change": 0,
-        "status": "stable",
-        "volume": 2400,
-        "estimated_clicks_per_month": 12,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas para hombre de sol",
-        "current_position": 49,
-        "previous_position": 49,
-        "change": 0,
-        "status": "stable",
-        "volume": 2400,
-        "estimated_clicks_per_month": 12,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "gafas hombre de sol",
-        "current_position": 24,
-        "previous_position": 24,
-        "change": 0,
-        "status": "stable",
-        "volume": 1600,
-        "estimated_clicks_per_month": 8,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "gafas de sol de hombre",
-        "current_position": 27,
-        "previous_position": 27,
-        "change": 0,
-        "status": "stable",
-        "volume": 1600,
-        "estimated_clicks_per_month": 8,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "gafas negras",
-        "current_position": 27,
-        "previous_position": 27,
-        "change": 0,
-        "status": "stable",
-        "volume": 1600,
-        "estimated_clicks_per_month": 8,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas de hombre de sol",
-        "current_position": 41,
-        "previous_position": 41,
-        "change": 0,
-        "status": "stable",
-        "volume": 1600,
-        "estimated_clicks_per_month": 8,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "gafas para mujer",
-        "current_position": 25,
-        "previous_position": 25,
-        "change": 0,
-        "status": "stable",
-        "volume": 1300,
-        "estimated_clicks_per_month": 6,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas marfil",
-        "current_position": 1,
-        "previous_position": 1,
-        "change": 0,
-        "status": "stable",
-        "volume": 1000,
-        "estimated_clicks_per_month": 300,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "marfil gafas",
-        "current_position": 1,
-        "previous_position": 1,
-        "change": 0,
-        "status": "stable",
-        "volume": 1000,
-        "estimated_clicks_per_month": 300,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas mujeres",
-        "current_position": 29,
-        "previous_position": 29,
-        "change": 0,
-        "status": "stable",
-        "volume": 1000,
-        "estimated_clicks_per_month": 5,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas de sol mujeres",
-        "current_position": 37,
-        "previous_position": 37,
-        "change": 0,
-        "status": "stable",
-        "volume": 1000,
-        "estimated_clicks_per_month": 5,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas mujer",
-        "current_position": 47,
-        "previous_position": 47,
-        "change": 0,
-        "status": "stable",
-        "volume": 1000,
-        "estimated_clicks_per_month": 5,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "celine gafas",
-        "current_position": 4,
-        "previous_position": 4,
-        "change": 0,
-        "status": "stable",
-        "volume": 880,
-        "estimated_clicks_per_month": 62,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5"
-      },
-      {
-        "keyword": "gafas celine",
-        "current_position": 9,
-        "previous_position": 9,
-        "change": 0,
-        "status": "stable",
-        "volume": 880,
-        "estimated_clicks_per_month": 18,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5"
-      },
-      {
-        "keyword": "gafas de marca",
-        "current_position": 47,
-        "previous_position": 47,
-        "change": 0,
-        "status": "stable",
-        "volume": 880,
-        "estimated_clicks_per_month": 4,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "marcas de gafas",
-        "current_position": 51,
-        "previous_position": 51,
-        "change": 0,
-        "status": "stable",
-        "volume": 880,
-        "estimated_clicks_per_month": 4,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "modelos de gafas para mujer",
-        "current_position": 73,
-        "previous_position": 73,
-        "change": 0,
-        "status": "stable",
-        "volume": 720,
-        "estimated_clicks_per_month": 4,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "estilo de gafas para mujer",
-        "current_position": 77,
-        "previous_position": 77,
-        "change": 0,
-        "status": "stable",
-        "volume": 720,
-        "estimated_clicks_per_month": 4,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas de hombre",
-        "current_position": 17,
-        "previous_position": 17,
-        "change": 0,
-        "status": "stable",
-        "volume": 590,
-        "estimated_clicks_per_month": 3,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "gafas de hombres",
-        "current_position": 30,
-        "previous_position": 30,
-        "change": 0,
-        "status": "stable",
-        "volume": 590,
-        "estimated_clicks_per_month": 3,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "gafas de lujos",
-        "current_position": 3,
-        "previous_position": 3,
-        "change": 0,
-        "status": "stable",
-        "volume": 480,
-        "estimated_clicks_per_month": 48,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas de hombre de moda",
-        "current_position": 12,
-        "previous_position": 12,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "colombia gafas",
-        "current_position": 18,
-        "previous_position": 18,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas negras hombre",
-        "current_position": 18,
-        "previous_position": 18,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "gafas colombia",
-        "current_position": 23,
-        "previous_position": 23,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas de mujer",
-        "current_position": 28,
-        "previous_position": 28,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "lentes para hombres",
-        "current_position": 43,
-        "previous_position": 43,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "gafas amarillas",
-        "current_position": 62,
-        "previous_position": 62,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-galaxy-1"
-      },
-      {
-        "keyword": "gafas modernas",
-        "current_position": 65,
-        "previous_position": 65,
-        "change": 0,
-        "status": "stable",
-        "volume": 390,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "azul tornasol",
-        "current_position": 28,
-        "previous_position": 28,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-harry"
-      },
-      {
-        "keyword": "gafas de sol marca",
-        "current_position": 31,
-        "previous_position": 31,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas sol hombre",
-        "current_position": 32,
-        "previous_position": 32,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "marcas gafas de sol",
-        "current_position": 49,
-        "previous_position": 49,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas de sol de marca",
-        "current_position": 81,
-        "previous_position": 81,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas de sol marcas",
-        "current_position": 89,
-        "previous_position": 89,
-        "change": 0,
-        "status": "stable",
-        "volume": 320,
-        "estimated_clicks_per_month": 2,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "lentes de sol de mujer",
-        "current_position": 18,
-        "previous_position": 18,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "cuelga gafas",
-        "current_position": 20,
-        "previous_position": 20,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-zack"
-      },
-      {
-        "keyword": "gafas estilo",
-        "current_position": 22,
-        "previous_position": 22,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/"
-      },
-      {
-        "keyword": "gafas sol mujer",
-        "current_position": 24,
-        "previous_position": 24,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "lentes de sol mujer",
-        "current_position": 33,
-        "previous_position": 33,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas elegantes para mujer",
-        "current_position": 51,
-        "previous_position": 51,
-        "change": 0,
-        "status": "stable",
-        "volume": 260,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas tornasol",
-        "current_position": 6,
-        "previous_position": 6,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 8,
-        "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1"
-      },
-      {
-        "keyword": "tous gafas",
-        "current_position": 10,
-        "previous_position": 10,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 4,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-1"
-      },
-      {
-        "keyword": "gafas rosas",
-        "current_position": 15,
-        "previous_position": 15,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-praga-rosado"
-      },
-      {
-        "keyword": "gafas de sol para mujer de moda",
-        "current_position": 16,
-        "previous_position": 16,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "gafas oscuras para hombre",
-        "current_position": 24,
-        "previous_position": 24,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "lentes de sol para hombres",
-        "current_position": 34,
-        "previous_position": 34,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre"
-      },
-      {
-        "keyword": "gafas para dama",
-        "current_position": 49,
-        "previous_position": 49,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "cordon para las gafas",
-        "current_position": 68,
-        "previous_position": 68,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-dennise"
-      },
-      {
-        "keyword": "lentes de sol para hombre",
-        "current_position": 92,
-        "previous_position": 92,
-        "change": 0,
-        "status": "stable",
-        "volume": 210,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre"
-      },
-      {
-        "keyword": "gafas brasileñas precio",
-        "current_position": 20,
-        "previous_position": 20,
-        "change": 0,
-        "status": "stable",
-        "volume": 170,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer"
-      },
-      {
-        "keyword": "tiendas de gafas",
-        "current_position": 20,
-        "previous_position": 20,
-        "change": 0,
-        "status": "stable",
-        "volume": 140,
-        "estimated_clicks_per_month": 1,
-        "url": "https://modamarfil.com.co/"
-      }
-    ]
+    "sitemap": {
+      "sitemap_size": 523,
+      "crawled_size": 300,
+      "overlap": 71,
+      "sitemap_orphans": 452,
+      "crawl_only": 229,
+      "sitemap_broken": 6
+    },
+    "lighthouse": {
+      "status": "ok",
+      "urls_count": 12,
+      "avg_lcp_ms": 18730.4,
+      "avg_cls": 0.0,
+      "avg_score_performance": 28.0,
+      "avg_score_seo": 94.8,
+      "avg_score_accessibility": 90.4
+    },
+    "indexation": {
+      "status": "skipped",
+      "urls_count": null,
+      "by_verdict": null
+    }
+  },
+  "layer2_money_pages": {
+    "pending_proposals_total": 19,
+    "pending_by_type": {
+      "linkless_mention_outreach": 19
+    }
   }
 }

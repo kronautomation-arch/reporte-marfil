@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-14T13:57:52.688612-05:00",
+  "updated_at": "2026-09-14T14:43:54.745184-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AqAHRHcB3VZnydq7tkPxfx7]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AtIxm0O8n0eKj0Ygl2K-RdR]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07228002900168372,
+    "pct_devoluciones": 0.07208338809149946,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13767300,
     "ordenes_ytd": 138,
-    "tasa_por_monto": 0.0723,
-    "tasa_por_ordenes": 0.0939
+    "tasa_por_monto": 0.0721,
+    "tasa_por_ordenes": 0.0936
   },
   "shopify": {
-    "ventas_brutas_ytd": 216055500,
-    "ventas_netas_ytd": 197777845,
-    "descuentos_ytd": 18307655,
-    "unidades_ytd": 1822,
-    "ordenes_ytd": 1329,
+    "ventas_brutas_ytd": 216814900,
+    "ventas_netas_ytd": 198517245,
+    "descuentos_ytd": 18327655,
+    "unidades_ytd": 1828,
+    "ordenes_ytd": 1335,
     "cash_flow": {
-      "cod_neto": 121354655,
-      "cod_bruto": 132439200,
-      "cod_ordenes": 938,
-      "prepago_neto": 76423190,
-      "prepago_bruto": 83616300,
-      "prepago_ordenes": 391,
-      "cod_pct": 0.6136,
-      "prepago_pct": 0.3864
+      "cod_neto": 121974155,
+      "cod_bruto": 133078700,
+      "cod_ordenes": 943,
+      "prepago_neto": 76543090,
+      "prepago_bruto": 83736200,
+      "prepago_ordenes": 392,
+      "cod_pct": 0.6144,
+      "prepago_pct": 0.3856
     },
     "canceladas": {
       "ordenes": 67,
@@ -39,14 +39,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 217,
-      "monto": 31097100,
-      "tasa": 0.1404,
+      "ordenes": 214,
+      "monto": 30717400,
+      "tasa": 0.1382,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 95,
-          "monto": 12661400.0
+          "ordenes": 93,
+          "monto": 12401600.0
         },
         {
           "canal": "shopify_draft_order",
@@ -55,22 +55,22 @@
         },
         {
           "canal": "web",
-          "ordenes": 51,
-          "monto": 6784500.0
+          "ordenes": 50,
+          "monto": 6664600.0
         }
       ]
     },
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1063,
-        "ventas": 127453700.0,
+        "unidades": 1067,
+        "ventas": 127933300.0,
         "vendor": "Marfil"
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 155,
-        "ventas": 21684500.0,
+        "unidades": 156,
+        "ventas": 21824400.0,
         "vendor": "MM"
       },
       {
@@ -155,14 +155,14 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1063,
-        "ventas": 127453700.0,
+        "unidades": 1067,
+        "ventas": 127933300.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 155,
-        "ventas": 21684500.0,
+        "unidades": 156,
+        "ventas": 21824400.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -277,25 +277,25 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 847,
-        "ventas_brutas": 149530400.0
+        "ordenes": 850,
+        "ventas_brutas": 149910100.0
       },
       {
         "canal": "5690175",
-        "ordenes": 274,
-        "ventas_brutas": 37498200.0
+        "ordenes": 276,
+        "ventas_brutas": 37758000.0
       },
       {
         "canal": "web",
-        "ordenes": 208,
-        "ventas_brutas": 29026900.0
+        "ordenes": 209,
+        "ventas_brutas": 29146800.0
       }
     ],
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 337,
-        "monto": 16640750.0
+        "usos": 338,
+        "monto": 16660750.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -8914,6 +8914,39 @@
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 259800.0,
       "envia_ordenes_raw": 2,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-14": {
+      "envia_ventas": 759400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
+      "envia_costo_envio": 71640.0,
+      "digital_ventas_netas": 739400.0,
+      "digital_descuentos": 20000.0,
+      "digital_cod_neto": 619500.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 5,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 519600.0,
+      "envia_ordenes_raw": 6,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

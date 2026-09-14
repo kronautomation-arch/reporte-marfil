@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-13T16:16:21.211794-05:00",
+  "updated_at": "2026-09-14T13:24:58.212722-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Aq2O6KT0Zi4ukUIPou7qjz0]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AhKvaynFeQGPv3eHlVyLwYF]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07301452131734006,
+    "pct_devoluciones": 0.07228002900168372,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 13907200,
-    "ordenes_ytd": 139,
-    "tasa_por_monto": 0.073,
-    "tasa_por_ordenes": 0.0946
+    "monto_ytd": 13767300,
+    "ordenes_ytd": 138,
+    "tasa_por_monto": 0.0723,
+    "tasa_por_ordenes": 0.0939
   },
   "shopify": {
-    "ventas_brutas_ytd": 215915600,
-    "ventas_netas_ytd": 197637945,
+    "ventas_brutas_ytd": 216055500,
+    "ventas_netas_ytd": 197777845,
     "descuentos_ytd": 18307655,
-    "unidades_ytd": 1821,
-    "ordenes_ytd": 1328,
+    "unidades_ytd": 1822,
+    "ordenes_ytd": 1329,
     "cash_flow": {
-      "cod_neto": 121214755,
-      "cod_bruto": 132299300,
-      "cod_ordenes": 937,
+      "cod_neto": 121354655,
+      "cod_bruto": 132439200,
+      "cod_ordenes": 938,
       "prepago_neto": 76423190,
       "prepago_bruto": 83616300,
       "prepago_ordenes": 391,
-      "cod_pct": 0.6133,
-      "prepago_pct": 0.3867
+      "cod_pct": 0.6136,
+      "prepago_pct": 0.3864
     },
     "canceladas": {
       "ordenes": 67,
@@ -39,24 +39,24 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 214,
-      "monto": 30737400,
-      "tasa": 0.1388,
+      "ordenes": 216,
+      "monto": 30977200,
+      "tasa": 0.1398,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 92,
-          "monto": 12281700.0
+          "ordenes": 94,
+          "monto": 12541500.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 72,
-          "monto": 11791100.0
+          "ordenes": 71,
+          "monto": 11651200.0
         },
         {
           "canal": "web",
-          "ordenes": 50,
-          "monto": 6664600.0
+          "ordenes": 51,
+          "monto": 6784500.0
         }
       ]
     },
@@ -69,8 +69,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 154,
-        "ventas": 21544600.0,
+        "unidades": 155,
+        "ventas": 21684500.0,
         "vendor": "MM"
       },
       {
@@ -161,8 +161,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 154,
-        "ventas": 21544600.0,
+        "unidades": 155,
+        "ventas": 21684500.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -277,8 +277,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 846,
-        "ventas_brutas": 149390500.0
+        "ordenes": 847,
+        "ventas_brutas": 149530400.0
       },
       {
         "canal": "5690175",
@@ -362,8 +362,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 174,
-      "transactions_completed": 169,
+      "transactions_total": 173,
+      "transactions_completed": 168,
       "transactions_canceled": 5
     },
     "ventas_brutas_ytd": 18117800,
@@ -478,22 +478,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 11842.49,
-    "ventas_netas_ytd": 10748.92,
-    "comisiones_ytd": 958.87,
+    "ventas_netas_ytd": 10737.83,
+    "comisiones_ytd": 969.96,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 134.7,
-    "pct_comision": 0.081,
+    "pct_comision": 0.0819,
     "ticket_promedio": 48.34,
     "unidades_ytd": 257,
     "ordenes_ytd": 245,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 3681.6,
+      "ventas_principal": 3726.5,
       "shipping_income": 102.22,
-      "tax_collected": 206.78,
-      "commission": 552.66,
-      "fba_fees": 364.34,
+      "tax_collected": 210.26,
+      "commission": 559.4,
+      "fba_fees": 368.69,
       "other_fees": 41.87,
       "refunds": 134.7,
       "ads_spend": 0.0
@@ -8308,18 +8308,18 @@
       "digital_gastos_var": 0
     },
     "2026-08-25": {
-      "envia_ventas": 619500.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 5,
-      "envia_costo_envio": 49920.0,
-      "digital_ventas_netas": 583530.0,
+      "envia_ventas": 759400.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 6,
+      "envia_costo_envio": 62400.0,
+      "digital_ventas_netas": 723430.0,
       "digital_descuentos": 35970.0,
-      "digital_cod_neto": 259800.0,
+      "digital_cod_neto": 399700.0,
       "digital_prepago_neto": 323730.0,
-      "digital_cod_ordenes": 2,
+      "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 2,
-      "envia_ventas_raw": 499600.0,
-      "envia_ordenes_raw": 4,
+      "envia_ventas_raw": 639500.0,
+      "envia_ordenes_raw": 5,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -8941,13 +8941,13 @@
     "store_name": "Marfil Colombia",
     "domain": "modamarfil.com.co",
     "country": "Colombia",
-    "generated_at": "2026-05-06T15:27:58.072069",
+    "generated_at": "2026-09-09T16:29:37.171434",
     "summary": {
-      "opportunity_keywords": 30,
+      "opportunity_keywords": 60,
       "currently_ranking": 30,
-      "pending_blog_topics": 11,
-      "published_blogs_total": 3,
-      "total_search_volume": 78600,
+      "pending_blog_topics": 14,
+      "published_blogs_total": 112,
+      "total_search_volume": 74830,
       "avg_difficulty": 0.0
     },
     "top_opportunities": [
@@ -8955,47 +8955,17 @@
         "keyword": "gafas de sol",
         "volume": 9900,
         "difficulty": 0,
-        "cpc": 0.4,
+        "cpc": 0.44,
         "competition": "HIGH",
         "opportunity": 99000.0,
         "intent": "",
         "source_seed": "gafas de sol"
       },
       {
-        "keyword": "montura de gafas para mujer",
-        "volume": 4400,
-        "difficulty": 0,
-        "cpc": 0.23,
-        "competition": "HIGH",
-        "opportunity": 44000.0,
-        "intent": "",
-        "source_seed": "gafas mujer"
-      },
-      {
-        "keyword": "monturas de gafas para mujer",
-        "volume": 4400,
-        "difficulty": 0,
-        "cpc": 0.23,
-        "competition": "HIGH",
-        "opportunity": 44000.0,
-        "intent": "",
-        "source_seed": "gafas mujer"
-      },
-      {
         "keyword": "montura de gafas para hombre",
         "volume": 2900,
         "difficulty": 0,
-        "cpc": 0.26,
-        "competition": "HIGH",
-        "opportunity": 29000.0,
-        "intent": "",
-        "source_seed": "gafas hombre"
-      },
-      {
-        "keyword": "monturas para gafas de hombre",
-        "volume": 2900,
-        "difficulty": 0,
-        "cpc": 0.26,
+        "cpc": 0.23,
         "competition": "HIGH",
         "opportunity": 29000.0,
         "intent": "",
@@ -9005,7 +8975,7 @@
         "keyword": "monturas de gafas para hombre",
         "volume": 2900,
         "difficulty": 0,
-        "cpc": 0.26,
+        "cpc": 0.23,
         "competition": "HIGH",
         "opportunity": 29000.0,
         "intent": "",
@@ -9015,17 +8985,7 @@
         "keyword": "gafas para sol de hombre",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.4,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas de sol"
-      },
-      {
-        "keyword": "gafas de sol para hombres",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.4,
+        "cpc": 0.37,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
@@ -9035,7 +8995,7 @@
         "keyword": "gafas de sol para mujer",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.33,
+        "cpc": 0.32,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
@@ -9045,7 +9005,7 @@
         "keyword": "gafas para hombre de sol",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.4,
+        "cpc": 0.37,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
@@ -9055,37 +9015,27 @@
         "keyword": "gafas para sol de mujer",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.33,
+        "cpc": 0.32,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
         "source_seed": "gafas de sol"
       },
       {
-        "keyword": "gafas hombre cartier",
+        "keyword": "gafas de sol para hombre",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.23,
+        "cpc": 0.37,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
-        "source_seed": "gafas hombre"
+        "source_seed": "gafas de sol"
       },
       {
         "keyword": "gafas para hombre",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.28,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas hombre"
-      },
-      {
-        "keyword": "cartier gafas hombre",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.23,
+        "cpc": 0.31,
         "competition": "HIGH",
         "opportunity": 24000.0,
         "intent": "",
@@ -9095,376 +9045,501 @@
         "keyword": "gafas cartier hombre",
         "volume": 2400,
         "difficulty": 0,
-        "cpc": 0.23,
-        "competition": "HIGH",
+        "cpc": 0.12,
+        "competition": "MEDIUM",
         "opportunity": 24000.0,
         "intent": "",
         "source_seed": "gafas hombre"
       },
       {
-        "keyword": "marco de gafas para mujer",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.24,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas mujer"
-      },
-      {
-        "keyword": "marcos de gafas para mujer",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.24,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas mujer"
-      },
-      {
-        "keyword": "marcos para gafas de mujer",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.24,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas mujer"
-      },
-      {
-        "keyword": "marcos de gafas para mujeres",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.24,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "marcos para gafas"
-      },
-      {
-        "keyword": "gafas hombre ray ban",
+        "keyword": "marcos de gafas para hombre",
         "volume": 1900,
         "difficulty": 0,
-        "cpc": 0.1,
+        "cpc": 0.27,
         "competition": "HIGH",
         "opportunity": 19000.0,
         "intent": "",
         "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas hombre",
+        "volume": 1600,
+        "difficulty": 0,
+        "cpc": 0.48,
+        "competition": "HIGH",
+        "opportunity": 16000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas hombre ray ban",
+        "volume": 1600,
+        "difficulty": 0,
+        "cpc": 0.16,
+        "competition": "HIGH",
+        "opportunity": 16000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas ray ban hombre",
+        "volume": 1600,
+        "difficulty": 0,
+        "cpc": 0.16,
+        "competition": "HIGH",
+        "opportunity": 16000.0,
+        "intent": "",
+        "source_seed": "gafas hombre"
+      },
+      {
+        "keyword": "gafas hombre de sol",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.41,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas de sol hombre",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.41,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas de sol de hombre",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.41,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas de hombre de sol",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.41,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas de sol"
+      },
+      {
+        "keyword": "gafas ray ban mujer",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.15,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
+      },
+      {
+        "keyword": "gafas para mujer",
+        "volume": 1300,
+        "difficulty": 0,
+        "cpc": 0.41,
+        "competition": "HIGH",
+        "opportunity": 13000.0,
+        "intent": "",
+        "source_seed": "gafas mujer"
       }
     ],
     "current_rankings": [
       {
         "keyword": "gafas marfil",
         "position": 1,
-        "volume": 1000,
+        "volume": 720,
         "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
+        "difficulty": 0
+      },
+      {
+        "keyword": "marfil",
+        "position": 1,
+        "volume": 14800,
+        "url": "https://modamarfil.com.co/",
+        "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
         "difficulty": 0
       },
       {
         "keyword": "marfil gafas",
         "position": 1,
-        "volume": 1000,
+        "volume": 720,
         "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-        "difficulty": 0
-      },
-      {
-        "keyword": "marfil",
-        "position": 2,
-        "volume": 12100,
-        "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas de lujos",
-        "position": 3,
-        "volume": 480,
-        "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "title": "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
         "difficulty": 0
       },
       {
         "keyword": "celine gafas",
-        "position": 4,
-        "volume": 880,
+        "position": 3,
+        "volume": 720,
         "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
-        "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
+        "title": "Gafas de Sol Marfil Celine Negro Mate",
         "difficulty": 0
       },
       {
         "keyword": "gafas tornasol",
-        "position": 6,
-        "volume": 210,
-        "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1",
-        "title": "GAFAS DE SOL MARFIL CROWD TORNASOL ROSADO",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas celine",
-        "position": 9,
-        "volume": 880,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-celine-5",
-        "title": "GAFAS DE SOL MARFIL CELINE NEGRO MATE",
-        "difficulty": 0
-      },
-      {
-        "keyword": "tous gafas",
-        "position": 10,
-        "volume": 210,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-1",
-        "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas de hombre de moda",
-        "position": 12,
-        "volume": 390,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
-        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas rosas",
-        "position": 15,
-        "volume": 210,
-        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-praga-rosado",
-        "title": "GAFAS DE SOL MARFIL PRAGA ROSA",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas de sol para mujer de moda",
-        "position": 16,
-        "volume": 210,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas para sol de mujer",
-        "position": 16,
-        "volume": 2400,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas de hombre",
-        "position": 17,
-        "volume": 590,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
-        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-        "difficulty": 0
-      },
-      {
-        "keyword": "colombia gafas",
-        "position": 18,
-        "volume": 390,
-        "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-        "difficulty": 0
-      },
-      {
-        "keyword": "gafas negras hombre",
-        "position": 18,
-        "volume": 390,
-        "url": "https://modamarfil.com.co/collections/lentes-de-hombre/hombre",
-        "title": "Gafas de Hombre 2025 | Estilo y Protección Solar",
-        "difficulty": 0
-      },
-      {
-        "keyword": "lentes de sol de mujer",
-        "position": 18,
+        "position": 5,
         "volume": 260,
-        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "url": "https://modamarfil.com.co/products/gafa-de-sol-marfil-crowd-1",
+        "title": "Gafas de Sol Marfil Crowd Tornasol Rosado",
+        "difficulty": 0
+      },
+      {
+        "keyword": "lentes cartier hombre",
+        "position": 5,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/blogs/news/cartier-gafas-hombre-guia-completa",
+        "title": "Cartier Gafas Hombre — Guía Completa de Estilos y Calidad",
         "difficulty": 0
       },
       {
         "keyword": "cuelga gafas",
-        "position": 20,
+        "position": 8,
         "volume": 260,
-        "url": "https://modamarfil.com.co/products/cordon-cuelga-gafas-zack",
-        "title": "Cordón Cuelga Gafas Zack",
+        "url": "https://modamarfil.com.co/collections/cuelga-gafas",
+        "title": "Cordones para Gafas | Marfil Colombia",
         "difficulty": 0
       },
       {
-        "keyword": "gafas brasileñas precio",
-        "position": 20,
-        "volume": 170,
+        "keyword": "gafas lentes rojos",
+        "position": 9,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-corvus-7",
+        "title": "Gafas de Sol Marfil Corvus Rojo",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas amarillas",
+        "position": 11,
+        "volume": 480,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-crowd-5",
+        "title": "Gafas de Sol Marfil Crowd Tornasol Amarillo",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas lente amarillo",
+        "position": 11,
+        "volume": 390,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-crowd-5",
+        "title": "Gafas de Sol Marfil Crowd Tornasol Amarillo",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas lente rojo",
+        "position": 11,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-corvus-7",
+        "title": "Gafas de Sol Marfil Corvus Rojo",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas para hombre",
+        "position": 11,
+        "volume": 2400,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+        "title": "Gafas de Sol Hombre UV400 | Marfil Colombia",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de sol para hombres",
+        "position": 12,
+        "volume": 2400,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+        "title": "Gafas de Sol Hombre | Marfil Colombia",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas mujer",
+        "position": 13,
+        "volume": 1000,
         "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
-        "title": "Gafas para Mujer | Marfil Colombia | Gafas oscuras",
+        "title": "Gafas de Sol Mujer | Marfil Colombia",
         "difficulty": 0
       },
       {
-        "keyword": "tiendas de gafas",
-        "position": 20,
-        "volume": 140,
-        "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
-        "difficulty": 6
+        "keyword": "gafas sol mujer",
+        "position": 13,
+        "volume": 320,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas de Sol Mujer | Marfil Colombia",
+        "difficulty": 0
       },
       {
-        "keyword": "gafas estilo",
-        "position": 22,
-        "volume": 260,
-        "url": "https://modamarfil.com.co/",
-        "title": "Moda Marfil | Gafas de sol | Lentes de lujo – Marfil Oficial",
+        "keyword": "gafas de hombre",
+        "position": 14,
+        "volume": 590,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+        "title": "Gafas de Sol Hombre | Marfil Colombia",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas jaguar",
+        "position": 14,
+        "volume": 170,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-jaguar",
+        "title": "Gafas de Sol Marfil Jaguar Negro | Lentes Polarizados ...",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de hombre de sol",
+        "position": 15,
+        "volume": 1300,
+        "url": "https://modamarfil.com.co/collections/lentes-de-hombre",
+        "title": "Gafas de Sol Hombre | Marfil Colombia",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas de mujer",
+        "position": 15,
+        "volume": 390,
+        "url": "https://modamarfil.com.co/collections/lentes-de-mujer",
+        "title": "Gafas de Sol Mujer UV400 Polarizadas",
+        "difficulty": 0
+      },
+      {
+        "keyword": "gafas naranjas",
+        "position": 15,
+        "volume": 210,
+        "url": "https://modamarfil.com.co/products/gafas-de-sol-marfil-tous-6",
+        "title": "GAFAS DE SOLMMARFIL TOUS NARANJA NEGRO",
         "difficulty": 0
       }
     ],
     "next_blog_topics": [
       {
-        "keyword": "montura de gafas para mujer",
-        "volume": 4400,
+        "keyword": "gafas transparentes hombre",
+        "volume": 590,
         "difficulty": 0,
-        "cpc": 0.23,
+        "cpc": 0.19,
         "competition": "HIGH",
-        "opportunity": 44000.0,
+        "opportunity": 5900.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 5900.0
+      },
+      {
+        "keyword": "gafas hombre redondas",
+        "volume": 590,
+        "difficulty": 0,
+        "cpc": 0.31,
+        "competition": "HIGH",
+        "opportunity": 5900.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 5900.0
+      },
+      {
+        "keyword": "gafas redondas hombre",
+        "volume": 590,
+        "difficulty": 0,
+        "cpc": 0.31,
+        "competition": "HIGH",
+        "opportunity": 5900.0,
+        "intent": "",
+        "source_seed": "gafas hombre",
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 5900.0
+      },
+      {
+        "keyword": "gafas cartier mujer",
+        "volume": 590,
+        "difficulty": 0,
+        "cpc": 0.21,
+        "competition": "HIGH",
+        "opportunity": 5900.0,
         "intent": "",
         "source_seed": "gafas mujer",
         "related_in_cluster": [
-          "montura de gafas para hombre"
-        ]
+          "cartier gafas mujer"
+        ],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 5900.0
       },
       {
-        "keyword": "monturas de gafas para mujer",
-        "volume": 4400,
+        "keyword": "gafas deportivas mujer",
+        "volume": 590,
         "difficulty": 0,
-        "cpc": 0.23,
+        "cpc": 0.36,
         "competition": "HIGH",
-        "opportunity": 44000.0,
+        "opportunity": 5900.0,
         "intent": "",
         "source_seed": "gafas mujer",
-        "related_in_cluster": [
-          "monturas de gafas para hombre"
-        ]
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 5900.0
       },
       {
-        "keyword": "monturas para gafas de hombre",
-        "volume": 2900,
+        "keyword": "gafas carrera hombre",
+        "volume": 480,
         "difficulty": 0,
-        "cpc": 0.26,
+        "cpc": 0.1,
         "competition": "HIGH",
-        "opportunity": 29000.0,
+        "opportunity": 4800.0,
         "intent": "",
         "source_seed": "gafas hombre",
-        "related_in_cluster": []
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 4800.0
       },
       {
-        "keyword": "gafas de sol para hombres",
-        "volume": 2400,
+        "keyword": "gafas cuadradas hombre",
+        "volume": 480,
         "difficulty": 0,
-        "cpc": 0.4,
+        "cpc": 0.19,
         "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas de sol",
-        "related_in_cluster": [
-          "gafas de sol para mujer"
-        ]
-      },
-      {
-        "keyword": "gafas para sol de mujer",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.33,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas de sol",
-        "related_in_cluster": []
-      },
-      {
-        "keyword": "gafas hombre cartier",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.23,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
+        "opportunity": 4800.0,
         "intent": "",
         "source_seed": "gafas hombre",
-        "related_in_cluster": [
-          "gafas hombre ray-ban"
-        ]
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 4800.0
       },
       {
-        "keyword": "cartier gafas hombre",
-        "volume": 2400,
-        "difficulty": 0,
-        "cpc": 0.23,
-        "competition": "HIGH",
-        "opportunity": 24000.0,
-        "intent": "",
-        "source_seed": "gafas hombre",
-        "related_in_cluster": [
-          "gafas cartier hombre"
-        ]
-      },
-      {
-        "keyword": "marco de gafas para mujer",
-        "volume": 2400,
+        "keyword": "gafas gucci mujer",
+        "volume": 480,
         "difficulty": 0,
         "cpc": 0.24,
         "competition": "HIGH",
-        "opportunity": 24000.0,
+        "opportunity": 4800.0,
         "intent": "",
         "source_seed": "gafas mujer",
-        "related_in_cluster": [
-          "marco de gafas para hombre"
-        ]
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 4800.0
       },
       {
-        "keyword": "marcos de gafas para mujer",
-        "volume": 2400,
+        "keyword": "gafas versace mujer",
+        "volume": 480,
         "difficulty": 0,
-        "cpc": 0.24,
+        "cpc": 0.17,
         "competition": "HIGH",
-        "opportunity": 24000.0,
+        "opportunity": 4800.0,
         "intent": "",
         "source_seed": "gafas mujer",
         "related_in_cluster": [
-          "marcos de gafas para mujeres",
-          "marcos de gafas para hombre",
-          "marcos de gafas para hombres"
-        ]
+          "versace gafas mujer"
+        ],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 4800.0
       },
       {
-        "keyword": "marcos para gafas de mujer",
-        "volume": 2400,
+        "keyword": "gafas negras mujer",
+        "volume": 480,
         "difficulty": 0,
-        "cpc": 0.24,
+        "cpc": 0.19,
         "competition": "HIGH",
-        "opportunity": 24000.0,
+        "opportunity": 4800.0,
         "intent": "",
         "source_seed": "gafas mujer",
-        "related_in_cluster": [
-          "marcos para gafas de hombre"
-        ]
+        "related_in_cluster": [],
+        "trend_velocity_90d": 0.0,
+        "opportunity_with_trend": 4800.0
       }
     ],
     "recent_publications": [
       {
-        "published_at": "2026-05-05T12:16:56",
-        "article_id": 660794867959,
-        "title": "Alternativas a Ray-Ban en Colombia: Gafas de Sol con Calidad y Estilo",
-        "handle": "alternativas-a-ray-ban-en-colombia",
-        "source_brief": ""
+        "published_at": "2026-08-13T00:00:00",
+        "article_id": 662930718967,
+        "title": "Lentes De Sol Unisex Que Le Quedan A Todos",
+        "handle": "lentes-de-sol-unisex",
+        "source_brief": "",
+        "primary_keyword": "lentes de sol unisex que le quedan a todos",
+        "migrated_from": "marfil-seo-blog"
       },
       {
-        "published_at": "2026-05-05T12:16:53",
-        "article_id": 660794835191,
-        "title": "Gafas de Sol para Cara Grande: Modelos que Equilibran tus Proporciones",
-        "handle": "gafas-de-sol-para-cara-grande-colombia",
-        "source_brief": ""
+        "published_at": "2026-08-12T00:00:00",
+        "article_id": 662924525815,
+        "title": "Lentes De Sol Para Regalar En Navidad",
+        "handle": "lentes-de-sol-regalo-navidad",
+        "source_brief": "",
+        "primary_keyword": "lentes de sol para regalar en navidad",
+        "migrated_from": "marfil-seo-blog"
       },
       {
-        "published_at": "2026-05-05T12:16:49",
-        "article_id": 660794802423,
-        "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo Elegirlos",
-        "handle": "lentes-de-sol-espejados-guia-colombia",
-        "source_brief": ""
+        "published_at": "2026-08-11T00:00:00",
+        "article_id": 662919184631,
+        "title": "Lentes De Sol Para Clima Calido Colombia",
+        "handle": "lentes-de-sol-clima-calido-colombia",
+        "source_brief": "",
+        "primary_keyword": "lentes de sol para clima calido colombia",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-09T00:00:00",
+        "article_id": 662908698871,
+        "title": "Cuanto Cuestan Unos Buenos Lentes De Sol En Colombia",
+        "handle": "precio-lentes-de-sol-colombia",
+        "source_brief": "",
+        "primary_keyword": "cuanto cuestan unos buenos lentes de sol en colombia",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-08T00:00:00",
+        "article_id": 662904045815,
+        "title": "Los Lentes De Sol Protegen De La Luz Azul",
+        "handle": "luz-azul-lentes-de-sol",
+        "source_brief": "",
+        "primary_keyword": "los lentes de sol protegen de la luz azul",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-07T00:00:00",
+        "article_id": 662898639095,
+        "title": "Lentes De Sol Con Formula Medica Se Pueden",
+        "handle": "lentes-de-sol-con-formula-medica",
+        "source_brief": "",
+        "primary_keyword": "lentes de sol con formula medica se pueden",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-06T00:00:00",
+        "article_id": 662892380407,
+        "title": "Usar Lentes De Sol Todos Los Dias Es Malo",
+        "handle": "usar-lentes-de-sol-todos-los-dias",
+        "source_brief": "",
+        "primary_keyword": "usar lentes de sol todos los dias es malo",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-05T00:00:00",
+        "article_id": 662886777079,
+        "title": "Colores De Lentes De Sol Que Estan De Moda",
+        "handle": "colores-lentes-de-sol-moda",
+        "source_brief": "",
+        "primary_keyword": "colores de lentes de sol que estan de moda",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-04T00:00:00",
+        "article_id": 662881796343,
+        "title": "Tendencias Lentes De Sol 2026",
+        "handle": "tendencias-lentes-de-sol-2026",
+        "source_brief": "",
+        "primary_keyword": "tendencias lentes de sol 2026",
+        "migrated_from": "marfil-seo-blog"
+      },
+      {
+        "published_at": "2026-08-03T00:00:00",
+        "article_id": 662876487927,
+        "title": "Lentes De Sol Negros Vs De Color Cual Elegir",
+        "handle": "lentes-de-sol-negros-vs-color",
+        "source_brief": "",
+        "primary_keyword": "lentes de sol negros vs de color cual elegir",
+        "migrated_from": "marfil-seo-blog"
       }
     ],
     "rank_distribution": {
@@ -9476,96 +9551,45 @@
     },
     "opportunity_by_volume_band": {
       "10k_plus": 0,
-      "1k_10k": 30,
-      "100_1k": 0,
+      "1k_10k": 28,
+      "100_1k": 32,
       "50_100": 0,
       "under_50": 0
     },
     "audit_summary": {
-      "audited_at": "2026-05-06T15:27:42.230860",
-      "total_articles": 37,
-      "avg_score": 75.6,
+      "audited_at": null,
+      "total_articles": 0,
+      "avg_score": 0,
       "score_distribution": {
         "90+": 0,
-        "80-89": 9,
-        "70-79": 23,
-        "60-69": 4,
-        "50-59": 1,
+        "80-89": 0,
+        "70-79": 0,
+        "60-69": 0,
+        "50-59": 0,
         "under_50": 0
       },
-      "worst_5": [
-        {
-          "title": "Catálogo Marfil 2025: Todos los Modelos de Gafas de Sol",
-          "score": 58,
-          "handle": "catalogo-marfil-2025-modelos-gafas-de-sol-colombia"
-        },
-        {
-          "title": "Gafas de Sol para Vacaciones de Mitad de Año en Colombia: Guía 2025",
-          "score": 64,
-          "handle": "vacaciones-de-mitad-de-ano"
-        },
-        {
-          "title": "Lentes de Sol para Cara Triangular: Guía de Estilos Perfectos",
-          "score": 68,
-          "handle": "lentes-de-sol-para-cara-triangular"
-        },
-        {
-          "title": "Lentes de sol para cara cuadrada: marcos que suavizan tu mandíbula",
-          "score": 68,
-          "handle": "lentes-de-sol-para-cara-cuadrada"
-        },
-        {
-          "title": "Lentes de Sol Espejados: Qué Son, Cómo Funcionan y Cuándo Elegirlos",
-          "score": 69,
-          "handle": "lentes-de-sol-espejados-guia-colombia"
-        }
-      ]
+      "worst_5": []
     },
     "progress": {
-      "starting_avg_score": 52.6,
-      "current_avg_score": 75.6,
-      "improvement_pct": 43.7,
-      "score_evolution": [
-        {
-          "audit": "20260505_1113_blog_audit",
-          "audited_at": "2026-05-05T11:13:17.622525",
-          "score": 52.6,
-          "articles": 33
-        },
-        {
-          "audit": "20260505_1222_blog_audit",
-          "audited_at": "2026-05-05T12:22:29.545141",
-          "score": 63.7,
-          "articles": 36
-        },
-        {
-          "audit": "20260506_0926_blog_audit",
-          "audited_at": "2026-05-06T09:26:24.324201",
-          "score": 69.6,
-          "articles": 37
-        },
-        {
-          "audit": "20260506_1527_blog_audit",
-          "audited_at": "2026-05-06T15:27:42.226776",
-          "score": 75.6,
-          "articles": 37
-        }
-      ],
+      "starting_avg_score": 0,
+      "current_avg_score": 0,
+      "improvement_pct": 0.0,
+      "score_evolution": [],
       "achievements": [
         {
           "icon": "📊",
           "label": "Blogs auditados",
-          "count": 37
+          "count": 0
         },
         {
           "icon": "✍️",
           "label": "Blogs reescritos con DataForSEO",
-          "count": 22
+          "count": 0
         },
         {
           "icon": "🆕",
           "label": "Blogs nuevos publicados",
-          "count": 3
+          "count": 117
         },
         {
           "icon": "❓",
@@ -9575,18 +9599,18 @@
         {
           "icon": "🎯",
           "label": "Blogs con score 70+",
-          "count": 32
+          "count": 0
         },
         {
           "icon": "⭐",
           "label": "Blogs con score 80+",
-          "count": 9
+          "count": 0
         }
       ]
     },
     "projections": {
-      "current_estimated_clicks_per_month": 2583,
-      "opportunity_volume_per_month": 60500,
+      "current_estimated_clicks_per_month": 5028,
+      "opportunity_volume_per_month": 47000,
       "assumptions": {
         "ticket_promedio_cop": 120000,
         "conversion_rate": 0.02,
@@ -9597,28 +9621,485 @@
           "name": "Conservador",
           "target_position": 10,
           "timeframe": "6 meses",
-          "additional_clicks_per_month": 1089,
-          "total_clicks_per_month": 3672,
-          "estimated_sales_per_month": 73,
-          "estimated_revenue_cop_per_month": 8760000
+          "additional_clicks_per_month": 846,
+          "total_clicks_per_month": 5874,
+          "estimated_sales_per_month": 117,
+          "estimated_revenue_cop_per_month": 14040000
         },
         {
           "name": "Realista",
           "target_position": 5,
           "timeframe": "6-12 meses",
-          "additional_clicks_per_month": 3025,
-          "total_clicks_per_month": 5608,
-          "estimated_sales_per_month": 112,
-          "estimated_revenue_cop_per_month": 13440000
+          "additional_clicks_per_month": 2350,
+          "total_clicks_per_month": 7378,
+          "estimated_sales_per_month": 148,
+          "estimated_revenue_cop_per_month": 17760000
         },
         {
           "name": "Optimista",
           "target_position": 3,
           "timeframe": "12-18 meses",
-          "additional_clicks_per_month": 6050,
-          "total_clicks_per_month": 8633,
-          "estimated_sales_per_month": 173,
-          "estimated_revenue_cop_per_month": 20760000
+          "additional_clicks_per_month": 4700,
+          "total_clicks_per_month": 9728,
+          "estimated_sales_per_month": 195,
+          "estimated_revenue_cop_per_month": 23400000
+        }
+      ]
+    },
+    "layer2_money_pages": {
+      "pending_proposals_total": 25,
+      "pending_by_type": {
+        "linkless_mention_outreach": 19,
+        "money_page_meta": 6
+      },
+      "audited_at": "2026-09-14T10:16:37Z",
+      "summary": {
+        "pages_audited": 6,
+        "avg_score": 97.5,
+        "issues_total": 2,
+        "not_found": 0
+      },
+      "worst_pages": [
+        {
+          "url": "/collections/marcos-hombre",
+          "primary_keyword": "monturas para gafas de hombre",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241744576709,
+          "handle": "marcos-hombre",
+          "current": {
+            "title": "Monturas para Gafas Hombre | Marfil Colombia",
+            "page_title": "Marcos Hombre",
+            "meta_description": "Descubre nuestras monturas para gafas de hombre con protección UV400. Diseños modernos, calidad premium y envío rápido. ¡Compra hoy!",
+            "body_html": "<h2>Monturas para gafas de hombre: estilo y protección en un solo marco</h2><p>En Marfil Colombia sabemos que los marcos correctos transforman tu look y protegen tu visión. Nuestras monturas para gafas de hombre combinan diseños modernos con tecnología UV400 que bloquea el 100% de los rayos ultravioleta. Desde acetato premium hasta metal resistente, cada par está pensado para durar años sin perder estilo.</p><p>Ya sea que busques monturas para la oficina, viajes de fin de semana o actividades al aire libre, tenemos la forma y el color que se adapta a tu rostro y personalidad. Los marcos rectangulares y cuadrados ofrecen elegancia clásica, mientras que los aviadores y modelos deportivos dan ese toque aventurero. Todos nuestros lentes polarizados reducen reflejos y fatiga ocular en días soleados.</p><ul>\n<li>Protección UV400 en todas las monturas para gafas de hombre</li>\n<li>Lentes polarizados que eliminan reflejos y mejoran contraste</li>\n<li>Materiales duraderos: acetato y metal de primera calidad</li>\n<li>Formas variadas: rectangulares, cuadrados, aviadores y deportivos</li>\n<li>Paleta de colores clásicos: negro, café, carey y tonos metálicos</li>\n<li>Garantía y servicio técnico en toda Colombia</li>\n</ul><h3>Encuentra tu estilo sin comprometer la protección</h3><p>Los marcos de Marfil no son solo accesorios: son inversión en salud visual y confianza en tu imagen. Explora nuestras colecciones y descubre la montura para gafas de hombre que complementa tu día a día.</p>",
+            "body_word_count": 218
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "️ Gafas Oftálmicas para Hombres con Personalidad",
+              "Gafas para Hombre ¡Compra tu par hoy mismo!",
+              "Monturas de Gafas Hombre",
+              "Gafas formuladas para hombre",
+              "Catálogo de Monturas de Gafas para Hombre",
+              "Mejor Marcos de Gafas para Hombre",
+              "Monturas Hombre | MercadoLibre 📦",
+              "Gafas Formuladas para hombre | Bogotá - Medellin - FOLKS",
+              "100 ideas de Lentes para hombre en 2026 | monturas de gafas ...",
+              "Marcos para gafas oftálmicas"
+            ],
+            "top_descriptions": [
+              "¿Qué materiales se utilizan en las gafas para hombre? Las monturas pueden fabricarse en acetato, metal o materiales ligeros que ofrecen resistencia y comodidad.",
+              "Para ti tenemos diferentes tipos de monturas como aviador, rectangulares, ovaladas entre otras. Ver más. Estilos de gafas para hombre. En nuestra tienda ...",
+              "Marca · SmartBuy Collection · Ray-Ban · Tom Ford · Oakley · Adensco · Adidas Originals · Adidas Sport · Alexander McQueen.",
+              "Contamos con una gran variedad de diseños y los mejores estilos en monturas para lentes formulados de hombre. ¡Pídela con tu fórmula y renueva tu estilo con ...",
+              "Compra acá tus Gafas. Diseños clásicos y modernos para Hombres. Disfruta de diseños llenos de estilo y practicidad. Precios Más Bajos · Enviamos En 48 horas.",
+              "Descubre el mejor Marcos de Gafas para Hombre en Los más vendidos. Encuentra los 100 artículos más populares en Amazon Ropa, Zapatos y Joyería Los más ...",
+              "Las monturas para hombres se fabrican en materiales como acetato, plástico, policarbonato, metal o combinaciones de estos. Estos materiales ayudan a ofrecer ...",
+              "Gafas formuladas diseñadas en Bogot á, hechas en acetato de alta calidad. Desde $250.000 lentes con formula incluidos.",
+              "Monturas Para Lentes · Lentes Hombre · Lentes Negros · Lentes · Cosas Para Comprar ; Anteojos De Ver Hombre · Tipos De Lentes Para La Vista · Marco Gafas Hombre.",
+              "50 % de DCTO, aprovecha y disfruta, con nuestros marcos para gafas podrás elegir las gafas ideales que se adaptan a tu estilo y realzan tu belleza natural."
+            ],
+            "common_patterns": {
+              "year_in_title": 1,
+              "geo_modifier_in_title": 5
+            },
+            "paa": [
+              {
+                "question": "¿Cuáles son los tipos de monturas de gafas para hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las mejores monturas de gafas para un hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las tendencias en monturas de gafas para hombres para el 2026?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuánto cuestan las monturas de gafas para hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cómo saber qué tipo de montura me queda bien?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [
+              "Monturas de gafas para hombre modernas",
+              "Monturas de gafas para hombre según rostro",
+              "Monturas de gafas para hombre elegantes",
+              "Monturas de gafas para hombre originales",
+              "Monturas de gafas para hombre económicas",
+              "Monturas de gafas para hombre de marca"
+            ],
+            "featured_snippet": null
+          },
+          "score": 90.0,
+          "issues": [
+            "primary_keyword_missing_from_title"
+          ]
+        },
+        {
+          "url": "/collections/lentes-de-hombre",
+          "primary_keyword": "gafas de sol hombre",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241606787269,
+          "handle": "lentes-de-hombre",
+          "current": {
+            "title": "Gafas de Sol Hombre | Lentes UV400 - Marfil",
+            "page_title": "Gafas de Hombre | Moda Marfil, lentes  en Colombia",
+            "meta_description": "Gafas de sol para hombre con protección UV400 y lentes polarizados. Envío gratis en Colombia. Moda y calidad Marfil.",
+            "body_html": "<h2>Gafas de sol para hombre que protegen tu visión sin comprometer estilo</h2><p>En Marfil Colombia sabemos que las gafas de sol hombre van más allá de un accesorio. Son tu aliado diario contra la radiación solar, el resplandor del asfalto y la fatiga visual. Por eso cada par está diseñado con tecnología polarizada y filtro UV400 real, no promesas vacías. Nuestros lentes bloquean el 100% de los rayos UVA y UVB, y eliminan reflejos que cansan la vista en la carretera, la playa o la ciudad.</p><p>La diferencia está en los detalles. Cada gafas de sol hombre de nuestra colección combina materiales premium con diseños versátiles que funcionan tanto en casual como en formal. Producción limitada significa que no compartirás tu estilo con otros, y que cada modelo recibe control de calidad riguroso antes de llegar a tus manos.</p><p>No es solo protección: es comodidad, durabilidad y un toque que refleja quién eres. Cuando inviertes en lentes polarizados de verdad, dejas de entrecerrar los ojos al conducir o pasar tiempo al aire libre.</p><ul>\n<li>Filtro UV400 certificado que bloquea rayos UVA y UVB al 100%</li>\n<li>Lentes polarizados que eliminan reflejos y reducen fatiga visual</li>\n<li>Diseños exclusivos de producción limitada para diferenciarte</li>\n<li>Materiales resistentes pensados para uso diario y durabilidad</li>\n<li>Comodidad garantizada en carretera, playa y ciudad</li>\n</ul><h3>Gafas de sol hombre que duran, que protegen, que transforman</h3><p>Tu visión merece lo mejor. Explora nuestra colección de gafas de sol hombre y encuentra el modelo que completa tu estilo.</p>",
+            "body_word_count": 246
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "Lentes de Sol de hombre | Ray-Ban® LATAM",
+              "Gafas de Sol para Hombres con Personalidad 🕶️",
+              "Gafas de sol para hombre: marcas top y varios estilos",
+              "Gafas de Sol para Hombre | Falabella Colombia",
+              "Gafas de sol: Protección y estilo a $149.900",
+              "Gafas de Sol Originales de Todas las Marcas",
+              "Compra hoy las Gafas de Sol para Hombres",
+              "¡Las 3 mejores gafas de sol para hombre! En Óptica ...",
+              "Gafas y Accesorios Gafas de Sol | MercadoLibre.com.co",
+              "Gafas de Sol"
+            ],
+            "top_descriptions": [
+              "Todos nuestros lentes de sol incluyen una gama de combinaciones de colores con las clásicas micas G-15, espejadas, Evolve o degradé en opciones de tonos tenues.",
+              "Explora gafas de sol para hombres con carácter, diseño moderno y protección UV. Compra fácil y segura en Ópticas GMO.",
+              "Descubre gafas de sol para hombre: diseño redondo, cuadrado y aviador. Marcas premium como Oakley, Ray-Ban y TH. Protege tus ojos con estilo en Dafiti.",
+              "Explora la selección de gafas de sol para hombre, compara modelos y elige con confianza y ya encuentra el par ideal. Compra en falabella.com.",
+              "Colección: Gafas de sol: Protección y estilo a $149.900 · GAFAS DE SOL PARA HOMBRE Y MUJER INVICTA · Calidad y Confort en Cada Par · Conoce a.",
+              "Ray-Ban, Oakley, Versace, Michael Kors, Gucci, Saint Laurent y más: gafas de sol originales con garantía de 24 meses. Envío gratis a Colombia y 3 cuotas sin ...",
+              "Ingresa aquí y compra en línea las Gafas de Sol para Hombre !, conoce toda la variedad y modelos que tenemos para lucir un estilo impactante. Ópticas Lafam.",
+              "🕶️ ¡Las 3 mejores gafas de sol para hombre ! En Óptica Colombiana tenemos lo que necesitas para elevar tu estilo. Encuentra las gafas perfectas ...",
+              "Gafas De Sol Polarizadas Hawkers One Raw Hombre Y Mujer Lente Azul claro Varilla Negro Armazón Negro Diseño MirrorHAWKERS 4.7 | +100 vendidosCalificación 4.7 de ...",
+              "Gafas Gaona para hombre lente translúcido. $ 279.900$ 195.930 · Gafas silueta ... Gafas Támesis para hombre lente polarizado negro. $ 279.900$ 195.930."
+            ],
+            "common_patterns": {
+              "year_in_title": 0,
+              "geo_modifier_in_title": 9
+            },
+            "paa": [
+              {
+                "question": "¿Cuáles son las mejores gafas de sol para hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué gafas de sol usar según tu cara hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las mejores marcas de lentes de sol para hombres?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las mejores marcas de gafas para hombres?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [
+              "Ray-Ban gafas de sol hombre",
+              "Gafas de sol hombre de moda",
+              "Gafas de sol hombre polarizadas",
+              "Gafas de sol para hombre originales",
+              "Gafas de sol hombre Louis Vuitton",
+              "Gafas de sol hombre colombia"
+            ],
+            "featured_snippet": null
+          },
+          "score": 95.0,
+          "issues": [
+            "primary_keyword_missing_from_meta"
+          ]
+        },
+        {
+          "url": "/collections/lentes-de-mujer",
+          "primary_keyword": "gafas de sol mujer",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241607770309,
+          "handle": "lentes-de-mujer",
+          "current": {
+            "title": "Gafas de Sol Mujer | Marfil Colombia",
+            "page_title": "Gafas de Mujer",
+            "meta_description": "Gafas de sol mujer con protección UV400 y lentes polarizados. Envío gratis. Descubre nuestros estilos modernos.",
+            "body_html": "<h2>Gafas de Sol para Mujer que Combinan Estilo y Protección Real</h2><p>Las gafas de sol mujer de Marfil Colombia van más allá del accesorio. Cada par protege tus ojos con tecnología UV400 certificada y lentes polarizados que eliminan reflejos, reducen fatiga visual y mejoran la claridad en cualquier condición de luz. Diseñadas para quienes no negocian entre belleza y funcionalidad.</p><p>Nuestra colección femenina responde a estilos diferentes: desde geometrías clásicas y minimalistas hasta propuestas deportivas y audaces. Cada modelo es de producción limitada, lo que significa que cuando encuentras tus gafas de sol mujer perfectas, eres parte de un grupo exclusivo. Fabricadas con materiales premium seleccionados para resistir el uso diario sin comprometer la elegancia.</p><p>En Marfil entendemos que los ojos merecen lo mejor. Por eso trabajamos con polarización de alta calidad que no solo protege, sino que transforma cómo ves el mundo. Inversión en salud visual que dura años.</p><ul>\n<li>Protección UV400 garantizada contra radiación solar</li>\n<li>Lentes polarizados que eliminan reflejos y resplandores</li>\n<li>Diseños exclusivos de producción limitada</li>\n<li>Materiales premium para durabilidad extrema</li>\n<li>Versatilidad: uso diario, playa, conducción y deporte</li>\n<li>Garantía de calidad y servicio al cliente excepcional</li>\n</ul><p>Explora la colección de gafas de sol mujer de Marfil y encuentra el par que refleje quién eres realmente.</p>",
+            "body_word_count": 207
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "Compra hoy las Gafas de Sol para Mujer",
+              "Gafas de Sol para Mujeres con Estilo",
+              "Lentes de Sol mujer | Ray-Ban® LATAM",
+              "Gafas de Sol para Mujer | Falabella Colombia",
+              "Gafas de sol para mujer | Tienda Online",
+              "Gafas de sol de mujer 2026 | MANGO Colombia",
+              "Gafas de Sol para Mujer | Diseño y Protección UV 400 - Totto",
+              "Mejor Lentes de Sol para Mujer",
+              "Gafas de sol para mujer",
+              "Gafas Sol Mujer | MercadoLibre 📦"
+            ],
+            "top_descriptions": [
+              "Ingresa aquí y compra en línea las Gafas de Sol para Mujeres, descubre la gran variedad y modelos que tenemos para complementar tu estilo. Ópticas Lafam.",
+              "Encuentra gafas de sol para mujeres que combinan moda, comodidad y protección visual. Explora diseños únicos y elige tu favorito.",
+              "Todos nuestros lentes de sol de diseñador para mujer están disponibles en varias combinaciones de colores con opciones de micas que se adaptan a tu look. Elige ...",
+              "Ofrece siluetas reconocibles como aviador, redondas y rectangulares, con opciones de monturas metálicas y acabados tipo acetato. Quienes prefieren diseños ...",
+              "Descubre las gafas de sol para mujer con monturas en diferentes materiales que realzan tu rostro. Protección solar con diseños de aviador, eyecat, maxi, entre ...",
+              "Protege tu vista y luce con estilo con estas gafas de sol de mujer. Tenemos gafas de mujer redondas, cuadradas, de pasta, metálicas. Elige ya tus gafas de ...",
+              "Todos nuestros modelos cuentan con filtro UV 400, garantizando una protección óptima contra los dañinos rayos solares. Además, la montura de gafas está ...",
+              "TJUTR Gafas de sol polarizadas para mujer, protección UV400 TS2579 | Gafas de sol para usar sobre anteojos, lentes de moda, marco ligero, conducción, al ...",
+              "Descubre nuestras gafas de sol para mujer, donde el estilo casual se encuentra con la elegancia artesanal. Perfectas para cada ocasión, reflejan tu esencia ...",
+              "Gafas de sol para mujer deportivas. Cuentan con diseño envolvente y curvatura base 8 que mejora la cobertura lateral frente a la luz solar directa. El armazón ..."
+            ],
+            "common_patterns": {
+              "year_in_title": 1,
+              "geo_modifier_in_title": 6
+            },
+            "paa": [
+              {
+                "question": "¿Qué gafas te hacen ver más joven?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuál es la mejor marca de gafas de sol para mujer?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son los lentes de sol de moda para mujer?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las gafas de sol más modernas para mujer?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [
+              "Gafas de sol mujer Ray-Ban",
+              "Gafas de sol para mujer de moda",
+              "Gafas de sol mujer con Filtro UV",
+              "Gafas de sol para mujer economicas",
+              "Gafas de sol para mujer de marca",
+              "Gafas de sol mujer Tommy Hilfiger"
+            ],
+            "featured_snippet": null
+          },
+          "score": 100.0,
+          "issues": []
+        },
+        {
+          "url": "/collections/marcos-mujer",
+          "primary_keyword": "monturas de gafas mujer",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241744675013,
+          "handle": "marcos-mujer",
+          "current": {
+            "title": "Monturas de Gafas Mujer | Marfil Colombia",
+            "page_title": "Marcos Mujer",
+            "meta_description": "Descubre monturas de gafas mujer con protección UV400 y lentes polarizados. Envío rápido. Garantía oficial en Marfil Colombia.",
+            "body_html": "<h2>Monturas de gafas mujer que combinan estilo y protección</h2><p>Las monturas de gafas mujer de Marfil Colombia están diseñadas para quienes buscan más que un accesorio: una declaración de estilo con funcionalidad. Cada par combina diseño contemporáneo con tecnología UV400 que protege tus ojos de los rayos solares, sin sacrificar la elegancia que mereces en tu día a día.</p><p>Contamos con monturas en cortes clásicos y audaces: cat eye vintage, redondos retro, mariposa sofisticados y oversized statement. Los lentes polarizados reducen reflejos y fatiga visual, ideales si pasas tiempo al aire libre. Desde tonos neutros como negro y carey hasta colores vibrantes en rosado, transparente y degradados, encontrarás la montura de gafas mujer que se adapte a tu personalidad.</p><ul>\n<li>Protección UV400 certificada en todas nuestras monturas de gafas mujer</li>\n<li>Lentes polarizados que eliminan reflejos y mejoran el contraste visual</li>\n<li>Diseños exclusivos en cat eye, redondo, mariposa y oversized</li>\n<li>Paleta de colores: negro, carey, rosados, transparentes y degradados</li>\n<li>Marcos durables con ajuste cómodo para uso prolongado</li>\n<li>Envío rápido a toda Colombia con garantía de satisfacción</li>\n</ul><h3>Monta tu estilo con confianza</h3><p>En Marfil, cada monturas de gafas mujer es seleccionada para combinar tendencia, comodidad y protección ocular real. Explora nuestras colecciones y encuentra el par que complete tu look.</p>",
+            "body_word_count": 207
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "Gafas para Mujer ¡Compra tu par hoy mismo!",
+              "Gafas Oftálmicas para Mujeres con Estilo",
+              "Gafas formuladas para mujer",
+              "Catálogo de Monturas de Gafas para Mujer",
+              "Monturas Modernas Para Mujer",
+              "Gafas para mujer",
+              "Las mejores 47 ideas de Monturas gafas mujer",
+              "Monturas de Gafas Mujer",
+              "Monturas Para Lentes Mujer | MercadoLibre 📦",
+              "Gafas de Moda y Estilos que Rejuvenecen"
+            ],
+            "top_descriptions": [
+              "Las mejores Gafas para mujer están aquí. Conoce las colecciones, marcas y diseños que tenemos para ti. Contamos con grandes precios y descuentos para ti.",
+              "¿Qué tipo de gafas para mujer están de moda? Las monturas cat eye, redondas, geométricas y transparentes se encuentran entre las opciones más populares.",
+              "Renueva tu estilo y tu visión gracias a las gafas formuladas para mujer de Óptica Santa Lucía. ¡Haz clic y descubre diseños top de la más alta calidad!",
+              "Compra acá los mejores diseños que te harán lucir linda, chic y sexy. Los mejores precios del mercado. Desde $69900 Pide con Tu fórmula Lista.",
+              "Monturas modernas para mujer · Gafas Para Cara Ovalada · Gafas montura transparente | Gafas de moda 2024 mujer, Armazones de lentes transparentes, Lentes · Lentes ...",
+              "Compra online las monturas perfectas en Metrovisual Óptica. Descubre una amplia variedad de diseños modernos, elegantes y cómodos, pensados para resaltar tu ...",
+              "8 oct. 2024 - Explora el tablero de Deissy \"Monturas gafas mujer\" en Pinterest. Ver más ideas sobre monturas gafas mujer, lentes modernos para mujer, ...",
+              "Encuentra los mejores precios de gafas graduadas en línea solo en Gafasworld. Ofrecemos grandes descuentos. Entrega rápida y pago seguro.",
+              "Monturas para lentes mujer · Gafas Cuadradas Lente Transparente Unisex Black/silver · Gafas Ópticas Vintage De Marco Completo Con Forma De B Zin Coral Claro.",
+              "Si estás lista para lucir más moderna, chic y hasta más joven con tus gafas o espejuelos… este video es para ti!! Sabías que existen reglas ..."
+            ],
+            "common_patterns": {
+              "year_in_title": 0,
+              "geo_modifier_in_title": 5
+            },
+            "paa": [
+              {
+                "question": "¿Cómo elegir la montura ideal según tu tipo de rostro?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué gafas te hacen ver más joven?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué monturas de lentes son modernas para mujeres?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué monturas de gafas están de moda?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cómo elegir la montura de gafas para mujer?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [],
+            "featured_snippet": null
+          },
+          "score": 100.0,
+          "issues": []
+        },
+        {
+          "url": "/collections/cuelga-gafas",
+          "primary_keyword": "cordones para gafas",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241744543941,
+          "handle": "cuelga-gafas",
+          "current": {
+            "title": "Cordones para Gafas | Marfil Colombia",
+            "page_title": "Cuelga Gafas",
+            "meta_description": "Cordones para gafas de calidad premium. Protege tus lentes con nuestros cuelgagafas resistentes. Envío rápido a toda Colombia.",
+            "body_html": "<h2>Cordones para gafas que protegen tu inversión</h2><p>Los cordones para gafas de Marfil Colombia son más que un accesorio: son tu garantía de que tus lentes polarizados UV400 permanecerán seguros y accesibles en cualquier momento. Diseñados con materiales resistentes que soportan el uso diario, estos cordones evitan caídas accidentales que rayan o dañan los cristales, especialmente importante cuando inviertes en gafas de sol de calidad.</p><p>Cada cordón para gafas en nuestra colección se fabrica pensando en durabilidad y comodidad. Ya sea en la playa, en la oficina o en actividades al aire libre, mantienen tus lentes ajustados sin presión innecesaria en el cuello. El acabado cuidado de cada pieza complementa cualquier modelo de gafas, combinando funcionalidad con un toque discreto de estilo que no compite con tus lentes.</p><ul>\n<li>Protege tus gafas de sol de caídas y arañazos costosos</li>\n<li>Material resistente diseñado para uso diario prolongado</li>\n<li>Compatible con todos los modelos de lentes polarizados</li>\n<li>Distribución equilibrada del peso sin incomodidad en el cuello</li>\n<li>Acabado Premium que se adapta a cualquier estilo personal</li>\n<li>Ideal para deportes, viajes y actividades en la playa</li>\n</ul><h3>Invierte en la protección de tus gafas polarizadas</h3><p>Un cordón para gafas de Marfil no es un gasto adicional, es una inversión en la vida útil de tus lentes UV400. Mantén siempre a mano tus gafas de sol favoritas con total seguridad.</p>",
+            "body_word_count": 222
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "Cuelga Gafas (Webpage)",
+              "Cordones para gafas Unisex Color Café",
+              "Cuelga gafas / Cadenas para gafas (@yapa.co)",
+              "Cordones Para Gafas",
+              "SEABELT | Accesorios para gafas",
+              "Como hacer CORDONES PARA GAFAS fácil. !!No las pierdas ...",
+              "Cordones Para Gafas",
+              "CORDONES para GAFAS DYI Aprende y Disfruta tu Verano ...",
+              "CORDÓN PARA GAFAS TECH NEGRO",
+              "CORDON GAFAS 1 COLG ZOOM TO GO SIN REF"
+            ],
+            "top_descriptions": [
+              "Cordones cuelga gafas hechos a mano y con materiales reciclados al mejor precio | Compra en saju.co | 705 días de garantía | Envíos gratis a toda Colombia a ...",
+              "Género:UnisexEdad:AdultosColor de la montura: CaféMaterial del cordon: AcrilicoSKU:215016.",
+              "Un accesorio…que salvó mis gafas ✨ Ligero, cómodo y con estilo. Ahora no solo cuida mis gafas, también eleva todo mi outfit. Esto no es solo un cuelga gafas, ...",
+              "Cordon Para Gafas Slip Verde. CHUMS por INKANTA. $49.000. 3 cuotas de $16.333 con 0% interés. Envío gratisEnvío gratis. Estuche Para Gafas Con Paño ...",
+              "Descubre accesorios y cuelga gafas elaborados en cordón y cuero, combinados con piezas de bisutería o Miyuki. Conéctalo a tus gafas.",
+              "Manualidades: CORDÓN para Gafas Fácil /Bisutería DIY ♥ Sor Amparo Arredondo R.En esta oportunidad te doy una idea de cómo hacer un cordón para lentes Fácil, ..",
+              "Descubre una amplia gama de cordones para gafas en diferentes materiales, colores y longitudes, ideales para deportes, actividades al aire libre y uso ...",
+              "Material de alta calidad: La cuerda está hecha de nailon, un material resistente a la elongación para un ajuste completamente seguro. · Adaptabilidad: El cordón ...",
+              "CORDON GAFAS 1 COLG ZOOM TO GO SIN REF. ZOOM TO GO-PLU: 1322323. image_bar_buy. CORDON GAFAS 1 COLG ZOOM TO GO SIN REF. (Und a $ 20.150,00). $ 20.150 ..."
+            ],
+            "common_patterns": {
+              "year_in_title": 0,
+              "geo_modifier_in_title": 9
+            },
+            "paa": [
+              {
+                "question": "¿Cómo se llaman los cordones para las gafas?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Dónde puedo encontrar un cordón ajustable para gafas?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cómo se usan los cordones para lentes?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué hago si se rompen mis lentes?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cómo reparar unas gafas rotas?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [
+              "Cordones para gafas hombre",
+              "Cordones para gafas mujer",
+              "Cordones para gafas de Niños",
+              "Cadenas para gafas elegantes",
+              "Sujetador de gafas para mujer",
+              "Cordón para gafas en mostacilla"
+            ],
+            "featured_snippet": null
+          },
+          "score": 100.0,
+          "issues": []
         }
       ]
     },

@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-15T16:57:12.494301-05:00",
+  "updated_at": "2026-09-16T12:31:59.230083-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A3qwnWmSPzzKBMH462NXtGW]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Af12sStVbnCwQKO3Y9K4Y4k]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07194036714026682,
+    "pct_devoluciones": 0.07131383542961055,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 13767300,
-    "ordenes_ytd": 138,
-    "tasa_por_monto": 0.0719,
-    "tasa_por_ordenes": 0.0934
+    "monto_ytd": 13647400,
+    "ordenes_ytd": 137,
+    "tasa_por_monto": 0.0713,
+    "tasa_por_ordenes": 0.0927
   },
   "shopify": {
-    "ventas_brutas_ytd": 217194600,
-    "ventas_netas_ytd": 198896945,
+    "ventas_brutas_ytd": 217314500,
+    "ventas_netas_ytd": 199016845,
     "descuentos_ytd": 18327655,
-    "unidades_ytd": 1831,
-    "ordenes_ytd": 1338,
+    "unidades_ytd": 1832,
+    "ordenes_ytd": 1339,
     "cash_flow": {
-      "cod_neto": 122353855,
-      "cod_bruto": 133458400,
-      "cod_ordenes": 946,
+      "cod_neto": 122473755,
+      "cod_bruto": 133578300,
+      "cod_ordenes": 947,
       "prepago_neto": 76543090,
       "prepago_bruto": 83736200,
       "prepago_ordenes": 392,
-      "cod_pct": 0.6152,
-      "prepago_pct": 0.3848
+      "cod_pct": 0.6154,
+      "prepago_pct": 0.3846
     },
     "canceladas": {
       "ordenes": 68,
@@ -41,7 +41,7 @@
     "no_despachadas": {
       "ordenes": 213,
       "monto": 30597500,
-      "tasa": 0.1373,
+      "tasa": 0.1372,
       "por_canal": [
         {
           "canal": "5690175",
@@ -63,8 +63,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1069,
-        "ventas": 128173100.0,
+        "unidades": 1070,
+        "ventas": 128293000.0,
         "vendor": "Marfil"
       },
       {
@@ -155,8 +155,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1069,
-        "ventas": 128173100.0,
+        "unidades": 1070,
+        "ventas": 128293000.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -277,8 +277,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 852,
-        "ventas_brutas": 150169900.0
+        "ordenes": 853,
+        "ventas_brutas": 150289800.0
       },
       {
         "canal": "5690175",
@@ -477,32 +477,32 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11890.53,
-    "ventas_netas_ytd": 10774.78,
-    "comisiones_ytd": 981.05,
+    "ventas_brutas_ytd": 11938.8,
+    "ventas_netas_ytd": 11130.55,
+    "comisiones_ytd": 763.35,
     "ads_spend_ytd": 0.0,
-    "refunds_ytd": 134.7,
-    "pct_comision": 0.0825,
+    "refunds_ytd": 44.9,
+    "pct_comision": 0.0639,
     "ticket_promedio": 48.34,
-    "unidades_ytd": 258,
-    "ordenes_ytd": 246,
+    "unidades_ytd": 259,
+    "ordenes_ytd": 247,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 3771.4,
-      "shipping_income": 102.22,
-      "tax_collected": 213.23,
-      "commission": 566.14,
-      "fba_fees": 373.04,
-      "other_fees": 41.87,
-      "refunds": 134.7,
+      "ventas_principal": 2918.3,
+      "shipping_income": 68.14,
+      "tax_collected": 160.03,
+      "commission": 438.08,
+      "fba_fees": 290.39,
+      "other_fees": 34.88,
+      "refunds": 44.9,
       "ads_spend": 0.0
     },
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 258,
-        "ventas": 11890.52999999999,
+        "unidades": 259,
+        "ventas": 11938.79999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -8539,18 +8539,18 @@
       "digital_gastos_var": 0
     },
     "2026-09-01": {
-      "envia_ventas": 529600.0,
-      "envia_ordenes": 3,
-      "envia_unidades": 4,
-      "envia_costo_envio": 37130.0,
-      "digital_ventas_netas": 529600.0,
+      "envia_ventas": 649500.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 5,
+      "envia_costo_envio": 57750.0,
+      "digital_ventas_netas": 649500.0,
       "digital_descuentos": 0.0,
-      "digital_cod_neto": 409700.0,
+      "digital_cod_neto": 529600.0,
       "digital_prepago_neto": 119900.0,
-      "digital_cod_ordenes": 2,
+      "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 1,
-      "envia_ventas_raw": 289800.0,
-      "envia_ordenes_raw": 3,
+      "envia_ventas_raw": 409700.0,
+      "envia_ordenes_raw": 4,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -8986,9 +8986,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 48.04,
-      "amazon_ordenes": 1,
-      "amazon_unidades": 1,
+      "amazon_ventas_brutas": 96.31,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

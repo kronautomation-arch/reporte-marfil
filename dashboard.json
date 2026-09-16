@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-16T13:38:59.512934-05:00",
+  "updated_at": "2026-09-16T14:17:33.290909-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A6rcdejKEl6CGcNU-OPfLri]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AzTGWj9cDmP54PtIi_mPmzC]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -10,25 +10,25 @@
   },
   "devoluciones": {
     "monto_ytd": 13647400,
-    "ordenes_ytd": 137,
+    "ordenes_ytd": 138,
     "tasa_por_monto": 0.0713,
-    "tasa_por_ordenes": 0.0927
+    "tasa_por_ordenes": 0.0934
   },
   "shopify": {
-    "ventas_brutas_ytd": 217314500,
-    "ventas_netas_ytd": 199016845,
+    "ventas_brutas_ytd": 217194600,
+    "ventas_netas_ytd": 198896945,
     "descuentos_ytd": 18327655,
-    "unidades_ytd": 1832,
-    "ordenes_ytd": 1339,
+    "unidades_ytd": 1831,
+    "ordenes_ytd": 1338,
     "cash_flow": {
-      "cod_neto": 122473755,
-      "cod_bruto": 133578300,
-      "cod_ordenes": 947,
+      "cod_neto": 122353855,
+      "cod_bruto": 133458400,
+      "cod_ordenes": 946,
       "prepago_neto": 76543090,
       "prepago_bruto": 83736200,
       "prepago_ordenes": 392,
-      "cod_pct": 0.6154,
-      "prepago_pct": 0.3846
+      "cod_pct": 0.6152,
+      "prepago_pct": 0.3848
     },
     "canceladas": {
       "ordenes": 68,
@@ -39,14 +39,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 213,
-      "monto": 30597500,
-      "tasa": 0.1372,
+      "ordenes": 214,
+      "monto": 30717400,
+      "tasa": 0.1379,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 92,
-          "monto": 12281700.0
+          "ordenes": 93,
+          "monto": 12401600.0
         },
         {
           "canal": "shopify_draft_order",
@@ -63,8 +63,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1070,
-        "ventas": 128293000.0,
+        "unidades": 1069,
+        "ventas": 128173100.0,
         "vendor": "Marfil"
       },
       {
@@ -155,8 +155,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1070,
-        "ventas": 128293000.0,
+        "unidades": 1069,
+        "ventas": 128173100.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -282,8 +282,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 277,
-        "ventas_brutas": 37877900.0
+        "ordenes": 276,
+        "ventas_brutas": 37758000.0
       },
       {
         "canal": "web",
@@ -8110,18 +8110,18 @@
       "digital_gastos_var": 0
     },
     "2026-08-19": {
-      "envia_ventas": 759400.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 6,
-      "envia_costo_envio": 68350.0,
-      "digital_ventas_netas": 649500.0,
+      "envia_ventas": 639500.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 5,
+      "envia_costo_envio": 55870.0,
+      "digital_ventas_netas": 529600.0,
       "digital_descuentos": 109900.0,
-      "digital_cod_neto": 529600.0,
+      "digital_cod_neto": 409700.0,
       "digital_prepago_neto": 119900.0,
-      "digital_cod_ordenes": 4,
+      "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 399700.0,
-      "envia_ordenes_raw": 5,
+      "envia_ordenes_raw": 4,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

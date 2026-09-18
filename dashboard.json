@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-17T16:56:48.577878-05:00",
+  "updated_at": "2026-09-18T11:59:10.858554-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AQ4NXCmWZ7Iu7gTwO5dkqPD]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ATVsWRSbdoFJt9UVfXVrFS7]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,9 +39,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 215,
-      "monto": 30857300,
-      "tasa": 0.1378,
+      "ordenes": 216,
+      "monto": 30977200,
+      "tasa": 0.1384,
       "por_canal": [
         {
           "canal": "5690175",
@@ -55,8 +55,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 51,
-          "monto": 6784500.0
+          "ordenes": 52,
+          "monto": 6904400.0
         }
       ]
     },
@@ -477,15 +477,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 11987.4,
-    "ventas_netas_ytd": 11179.15,
+    "ventas_brutas_ytd": 12032.3,
+    "ventas_netas_ytd": 11224.05,
     "comisiones_ytd": 763.35,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 44.9,
-    "pct_comision": 0.0637,
-    "ticket_promedio": 48.34,
-    "unidades_ytd": 260,
-    "ordenes_ytd": 248,
+    "pct_comision": 0.0634,
+    "ticket_promedio": 48.32,
+    "unidades_ytd": 261,
+    "ordenes_ytd": 249,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -501,8 +501,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 260,
-        "ventas": 11987.39999999999,
+        "unidades": 261,
+        "ventas": 12032.29999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -9019,9 +9019,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 96.31,
-      "amazon_ordenes": 2,
-      "amazon_unidades": 2,
+      "amazon_ventas_brutas": 141.21,
+      "amazon_ordenes": 3,
+      "amazon_unidades": 3,
       "pos_caracoli_ventas": 140000.0,
       "pos_caracoli_unidades": 1,
       "pos_caracoli_gastos": 0,
@@ -9088,11 +9088,11 @@
       "amazon_ventas_brutas": 48.6,
       "amazon_ordenes": 1,
       "amazon_unidades": 1,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 260000.0,
+      "pos_caracoli_unidades": 2,
       "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_ventas": 280000.0,
+      "pos_titan_plaza_unidades": 2,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,

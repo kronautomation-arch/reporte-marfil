@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-19T16:20:09.894753-05:00",
+  "updated_at": "2026-09-20T11:43:05.196203-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AnhV3w2eost22gLoqpOFE77]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AVNqCPeISvEoEUHUEejDjfr]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,9 +39,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 212,
-      "monto": 30497600,
-      "tasa": 0.1355,
+      "ordenes": 214,
+      "monto": 30756500,
+      "tasa": 0.1367,
       "por_canal": [
         {
           "canal": "5690175",
@@ -55,8 +55,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 50,
-          "monto": 6664600.0
+          "ordenes": 52,
+          "monto": 6923500.0
         }
       ]
     },
@@ -477,15 +477,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 12032.3,
-    "ventas_netas_ytd": 11212.96,
+    "ventas_brutas_ytd": 12081.69,
+    "ventas_netas_ytd": 11262.35,
     "comisiones_ytd": 774.44,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 44.9,
-    "pct_comision": 0.0644,
-    "ticket_promedio": 48.32,
-    "unidades_ytd": 261,
-    "ordenes_ytd": 249,
+    "pct_comision": 0.0641,
+    "ticket_promedio": 48.33,
+    "unidades_ytd": 262,
+    "ordenes_ytd": 250,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -501,8 +501,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 261,
-        "ventas": 12032.29999999999,
+        "unidades": 262,
+        "ventas": 12081.68999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -9118,9 +9118,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 0,
-      "amazon_ordenes": 0,
-      "amazon_unidades": 0,
+      "amazon_ventas_brutas": 49.39,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

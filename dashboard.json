@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-20T16:13:32.148049-05:00",
+  "updated_at": "2026-09-21T13:32:13.541800-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AxcnPc2w7ADgxvjcV57PiYH]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AeTlpcj9MkYRisZ3KtDgXzG]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07111385376168633,
+    "pct_devoluciones": 0.07106951629735901,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13667400,
-    "ordenes_ytd": 137,
+    "ordenes_ytd": 139,
     "tasa_por_monto": 0.0711,
-    "tasa_por_ordenes": 0.0919
+    "tasa_por_ordenes": 0.0931
   },
   "shopify": {
-    "ventas_brutas_ytd": 219113100,
-    "ventas_netas_ytd": 200785445,
+    "ventas_brutas_ytd": 219252100,
+    "ventas_netas_ytd": 200924445,
     "descuentos_ytd": 18357655,
-    "unidades_ytd": 1846,
-    "ordenes_ytd": 1352,
+    "unidades_ytd": 1847,
+    "ordenes_ytd": 1353,
     "cash_flow": {
-      "cod_neto": 123363055,
-      "cod_bruto": 134497600,
-      "cod_ordenes": 953,
-      "prepago_neto": 77422390,
-      "prepago_bruto": 84615500,
-      "prepago_ordenes": 399,
-      "cod_pct": 0.6144,
-      "prepago_pct": 0.3856
+      "cod_neto": 123243155,
+      "cod_bruto": 134377700,
+      "cod_ordenes": 952,
+      "prepago_neto": 77681290,
+      "prepago_bruto": 84874400,
+      "prepago_ordenes": 401,
+      "cod_pct": 0.6134,
+      "prepago_pct": 0.3866
     },
     "canceladas": {
       "ordenes": 69,
@@ -39,24 +39,24 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 214,
-      "monto": 30756500,
-      "tasa": 0.1367,
+      "ordenes": 215,
+      "monto": 30857300,
+      "tasa": 0.1371,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 92,
-          "monto": 12281700.0
+          "ordenes": 93,
+          "monto": 12401600.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 70,
-          "monto": 11551300.0
+          "ordenes": 71,
+          "monto": 11671200.0
         },
         {
           "canal": "web",
-          "ordenes": 52,
-          "monto": 6923500.0
+          "ordenes": 51,
+          "monto": 6784500.0
         }
       ]
     },
@@ -185,8 +185,8 @@
       },
       {
         "sku": "(sin SKU)",
-        "unidades": 41,
-        "ventas": 323900.0,
+        "unidades": 42,
+        "ventas": 462900.0,
         "title": "ENVIO PRIORITARIO"
       },
       {
@@ -282,13 +282,13 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 282,
-        "ventas_brutas": 38667300.0
+        "ordenes": 281,
+        "ventas_brutas": 38547400.0
       },
       {
         "canal": "web",
-        "ordenes": 213,
-        "ventas_brutas": 29626400.0
+        "ordenes": 215,
+        "ventas_brutas": 29885300.0
       }
     ],
     "codigos_descuento": [
@@ -477,15 +477,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 12081.69,
-    "ventas_netas_ytd": 11262.35,
+    "ventas_brutas_ytd": 12126.59,
+    "ventas_netas_ytd": 11307.25,
     "comisiones_ytd": 774.44,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 44.9,
-    "pct_comision": 0.0641,
-    "ticket_promedio": 48.33,
-    "unidades_ytd": 262,
-    "ordenes_ytd": 250,
+    "pct_comision": 0.0639,
+    "ticket_promedio": 48.31,
+    "unidades_ytd": 263,
+    "ordenes_ytd": 251,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -501,8 +501,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 262,
-        "ventas": 12081.68999999999,
+        "unidades": 263,
+        "ventas": 12126.58999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -8539,18 +8539,18 @@
       "digital_gastos_var": 0
     },
     "2026-09-01": {
-      "envia_ventas": 649500.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 5,
-      "envia_costo_envio": 57750.0,
-      "digital_ventas_netas": 649500.0,
+      "envia_ventas": 529600.0,
+      "envia_ordenes": 3,
+      "envia_unidades": 4,
+      "envia_costo_envio": 42860.0,
+      "digital_ventas_netas": 529600.0,
       "digital_descuentos": 0.0,
-      "digital_cod_neto": 529600.0,
+      "digital_cod_neto": 409700.0,
       "digital_prepago_neto": 119900.0,
-      "digital_cod_ordenes": 3,
+      "digital_cod_ordenes": 2,
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 409700.0,
-      "envia_ordenes_raw": 4,
+      "envia_ordenes_raw": 3,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -8872,7 +8872,7 @@
       "envia_ventas": 599500.0,
       "envia_ordenes": 4,
       "envia_unidades": 5,
-      "envia_costo_envio": 74450.0,
+      "envia_costo_envio": 59560.0,
       "digital_ventas_netas": 509600.0,
       "digital_descuentos": 89900.0,
       "digital_cod_neto": 239800.0,
@@ -8880,7 +8880,7 @@
       "digital_cod_ordenes": 2,
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 479600.0,
-      "envia_ordenes_raw": 5,
+      "envia_ordenes_raw": 4,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,
@@ -9085,9 +9085,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 48.6,
-      "amazon_ordenes": 1,
-      "amazon_unidades": 1,
+      "amazon_ventas_brutas": 93.5,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 260000.0,
       "pos_caracoli_unidades": 2,
       "pos_caracoli_gastos": 0,
@@ -9096,6 +9096,39 @@
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-18": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 920000.0,
+      "pos_caracoli_unidades": 7,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 300000.0,
+      "pos_fundadores_unidades": 4,
       "pos_fundadores_gastos": 0,
       "digital_gastos_var": 0
     },
@@ -9121,6 +9154,72 @@
       "amazon_ventas_brutas": 49.39,
       "amazon_ordenes": 1,
       "amazon_unidades": 1,
+      "pos_caracoli_ventas": 710000.0,
+      "pos_caracoli_unidades": 5,
+      "pos_caracoli_gastos": 83000.0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 600000.0,
+      "pos_fundadores_unidades": 8,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-20": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 260000.0,
+      "pos_caracoli_unidades": 2,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 660000.0,
+      "pos_titan_plaza_unidades": 5,
+      "pos_titan_plaza_gastos": 100000.0,
+      "pos_fundadores_ventas": 300000.0,
+      "pos_fundadores_unidades": 4,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-21": {
+      "envia_ventas": 258900.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 2,
+      "envia_costo_envio": 29780.0,
+      "digital_ventas_netas": 258900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 0.0,
+      "digital_prepago_neto": 258900.0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 2,
+      "envia_ventas_raw": 119900.0,
+      "envia_ordenes_raw": 2,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,
@@ -9787,7 +9886,7 @@
         {
           "icon": "🆕",
           "label": "Blogs nuevos publicados",
-          "count": 117
+          "count": 124
         },
         {
           "icon": "❓",
@@ -9845,201 +9944,21 @@
       ]
     },
     "layer2_money_pages": {
-      "pending_proposals_total": 25,
+      "pending_proposals_total": 59,
       "pending_by_type": {
-        "linkless_mention_outreach": 19,
-        "money_page_meta": 6
+        "linkless_mention_outreach": 35,
+        "geo_outreach_target": 15,
+        "money_page_meta": 5,
+        "money_page_description": 4
       },
-      "audited_at": "2026-09-14T10:16:37Z",
+      "audited_at": "2026-09-21T10:21:56Z",
       "summary": {
         "pages_audited": 6,
-        "avg_score": 97.5,
-        "issues_total": 2,
-        "not_found": 0
+        "avg_score": 71.7,
+        "issues_total": 6,
+        "not_found": 1
       },
       "worst_pages": [
-        {
-          "url": "/collections/marcos-hombre",
-          "primary_keyword": "monturas para gafas de hombre",
-          "kind": "collection",
-          "sub_kind": "custom_collections",
-          "resource_id": 241744576709,
-          "handle": "marcos-hombre",
-          "current": {
-            "title": "Monturas para Gafas Hombre | Marfil Colombia",
-            "page_title": "Marcos Hombre",
-            "meta_description": "Descubre nuestras monturas para gafas de hombre con protección UV400. Diseños modernos, calidad premium y envío rápido. ¡Compra hoy!",
-            "body_html": "<h2>Monturas para gafas de hombre: estilo y protección en un solo marco</h2><p>En Marfil Colombia sabemos que los marcos correctos transforman tu look y protegen tu visión. Nuestras monturas para gafas de hombre combinan diseños modernos con tecnología UV400 que bloquea el 100% de los rayos ultravioleta. Desde acetato premium hasta metal resistente, cada par está pensado para durar años sin perder estilo.</p><p>Ya sea que busques monturas para la oficina, viajes de fin de semana o actividades al aire libre, tenemos la forma y el color que se adapta a tu rostro y personalidad. Los marcos rectangulares y cuadrados ofrecen elegancia clásica, mientras que los aviadores y modelos deportivos dan ese toque aventurero. Todos nuestros lentes polarizados reducen reflejos y fatiga ocular en días soleados.</p><ul>\n<li>Protección UV400 en todas las monturas para gafas de hombre</li>\n<li>Lentes polarizados que eliminan reflejos y mejoran contraste</li>\n<li>Materiales duraderos: acetato y metal de primera calidad</li>\n<li>Formas variadas: rectangulares, cuadrados, aviadores y deportivos</li>\n<li>Paleta de colores clásicos: negro, café, carey y tonos metálicos</li>\n<li>Garantía y servicio técnico en toda Colombia</li>\n</ul><h3>Encuentra tu estilo sin comprometer la protección</h3><p>Los marcos de Marfil no son solo accesorios: son inversión en salud visual y confianza en tu imagen. Explora nuestras colecciones y descubre la montura para gafas de hombre que complementa tu día a día.</p>",
-            "body_word_count": 218
-          },
-          "crawl_signals": null,
-          "serp": {
-            "top_titles": [
-              "️ Gafas Oftálmicas para Hombres con Personalidad",
-              "Gafas para Hombre ¡Compra tu par hoy mismo!",
-              "Monturas de Gafas Hombre",
-              "Gafas formuladas para hombre",
-              "Catálogo de Monturas de Gafas para Hombre",
-              "Mejor Marcos de Gafas para Hombre",
-              "Monturas Hombre | MercadoLibre 📦",
-              "Gafas Formuladas para hombre | Bogotá - Medellin - FOLKS",
-              "100 ideas de Lentes para hombre en 2026 | monturas de gafas ...",
-              "Marcos para gafas oftálmicas"
-            ],
-            "top_descriptions": [
-              "¿Qué materiales se utilizan en las gafas para hombre? Las monturas pueden fabricarse en acetato, metal o materiales ligeros que ofrecen resistencia y comodidad.",
-              "Para ti tenemos diferentes tipos de monturas como aviador, rectangulares, ovaladas entre otras. Ver más. Estilos de gafas para hombre. En nuestra tienda ...",
-              "Marca · SmartBuy Collection · Ray-Ban · Tom Ford · Oakley · Adensco · Adidas Originals · Adidas Sport · Alexander McQueen.",
-              "Contamos con una gran variedad de diseños y los mejores estilos en monturas para lentes formulados de hombre. ¡Pídela con tu fórmula y renueva tu estilo con ...",
-              "Compra acá tus Gafas. Diseños clásicos y modernos para Hombres. Disfruta de diseños llenos de estilo y practicidad. Precios Más Bajos · Enviamos En 48 horas.",
-              "Descubre el mejor Marcos de Gafas para Hombre en Los más vendidos. Encuentra los 100 artículos más populares en Amazon Ropa, Zapatos y Joyería Los más ...",
-              "Las monturas para hombres se fabrican en materiales como acetato, plástico, policarbonato, metal o combinaciones de estos. Estos materiales ayudan a ofrecer ...",
-              "Gafas formuladas diseñadas en Bogot á, hechas en acetato de alta calidad. Desde $250.000 lentes con formula incluidos.",
-              "Monturas Para Lentes · Lentes Hombre · Lentes Negros · Lentes · Cosas Para Comprar ; Anteojos De Ver Hombre · Tipos De Lentes Para La Vista · Marco Gafas Hombre.",
-              "50 % de DCTO, aprovecha y disfruta, con nuestros marcos para gafas podrás elegir las gafas ideales que se adaptan a tu estilo y realzan tu belleza natural."
-            ],
-            "common_patterns": {
-              "year_in_title": 1,
-              "geo_modifier_in_title": 5
-            },
-            "paa": [
-              {
-                "question": "¿Cuáles son los tipos de monturas de gafas para hombre?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuáles son las mejores monturas de gafas para un hombre?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuáles son las tendencias en monturas de gafas para hombres para el 2026?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuánto cuestan las monturas de gafas para hombre?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cómo saber qué tipo de montura me queda bien?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              }
-            ],
-            "related_searches": [
-              "Monturas de gafas para hombre modernas",
-              "Monturas de gafas para hombre según rostro",
-              "Monturas de gafas para hombre elegantes",
-              "Monturas de gafas para hombre originales",
-              "Monturas de gafas para hombre económicas",
-              "Monturas de gafas para hombre de marca"
-            ],
-            "featured_snippet": null
-          },
-          "score": 90.0,
-          "issues": [
-            "primary_keyword_missing_from_title"
-          ]
-        },
-        {
-          "url": "/collections/lentes-de-hombre",
-          "primary_keyword": "gafas de sol hombre",
-          "kind": "collection",
-          "sub_kind": "custom_collections",
-          "resource_id": 241606787269,
-          "handle": "lentes-de-hombre",
-          "current": {
-            "title": "Gafas de Sol Hombre | Lentes UV400 - Marfil",
-            "page_title": "Gafas de Hombre | Moda Marfil, lentes  en Colombia",
-            "meta_description": "Gafas de sol para hombre con protección UV400 y lentes polarizados. Envío gratis en Colombia. Moda y calidad Marfil.",
-            "body_html": "<h2>Gafas de sol para hombre que protegen tu visión sin comprometer estilo</h2><p>En Marfil Colombia sabemos que las gafas de sol hombre van más allá de un accesorio. Son tu aliado diario contra la radiación solar, el resplandor del asfalto y la fatiga visual. Por eso cada par está diseñado con tecnología polarizada y filtro UV400 real, no promesas vacías. Nuestros lentes bloquean el 100% de los rayos UVA y UVB, y eliminan reflejos que cansan la vista en la carretera, la playa o la ciudad.</p><p>La diferencia está en los detalles. Cada gafas de sol hombre de nuestra colección combina materiales premium con diseños versátiles que funcionan tanto en casual como en formal. Producción limitada significa que no compartirás tu estilo con otros, y que cada modelo recibe control de calidad riguroso antes de llegar a tus manos.</p><p>No es solo protección: es comodidad, durabilidad y un toque que refleja quién eres. Cuando inviertes en lentes polarizados de verdad, dejas de entrecerrar los ojos al conducir o pasar tiempo al aire libre.</p><ul>\n<li>Filtro UV400 certificado que bloquea rayos UVA y UVB al 100%</li>\n<li>Lentes polarizados que eliminan reflejos y reducen fatiga visual</li>\n<li>Diseños exclusivos de producción limitada para diferenciarte</li>\n<li>Materiales resistentes pensados para uso diario y durabilidad</li>\n<li>Comodidad garantizada en carretera, playa y ciudad</li>\n</ul><h3>Gafas de sol hombre que duran, que protegen, que transforman</h3><p>Tu visión merece lo mejor. Explora nuestra colección de gafas de sol hombre y encuentra el modelo que completa tu estilo.</p>",
-            "body_word_count": 246
-          },
-          "crawl_signals": null,
-          "serp": {
-            "top_titles": [
-              "Lentes de Sol de hombre | Ray-Ban® LATAM",
-              "Gafas de Sol para Hombres con Personalidad 🕶️",
-              "Gafas de sol para hombre: marcas top y varios estilos",
-              "Gafas de Sol para Hombre | Falabella Colombia",
-              "Gafas de sol: Protección y estilo a $149.900",
-              "Gafas de Sol Originales de Todas las Marcas",
-              "Compra hoy las Gafas de Sol para Hombres",
-              "¡Las 3 mejores gafas de sol para hombre! En Óptica ...",
-              "Gafas y Accesorios Gafas de Sol | MercadoLibre.com.co",
-              "Gafas de Sol"
-            ],
-            "top_descriptions": [
-              "Todos nuestros lentes de sol incluyen una gama de combinaciones de colores con las clásicas micas G-15, espejadas, Evolve o degradé en opciones de tonos tenues.",
-              "Explora gafas de sol para hombres con carácter, diseño moderno y protección UV. Compra fácil y segura en Ópticas GMO.",
-              "Descubre gafas de sol para hombre: diseño redondo, cuadrado y aviador. Marcas premium como Oakley, Ray-Ban y TH. Protege tus ojos con estilo en Dafiti.",
-              "Explora la selección de gafas de sol para hombre, compara modelos y elige con confianza y ya encuentra el par ideal. Compra en falabella.com.",
-              "Colección: Gafas de sol: Protección y estilo a $149.900 · GAFAS DE SOL PARA HOMBRE Y MUJER INVICTA · Calidad y Confort en Cada Par · Conoce a.",
-              "Ray-Ban, Oakley, Versace, Michael Kors, Gucci, Saint Laurent y más: gafas de sol originales con garantía de 24 meses. Envío gratis a Colombia y 3 cuotas sin ...",
-              "Ingresa aquí y compra en línea las Gafas de Sol para Hombre !, conoce toda la variedad y modelos que tenemos para lucir un estilo impactante. Ópticas Lafam.",
-              "🕶️ ¡Las 3 mejores gafas de sol para hombre ! En Óptica Colombiana tenemos lo que necesitas para elevar tu estilo. Encuentra las gafas perfectas ...",
-              "Gafas De Sol Polarizadas Hawkers One Raw Hombre Y Mujer Lente Azul claro Varilla Negro Armazón Negro Diseño MirrorHAWKERS 4.7 | +100 vendidosCalificación 4.7 de ...",
-              "Gafas Gaona para hombre lente translúcido. $ 279.900$ 195.930 · Gafas silueta ... Gafas Támesis para hombre lente polarizado negro. $ 279.900$ 195.930."
-            ],
-            "common_patterns": {
-              "year_in_title": 0,
-              "geo_modifier_in_title": 9
-            },
-            "paa": [
-              {
-                "question": "¿Cuáles son las mejores gafas de sol para hombre?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Qué gafas de sol usar según tu cara hombre?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuáles son las mejores marcas de lentes de sol para hombres?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuáles son las mejores marcas de gafas para hombres?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              },
-              {
-                "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
-                "expanded_url": "",
-                "expanded_title": "",
-                "expanded_text": ""
-              }
-            ],
-            "related_searches": [
-              "Ray-Ban gafas de sol hombre",
-              "Gafas de sol hombre de moda",
-              "Gafas de sol hombre polarizadas",
-              "Gafas de sol para hombre originales",
-              "Gafas de sol hombre Louis Vuitton",
-              "Gafas de sol hombre colombia"
-            ],
-            "featured_snippet": null
-          },
-          "score": 95.0,
-          "issues": [
-            "primary_keyword_missing_from_meta"
-          ]
-        },
         {
           "url": "/collections/lentes-de-mujer",
           "primary_keyword": "gafas de sol mujer",
@@ -10048,41 +9967,41 @@
           "resource_id": 241607770309,
           "handle": "lentes-de-mujer",
           "current": {
-            "title": "Gafas de Sol Mujer | Marfil Colombia",
+            "title": "Gafas de Sol Mujer UV400 | Marfil Colombia",
             "page_title": "Gafas de Mujer",
-            "meta_description": "Gafas de sol mujer con protección UV400 y lentes polarizados. Envío gratis. Descubre nuestros estilos modernos.",
-            "body_html": "<h2>Gafas de Sol para Mujer que Combinan Estilo y Protección Real</h2><p>Las gafas de sol mujer de Marfil Colombia van más allá del accesorio. Cada par protege tus ojos con tecnología UV400 certificada y lentes polarizados que eliminan reflejos, reducen fatiga visual y mejoran la claridad en cualquier condición de luz. Diseñadas para quienes no negocian entre belleza y funcionalidad.</p><p>Nuestra colección femenina responde a estilos diferentes: desde geometrías clásicas y minimalistas hasta propuestas deportivas y audaces. Cada modelo es de producción limitada, lo que significa que cuando encuentras tus gafas de sol mujer perfectas, eres parte de un grupo exclusivo. Fabricadas con materiales premium seleccionados para resistir el uso diario sin comprometer la elegancia.</p><p>En Marfil entendemos que los ojos merecen lo mejor. Por eso trabajamos con polarización de alta calidad que no solo protege, sino que transforma cómo ves el mundo. Inversión en salud visual que dura años.</p><ul>\n<li>Protección UV400 garantizada contra radiación solar</li>\n<li>Lentes polarizados que eliminan reflejos y resplandores</li>\n<li>Diseños exclusivos de producción limitada</li>\n<li>Materiales premium para durabilidad extrema</li>\n<li>Versatilidad: uso diario, playa, conducción y deporte</li>\n<li>Garantía de calidad y servicio al cliente excepcional</li>\n</ul><p>Explora la colección de gafas de sol mujer de Marfil y encuentra el par que refleje quién eres realmente.</p>",
-            "body_word_count": 207
+            "meta_description": "Gafas de sol para mujer con protección UV400 y lentes polarizados. Envío gratis en Colombia. Diseños modernos y de moda.",
+            "body_html": "",
+            "body_word_count": 0
           },
           "crawl_signals": null,
           "serp": {
             "top_titles": [
               "Compra hoy las Gafas de Sol para Mujer",
-              "Gafas de Sol para Mujeres con Estilo",
+              "Gafas de Sol Originales 😎 para Cada Estilo",
+              "Gafas de Sol para Mujer en Aniversario Falabella",
               "Lentes de Sol mujer | Ray-Ban® LATAM",
-              "Gafas de Sol para Mujer | Falabella Colombia",
-              "Gafas de sol para mujer | Tienda Online",
+              "Gafas de sol Mujer",
+              "Gafas Para Mujer | Solo en Patprimo",
               "Gafas de sol de mujer 2026 | MANGO Colombia",
-              "Gafas de Sol para Mujer | Diseño y Protección UV 400 - Totto",
-              "Mejor Lentes de Sol para Mujer",
-              "Gafas de sol para mujer",
-              "Gafas Sol Mujer | MercadoLibre 📦"
+              "Gafas de Sol Mujer",
+              "EL CHICOS DE LAS GAFAS EN SATÉLITE+",
+              "¿Cómo saber si unas GAFAS son POLARIZADAS? 👓 ..."
             ],
             "top_descriptions": [
               "Ingresa aquí y compra en línea las Gafas de Sol para Mujeres, descubre la gran variedad y modelos que tenemos para complementar tu estilo. Ópticas Lafam.",
-              "Encuentra gafas de sol para mujeres que combinan moda, comodidad y protección visual. Explora diseños únicos y elige tu favorito.",
-              "Todos nuestros lentes de sol de diseñador para mujer están disponibles en varias combinaciones de colores con opciones de micas que se adaptan a tu look. Elige ...",
+              "Descubre gafas de sol con protección UV y diseño premium. Elige entre marcas reconocidas y compra online con total confianza.",
               "Ofrece siluetas reconocibles como aviador, redondas y rectangulares, con opciones de monturas metálicas y acabados tipo acetato. Quienes prefieren diseños ...",
-              "Descubre las gafas de sol para mujer con monturas en diferentes materiales que realzan tu rostro. Protección solar con diseños de aviador, eyecat, maxi, entre ...",
+              "Todos nuestros lentes de sol de diseñador para mujer están disponibles en varias combinaciones de colores con opciones de micas que se adaptan a tu look. Elige ...",
+              "Compra tus gafas de sol para mujeres de las mejores marcas en Lenscolombia.co Ray-Ban Oakley Versace Michael Kors Ralph Armani Exchange Kipling Envío gratis ...",
+              "Las gafas para mujer de Patprimo son lindas y funcionales. Gafas de sol que te protegen y complementan tu look con sus diseños a la moda.",
               "Protege tu vista y luce con estilo con estas gafas de sol de mujer. Tenemos gafas de mujer redondas, cuadradas, de pasta, metálicas. Elige ya tus gafas de ...",
-              "Todos nuestros modelos cuentan con filtro UV 400, garantizando una protección óptima contra los dañinos rayos solares. Además, la montura de gafas está ...",
-              "TJUTR Gafas de sol polarizadas para mujer, protección UV400 TS2579 | Gafas de sol para usar sobre anteojos, lentes de moda, marco ligero, conducción, al ...",
-              "Descubre nuestras gafas de sol para mujer, donde el estilo casual se encuentra con la elegancia artesanal. Perfectas para cada ocasión, reflejan tu esencia ...",
-              "Gafas de sol para mujer deportivas. Cuentan con diseño envolvente y curvatura base 8 que mejora la cobertura lateral frente a la luz solar directa. El armazón ..."
+              "Precio de oferta $70,000 COP Precio habitual $85,000 COP. Gafas de sol Polarizadas-filtro UV400- Elon Yellow. Gafas de sol Polarizadas-filtro UV400- Elon ...",
+              "31/05/2026 — EL CHICO DE LAS GAFAS | PRIMERA TEMPORADAPOR SATÉLITE+ EL CANAL DE LOS GALÁCTICOS #AmaCharoAuxilio #DameLuz #SoloGalacticos ¡Suscríbete, ...",
+              "17/06/2021 — En 2 minutos... ¡Un truco para saber si unas #GAFAS son #POLARIZADAS! SUSCRÍBETE GRATIS y descubre más SECRETOS para la visión de tus hijos ..."
             ],
             "common_patterns": {
               "year_in_title": 1,
-              "geo_modifier_in_title": 6
+              "geo_modifier_in_title": 5
             },
             "paa": [
               {
@@ -10119,15 +10038,110 @@
             "related_searches": [
               "Gafas de sol mujer Ray-Ban",
               "Gafas de sol para mujer de moda",
-              "Gafas de sol mujer con Filtro UV",
+              "Gafas de sol mujer con filtro UV",
               "Gafas de sol para mujer economicas",
               "Gafas de sol para mujer de marca",
               "Gafas de sol mujer Tommy Hilfiger"
             ],
             "featured_snippet": null
           },
-          "score": 100.0,
-          "issues": []
+          "score": 80.0,
+          "issues": [
+            "thin_body",
+            "primary_keyword_missing_from_meta"
+          ]
+        },
+        {
+          "url": "/collections/lentes-de-hombre",
+          "primary_keyword": "gafas de sol hombre",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241606787269,
+          "handle": "lentes-de-hombre",
+          "current": {
+            "title": "Gafas de Sol Hombre | Lentes Polarizados UV400 - Marfil",
+            "page_title": "Gafas de Hombre",
+            "meta_description": "Gafas de sol para hombre con protección UV400 y lentes polarizados. Envío gratis en Colombia. Descubre diseño y calidad Marfil.",
+            "body_html": "<h2><br></h2>\n<p> </p>",
+            "body_word_count": 0
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "Lentes de Sol de hombre | Ray-Ban® LATAM",
+              "Gafas de Sol para Hombres con Personalidad 🕶️",
+              "Gafas de Sol Originales de Todas las Marcas",
+              "Gafas de sol para hombre: marcas top y varios estilos",
+              "Gafas de sol: Protección y estilo a $149.900",
+              "Gafas de Sol para Hombre en Aniversario Falabella",
+              "Compra hoy las Gafas de Sol para Hombres",
+              "¡Las 3 mejores gafas de sol para hombre! En Óptica ...",
+              "Gafas y Accesorios Gafas de Sol | MercadoLibre.com.co",
+              "Para hombre | Ferragamo ES"
+            ],
+            "top_descriptions": [
+              "Todos nuestros lentes de sol incluyen una gama de combinaciones de colores con las clásicas micas G-15, espejadas, Evolve o degradé en opciones de tonos tenues.",
+              "Explora gafas de sol para hombres con carácter, diseño moderno y protección UV. Compra fácil y segura en Ópticas GMO.",
+              "Ray-Ban, Oakley, Versace, Michael Kors, Gucci, Saint Laurent y más: gafas de sol originales con garantía de 24 meses. Envío gratis a Colombia y 3 cuotas sin ...",
+              "Descubre gafas de sol para hombre: diseño redondo, cuadrado y aviador. Marcas premium como Oakley, Ray-Ban y TH. Protege tus ojos con estilo en Dafiti.",
+              "Colección: Gafas de sol: Protección y estilo a $149.900 · GAFAS DE SOL PARA HOMBRE Y MUJER INVICTA · Calidad y Confort en Cada Par · Conoce a.",
+              "Explora la selección de gafas de sol para hombre, compara modelos y elige con confianza y ya encuentra el par ideal. Compra en falabella.com.",
+              "Ingresa aquí y compra en línea las Gafas de Sol para Hombre !, conoce toda la variedad y modelos que tenemos para lucir un estilo impactante. Ópticas Lafam.",
+              "🕶️ ¡Las 3 mejores gafas de sol para hombre ! En Óptica Colombiana tenemos lo que necesitas para elevar tu estilo. Encuentra las gafas perfectas ...",
+              "Gafas De Sol Polarizadas Hawkers One Raw Hombre Y Mujer Lente Azul claro Varilla Negro Armazón Negro Diseño MirrorHAWKERS 4.7 | +100 vendidosCalificación 4.7 de ...",
+              "La colección para hombre de Ferragamo es la combinación perfecta de diseño sofisticado y elegancia atemporal, donde el lujo artesanal se une a un estilo ..."
+            ],
+            "common_patterns": {
+              "year_in_title": 0,
+              "geo_modifier_in_title": 9
+            },
+            "paa": [
+              {
+                "question": "¿Cuáles son las mejores gafas de sol para hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son los mejores lentes de sol para hombres?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué gafas de sol usar según tu cara hombre?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Qué marca de lentes de sol para hombres es buena?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              },
+              {
+                "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
+                "expanded_url": "",
+                "expanded_title": "",
+                "expanded_text": ""
+              }
+            ],
+            "related_searches": [
+              "Ray-Ban gafas de sol hombre",
+              "Gafas de sol hombre de moda",
+              "Gafas de sol hombre polarizadas",
+              "Gafas de sol para hombre originales",
+              "Gafas de sol hombre Louis Vuitton",
+              "Gafas de sol hombre Oakley"
+            ],
+            "featured_snippet": null
+          },
+          "score": 80.0,
+          "issues": [
+            "thin_body",
+            "primary_keyword_missing_from_meta"
+          ]
         },
         {
           "url": "/collections/marcos-mujer",
@@ -10139,35 +10153,35 @@
           "current": {
             "title": "Monturas de Gafas Mujer | Marfil Colombia",
             "page_title": "Marcos Mujer",
-            "meta_description": "Descubre monturas de gafas mujer con protección UV400 y lentes polarizados. Envío rápido. Garantía oficial en Marfil Colombia.",
-            "body_html": "<h2>Monturas de gafas mujer que combinan estilo y protección</h2><p>Las monturas de gafas mujer de Marfil Colombia están diseñadas para quienes buscan más que un accesorio: una declaración de estilo con funcionalidad. Cada par combina diseño contemporáneo con tecnología UV400 que protege tus ojos de los rayos solares, sin sacrificar la elegancia que mereces en tu día a día.</p><p>Contamos con monturas en cortes clásicos y audaces: cat eye vintage, redondos retro, mariposa sofisticados y oversized statement. Los lentes polarizados reducen reflejos y fatiga visual, ideales si pasas tiempo al aire libre. Desde tonos neutros como negro y carey hasta colores vibrantes en rosado, transparente y degradados, encontrarás la montura de gafas mujer que se adapte a tu personalidad.</p><ul>\n<li>Protección UV400 certificada en todas nuestras monturas de gafas mujer</li>\n<li>Lentes polarizados que eliminan reflejos y mejoran el contraste visual</li>\n<li>Diseños exclusivos en cat eye, redondo, mariposa y oversized</li>\n<li>Paleta de colores: negro, carey, rosados, transparentes y degradados</li>\n<li>Marcos durables con ajuste cómodo para uso prolongado</li>\n<li>Envío rápido a toda Colombia con garantía de satisfacción</li>\n</ul><h3>Monta tu estilo con confianza</h3><p>En Marfil, cada monturas de gafas mujer es seleccionada para combinar tendencia, comodidad y protección ocular real. Explora nuestras colecciones y encuentra el par que complete tu look.</p>",
-            "body_word_count": 207
+            "meta_description": "Monturas de gafas mujer con lentes UV400 y polarizados. Diseños modernos, envío rápido y garantía oficial. ¡Compra hoy!",
+            "body_html": "",
+            "body_word_count": 0
           },
           "crawl_signals": null,
           "serp": {
             "top_titles": [
-              "Gafas para Mujer ¡Compra tu par hoy mismo!",
               "Gafas Oftálmicas para Mujeres con Estilo",
               "Gafas formuladas para mujer",
+              "Gafas para Mujer ¡Compra tu par hoy mismo!",
               "Catálogo de Monturas de Gafas para Mujer",
-              "Monturas Modernas Para Mujer",
-              "Gafas para mujer",
+              "Gafas oftálmicas para mujer en Aniversario Falabella",
               "Las mejores 47 ideas de Monturas gafas mujer",
-              "Monturas de Gafas Mujer",
-              "Monturas Para Lentes Mujer | MercadoLibre 📦",
-              "Gafas de Moda y Estilos que Rejuvenecen"
+              "Gafas para mujer",
+              "Gafas de Moda y Estilos que Rejuvenecen",
+              "Monturas Para Lentes Mujer",
+              "Gafas Oftálmicas Mujer"
             ],
             "top_descriptions": [
-              "Las mejores Gafas para mujer están aquí. Conoce las colecciones, marcas y diseños que tenemos para ti. Contamos con grandes precios y descuentos para ti.",
               "¿Qué tipo de gafas para mujer están de moda? Las monturas cat eye, redondas, geométricas y transparentes se encuentran entre las opciones más populares.",
               "Renueva tu estilo y tu visión gracias a las gafas formuladas para mujer de Óptica Santa Lucía. ¡Haz clic y descubre diseños top de la más alta calidad!",
-              "Compra acá los mejores diseños que te harán lucir linda, chic y sexy. Los mejores precios del mercado. Desde $69900 Pide con Tu fórmula Lista.",
-              "Monturas modernas para mujer · Gafas Para Cara Ovalada · Gafas montura transparente | Gafas de moda 2024 mujer, Armazones de lentes transparentes, Lentes · Lentes ...",
-              "Compra online las monturas perfectas en Metrovisual Óptica. Descubre una amplia variedad de diseños modernos, elegantes y cómodos, pensados para resaltar tu ...",
+              "Las mejores Gafas para mujer están aquí. Conoce las colecciones, marcas y diseños que tenemos para ti. Contamos con grandes precios y descuentos para ti.",
+              "Compra acá los mejores diseños que te harán lucir linda, chic y sexy. Los mejores precios del mercado. Desde $69,900 Pide con Tu fórmula Lista. Hacemos el ...",
+              "-40%. $ 169.900. Agregar · GENERICO. Montura Marco Gafas Redondas Óptica Protección De Luz LeopardoPor Perduoutlet. $ 44.990. -15%. $ 53.000. Llega mañana.",
               "8 oct. 2024 - Explora el tablero de Deissy \"Monturas gafas mujer\" en Pinterest. Ver más ideas sobre monturas gafas mujer, lentes modernos para mujer, ...",
-              "Encuentra los mejores precios de gafas graduadas en línea solo en Gafasworld. Ofrecemos grandes descuentos. Entrega rápida y pago seguro.",
-              "Monturas para lentes mujer · Gafas Cuadradas Lente Transparente Unisex Black/silver · Gafas Ópticas Vintage De Marco Completo Con Forma De B Zin Coral Claro.",
-              "Si estás lista para lucir más moderna, chic y hasta más joven con tus gafas o espejuelos… este video es para ti!! Sabías que existen reglas ..."
+              "Compra online las monturas perfectas en Metrovisual Óptica. Descubre una amplia variedad de diseños modernos, elegantes y cómodos, pensados para resaltar tu ...",
+              "Si estás lista para lucir más moderna, chic y hasta más joven con tus gafas o espejuelos… este video es para ti!! Sabías que existen reglas ...",
+              "Descubre cómo elegir la montura perfecta que se adapte a tu rostro, estilo y necesidades visuales. ¡Sigue leyendo para encontrar la montura ideal para ti! \\ ...",
+              "El mayor catálogo de gafas oftálmicas para mujer en Opticalia. Las mejores marcas y los modelos más exclusivos de gafas oftálmicas de mujer para estar a la"
             ],
             "common_patterns": {
               "year_in_title": 0,
@@ -10181,19 +10195,19 @@
                 "expanded_text": ""
               },
               {
-                "question": "¿Qué gafas te hacen ver más joven?",
+                "question": "¿Qué monturas están de moda?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Qué monturas de lentes son modernas para mujeres?",
+                "question": "¿Qué monturas de lentes para mujer están en tendencia?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Qué monturas de gafas están de moda?",
+                "question": "¿Cuáles son las mejores monturas de lentes para mujer?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
@@ -10208,91 +10222,156 @@
             "related_searches": [],
             "featured_snippet": null
           },
-          "score": 100.0,
-          "issues": []
+          "score": 85.0,
+          "issues": [
+            "thin_body"
+          ]
         },
         {
-          "url": "/collections/cuelga-gafas",
-          "primary_keyword": "cordones para gafas",
-          "kind": "collection",
-          "sub_kind": "custom_collections",
-          "resource_id": 241744543941,
-          "handle": "cuelga-gafas",
+          "url": "/pages/sobre-nosotros",
+          "primary_keyword": "marfil colombia",
+          "kind": "page",
+          "sub_kind": null,
+          "resource_id": 75215503557,
+          "handle": "sobre-nosotros",
           "current": {
-            "title": "Cordones para Gafas | Marfil Colombia",
-            "page_title": "Cuelga Gafas",
-            "meta_description": "Cordones para gafas de calidad premium. Protege tus lentes con nuestros cuelgagafas resistentes. Envío rápido a toda Colombia.",
-            "body_html": "<h2>Cordones para gafas que protegen tu inversión</h2><p>Los cordones para gafas de Marfil Colombia son más que un accesorio: son tu garantía de que tus lentes polarizados UV400 permanecerán seguros y accesibles en cualquier momento. Diseñados con materiales resistentes que soportan el uso diario, estos cordones evitan caídas accidentales que rayan o dañan los cristales, especialmente importante cuando inviertes en gafas de sol de calidad.</p><p>Cada cordón para gafas en nuestra colección se fabrica pensando en durabilidad y comodidad. Ya sea en la playa, en la oficina o en actividades al aire libre, mantienen tus lentes ajustados sin presión innecesaria en el cuello. El acabado cuidado de cada pieza complementa cualquier modelo de gafas, combinando funcionalidad con un toque discreto de estilo que no compite con tus lentes.</p><ul>\n<li>Protege tus gafas de sol de caídas y arañazos costosos</li>\n<li>Material resistente diseñado para uso diario prolongado</li>\n<li>Compatible con todos los modelos de lentes polarizados</li>\n<li>Distribución equilibrada del peso sin incomodidad en el cuello</li>\n<li>Acabado Premium que se adapta a cualquier estilo personal</li>\n<li>Ideal para deportes, viajes y actividades en la playa</li>\n</ul><h3>Invierte en la protección de tus gafas polarizadas</h3><p>Un cordón para gafas de Marfil no es un gasto adicional, es una inversión en la vida útil de tus lentes UV400. Mantén siempre a mano tus gafas de sol favoritas con total seguridad.</p>",
-            "body_word_count": 222
+            "title": "Marfil Colombia | Gafas UV400 Polarizadas",
+            "page_title": "SOBRE MARFIL",
+            "meta_description": "Descubre Marfil Colombia: gafas de sol UV400 polarizadas de diseño premium. Envío gratis en Colombia. Protección garantizada contra radiación solar.",
+            "body_html": "<h3 style=\"text-align: center;\"><br></h3>\n<p dir=\"auto\" class=\"PDq2pG_selectionAnchorContainer\" style=\"text-align: center;\">Fundada en Colombia en 2014, MARFIL nace con una visión clara: crear lentes de sol con diseño exclusivo, calidad real y una identidad propia.<span class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" style=\"text-align: center;\">Cada colección refleja nuestro enfoque en la estética, la funcionalidad y la exclusividad, ofreciendo piezas pensadas para quienes valoran el estilo en cada detalle.</p>\n<p dir=\"auto\" style=\"text-align: center;\">Descubre el universo MARFIL y conoce una marca creada para destac<strong>ar.</strong></p>\n<h2 style=\"text-align: center;\">¿NECESITAS AYUDA?</h2>\n<p dir=\"auto\" class=\"PDq2pG_selectionAnchorContainer\" style=\"text-align: center;\">Conoce más sobre nuestros productos, materiales y experiencia de compra a través de nuestro equipo de atención al cliente.<span class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" style=\"text-align: center;\">Contáctanos</p>\n<p dir=\"auto\" style=\"text-align: center;\"><a href=\"https://wa.me/573187726605?text=Hola%2C%20quiero%20recibir%20asesor%C3%ADa%20sobre%20los%20productos%20MARFIL\" title=\"CONTACTA CON UN ASESOR\">CONTACTO DIRECTO CON UN ASESOR</a></p>",
+            "body_word_count": 87
           },
           "crawl_signals": null,
           "serp": {
             "top_titles": [
-              "Cuelga Gafas (Webpage)",
-              "Cordones para gafas Unisex Color Café",
-              "Cuelga gafas / Cadenas para gafas (@yapa.co)",
-              "Cordones Para Gafas",
-              "SEABELT | Accesorios para gafas",
-              "Como hacer CORDONES PARA GAFAS fácil. !!No las pierdas ...",
-              "Cordones Para Gafas",
-              "CORDONES para GAFAS DYI Aprende y Disfruta tu Verano ...",
-              "CORDÓN PARA GAFAS TECH NEGRO",
-              "CORDON GAFAS 1 COLG ZOOM TO GO SIN REF"
+              "Marfil Oficial: Gafas de Sol Colombia | UV400 Polarizados",
+              "MARFIL (@productosmarfil) · Soledad",
+              "marfil Archives",
+              "Marfil - Bogotá",
+              "Productos Marfil (@productosmarfil)",
+              "Gafas Marfil | MercadoLibre 📦",
+              "Marfil® | Lentes de sol (@modamarfil)",
+              "MARFIL | Útiles Escolares y Artículos de Oficina para Todos",
+              "MARFIL S.A.S - Datos de empresas",
+              "Productos Marfil: Home"
             ],
             "top_descriptions": [
-              "Cordones cuelga gafas hechos a mano y con materiales reciclados al mejor precio | Compra en saju.co | 705 días de garantía | Envíos gratis a toda Colombia a ...",
-              "Género:UnisexEdad:AdultosColor de la montura: CaféMaterial del cordon: AcrilicoSKU:215016.",
-              "Un accesorio…que salvó mis gafas ✨ Ligero, cómodo y con estilo. Ahora no solo cuida mis gafas, también eleva todo mi outfit. Esto no es solo un cuelga gafas, ...",
-              "Cordon Para Gafas Slip Verde. CHUMS por INKANTA. $49.000. 3 cuotas de $16.333 con 0% interés. Envío gratisEnvío gratis. Estuche Para Gafas Con Paño ...",
-              "Descubre accesorios y cuelga gafas elaborados en cordón y cuero, combinados con piezas de bisutería o Miyuki. Conéctalo a tus gafas.",
-              "Manualidades: CORDÓN para Gafas Fácil /Bisutería DIY ♥ Sor Amparo Arredondo R.En esta oportunidad te doy una idea de cómo hacer un cordón para lentes Fácil, ..",
-              "Descubre una amplia gama de cordones para gafas en diferentes materiales, colores y longitudes, ideales para deportes, actividades al aire libre y uso ...",
-              "Material de alta calidad: La cuerda está hecha de nailon, un material resistente a la elongación para un ajuste completamente seguro. · Adaptabilidad: El cordón ...",
-              "CORDON GAFAS 1 COLG ZOOM TO GO SIN REF. ZOOM TO GO-PLU: 1322323. image_bar_buy. CORDON GAFAS 1 COLG ZOOM TO GO SIN REF. (Und a $ 20.150,00). $ 20.150 ..."
+              "Gafas de sol exclusivas con UV400 y lentes polarizados. Máx. 20 unidades por diseño. Envío gratis a toda Colombia · Pago contra entrega. ¡Compra ya!",
+              "Líder en escolar y oficina. Industria colombiana. · El plan se arma mejor cuando estás con tus amigos. · Una cajita de regalo para Amor y Amistad, hecha con ...",
+              "marfil ; BETO INGLÉS. $ 4.450 ; BLOCK ARGOLLADO AMARILLO CARTA CUADRADO MARFIL TAYDEM. $ 6.000 ; FORMA MULTIUSOS PERIODICO 1/32 TAYDEM MARFIL. $ 850 ; FORMATO ...",
+              "Comprá online productos de Marfil desde $668. Tenemos esfero marfil semi gel, carpeta legajadora marfil plastica y más. Hacé tu pedido y pagalo online.",
+              "✨ La calidad está en los detalles. Nuestro pegante líquido, elaborado con marfil, ofrece una aplicación suave, excelente adherencia y un acabado limpio para ...",
+              "Las gafas Marfil destacan por su diseño elegante y moderno, perfectas para complementar cualquier estilo con un toque de sofisticación. Montura ligera y cómoda.",
+              "Lentes de Sol Polarizados. Diseños Italianos. Bogotá CC Titán Plaza 1•Piso frente a Mattelsa Bucaramanga CC caracoli 1•Piso Link Directo.",
+              "Descubre el portafolio MARFIL en El Gigante del Hogar. Cuadernos, lápices, crayones, plastilina, grapadoras, archivadores y más para el colegio y la oficina ...",
+              "La empresa Marfil S.a.s fue constituida el 26-12-2007. Su dirección reportada en Registro mercantil es HC LA LUISIANA en la ciudad de Nemocón, Cundinamarca.",
+              "Línea de escritura · Bolígrafos · Correctores · Marcadores · Plumones · Colores · Foamy · Arte y manualidades · Plastilina · Crayones · Vinilos · Temperas ..."
             ],
             "common_patterns": {
               "year_in_title": 0,
-              "geo_modifier_in_title": 9
+              "geo_modifier_in_title": 5
+            },
+            "paa": [],
+            "related_searches": [
+              "Productos Marfil colombia",
+              "Marfil color",
+              "Productos Marfil teléfono",
+              "Distribuidora marfil",
+              "Marfil Barranquilla",
+              "Marfil gafas",
+              "Gafas Marfil precio Colombia",
+              "Marfil empresa"
+            ],
+            "featured_snippet": null
+          },
+          "score": 85.0,
+          "issues": [
+            "thin_body"
+          ]
+        },
+        {
+          "url": "/collections/marcos-hombre",
+          "primary_keyword": "monturas para gafas de hombre",
+          "kind": "collection",
+          "sub_kind": "custom_collections",
+          "resource_id": 241744576709,
+          "handle": "marcos-hombre",
+          "current": {
+            "title": "Monturas para Gafas de Hombre | Marfil Colombia",
+            "page_title": "Marcos Hombre",
+            "meta_description": "Monturas para gafas de hombre con protección UV400 y diseños modernos. Acetato, metal y materiales premium. Envío rápido a toda Colombia.",
+            "body_html": "<h2>Monturas para gafas de hombre: estilo y protección en un solo marco</h2><p>En Marfil Colombia sabemos que los marcos correctos transforman tu look y protegen tu visión. Nuestras monturas para gafas de hombre combinan diseños modernos con tecnología UV400 que bloquea el 100% de los rayos ultravioleta. Desde acetato premium hasta metal resistente, cada par está pensado para durar años sin perder estilo.</p><p>Ya sea que busques monturas para la oficina, viajes de fin de semana o actividades al aire libre, tenemos la forma y el color que se adapta a tu rostro y personalidad. Los marcos rectangulares y cuadrados ofrecen elegancia clásica, mientras que los aviadores y modelos deportivos dan ese toque aventurero. Todos nuestros lentes polarizados reducen reflejos y fatiga ocular en días soleados.</p><ul>\n<li>Protección UV400 en todas las monturas para gafas de hombre</li>\n<li>Lentes polarizados que eliminan reflejos y mejoran contraste</li>\n<li>Materiales duraderos: acetato y metal de primera calidad</li>\n<li>Formas variadas: rectangulares, cuadrados, aviadores y deportivos</li>\n<li>Paleta de colores clásicos: negro, café, carey y tonos metálicos</li>\n<li>Garantía y servicio técnico en toda Colombia</li>\n</ul><h3>Encuentra tu estilo sin comprometer la protección</h3><p>Los marcos de Marfil no son solo accesorios: son inversión en salud visual y confianza en tu imagen. Explora nuestras colecciones y descubre la montura para gafas de hombre que complementa tu día a día.</p>",
+            "body_word_count": 218
+          },
+          "crawl_signals": null,
+          "serp": {
+            "top_titles": [
+              "️ Gafas Oftálmicas para Hombres con Personalidad",
+              "Gafas para Hombre ¡Compra tu par hoy mismo!",
+              "Gafas formuladas para hombre",
+              "Catálogo de Monturas de Gafas para Hombre",
+              "lentes de vista para hombre",
+              "Monturas de Gafas Hombre",
+              "Monturas Gafas Hombre",
+              "Mejor Marcos de Gafas para Hombre",
+              "Monturas Hombre | MercadoLibre 📦",
+              "I Tested the Best Smart Glasses | Even G2"
+            ],
+            "top_descriptions": [
+              "Explora una selección de gafas para hombre con diseños clásicos, modernos y deportivos. Encuentra monturas que combinan funcionalidad, comodidad y estilo para ...",
+              "Para ti tenemos diferentes tipos de monturas como aviador, rectangulares, ovaladas entre otras. Ver más. Estilos de gafas para hombre. En nuestra tienda ...",
+              "Contamos con una gran variedad de diseños y los mejores estilos en monturas para lentes formulados de hombre. ¡Pídela con tu fórmula y renueva tu estilo con ...",
+              "Monturas para Hombres. Compra acá tus Gafas. Diseños clásicos y modernos para Hombres. Disfruta de diseños llenos de estilo y practicidad. Precios Más Bajos.",
+              "Descubre los modelos icónicos como los Wayfarer y Clubmaster. También encuentra otros estilos de armazón como los completos, metálicos y al aire. Pide tus ...",
+              "Marca · SmartBuy Collection · Ray-Ban · Tom Ford · Oakley · Adensco · Adidas Originals · Adidas Sport · Alexander McQueen.",
+              "Monturas gafas hombre · Descubre qué gafas llevar según la forma de tu cara | Tipos de cara hombre, · 28.79€ 19% de DESCUENTO|BETSION Montura de gafas de titanio ...",
+              "Descubre el mejor Marcos de Gafas para Hombre en Los más vendidos. Encuentra los 100 artículos más populares en Amazon Ropa, Zapatos y Joyería Los más ...",
+              "Monturas hombre ; Anteojos Unisex Con Montura Cuadrada Y Lentes Transparentes Black/silver · 15.544 ; Gafas De Lectura Transparentes Con Montura Redonda Unisex.",
+              "21/06/2026 — Consigue las Even G2 aquí - https://evenrealities.bio/2ge Las Even G2 son las gafas inteligentes que llevaba tiempo esperando."
+            ],
+            "common_patterns": {
+              "year_in_title": 0,
+              "geo_modifier_in_title": 5
             },
             "paa": [
               {
-                "question": "¿Cómo se llaman los cordones para las gafas?",
+                "question": "¿Cuánto cuestan las monturas de gafas para hombre?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Dónde puedo encontrar un cordón ajustable para gafas?",
+                "question": "¿Qué monturas de lentes son de moda para hombres?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Cómo se usan los cordones para lentes?",
+                "question": "¿Cuáles son las mejores monturas de gafas para un hombre?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Qué hago si se rompen mis lentes?",
+                "question": "¿Qué tipo de monturas se llevan ahora?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               },
               {
-                "question": "¿Cómo reparar unas gafas rotas?",
+                "question": "¿Qué gafas te hacen ver más joven?",
                 "expanded_url": "",
                 "expanded_title": "",
                 "expanded_text": ""
               }
             ],
             "related_searches": [
-              "Cordones para gafas hombre",
-              "Cordones para gafas mujer",
-              "Cordones para gafas de Niños",
-              "Cadenas para gafas elegantes",
-              "Sujetador de gafas para mujer",
-              "Cordón para gafas en mostacilla"
+              "Monturas de gafas para hombre según rostro",
+              "Monturas de gafas para hombre modernas",
+              "Monturas de gafas para hombre elegantes",
+              "Monturas de gafas para hombre originales",
+              "Monturas de gafas para hombre económicas",
+              "Gafas para hombre formuladas"
             ],
             "featured_snippet": null
           },

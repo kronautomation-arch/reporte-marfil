@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-21T13:59:22.970453-05:00",
+  "updated_at": "2026-09-21T14:52:11.725466-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AbIqs9lmthV5-mhhoc-TEiU]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ASDe4_GoTS8f165MXjqNmxZ]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,9 +39,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 216,
-      "monto": 30977200,
-      "tasa": 0.1377,
+      "ordenes": 217,
+      "monto": 31097100,
+      "tasa": 0.1382,
       "por_canal": [
         {
           "canal": "5690175",
@@ -55,8 +55,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 51,
-          "monto": 6784500.0
+          "ordenes": 52,
+          "monto": 6904400.0
         }
       ]
     },

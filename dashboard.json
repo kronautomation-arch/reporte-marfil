@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-21T17:29:02.838017-05:00",
+  "updated_at": "2026-09-22T12:33:15.508408-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AMANeu_oC0f6SW7NorD0nFK]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AprZD_IQAS2B3YwkH34px96]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,19 +39,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 215,
-      "monto": 30857300,
-      "tasa": 0.1369,
+      "ordenes": 217,
+      "monto": 31137100,
+      "tasa": 0.138,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 93,
-          "monto": 12401600.0
+          "ordenes": 94,
+          "monto": 12541500.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 71,
-          "monto": 11671200.0
+          "ordenes": 72,
+          "monto": 11811100.0
         },
         {
           "canal": "web",
@@ -478,23 +478,23 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 12126.59,
-    "ventas_netas_ytd": 11307.25,
-    "comisiones_ytd": 774.44,
+    "ventas_netas_ytd": 11284.48,
+    "comisiones_ytd": 797.21,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 44.9,
-    "pct_comision": 0.0639,
+    "pct_comision": 0.0657,
     "ticket_promedio": 48.31,
     "unidades_ytd": 263,
     "ordenes_ytd": 251,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 2963.2,
-      "shipping_income": 71.7,
+      "ventas_principal": 3008.1,
+      "shipping_income": 83.38,
       "tax_collected": 160.03,
-      "commission": 444.82,
-      "fba_fees": 294.74,
-      "other_fees": 34.88,
+      "commission": 451.56,
+      "fba_fees": 299.09,
+      "other_fees": 46.56,
       "refunds": 44.9,
       "ads_spend": 0.0
     },

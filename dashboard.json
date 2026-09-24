@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-24T13:05:50.524716-05:00",
+  "updated_at": "2026-09-24T13:49:58.678607-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AcNDCps9AqedDMTzpb841va]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AdvLhfTs8eNhoDASmpWzYHW]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -477,15 +477,15 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 12175.87,
-    "ventas_netas_ytd": 11322.67,
+    "ventas_brutas_ytd": 12224.9,
+    "ventas_netas_ytd": 11371.7,
     "comisiones_ytd": 808.3,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 44.9,
-    "pct_comision": 0.0664,
+    "pct_comision": 0.0661,
     "ticket_promedio": 48.32,
-    "unidades_ytd": 264,
-    "ordenes_ytd": 252,
+    "unidades_ytd": 265,
+    "ordenes_ytd": 253,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
@@ -501,8 +501,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 264,
-        "ventas": 12175.86999999999,
+        "unidades": 265,
+        "ventas": 12224.89999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -9283,9 +9283,9 @@
       "meli_comisiones": 0,
       "meli_ordenes": 0,
       "meli_unidades": 0,
-      "amazon_ventas_brutas": 49.28,
-      "amazon_ordenes": 1,
-      "amazon_unidades": 1,
+      "amazon_ventas_brutas": 98.31,
+      "amazon_ordenes": 2,
+      "amazon_unidades": 2,
       "pos_caracoli_ventas": 120000.0,
       "pos_caracoli_unidades": 1,
       "pos_caracoli_gastos": 0,

@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-25T14:07:54.190587-05:00",
+  "updated_at": "2026-09-25T14:45:28.794941-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A-akItn7spQZcj8wtXLk9V2]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ABIlWkdPCxQ5DcWd_xdmPC8]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07108024463816473,
+    "pct_devoluciones": 0.07088669943140716,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13787300,
     "ordenes_ytd": 140,
-    "tasa_por_monto": 0.0711,
-    "tasa_por_ordenes": 0.0929
+    "tasa_por_monto": 0.0709,
+    "tasa_por_ordenes": 0.0927
   },
   "shopify": {
-    "ventas_brutas_ytd": 221049800,
-    "ventas_netas_ytd": 202592245,
-    "descuentos_ytd": 18487555,
-    "unidades_ytd": 1861,
-    "ordenes_ytd": 1366,
+    "ventas_brutas_ytd": 229972400,
+    "ventas_netas_ytd": 211376960,
+    "descuentos_ytd": 18625440,
+    "unidades_ytd": 2005,
+    "ordenes_ytd": 1370,
     "cash_flow": {
-      "cod_neto": 124531255,
-      "cod_bruto": 135795700,
-      "cod_ordenes": 962,
-      "prepago_neto": 78060990,
-      "prepago_bruto": 85254100,
-      "prepago_ordenes": 404,
-      "cod_pct": 0.6147,
-      "prepago_pct": 0.3853
+      "cod_neto": 124922970,
+      "cod_bruto": 136325300,
+      "cod_ordenes": 965,
+      "prepago_neto": 86453990,
+      "prepago_bruto": 93647100,
+      "prepago_ordenes": 405,
+      "cod_pct": 0.591,
+      "prepago_pct": 0.409
     },
     "canceladas": {
       "ordenes": 72,
@@ -39,19 +39,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 217,
-      "monto": 39390200,
-      "tasa": 0.1371,
+      "ordenes": 214,
+      "monto": 30737400,
+      "tasa": 0.1351,
       "por_canal": [
         {
-          "canal": "shopify_draft_order",
-          "ordenes": 73,
-          "monto": 20204100.0
+          "canal": "5690175",
+          "ordenes": 92,
+          "monto": 12281700.0
         },
         {
-          "canal": "5690175",
-          "ordenes": 93,
-          "monto": 12401600.0
+          "canal": "shopify_draft_order",
+          "ordenes": 71,
+          "monto": 11671200.0
         },
         {
           "canal": "web",
@@ -63,14 +63,20 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1087,
-        "ventas": 130331300.0,
+        "unidades": 1159,
+        "ventas": 138964100.0,
         "vendor": "Marfil"
       },
       {
+        "nombre": "ESTUCHES PORVISIONALES",
+        "unidades": 167,
+        "ventas": 0.0,
+        "vendor": "MM"
+      },
+      {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 161,
-        "ventas": 22523900.0,
+        "unidades": 162,
+        "ventas": 22663800.0,
         "vendor": "MM"
       },
       {
@@ -80,15 +86,9 @@
         "vendor": "MM"
       },
       {
-        "nombre": "ESTUCHES PORVISIONALES",
-        "unidades": 97,
-        "ventas": 0.0,
-        "vendor": "MM"
-      },
-      {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 56,
-        "ventas": 8394400.0,
+        "unidades": 57,
+        "ventas": 8544300.0,
         "vendor": "MM"
       },
       {
@@ -155,14 +155,20 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1087,
-        "ventas": 130331300.0,
+        "unidades": 1159,
+        "ventas": 138964100.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
+        "sku": "ESTUCHES POVISIONALES-1",
+        "unidades": 167,
+        "ventas": 0.0,
+        "title": "ESTUCHES PORVISIONALES"
+      },
+      {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 161,
-        "ventas": 22523900.0,
+        "unidades": 162,
+        "ventas": 22663800.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -172,15 +178,9 @@
         "title": "GAFAS DE SOL MARFIL VENUS AZUL ROJO"
       },
       {
-        "sku": "ESTUCHES POVISIONALES-1",
-        "unidades": 97,
-        "ventas": 0.0,
-        "title": "ESTUCHES PORVISIONALES"
-      },
-      {
         "sku": "VENUS CAFÉ-1",
-        "unidades": 56,
-        "ventas": 8394400.0,
+        "unidades": 57,
+        "ventas": 8544300.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
@@ -277,13 +277,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 866,
-        "ventas_brutas": 152098400.0
+        "ordenes": 869,
+        "ventas_brutas": 160901100.0
       },
       {
         "canal": "5690175",
-        "ordenes": 284,
-        "ventas_brutas": 38946200.0
+        "ordenes": 285,
+        "ventas_brutas": 39066100.0
       },
       {
         "canal": "web",
@@ -294,8 +294,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 342,
-        "monto": 16820650.0
+        "usos": 343,
+        "monto": 16940550.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -326,6 +326,11 @@
         "codigo": "ADKRU",
         "usos": 1,
         "monto": 29980.0
+      },
+      {
+        "codigo": "LX-G3IML9",
+        "usos": 1,
+        "monto": 17985.0
       },
       {
         "codigo": "LX-JFKM9S",
@@ -9319,6 +9324,39 @@
       "amazon_ventas_brutas": 49.39,
       "amazon_ordenes": 1,
       "amazon_unidades": 1,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-25": {
+      "envia_ventas": 8922600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 144,
+      "envia_costo_envio": 74830.0,
+      "digital_ventas_netas": 8784715.0,
+      "digital_descuentos": 137885.0,
+      "digital_cod_neto": 391715.0,
+      "digital_prepago_neto": 8393000.0,
+      "digital_cod_ordenes": 3,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 529600.0,
+      "envia_ordenes_raw": 4,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

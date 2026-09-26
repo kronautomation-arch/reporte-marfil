@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-26T13:20:55.824146-05:00",
+  "updated_at": "2026-09-26T13:54:31.544243-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AnnJZ_IBOowa0SiczLQGfi7]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A_XDJQTZtH7qLAfcRIvjILh]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,14 +39,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 214,
-      "monto": 30737400,
-      "tasa": 0.1351,
+      "ordenes": 215,
+      "monto": 31017200,
+      "tasa": 0.1356,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 92,
-          "monto": 12281700.0
+          "ordenes": 93,
+          "monto": 12561500.0
         },
         {
           "canal": "shopify_draft_order",

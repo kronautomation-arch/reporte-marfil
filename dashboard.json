@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-28T18:45:28.978489-05:00",
+  "updated_at": "2026-09-29T13:30:05.867567-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ATTxa5U_AP2zx7QK59FV6BF]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AE5oSexu5F13zwjOpVeWXZi]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.0706110046702527,
+    "pct_devoluciones": 0.07051717779895242,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13787300,
     "ordenes_ytd": 140,
-    "tasa_por_monto": 0.0706,
-    "tasa_por_ordenes": 0.0922
+    "tasa_por_monto": 0.0705,
+    "tasa_por_ordenes": 0.0919
   },
   "shopify": {
-    "ventas_brutas_ytd": 231271400,
-    "ventas_netas_ytd": 212506060,
-    "descuentos_ytd": 18795340,
-    "unidades_ytd": 2015,
-    "ordenes_ytd": 1378,
+    "ventas_brutas_ytd": 231771000,
+    "ventas_netas_ytd": 212985660,
+    "descuentos_ytd": 18815340,
+    "unidades_ytd": 2019,
+    "ordenes_ytd": 1382,
     "cash_flow": {
-      "cod_neto": 125662370,
-      "cod_bruto": 137104700,
-      "cod_ordenes": 970,
+      "cod_neto": 126141970,
+      "cod_bruto": 137604300,
+      "cod_ordenes": 974,
       "prepago_neto": 86843690,
       "prepago_bruto": 94166700,
       "prepago_ordenes": 408,
-      "cod_pct": 0.5913,
-      "prepago_pct": 0.4087
+      "cod_pct": 0.5923,
+      "prepago_pct": 0.4077
     },
     "canceladas": {
       "ordenes": 72,
@@ -39,14 +39,14 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 215,
-      "monto": 30857300,
-      "tasa": 0.135,
+      "ordenes": 214,
+      "monto": 30737400,
+      "tasa": 0.1341,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 93,
-          "monto": 12401600.0
+          "ordenes": 92,
+          "monto": 12281700.0
         },
         {
           "canal": "shopify_draft_order",
@@ -63,8 +63,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1164,
-        "ventas": 139563600.0,
+        "unidades": 1167,
+        "ventas": 139923300.0,
         "vendor": "Marfil"
       },
       {
@@ -155,8 +155,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1164,
-        "ventas": 139563600.0,
+        "unidades": 1167,
+        "ventas": 139923300.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -277,13 +277,13 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 874,
-        "ventas_brutas": 161660500.0
+        "ordenes": 877,
+        "ventas_brutas": 162040200.0
       },
       {
         "canal": "5690175",
-        "ordenes": 287,
-        "ventas_brutas": 39485800.0
+        "ordenes": 288,
+        "ventas_brutas": 39605700.0
       },
       {
         "canal": "web",
@@ -294,8 +294,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 346,
-        "monto": 17110450.0
+        "usos": 347,
+        "monto": 17130450.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -482,23 +482,23 @@
     ]
   },
   "amazon": {
-    "ventas_brutas_ytd": 12322.87,
-    "ventas_netas_ytd": 11391.5,
-    "comisiones_ytd": 841.57,
+    "ventas_brutas_ytd": 12352.77,
+    "ventas_netas_ytd": 11399.22,
+    "comisiones_ytd": 863.75,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 89.8,
-    "pct_comision": 0.0683,
-    "ticket_promedio": 48.32,
-    "unidades_ytd": 267,
-    "ordenes_ytd": 255,
+    "pct_comision": 0.0699,
+    "ticket_promedio": 48.25,
+    "unidades_ytd": 268,
+    "ordenes_ytd": 256,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 3187.7,
-      "shipping_income": 90.85,
+      "ventas_principal": 3277.5,
+      "shipping_income": 104.83,
       "tax_collected": 174.73,
-      "commission": 478.52,
-      "fba_fees": 316.49,
+      "commission": 492.0,
+      "fba_fees": 325.19,
       "other_fees": 46.56,
       "refunds": 89.8,
       "ads_spend": 0.0
@@ -506,8 +506,8 @@
     "top_productos": [
       {
         "nombre": "Marfil Orion Round Steampunk Sunglasses - Mountaineering Glasses Uv 400 Polarized Filter, Glacier Shades",
-        "unidades": 267,
-        "ventas": 12322.86999999999,
+        "unidades": 268,
+        "ventas": 12352.76999999999,
         "asin": "B09JN7BXLZ"
       }
     ]
@@ -9456,6 +9456,39 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-09-29": {
+      "envia_ventas": 499600.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 4,
+      "envia_costo_envio": 59560.0,
+      "digital_ventas_netas": 479600.0,
+      "digital_descuentos": 20000.0,
+      "digital_cod_neto": 479600.0,
+      "digital_prepago_neto": 0.0,
+      "digital_cod_ordenes": 4,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 259800.0,
+      "envia_ordenes_raw": 4,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 29.9,
+      "amazon_ordenes": 1,
+      "amazon_unidades": 1,
       "pos_caracoli_ventas": 0,
       "pos_caracoli_unidades": 0,
       "pos_caracoli_gastos": 0,

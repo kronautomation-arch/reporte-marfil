@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-03T12:41:57.205295-05:00",
+  "updated_at": "2026-10-03T13:33:08.218253-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ABQv6imKUajyw2VGMLD_Aeq]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Az_oS0t2Zohka9H0p-sJAtr]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,

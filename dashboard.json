@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-07T18:29:21.460359-05:00",
+  "updated_at": "2026-10-08T14:10:41.522398-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AuxUpNWAgPWI6u7ZbaVQRnf]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A6Dk0fOGXZ-r15k5i5iXSQJ]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -367,24 +367,24 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 163,
-      "transactions_completed": 159,
+      "transactions_total": 162,
+      "transactions_completed": 158,
       "transactions_canceled": 4
     },
-    "ventas_brutas_ytd": 18117800,
-    "ventas_netas_ytd": 14222534,
-    "comisiones_ytd": 3895266,
+    "ventas_brutas_ytd": 18257700,
+    "ventas_netas_ytd": 14332356,
+    "comisiones_ytd": 3925344,
     "pct_comision": 0.215,
-    "ticket_promedio": 148507,
-    "unidades_ytd": 122,
-    "ordenes_ytd": 122,
+    "ticket_promedio": 148437,
+    "unidades_ytd": 123,
+    "ordenes_ytd": 123,
     "entregadas": {
       "ordenes": 122,
       "monto": 18117800
     },
     "en_transito": {
-      "ordenes": 0,
-      "monto": 0
+      "ordenes": 1,
+      "monto": 139900
     },
     "canceladas": {
       "ordenes": 5,
@@ -414,6 +414,14 @@
         "comisiones": 60156.0,
         "mlc_id": "MCO1602083575",
         "ventas_netas": 219644.0
+      },
+      {
+        "nombre": "Gafas De Sol Marfil Crowd Tornasol Rosa Espejada, Con Protección Uv Dorado Oscuro",
+        "unidades": 1,
+        "ventas": 139900.0,
+        "comisiones": 30078.0,
+        "mlc_id": "MCO3491729868",
+        "ventas_netas": 109822.0
       },
       {
         "nombre": "Gafas De Sol Marfil Tous Verde-naranja Lente Naranja Claro Varilla Verde Claro Armazón Verde Claro Diseño Ocean Océano",
@@ -483,22 +491,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 12495.93,
-    "ventas_netas_ytd": 11646.92,
-    "comisiones_ytd": 759.21,
+    "ventas_netas_ytd": 11638.08,
+    "comisiones_ytd": 768.05,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 89.8,
-    "pct_comision": 0.0608,
+    "pct_comision": 0.0615,
     "ticket_promedio": 48.62,
     "unidades_ytd": 271,
     "ordenes_ytd": 257,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 2888.4,
+      "ventas_principal": 2918.3,
       "shipping_income": 83.86,
       "tax_collected": 167.84,
-      "commission": 433.59,
-      "fba_fees": 286.05,
+      "commission": 438.08,
+      "fba_fees": 290.4,
       "other_fees": 39.57,
       "refunds": 89.8,
       "ads_spend": 0.0
@@ -9745,11 +9753,11 @@
       "envia_ventas_raw": 519600.0,
       "envia_ordenes_raw": 3,
       "meta_gasto": 0,
-      "meli_ventas_brutas": 0,
-      "meli_ventas_netas": 0,
-      "meli_comisiones": 0,
-      "meli_ordenes": 0,
-      "meli_unidades": 0,
+      "meli_ventas_brutas": 139900.0,
+      "meli_ventas_netas": 109822.0,
+      "meli_comisiones": 30078.0,
+      "meli_ordenes": 1,
+      "meli_unidades": 1,
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,

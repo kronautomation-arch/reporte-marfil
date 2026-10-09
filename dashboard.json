@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-08T18:40:32.639853-05:00",
+  "updated_at": "2026-10-09T13:41:26.590800-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AKn4EgEp6myWKQPHlaG4G95]"
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A8xo2ud7zl7YwJsaM6ONxQl]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
@@ -39,19 +39,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 216,
-      "monto": 30977200,
-      "tasa": 0.132,
+      "ordenes": 218,
+      "monto": 31236100,
+      "tasa": 0.1331,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 94,
-          "monto": 12521500.0
+          "ordenes": 95,
+          "monto": 12660500.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 71,
-          "monto": 11671200.0
+          "ordenes": 72,
+          "monto": 11791100.0
         },
         {
           "canal": "web",
@@ -367,8 +367,8 @@
       "user_type": "brand",
       "level_id": "5_green",
       "power_seller_status": null,
-      "transactions_total": 162,
-      "transactions_completed": 158,
+      "transactions_total": 160,
+      "transactions_completed": 156,
       "transactions_canceled": 4
     },
     "ventas_brutas_ytd": 18257700,
@@ -9695,8 +9695,8 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 270000.0,
+      "pos_caracoli_unidades": 2,
       "pos_caracoli_gastos": 0,
       "pos_titan_plaza_ventas": 130000.0,
       "pos_titan_plaza_unidades": 1,
@@ -9728,12 +9728,12 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 270000.0,
+      "pos_caracoli_unidades": 2,
       "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
-      "pos_titan_plaza_gastos": 0,
+      "pos_titan_plaza_ventas": 430000.0,
+      "pos_titan_plaza_unidades": 3,
+      "pos_titan_plaza_gastos": 17000.0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
       "pos_fundadores_gastos": 0,
@@ -9761,11 +9761,11 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 590000.0,
+      "pos_caracoli_unidades": 4,
       "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_ventas": 290000.0,
+      "pos_titan_plaza_unidades": 2,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,
@@ -9794,11 +9794,11 @@
       "amazon_ventas_brutas": 0,
       "amazon_ordenes": 0,
       "amazon_unidades": 0,
-      "pos_caracoli_ventas": 0,
-      "pos_caracoli_unidades": 0,
+      "pos_caracoli_ventas": 550000.0,
+      "pos_caracoli_unidades": 4,
       "pos_caracoli_gastos": 0,
-      "pos_titan_plaza_ventas": 0,
-      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_ventas": 880000.0,
+      "pos_titan_plaza_unidades": 6,
       "pos_titan_plaza_gastos": 0,
       "pos_fundadores_ventas": 0,
       "pos_fundadores_unidades": 0,

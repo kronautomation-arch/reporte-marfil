@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-12T16:56:00.526914-05:00",
+  "updated_at": "2026-10-12T17:23:33.599662-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AG7FokbJcafXBVKpD5THtKi]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Aa9HywZ_G7Lw1CWMXelUksw]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used"
   },
   "config": {

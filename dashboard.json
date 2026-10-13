@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-12T17:41:21.705767-05:00",
+  "updated_at": "2026-10-12T20:08:39.880624-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AR2s4TLuhm-PgRs8Qng7qiU]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ApAbg4cqHRwDpkD4h7rf23D]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used"
   },
   "config": {
@@ -385,22 +385,22 @@
   },
   "amazon": {
     "ventas_brutas_ytd": 12630.63,
-    "ventas_netas_ytd": 11772.78,
-    "comisiones_ytd": 768.05,
+    "ventas_netas_ytd": 11739.52,
+    "comisiones_ytd": 801.31,
     "ads_spend_ytd": 0.0,
     "refunds_ytd": 89.8,
-    "pct_comision": 0.0608,
+    "pct_comision": 0.0634,
     "ticket_promedio": 48.58,
     "unidades_ytd": 274,
     "ordenes_ytd": 260,
     "canceladas": 0,
     "currency": "USD",
     "financials": {
-      "ventas_principal": 2918.3,
-      "shipping_income": 83.86,
-      "tax_collected": 167.84,
-      "commission": 438.08,
-      "fba_fees": 290.4,
+      "ventas_principal": 3053.0,
+      "shipping_income": 85.56,
+      "tax_collected": 176.3,
+      "commission": 458.3,
+      "fba_fees": 303.44,
       "other_fees": 39.57,
       "refunds": 89.8,
       "ads_spend": 0.0

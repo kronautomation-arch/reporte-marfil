@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-10-15T12:39:29.358805-05:00",
+  "updated_at": "2026-10-15T12:57:07.528180-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AdnEB6a8-V-Pb1ua_hHeFpz]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AaXANfE2fXLWmKYz6vmgzfI]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.07024211718770765,
+    "pct_devoluciones": 0.07014369665208585,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 14007100,
     "ordenes_ytd": 142,
-    "tasa_por_monto": 0.0702,
-    "tasa_por_ordenes": 0.0898
+    "tasa_por_monto": 0.0701,
+    "tasa_por_ordenes": 0.0897
   },
   "shopify": {
-    "ventas_brutas_ytd": 239500700,
-    "ventas_netas_ytd": 220155660,
-    "descuentos_ytd": 19375040,
-    "unidades_ytd": 2083,
-    "ordenes_ytd": 1437,
+    "ventas_brutas_ytd": 240060300,
+    "ventas_netas_ytd": 220505360,
+    "descuentos_ytd": 19584940,
+    "unidades_ytd": 2087,
+    "ordenes_ytd": 1439,
     "cash_flow": {
-      "cod_neto": 131603370,
-      "cod_bruto": 143475500,
-      "cod_ordenes": 1016,
-      "prepago_neto": 88552290,
-      "prepago_bruto": 96025200,
-      "prepago_ordenes": 421,
-      "cod_pct": 0.5978,
-      "prepago_pct": 0.4022
+      "cod_neto": 131753270,
+      "cod_bruto": 143755300,
+      "cod_ordenes": 1017,
+      "prepago_neto": 88752090,
+      "prepago_bruto": 96305000,
+      "prepago_ordenes": 422,
+      "cod_pct": 0.5975,
+      "prepago_pct": 0.4025
     },
     "canceladas": {
       "ordenes": 78,
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 219,
-      "monto": 31515900,
-      "tasa": 0.1322,
+      "ordenes": 218,
+      "monto": 31236100,
+      "tasa": 0.1316,
       "por_canal": [
         {
           "canal": "5690175",
@@ -52,8 +52,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 73,
-          "monto": 12070900.0
+          "ordenes": 72,
+          "monto": 11791100.0
         },
         {
           "canal": "web",
@@ -71,8 +71,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 173,
-        "ventas": 24202700.0,
+        "unidades": 174,
+        "ventas": 24342600.0,
         "vendor": "MM"
       },
       {
@@ -112,15 +112,15 @@
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL TOUS BLANCO",
+        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
         "unidades": 22,
         "ventas": 3077800.0,
         "vendor": "MM"
       },
       {
-        "nombre": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL",
-        "unidades": 21,
-        "ventas": 2937900.0,
+        "nombre": "GAFAS DE SOL MARFIL TOUS BLANCO",
+        "unidades": 22,
+        "ventas": 3077800.0,
         "vendor": "MM"
       },
       {
@@ -163,8 +163,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 173,
-        "ventas": 24202700.0,
+        "unidades": 174,
+        "ventas": 24342600.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -204,16 +204,16 @@
         "title": "GAFAS DE SOL MARFIL TOUS NEGRO NARANJA"
       },
       {
+        "sku": "TAURUS NEGRO-AZUL-1",
+        "unidades": 22,
+        "ventas": 3077800.0,
+        "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
+      },
+      {
         "sku": "TOUS BLANCO-1",
         "unidades": 22,
         "ventas": 3077800.0,
         "title": "GAFAS DE SOL MARFIL TOUS BLANCO"
-      },
-      {
-        "sku": "TAURUS NEGRO-AZUL-1",
-        "unidades": 21,
-        "ventas": 2937900.0,
-        "title": "GAFAS DE SOL MARFIL TAURUS NEGRO AZUL"
       },
       {
         "sku": "VENUS NEGRO MATE-1",
@@ -279,8 +279,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 917,
-        "ventas_brutas": 167745700.0
+        "ordenes": 919,
+        "ventas_brutas": 168305300.0
       },
       {
         "canal": "5690175",
@@ -296,8 +296,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 363,
-        "monto": 17690150.0
+        "usos": 365,
+        "monto": 17900050.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -9796,6 +9796,39 @@
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 259800.0,
       "envia_ordenes_raw": 7,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-10-15": {
+      "envia_ventas": 559600.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 4,
+      "envia_costo_envio": 29780.0,
+      "digital_ventas_netas": 349700.0,
+      "digital_descuentos": 209900.0,
+      "digital_cod_neto": 149900.0,
+      "digital_prepago_neto": 199800.0,
+      "digital_cod_ordenes": 1,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 279800.0,
+      "envia_ordenes_raw": 2,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

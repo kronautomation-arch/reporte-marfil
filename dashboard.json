@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-15T16:59:23.742034-05:00",
+  "updated_at": "2026-10-16T12:12:33.278197-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Ash720hwKGu649ILcwkdM93]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=ALrtlxM5wnxDYy7oqV8q1C1]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
@@ -14,23 +14,23 @@
     "monto_ytd": 14007100,
     "ordenes_ytd": 142,
     "tasa_por_monto": 0.0701,
-    "tasa_por_ordenes": 0.0895
+    "tasa_por_ordenes": 0.0894
   },
   "shopify": {
-    "ventas_brutas_ytd": 240827600,
-    "ventas_netas_ytd": 221232660,
+    "ventas_brutas_ytd": 240947500,
+    "ventas_netas_ytd": 221352560,
     "descuentos_ytd": 19624940,
-    "unidades_ytd": 2094,
-    "ordenes_ytd": 1443,
+    "unidades_ytd": 2095,
+    "ordenes_ytd": 1444,
     "cash_flow": {
       "cod_neto": 132380670,
       "cod_bruto": 144402700,
       "cod_ordenes": 1020,
-      "prepago_neto": 88851990,
-      "prepago_bruto": 96424900,
-      "prepago_ordenes": 423,
-      "cod_pct": 0.5984,
-      "prepago_pct": 0.4016
+      "prepago_neto": 88971890,
+      "prepago_bruto": 96544800,
+      "prepago_ordenes": 424,
+      "cod_pct": 0.5981,
+      "prepago_pct": 0.4019
     },
     "canceladas": {
       "ordenes": 78,
@@ -43,7 +43,7 @@
     "no_despachadas": {
       "ordenes": 217,
       "monto": 31116200,
-      "tasa": 0.1307,
+      "tasa": 0.1306,
       "por_canal": [
         {
           "canal": "5690175",
@@ -65,8 +65,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1211,
-        "ventas": 145198900.0,
+        "unidades": 1212,
+        "ventas": 145318800.0,
         "vendor": "Marfil"
       },
       {
@@ -157,8 +157,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1211,
-        "ventas": 145198900.0,
+        "unidades": 1212,
+        "ventas": 145318800.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -289,8 +289,8 @@
       },
       {
         "canal": "web",
-        "ordenes": 223,
-        "ventas_brutas": 31004400.0
+        "ordenes": 224,
+        "ventas_brutas": 31124300.0
       }
     ],
     "codigos_descuento": [
@@ -9829,6 +9829,39 @@
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 539600.0,
       "envia_ordenes_raw": 6,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-10-16": {
+      "envia_ventas": 119900.0,
+      "envia_ordenes": 1,
+      "envia_unidades": 1,
+      "envia_costo_envio": 14890.0,
+      "digital_ventas_netas": 119900.0,
+      "digital_descuentos": 0.0,
+      "digital_cod_neto": 0.0,
+      "digital_prepago_neto": 119900.0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 0.0,
+      "envia_ordenes_raw": 1,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

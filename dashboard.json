@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-16T16:56:53.157700-05:00",
+  "updated_at": "2026-10-17T11:10:18.749080-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=APHnqgqbld6lLwmfl9eeQuP]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Apa-9FnbQc7vW7HQZD9acLi]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
@@ -12,9 +12,9 @@
   },
   "devoluciones": {
     "monto_ytd": 13887200,
-    "ordenes_ytd": 141,
+    "ordenes_ytd": 142,
     "tasa_por_monto": 0.0695,
-    "tasa_por_ordenes": 0.0888
+    "tasa_por_ordenes": 0.0894
   },
   "shopify": {
     "ventas_brutas_ytd": 241067400,
@@ -9787,7 +9787,7 @@
       "envia_ventas": 919300.0,
       "envia_ordenes": 6,
       "envia_unidades": 7,
-      "envia_costo_envio": 106590.0,
+      "envia_costo_envio": 90520.0,
       "digital_ventas_netas": 899300.0,
       "digital_descuentos": 20000.0,
       "digital_cod_neto": 759400.0,
@@ -9795,7 +9795,7 @@
       "digital_cod_ordenes": 5,
       "digital_prepago_ordenes": 1,
       "envia_ventas_raw": 259800.0,
-      "envia_ordenes_raw": 7,
+      "envia_ordenes_raw": 6,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

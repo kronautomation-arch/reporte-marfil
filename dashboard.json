@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-10-20T13:54:42.402328-05:00",
+  "updated_at": "2026-10-20T14:47:33.649559-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AFTXho0So6CucBmwYOQ8pVT]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AGawleekJKX5YXMc2UEcjJm]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.06918354922886387,
+    "pct_devoluciones": 0.06908724757424521,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13887200,
     "ordenes_ytd": 142,
-    "tasa_por_monto": 0.0692,
+    "tasa_por_monto": 0.0691,
     "tasa_por_ordenes": 0.089
   },
   "shopify": {
-    "ventas_brutas_ytd": 242105700,
-    "ventas_netas_ytd": 222340860,
+    "ventas_brutas_ytd": 242385500,
+    "ventas_netas_ytd": 222620660,
     "descuentos_ytd": 19794840,
-    "unidades_ytd": 2104,
-    "ordenes_ytd": 1452,
+    "unidades_ytd": 2106,
+    "ordenes_ytd": 1453,
     "cash_flow": {
       "cod_neto": 133368970,
       "cod_bruto": 145560900,
       "cod_ordenes": 1028,
-      "prepago_neto": 88971890,
-      "prepago_bruto": 96544800,
-      "prepago_ordenes": 424,
-      "cod_pct": 0.5998,
-      "prepago_pct": 0.4002
+      "prepago_neto": 89251690,
+      "prepago_bruto": 96824600,
+      "prepago_ordenes": 425,
+      "cod_pct": 0.5991,
+      "prepago_pct": 0.4009
     },
     "canceladas": {
       "ordenes": 81,
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 220,
-      "monto": 31654900,
-      "tasa": 0.1316,
+      "ordenes": 219,
+      "monto": 31375100,
+      "tasa": 0.131,
       "por_canal": [
         {
           "canal": "5690175",
@@ -57,8 +57,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 53,
-          "monto": 7203300.0
+          "ordenes": 52,
+          "monto": 6923500.0
         }
       ]
     },
@@ -71,8 +71,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 176,
-        "ventas": 24622400.0,
+        "unidades": 178,
+        "ventas": 24902200.0,
         "vendor": "MM"
       },
       {
@@ -163,8 +163,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 176,
-        "ventas": 24622400.0,
+        "unidades": 178,
+        "ventas": 24902200.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -289,8 +289,8 @@
       },
       {
         "canal": "web",
-        "ordenes": 225,
-        "ventas_brutas": 31244200.0
+        "ordenes": 226,
+        "ventas_brutas": 31524000.0
       }
     ],
     "codigos_descuento": [
@@ -9916,18 +9916,18 @@
       "digital_gastos_var": 0
     },
     "2026-10-20": {
-      "envia_ventas": 119000.0,
-      "envia_ordenes": 1,
-      "envia_unidades": 1,
-      "envia_costo_envio": 14890.0,
-      "digital_ventas_netas": 119000.0,
+      "envia_ventas": 398800.0,
+      "envia_ordenes": 2,
+      "envia_unidades": 3,
+      "envia_costo_envio": 35510.0,
+      "digital_ventas_netas": 398800.0,
       "digital_descuentos": 0.0,
       "digital_cod_neto": 119000.0,
-      "digital_prepago_neto": 0.0,
+      "digital_prepago_neto": 279800.0,
       "digital_cod_ordenes": 1,
-      "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 119000.0,
-      "envia_ordenes_raw": 1,
+      "digital_prepago_ordenes": 1,
+      "envia_ventas_raw": 398800.0,
+      "envia_ordenes_raw": 2,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

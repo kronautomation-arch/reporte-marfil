@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-10-21T17:11:20.164418-05:00",
+  "updated_at": "2026-10-22T12:53:27.002895-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A1-Ht2k3oGOFAgP3zRcAEez]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Aair-STcNs-2-LXwJs_Q4M-]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.06900492622586701,
+    "pct_devoluciones": 0.0696007043996156,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
-    "monto_ytd": 13887200,
-    "ordenes_ytd": 142,
-    "tasa_por_monto": 0.069,
-    "tasa_por_ordenes": 0.0886
+    "monto_ytd": 14007100,
+    "ordenes_ytd": 143,
+    "tasa_por_monto": 0.0696,
+    "tasa_por_ordenes": 0.0893
   },
   "shopify": {
-    "ventas_brutas_ytd": 243112800,
-    "ventas_netas_ytd": 223347960,
+    "ventas_brutas_ytd": 242992900,
+    "ventas_netas_ytd": 223228060,
     "descuentos_ytd": 19794840,
-    "unidades_ytd": 2113,
-    "ordenes_ytd": 1459,
+    "unidades_ytd": 2112,
+    "ordenes_ytd": 1458,
     "cash_flow": {
-      "cod_neto": 133856470,
-      "cod_bruto": 146048400,
-      "cod_ordenes": 1032,
+      "cod_neto": 133736570,
+      "cod_bruto": 145928500,
+      "cod_ordenes": 1031,
       "prepago_neto": 89491490,
       "prepago_bruto": 97064400,
       "prepago_ordenes": 427,
-      "cod_pct": 0.5993,
-      "prepago_pct": 0.4007
+      "cod_pct": 0.5991,
+      "prepago_pct": 0.4009
     },
     "canceladas": {
-      "ordenes": 81,
-      "monto": 12322300
+      "ordenes": 82,
+      "monto": 12442200
     },
     "reembolsadas": {
       "ordenes": 0,
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 218,
-      "monto": 31255200,
-      "tasa": 0.13,
+      "ordenes": 219,
+      "monto": 31375100,
+      "tasa": 0.1306,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 93,
-          "monto": 12420700.0
+          "ordenes": 94,
+          "monto": 12540600.0
         },
         {
           "canal": "shopify_draft_order",
@@ -65,8 +65,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1222,
-        "ventas": 146517800.0,
+        "unidades": 1221,
+        "ventas": 146397900.0,
         "vendor": "Marfil"
       },
       {
@@ -157,8 +157,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1222,
-        "ventas": 146517800.0,
+        "unidades": 1221,
+        "ventas": 146397900.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -284,8 +284,8 @@
       },
       {
         "canal": "5690175",
-        "ordenes": 305,
-        "ventas_brutas": 41885500.0
+        "ordenes": 304,
+        "ventas_brutas": 41765600.0
       },
       {
         "canal": "web",
@@ -9388,18 +9388,18 @@
       "digital_gastos_var": 0
     },
     "2026-10-02": {
-      "envia_ventas": 739400.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 6,
-      "envia_costo_envio": 76180.0,
-      "digital_ventas_netas": 739400.0,
+      "envia_ventas": 619500.0,
+      "envia_ordenes": 4,
+      "envia_unidades": 5,
+      "envia_costo_envio": 61290.0,
+      "digital_ventas_netas": 619500.0,
       "digital_descuentos": 0.0,
-      "digital_cod_neto": 739400.0,
+      "digital_cod_neto": 619500.0,
       "digital_prepago_neto": 0.0,
-      "digital_cod_ordenes": 5,
+      "digital_cod_ordenes": 4,
       "digital_prepago_ordenes": 0,
-      "envia_ventas_raw": 739400.0,
-      "envia_ordenes_raw": 5,
+      "envia_ventas_raw": 619500.0,
+      "envia_ordenes_raw": 4,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

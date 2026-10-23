@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-10-23T14:42:37.947909-05:00",
+  "updated_at": "2026-10-23T16:53:36.541105-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=APFTIPCb8_V5D8Scjm8q0N1]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Aa5CwsbP2Uhn8AlFq-wzTut]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.06778342944829512,
+    "pct_devoluciones": 0.06764960007959288,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 14007100,
     "ordenes_ytd": 143,
-    "tasa_por_monto": 0.0678,
+    "tasa_por_monto": 0.0676,
     "tasa_por_ordenes": 0.0889
   },
   "shopify": {
-    "ventas_brutas_ytd": 248867100,
-    "ventas_netas_ytd": 229102260,
+    "ventas_brutas_ytd": 249275900,
+    "ventas_netas_ytd": 229511060,
     "descuentos_ytd": 19794840,
-    "unidades_ytd": 2161,
-    "ordenes_ytd": 1464,
+    "unidades_ytd": 2164,
+    "ordenes_ytd": 1465,
     "cash_flow": {
       "cod_neto": 134096270,
       "cod_bruto": 146288200,
       "cod_ordenes": 1034,
-      "prepago_neto": 95005990,
-      "prepago_bruto": 102578900,
-      "prepago_ordenes": 430,
-      "cod_pct": 0.5853,
-      "prepago_pct": 0.4147
+      "prepago_neto": 95414790,
+      "prepago_bruto": 102987700,
+      "prepago_ordenes": 431,
+      "cod_pct": 0.5843,
+      "prepago_pct": 0.4157
     },
     "canceladas": {
       "ordenes": 83,
@@ -41,19 +41,19 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 218,
-      "monto": 31236100,
-      "tasa": 0.1296,
+      "ordenes": 225,
+      "monto": 32360700,
+      "tasa": 0.1331,
       "por_canal": [
         {
           "canal": "5690175",
-          "ordenes": 93,
-          "monto": 12401600.0
+          "ordenes": 97,
+          "monto": 12878500.0
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 73,
-          "monto": 11911000.0
+          "ordenes": 76,
+          "monto": 12558700.0
         },
         {
           "canal": "web",
@@ -71,8 +71,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL JUSTIN NEGRO",
-        "unidades": 178,
-        "ventas": 24902200.0,
+        "unidades": 179,
+        "ventas": 25042100.0,
         "vendor": "MM"
       },
       {
@@ -89,8 +89,8 @@
       },
       {
         "nombre": "GAFAS DE SOL MARFIL VENUS CAFE",
-        "unidades": 60,
-        "ventas": 8994000.0,
+        "unidades": 61,
+        "ventas": 9143900.0,
         "vendor": "MM"
       },
       {
@@ -163,8 +163,8 @@
       },
       {
         "sku": "JUSTIN NEGRO-1",
-        "unidades": 178,
-        "ventas": 24902200.0,
+        "unidades": 179,
+        "ventas": 25042100.0,
         "title": "GAFAS DE SOL MARFIL JUSTIN NEGRO"
       },
       {
@@ -181,8 +181,8 @@
       },
       {
         "sku": "VENUS CAFÉ-1",
-        "unidades": 60,
-        "ventas": 8994000.0,
+        "unidades": 61,
+        "ventas": 9143900.0,
         "title": "GAFAS DE SOL MARFIL VENUS CAFE"
       },
       {
@@ -279,8 +279,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 931,
-        "ventas_brutas": 175217800.0
+        "ordenes": 932,
+        "ventas_brutas": 175626600.0
       },
       {
         "canal": "5690175",
@@ -10015,18 +10015,18 @@
       "digital_gastos_var": 0
     },
     "2026-10-23": {
-      "envia_ventas": 479600.0,
-      "envia_ordenes": 4,
-      "envia_unidades": 4,
-      "envia_costo_envio": 64660.0,
-      "digital_ventas_netas": 479600.0,
+      "envia_ventas": 888400.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 7,
+      "envia_costo_envio": 79550.0,
+      "digital_ventas_netas": 888400.0,
       "digital_descuentos": 0.0,
       "digital_cod_neto": 359700.0,
-      "digital_prepago_neto": 119900.0,
+      "digital_prepago_neto": 528700.0,
       "digital_cod_ordenes": 3,
-      "digital_prepago_ordenes": 1,
-      "envia_ventas_raw": 119900.0,
-      "envia_ordenes_raw": 4,
+      "digital_prepago_ordenes": 2,
+      "envia_ventas_raw": 528700.0,
+      "envia_ordenes_raw": 5,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

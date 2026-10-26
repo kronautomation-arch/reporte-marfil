@@ -708,60 +708,357 @@
       }
     ]
   },
-  "layer1_technical": {
-    "score": 27.4,
-    "crawled_at": "2026-10-26T09:41:22Z",
-    "pages_crawled": 297,
-    "issues": {
-      "broken_links": 0,
-      "missing_meta": 13,
-      "missing_title": 0,
-      "missing_h1": 1,
-      "orphan_pages": 0,
-      "duplicate_titles": 87,
-      "duplicate_metas": 59,
-      "thin_content": 49,
-      "no_canonical": 0,
-      "redirect_chains_long": 0,
-      "images_without_alt": 1228
-    },
-    "schema": {
-      "ok": 76,
-      "wrong_type": 192,
-      "skipped": 27,
-      "missing": 2,
-      "pending_proposals": 2
-    },
-    "sitemap": {
-      "sitemap_size": 411,
-      "crawled_size": 300,
-      "overlap": 120,
-      "sitemap_orphans": 291,
-      "crawl_only": 180,
-      "sitemap_broken": 0
-    },
-    "lighthouse": {
-      "status": "ok",
-      "urls_count": 12,
-      "avg_lcp_ms": 19102.8,
-      "avg_cls": 0.0,
-      "avg_score_performance": 31.1,
-      "avg_score_seo": 95.0,
-      "avg_score_accessibility": 89.9
-    },
-    "indexation": {
-      "status": "skipped",
-      "urls_count": null,
-      "by_verdict": null
-    }
-  },
   "layer2_money_pages": {
-    "pending_proposals_total": 192,
+    "pending_proposals_total": 201,
     "pending_by_type": {
       "linkless_mention_outreach": 81,
       "geo_outreach_target": 90,
       "lcp_regression": 6,
-      "local_competitor": 15
-    }
+      "local_competitor": 15,
+      "money_page_meta": 5,
+      "money_page_description": 4
+    },
+    "audited_at": "2026-10-26T10:43:11Z",
+    "summary": {
+      "pages_audited": 6,
+      "avg_score": 71.7,
+      "issues_total": 6,
+      "not_found": 1
+    },
+    "worst_pages": [
+      {
+        "url": "/collections/lentes-de-mujer",
+        "primary_keyword": "gafas de sol mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241607770309,
+        "handle": "lentes-de-mujer",
+        "current": {
+          "title": "Gafas de Sol Mujer 2026 | Marfil Colombia",
+          "page_title": "GAFAS DE MUJER",
+          "meta_description": "Gafas de sol para mujer con protección UV400 y lentes polarizados. Diseños trendy 2026. Envío gratis en Colombia. ¡Compra ahora!",
+          "body_html": "",
+          "body_word_count": 0
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Gafas De Mujer | MercadoLibre 📦",
+            "Gafas Para Dama | MercadoLibre 📦",
+            "Gafas de Sol para Mujer Originales — Guía Completa 2024",
+            "Gafas de Sol para Mujer",
+            "Moda Gafas de sol de mujer",
+            "Gafas para mujer - Monastery | Tienda Oficial Colombia",
+            "Moda Gafas de sol de mujer",
+            "Gafas de Sol para Mujer",
+            "Lentes de Sol",
+            "Gafas de sol para mujer - FUNGARIO"
+          ],
+          "top_descriptions": [
+            "Con diseños modernos y sofisticados, una amplia variedad de colores y estilos, materiales de alta calidad y protección UV, estas gafas garantizan comodidad y ...",
+            "Envíos Gratis en el día ✓ Compre Gafas Para Dama en cuotas sin interés! Conozca nuestras increíbles ofertas y promociones en millones de productos.",
+            "hace 5 días — Descubre cómo elegir gafas de sol originales para mujer con protección UV400. Guía completa sobre materiales, estilos y dónde comprar en ...",
+            "Descuentos especiales en tu primer pedido.Comprar Gafas de sol de mujer online. SHEIN ofrece Gafas de sol de mujer y mucho más, para que no le falte de nada ...",
+            "Gafas para mujer. Las gafas para mujer de Monastery definen el streetwear de lujo con un diseño exclusivo que combina sofisticación y estilo urbano.",
+            "Descuentos especiales en tu primer pedido.Comprar Gafas de sol de mujer online. SHEIN ofrece Gafas de sol de mujer y mucho más, para que no le falte de nada ...",
+            "Descubre las últimas tendencias en gafas de sol para mujer. Diseños modernos y sofisticados que ofrecen protección y estilo en cada mirada.",
+            "Gafas de Sol hasta un 55% más baratas en Gafasworld. Gafasworld le ofrece más de 100.000 modelos de gafas online con increíbles descuentos.",
+            "Descubre nuestra selección de gafas de sol para mujeres que combinan estilo y protección. Filtrar por. Precio. Desde Hasta Aplicar. Lentes metálicos negros."
+          ],
+          "common_patterns": {
+            "year_in_title": 1,
+            "geo_modifier_in_title": 3
+          },
+          "paa": [
+            {
+              "question": "¿Cómo se llaman las gafas de sol?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las mejores gafas de sol para mujer?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son los 4 tipos de lentes?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las 10 marcas de gafas más caras del mundo?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [],
+          "featured_snippet": null
+        },
+        "score": 80.0,
+        "issues": [
+          "thin_body",
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/lentes-de-hombre",
+        "primary_keyword": "gafas de sol hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241606787269,
+        "handle": "lentes-de-hombre",
+        "current": {
+          "title": "Gafas de Sol Hombre UV400 Polarizadas | Marfil",
+          "page_title": "GAFAS DE HOMBRE",
+          "meta_description": "Gafas de sol para hombre con protección UV400 y lentes polarizados. Envío gratis en Colombia. Compra ahora con garantía premium.",
+          "body_html": "",
+          "body_word_count": 0
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Gafas de sol",
+            "Compra gafas de sol online en GafasWorld Colombia",
+            "Gafas para Hombre ¡Compra tu par hoy mismo!",
+            "¡Las 3 mejores gafas de sol para hombre! En Óptica ...",
+            "Gafas de sol de diseño para Hombre - Massimo Dutti - CO",
+            "Gafas y Accesorios Gafas de Sol | MercadoLibre.com.co",
+            "Gafas de sol para hombres: Las mejores marcas",
+            "Tienda Online de Gafas Originales | Ray-Ban, Oakley y Más ...",
+            "Gafas de sol sin montura - Accesorios - Hombre",
+            "Gafas de sol de hombre 2026"
+          ],
+          "top_descriptions": [
+            "Lleva el cuidado de tus ojos al siguiente nivel con las gafas de sol de las mejores marcas de moda que tenemos para ti: Oakley, Ray-Ban, Versace y muchas ...",
+            "Gafas de Sol hasta un 55% más baratas en Gafasworld. Gafasworld le ofrece más de 100.000 modelos de gafas online con increíbles descuentos.",
+            "Las mejores Gafas para hombre están aquí. Conoce todas las colecciones, marcas y diseños que tenemos para ti. Contamos con grandes precios y descuentos.",
+            "🕶️ ¡Las 3 mejores gafas de sol para hombre ! En Óptica Colombiana tenemos lo que necesitas para elevar tu estilo. Encuentra las gafas perfectas ...",
+            "Descubre la colección de gafas de sol para hombre de Massimo Dutti, desde clásicas aviador hasta modernas monturas cuadradas. Eleva tu estilo con nuestras ...",
+            "Gafas De Sol Hawkers One Venm Hybrid Hombre Y Mujer Color de la lente Negro Color del armazón NegroHAWKERS 4.8 | +500 vendidosCalificación 4.8 de 5 estrellas.",
+            "Ray-Ban y Oakley ofrecen una amplia gama de estilos y formas que se adaptan a cada tipo de rostro y preferencias. No dudes en explorar las opciones disponibles ...",
+            "Descubre nuestra colección de gafas de sol TOP, monturas, accesorios y repuestos originales de marcas como Ray-Ban - Oakley - Vogue.",
+            "Envío a domicilio estándar a partir de 249,900 COP GRATIS. -. Inspírate con estos looks. @manuell.l10. Ver look. Composición, cuidados y origen.",
+            "Tenemos una amplia variedad de gafas de sol de hombre : redondas, cuadradas, con marco de pasta o patillas metálicas, entre otras. Tanto si te gustan las gafas ..."
+          ],
+          "common_patterns": {
+            "year_in_title": 1,
+            "geo_modifier_in_title": 8
+          },
+          "paa": [],
+          "related_searches": [
+            "Monturas de gafas para hombre modernas",
+            "Monturas de gafas para hombre elegantes",
+            "Monturas de gafas para hombre según rostro",
+            "Monturas de gafas para hombre económicas",
+            "Marcos de gafas para hombre",
+            "Gafas de sol para mujer"
+          ],
+          "featured_snippet": null
+        },
+        "score": 80.0,
+        "issues": [
+          "thin_body",
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/marcos-mujer",
+        "primary_keyword": "monturas de gafas mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744675013,
+        "handle": "marcos-mujer",
+        "current": {
+          "title": "Monturas de Gafas Mujer | UV400 Polarizado | Marfil",
+          "page_title": "Marcos Mujer",
+          "meta_description": "Monturas de gafas mujer con lentes UV400 y polarizados. Diseños modernos colombianos. Garantía incluida, envío seguro a todo el país. ¡Compra hoy!",
+          "body_html": "",
+          "body_word_count": 0
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Catálogo de Monturas de Gafas para Mujer",
+            "Gafas para Mujer ¡Compra tu par hoy mismo!",
+            "Gafas Oftálmicas para Mujeres con Estilo",
+            "Gafas formuladas para mujer",
+            "35 ideas de Gafas | gafas, monturas gafas mujer, lentes ...",
+            "Monturas de Gafas Mujer",
+            "Monturas Colombia (@monturas_colombia)",
+            "Gafas oftálmicas para mujer Hot Sale | Falabella Colombia",
+            "Gafas de Moda y Estilos que Rejuvenecen",
+            "Gafas Oftálmicas Mujer"
+          ],
+          "top_descriptions": [
+            "Monturas para mujer en Colombia. Elige tu referencia y arma tus gafas según tu fórmula. SUPER15. 15 % de descuento en tus lentes con el cupón SUPER15 en ...",
+            "Las mejores Gafas para mujer están aquí. Conoce las colecciones, marcas y diseños que tenemos para ti. Contamos con grandes precios y descuentos para ti.",
+            "¿Qué tipo de gafas para mujer están de moda? Las monturas cat eye, redondas, geométricas y transparentes se encuentran entre las opciones más populares.",
+            "Renueva tu estilo y tu visión gracias a las gafas formuladas para mujer de Óptica Santa Lucía. ¡Haz clic y descubre diseños top de la más alta calidad!",
+            "23 abr. 2025 - Explora el tablero de Mari Luz Gil \"gafas\" en Pinterest. Ver más ideas sobre gafas, monturas gafas mujer, lentes modernos para mujer.",
+            "Encuentra los mejores precios de gafas graduadas en línea solo en Gafasworld. Ofrecemos grandes descuentos. Entrega rápida y pago seguro.",
+            "Gafas en tendencia y lentes a tu medida Envíos seguros a todo el país ✨ Calidad y estilo visual Compra o cotiza aquí:.",
+            "Tipo de Entrega. Envío a domicilio. Gratis. Llega mañana · Marca. Ray-ban · Buho paris · Oakley · Precio. $20.000 - $50.000; $50.000 - $100.000; $100.000 - ...",
+            "ti!! Sabías que existen reglas muy importantes cuando usamos gafas o lentes ... 5 Lentes que rejuvenecen instantáneamente a las mujeres mayores de ...",
+            "El mayor catálogo de gafas oftálmicas para mujer en Opticalia. Las mejores marcas y los modelos más exclusivos de gafas oftálmicas de mujer para estar a la"
+          ],
+          "common_patterns": {
+            "year_in_title": 0,
+            "geo_modifier_in_title": 6
+          },
+          "paa": [
+            {
+              "question": "¿Cómo elegir la montura ideal según tu tipo de rostro?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las tendencias de monturas de gafas para mujer en 2026?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué monturas están de moda?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué monturas de lentes para mujer están en tendencia?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué gafas se llevan en 2026?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [
+            "Monturas de gafas mujer modernas",
+            "Gafas para mujer modernas",
+            "Monturas de gafas para Mujer cara redonda",
+            "Monturas de gafas para mujer de Marca",
+            "Monturas de gafas originales para mujer",
+            "Monturas de gafas para mujer Precio"
+          ],
+          "featured_snippet": null
+        },
+        "score": 85.0,
+        "issues": [
+          "thin_body"
+        ]
+      },
+      {
+        "url": "/collections/marcos-hombre",
+        "primary_keyword": "monturas para gafas de hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744576709,
+        "handle": "marcos-hombre",
+        "current": {
+          "title": "Monturas para Gafas de Hombre | Marfil Colombia",
+          "page_title": "MARCOS HOMBRE",
+          "meta_description": "Monturas para gafas de hombre UV400 y polarizadas. Diseños modernos en acetato y metal. Garantía, envío rápido a toda Colombia.",
+          "body_html": "",
+          "body_word_count": 0
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Marcos de gafas para hombre",
+            "Gafas Oftálmicas para Hombre",
+            "Montura de Gafas Hombre Marco",
+            "Monturas De Gafas Para Hombre",
+            "Montura de Gafas para Hombre Modernas: Guía Completa",
+            "Monturas Modernas para Hombre | Marfil Colombia",
+            "Monturas gafas hombre - Vista Óptica",
+            "Optica Online | Monturas, Gafas y Lentes",
+            "Monturas Grandes Gafas | MercadoLibre 📦",
+            "100 ideas de Lentes para hombre en 2026 | monturas de gafas ..."
+          ],
+          "top_descriptions": [
+            "En Óptica Santa Lucía contamos con marcos de gafas para hombre en todos los estilos: Prada, Ray-Ban, Oakley y en las mejores marcas del mundo.",
+            "El mayor catálogo de gafas oftálmicas para hombre en Opticalia. Las mejores marcas y los modelos más exclusivos de gafas oftálmicas de hombre para estar a la",
+            "Delicadeza y comodidad son las características de esta montura Montura Acetato Paño de microfibra Estuche Si quieres una asesoría personalizada, ...",
+            "Descubre las mejores ideas e inspiración de Pinterest para Monturas de gafas para hombre. Inspírate y prueba cosas nuevas. 3 mil personas buscaron esto.",
+            "hace 6 días — Las formas geométricas son un sello del diseño moderno. Cuadradas, rectangulares o hexagonales, estas monturas proyectan confianza y definición.",
+            "hace 7 días — Las monturas metálicas actuales usan aleaciones ligeras (titanio, aluminio, acero quirúrgico) que reducen peso significativamente. Los diseños ...",
+            "Compra monturas con diseños únicos y exclusivos para hombre en la óptica del centro de Bogotá. Compra contraentrega y recibe el mismo día en Bogotá.",
+            "Consigue acá monturas y marcos para Mujeres, Hombres, niños y niñas. ... Kenneth Cole Reaction Gafas para Hombre en Metal Ovaladas Ahora: $60.000 Antes: $400.000.",
+            "Las monturas grandes gafas destacan en el rostro, brindando un aspecto llamativo y moderno a quien las lleva puestas. Su tamaño amplio cubre una gran parte del ...",
+            "18 sept. 2026 - Explora el tablero de Yitomas \"lentes para hombre \" en Pinterest. Ver más ideas sobre monturas de gafas para hombre, lentes hombre, ..."
+          ],
+          "common_patterns": {
+            "year_in_title": 1,
+            "geo_modifier_in_title": 7
+          },
+          "paa": [
+            {
+              "question": "¿Qué monturas de lentes están de moda?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son los 4 tipos de lentes?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cómo elegir la mejor montura de las gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué montura es mejor, acetato o policarbonato?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué tipo de montura de lentes es mejor?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [
+            "Monturas de gafas para hombre según rostro",
+            "Gafas marco transparente hombre",
+            "Gafas transparentes hombre Ray-Ban",
+            "Gafas oftálmicas Hombre",
+            "Gafas redondas hombre",
+            "Gafas marco Negro Mujer"
+          ],
+          "featured_snippet": null
+        },
+        "score": 85.0,
+        "issues": [
+          "thin_body"
+        ]
+      },
+      {
+        "url": "/collections/cuelga-gafas",
+        "primary_keyword": "cordones para gafas",
+        "kind": "collection",
+        "status": "not_found"
+      }
+    ]
   }
 }

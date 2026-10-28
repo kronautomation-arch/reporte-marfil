@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-10-27T17:52:27.443039-05:00",
+  "updated_at": "2026-10-28T13:41:12.168515-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=Ap6BEt5rQzpAgnpi_jRTNGL]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A9VZ8buVgyKj02ekC8EHBWf]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.06740887931312445,
+    "pct_devoluciones": 0.06731176315962727,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 14007100,
     "ordenes_ytd": 143,
-    "tasa_por_monto": 0.0674,
-    "tasa_por_ordenes": 0.0882
+    "tasa_por_monto": 0.0673,
+    "tasa_por_ordenes": 0.0879
   },
   "shopify": {
-    "ventas_brutas_ytd": 251424200,
-    "ventas_netas_ytd": 231669360,
-    "descuentos_ytd": 19784840,
-    "unidades_ytd": 2181,
-    "ordenes_ytd": 1477,
+    "ventas_brutas_ytd": 252143700,
+    "ventas_netas_ytd": 232228860,
+    "descuentos_ytd": 19944840,
+    "unidades_ytd": 2186,
+    "ordenes_ytd": 1482,
     "cash_flow": {
-      "cod_neto": 134615870,
-      "cod_bruto": 146787800,
-      "cod_ordenes": 1038,
-      "prepago_neto": 97053490,
-      "prepago_bruto": 104636400,
-      "prepago_ordenes": 439,
-      "cod_pct": 0.5811,
-      "prepago_pct": 0.4189
+      "cod_neto": 134835670,
+      "cod_bruto": 147087600,
+      "cod_ordenes": 1040,
+      "prepago_neto": 97393190,
+      "prepago_bruto": 105056100,
+      "prepago_ordenes": 442,
+      "cod_pct": 0.5806,
+      "prepago_pct": 0.4194
     },
     "canceladas": {
       "ordenes": 93,
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 219,
-      "monto": 31356000,
-      "tasa": 0.1291,
+      "ordenes": 218,
+      "monto": 31236100,
+      "tasa": 0.1282,
       "por_canal": [
         {
           "canal": "5690175",
@@ -52,8 +52,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 75,
-          "monto": 12150800.0
+          "ordenes": 74,
+          "monto": 12030900.0
         },
         {
           "canal": "web",
@@ -65,8 +65,8 @@
     "top_productos": [
       {
         "nombre": "Gafas De Sol Marfil Orion",
-        "unidades": 1276,
-        "ventas": 152992400.0,
+        "unidades": 1277,
+        "ventas": 153112300.0,
         "vendor": "Marfil"
       },
       {
@@ -157,8 +157,8 @@
     "top_skus": [
       {
         "sku": "ORION - NEGRO",
-        "unidades": 1276,
-        "ventas": 152992400.0,
+        "unidades": 1277,
+        "ventas": 153112300.0,
         "title": "Gafas De Sol Marfil Orion"
       },
       {
@@ -187,8 +187,8 @@
       },
       {
         "sku": "(sin SKU)",
-        "unidades": 50,
-        "ventas": 991400.0,
+        "unidades": 51,
+        "ventas": 1141300.0,
         "title": "ENVIO PRIORITARIO"
       },
       {
@@ -279,8 +279,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 938,
-        "ventas_brutas": 176396000.0
+        "ordenes": 943,
+        "ventas_brutas": 177115500.0
       },
       {
         "canal": "5690175",
@@ -296,8 +296,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 370,
-        "monto": 18099950.0
+        "usos": 374,
+        "monto": 18259950.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -10113,6 +10113,72 @@
       "pos_fundadores_gastos": 0,
       "digital_gastos_var": 0
     },
+    "2026-10-24": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 910000.0,
+      "pos_caracoli_unidades": 7,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 140000.0,
+      "pos_titan_plaza_unidades": 1,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-10-25": {
+      "envia_ventas": 0,
+      "envia_ordenes": 0,
+      "envia_unidades": 0,
+      "envia_costo_envio": 0,
+      "digital_ventas_netas": 0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 0,
+      "envia_ordenes_raw": 0,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 280000.0,
+      "pos_caracoli_unidades": 2,
+      "pos_caracoli_gastos": 80000.0,
+      "pos_titan_plaza_ventas": 290000.0,
+      "pos_titan_plaza_unidades": 2,
+      "pos_titan_plaza_gastos": 100000.0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
     "2026-10-26": {
       "envia_ventas": 1528800.0,
       "envia_ordenes": 8,
@@ -10159,6 +10225,39 @@
       "digital_prepago_ordenes": 4,
       "envia_ventas_raw": 119900.0,
       "envia_ordenes_raw": 4,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 315000.0,
+      "pos_caracoli_unidades": 2,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 150000.0,
+      "pos_titan_plaza_unidades": 1,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-10-28": {
+      "envia_ventas": 719500.0,
+      "envia_ordenes": 5,
+      "envia_unidades": 5,
+      "envia_costo_envio": 74450.0,
+      "digital_ventas_netas": 559500.0,
+      "digital_descuentos": 160000.0,
+      "digital_cod_neto": 219800.0,
+      "digital_prepago_neto": 339700.0,
+      "digital_cod_ordenes": 2,
+      "digital_prepago_ordenes": 3,
+      "envia_ventas_raw": 299800.0,
+      "envia_ordenes_raw": 5,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

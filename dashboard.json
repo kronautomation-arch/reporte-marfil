@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-28T13:41:12.168515-05:00",
+  "updated_at": "2026-10-28T14:12:45.549860-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=A9VZ8buVgyKj02ekC8EHBWf]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AS0B-RPR9zZ2jCXQrVdfVgR]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
@@ -17,20 +17,20 @@
     "tasa_por_ordenes": 0.0879
   },
   "shopify": {
-    "ventas_brutas_ytd": 252143700,
-    "ventas_netas_ytd": 232228860,
-    "descuentos_ytd": 19944840,
-    "unidades_ytd": 2186,
-    "ordenes_ytd": 1482,
+    "ventas_brutas_ytd": 252293600,
+    "ventas_netas_ytd": 232348760,
+    "descuentos_ytd": 19974840,
+    "unidades_ytd": 2187,
+    "ordenes_ytd": 1483,
     "cash_flow": {
-      "cod_neto": 134835670,
-      "cod_bruto": 147087600,
-      "cod_ordenes": 1040,
+      "cod_neto": 134955570,
+      "cod_bruto": 147237500,
+      "cod_ordenes": 1041,
       "prepago_neto": 97393190,
       "prepago_bruto": 105056100,
       "prepago_ordenes": 442,
-      "cod_pct": 0.5806,
-      "prepago_pct": 0.4194
+      "cod_pct": 0.5808,
+      "prepago_pct": 0.4192
     },
     "canceladas": {
       "ordenes": 93,
@@ -279,8 +279,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 943,
-        "ventas_brutas": 177115500.0
+        "ordenes": 944,
+        "ventas_brutas": 177265400.0
       },
       {
         "canal": "5690175",
@@ -296,8 +296,8 @@
     "codigos_descuento": [
       {
         "codigo": "Descuento personalizado",
-        "usos": 374,
-        "monto": 18259950.0
+        "usos": 375,
+        "monto": 18289950.0
       },
       {
         "codigo": "CUSTOM DISCOUNT",
@@ -10246,18 +10246,18 @@
       "digital_gastos_var": 0
     },
     "2026-10-28": {
-      "envia_ventas": 719500.0,
-      "envia_ordenes": 5,
-      "envia_unidades": 5,
-      "envia_costo_envio": 74450.0,
-      "digital_ventas_netas": 559500.0,
-      "digital_descuentos": 160000.0,
-      "digital_cod_neto": 219800.0,
+      "envia_ventas": 869400.0,
+      "envia_ordenes": 6,
+      "envia_unidades": 6,
+      "envia_costo_envio": 108380.0,
+      "digital_ventas_netas": 679400.0,
+      "digital_descuentos": 190000.0,
+      "digital_cod_neto": 339700.0,
       "digital_prepago_neto": 339700.0,
-      "digital_cod_ordenes": 2,
+      "digital_cod_ordenes": 3,
       "digital_prepago_ordenes": 3,
       "envia_ventas_raw": 299800.0,
-      "envia_ordenes_raw": 5,
+      "envia_ordenes_raw": 6,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

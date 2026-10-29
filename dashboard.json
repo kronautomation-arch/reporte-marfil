@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-29T14:22:05.967950-05:00",
+  "updated_at": "2026-10-29T15:03:52.370545-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AlOJig31UchS2XQ2Bpim_p_]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AwNcQl2PdXAR3TTshhjd3zf]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
@@ -14,23 +14,23 @@
     "monto_ytd": 14007100,
     "ordenes_ytd": 143,
     "tasa_por_monto": 0.0671,
-    "tasa_por_ordenes": 0.0876
+    "tasa_por_ordenes": 0.0875
   },
   "shopify": {
-    "ventas_brutas_ytd": 253182900,
-    "ventas_netas_ytd": 233098160,
+    "ventas_brutas_ytd": 253302800,
+    "ventas_netas_ytd": 233218060,
     "descuentos_ytd": 20114740,
-    "unidades_ytd": 2194,
-    "ordenes_ytd": 1489,
+    "unidades_ytd": 2195,
+    "ordenes_ytd": 1490,
     "cash_flow": {
-      "cod_neto": 135465170,
-      "cod_bruto": 147887000,
-      "cod_ordenes": 1045,
+      "cod_neto": 135585070,
+      "cod_bruto": 148006900,
+      "cod_ordenes": 1046,
       "prepago_neto": 97632990,
       "prepago_bruto": 105295900,
       "prepago_ordenes": 444,
-      "cod_pct": 0.5812,
-      "prepago_pct": 0.4188
+      "cod_pct": 0.5814,
+      "prepago_pct": 0.4186
     },
     "canceladas": {
       "ordenes": 95,
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 219,
-      "monto": 31356000,
-      "tasa": 0.1282,
+      "ordenes": 218,
+      "monto": 31236100,
+      "tasa": 0.1276,
       "por_canal": [
         {
           "canal": "5690175",
@@ -52,8 +52,8 @@
         },
         {
           "canal": "shopify_draft_order",
-          "ordenes": 75,
-          "monto": 12150800.0
+          "ordenes": 74,
+          "monto": 12030900.0
         },
         {
           "canal": "web",
@@ -143,8 +143,8 @@
       },
       {
         "nombre": "Gafas de Sol Orion",
-        "unidades": 9,
-        "ventas": 1259100.0,
+        "unidades": 10,
+        "ventas": 1379000.0,
         "vendor": "Marfil Oficial"
       },
       {
@@ -279,8 +279,8 @@
     "canales": [
       {
         "canal": "shopify_draft_order",
-        "ordenes": 950,
-        "ventas_brutas": 178154700.0
+        "ordenes": 951,
+        "ventas_brutas": 178274600.0
       },
       {
         "canal": "5690175",
@@ -10279,18 +10279,18 @@
       "digital_gastos_var": 0
     },
     "2026-10-29": {
-      "envia_ventas": 889300.0,
-      "envia_ordenes": 6,
-      "envia_unidades": 7,
-      "envia_costo_envio": 89340.0,
-      "digital_ventas_netas": 749400.0,
+      "envia_ventas": 1009200.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 8,
+      "envia_costo_envio": 104230.0,
+      "digital_ventas_netas": 869300.0,
       "digital_descuentos": 139900.0,
-      "digital_cod_neto": 509600.0,
+      "digital_cod_neto": 629500.0,
       "digital_prepago_neto": 239800.0,
-      "digital_cod_ordenes": 4,
+      "digital_cod_ordenes": 5,
       "digital_prepago_ordenes": 2,
       "envia_ventas_raw": 619500.0,
-      "envia_ordenes_raw": 6,
+      "envia_ordenes_raw": 7,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

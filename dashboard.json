@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-04T16:39:56.502346-05:00",
+  "updated_at": "2026-11-04T19:11:26.255162-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AiL2w_QJaene9oV7H3kZR-6]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AaUvDJS6fz9yYDHdA-Fr68G]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 250,
-      "monto": 35692800,
-      "tasa": 0.1428,
+      "ordenes": 251,
+      "monto": 35812700,
+      "tasa": 0.1433,
       "por_canal": [
         {
           "canal": "5690175",
@@ -57,8 +57,8 @@
         },
         {
           "canal": "web",
-          "ordenes": 59,
-          "monto": 7792800.0
+          "ordenes": 60,
+          "monto": 7912700.0
         },
         {
           "canal": "431735767041",

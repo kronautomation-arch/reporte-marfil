@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-11-05T18:57:27.896908-05:00",
+  "updated_at": "2026-11-06T14:52:45.456855-05:00",
   "errors": {
-    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AnM33L8XPaB5DIu1iOyEk45]",
+    "meta": "Meta API 400 en act_763051359490467/insights — OAuthException (code 190): Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. [fbtrace_id=AeyxPM6oIE7F17MZhx53RW7]",
     "meli": "Meli refresh fallo 400: invalid_grant — Error validating grant. Your authorization code or refresh token may be expired or it was already used",
     "amazon": "Amazon Orders API: [{'code': 'Unauthorized', 'message': 'Access to requested resource is denied.', 'details': 'The LWA secret token you provided has expired.'}]"
   },
   "config": {
     "costo_unitario_gafa": 30000.0,
-    "pct_devoluciones": 0.06555513595166162,
+    "pct_devoluciones": 0.06533326684211566,
     "ventas_fuente_primaria": "shopify"
   },
   "devoluciones": {
     "monto_ytd": 13887200,
-    "ordenes_ytd": 143,
-    "tasa_por_monto": 0.0656,
-    "tasa_por_ordenes": 0.0856
+    "ordenes_ytd": 144,
+    "tasa_por_monto": 0.0653,
+    "tasa_por_ordenes": 0.0859
   },
   "shopify": {
     "ventas_brutas_ytd": 254881500,
@@ -41,9 +41,9 @@
       "monto": 0
     },
     "no_despachadas": {
-      "ordenes": 253,
-      "monto": 36052500,
-      "tasa": 0.1442,
+      "ordenes": 259,
+      "monto": 36851900,
+      "tasa": 0.1472,
       "por_canal": [
         {
           "canal": "5690175",
@@ -62,8 +62,8 @@
         },
         {
           "canal": "431735767041",
-          "ordenes": 13,
-          "monto": 2118600.0
+          "ordenes": 19,
+          "monto": 2918000.0
         }
       ]
     },
@@ -10483,9 +10483,9 @@
     },
     "2026-11-04": {
       "envia_ventas": 2268300.0,
-      "envia_ordenes": 24,
-      "envia_unidades": 24,
-      "envia_costo_envio": 371970.0,
+      "envia_ordenes": 23,
+      "envia_unidades": 23,
+      "envia_costo_envio": 357080.0,
       "digital_ventas_netas": 2268300.0,
       "digital_descuentos": 0,
       "digital_cod_neto": 0,
@@ -10493,7 +10493,40 @@
       "digital_cod_ordenes": 0,
       "digital_prepago_ordenes": 0,
       "envia_ventas_raw": 2268300.0,
-      "envia_ordenes_raw": 24,
+      "envia_ordenes_raw": 23,
+      "meta_gasto": 0,
+      "meli_ventas_brutas": 0,
+      "meli_ventas_netas": 0,
+      "meli_comisiones": 0,
+      "meli_ordenes": 0,
+      "meli_unidades": 0,
+      "amazon_ventas_brutas": 0,
+      "amazon_ordenes": 0,
+      "amazon_unidades": 0,
+      "pos_caracoli_ventas": 0,
+      "pos_caracoli_unidades": 0,
+      "pos_caracoli_gastos": 0,
+      "pos_titan_plaza_ventas": 0,
+      "pos_titan_plaza_unidades": 0,
+      "pos_titan_plaza_gastos": 0,
+      "pos_fundadores_ventas": 0,
+      "pos_fundadores_unidades": 0,
+      "pos_fundadores_gastos": 0,
+      "digital_gastos_var": 0
+    },
+    "2026-11-06": {
+      "envia_ventas": 719400.0,
+      "envia_ordenes": 7,
+      "envia_unidades": 7,
+      "envia_costo_envio": 103420.0,
+      "digital_ventas_netas": 719400.0,
+      "digital_descuentos": 0,
+      "digital_cod_neto": 0,
+      "digital_prepago_neto": 0,
+      "digital_cod_ordenes": 0,
+      "digital_prepago_ordenes": 0,
+      "envia_ventas_raw": 719400.0,
+      "envia_ordenes_raw": 7,
       "meta_gasto": 0,
       "meli_ventas_brutas": 0,
       "meli_ventas_netas": 0,

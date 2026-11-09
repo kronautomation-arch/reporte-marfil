@@ -708,60 +708,113 @@
       }
     ]
   },
-  "layer1_technical": {
-    "score": 22.6,
-    "crawled_at": "2026-11-09T12:32:39Z",
-    "pages_crawled": 237,
-    "issues": {
-      "broken_links": 0,
-      "missing_meta": 32,
-      "missing_title": 0,
-      "missing_h1": 1,
-      "orphan_pages": 0,
-      "duplicate_titles": 70,
-      "duplicate_metas": 44,
-      "thin_content": 6,
-      "no_canonical": 0,
-      "redirect_chains_long": 0,
-      "images_without_alt": 1126
-    },
-    "schema": {
-      "ok": 67,
-      "wrong_type": 161,
-      "skipped": 8,
-      "missing": 1,
-      "pending_proposals": 1
-    },
-    "sitemap": {
-      "sitemap_size": 320,
-      "crawled_size": 300,
-      "overlap": 65,
-      "sitemap_orphans": 255,
-      "crawl_only": 235,
-      "sitemap_broken": 3
-    },
-    "lighthouse": {
-      "status": "ok",
-      "urls_count": 12,
-      "avg_lcp_ms": 6110.1,
-      "avg_cls": 0.0,
-      "avg_score_performance": 48.5,
-      "avg_score_seo": 94.4,
-      "avg_score_accessibility": 86.5
-    },
-    "indexation": {
-      "status": "skipped",
-      "urls_count": null,
-      "by_verdict": null
-    }
-  },
   "layer2_money_pages": {
-    "pending_proposals_total": 337,
+    "pending_proposals_total": 342,
     "pending_by_type": {
       "linkless_mention_outreach": 181,
       "geo_outreach_target": 120,
       "lcp_regression": 6,
-      "local_competitor": 30
-    }
+      "local_competitor": 30,
+      "money_page_meta": 5
+    },
+    "audited_at": "2026-11-09T13:32:37Z",
+    "summary": {
+      "pages_audited": 6,
+      "avg_score": 80.0,
+      "issues_total": 4,
+      "not_found": 1
+    },
+    "worst_pages": [
+      {
+        "url": "/collections/lentes-de-mujer",
+        "primary_keyword": "gafas de sol mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241607770309,
+        "handle": "lentes-de-mujer",
+        "current": {
+          "title": "Gafas de Sol Mujer | Protección UV - Marfil Colombia",
+          "page_title": "GAFAS DE MUJER",
+          "meta_description": "Gafas de sol para mujer con protección UV400 y lentes polarizados. Envío gratis en Colombia. Descubre diseños exclusivos.",
+          "body_html": "<h2>Gafas de sol mujer con protección real para tu día a día</h2><p>En Marfil Colombia sabemos que las gafas de sol mujer no son solo un accesorio: protegen tu visión mientras definen tu estilo. Nuestras colecciones combinan diseño contemporáneo con tecnología UV400 certificada, garantizando que tus ojos estén protegidos contra los rayos ultravioleta sin comprometer la moda.</p><p>Cada par de gafas de sol mujer en nuestro catálogo está fabricado con materiales premium y lentes polarizados que reducen el brillo y mejoran la claridad visual. Esto significa menos fatiga ocular, mejor contraste y esos momentos perfectos sin entrecerrar los ojos bajo el sol colombiano.</p><p>Elegir las gafas de sol mujer correctas es invertir en salud ocular y confianza personal. Nuestros diseños trendy 2026 se adaptan a cualquier forma de rostro y color de piel, desde marcos clásicos hasta propuestas audaces que te permitirán expresar tu personalidad.</p><ul>\n<li>Protección UV400 certificada en todos los modelos</li>\n<li>Lentes polarizados para reducir reflejos y brillo</li>\n<li>Diseños exclusivos ajustados a tendencias actuales</li>\n<li>Materiales durables y resistentes al uso diario</li>\n<li>Envío gratis en toda Colombia</li>\n<li>Garantía de calidad en cada par</li>\n</ul><h3>Encuentra tu par perfecto hoy</h3><p>No todas las gafas de sol mujer ofrecen el balance correcto entre protección, comodidad y estilo. En Marfil Colombia, cada diseño es pensado para la mujer que no compromete. Explora nuestras colecciones y descubre por qué somos la opción confiable en gafas de sol para mujer en Colombia.</p>",
+          "body_word_count": 236
+        },
+        "crawl_signals": null,
+        "serp": null,
+        "score": 95.0,
+        "issues": [
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/lentes-de-hombre",
+        "primary_keyword": "gafas de sol hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241606787269,
+        "handle": "lentes-de-hombre",
+        "current": {
+          "title": "Gafas de Sol Hombre Polarizadas UV400 | Marfil",
+          "page_title": "GAFAS DE HOMBRE",
+          "meta_description": "Gafas de sol para hombre con lentes polarizados UV400. Envío gratis en Colombia. Descubre estilos que se adaptan a tu rostro. Compra con garantía.",
+          "body_html": "<h2>Gafas de sol hombre que protegen tu visión sin sacrificar estilo</h2><p>En Marfil Colombia entendemos que las gafas de sol hombre no son solo un accesorio: son tu escudo contra los rayos UV y el reflejo del sol que daña la retina día tras día. Nuestras gafas de sol hombre vienen con lentes polarizados y protección UV400, la máxima certificación en defensa ocular. Cada par está diseñado para durar, con marcos resistentes y cristales que reducen el brillo sin distorsionar los colores.</p><p>A diferencia de otras tiendas en línea, nosotros no vendemos cantidad: vendemos calidad verificada. Cada gafa de sol hombre en nuestro catálogo pasa control de polarización y bloqueo UV antes de llegar a tus manos. No es marketing, es garantía. Además, el envío es gratis en toda Colombia y tienes 30 días para devolver si no quedas satisfecho.</p><p>Sabemos que elegir gafas de sol hombre online genera dudas: ¿me van bien? ¿De verdad protegen? Por eso incluimos guía de tallas, especificaciones técnicas de cada lente y atención personalizada. Tu compra no es anónima; es una relación con una marca colombiana que vela por tu salud visual.</p><ul>\n<li>Lentes polarizados que eliminan reflejos y mejoran contraste</li>\n<li>Protección UV400 certificada contra radiación UVA y UVB</li>\n<li>Marcos de materiales premium: metal, acetato y nylon resistente</li>\n<li>Envío gratis en toda Colombia sin monto mínimo</li>\n<li>Garantía de devolución 30 días, sin preguntas</li>\n<li>Asesoramiento técnico incluido para elegir tu modelo</li>\n</ul><h3>Gafas de sol hombre que ves hoy, proteges mañana</h3><p>Invertir en gafas de sol hombre de verdad es invertir en tu salud ocular a largo plazo. Explora nuestros modelos, filtra por forma, color y material, y encuentra el par que complementa tu rostro y tu día a día. En Marfil Colombia, cada compra incluye una experiencia sin fricción.</p>",
+          "body_word_count": 293
+        },
+        "crawl_signals": null,
+        "serp": null,
+        "score": 95.0,
+        "issues": [
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/marcos-mujer",
+        "primary_keyword": "monturas de gafas mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744675013,
+        "handle": "marcos-mujer",
+        "current": {
+          "title": "Monturas de Gafas Mujer | Marfil Colombia",
+          "page_title": "Marcos Mujer",
+          "meta_description": "Monturas gafas mujer UV400 y polarizadas. Diseños colombianos modernos con envío seguro y garantía. ¡Descubre nuestros estilos hoy!",
+          "body_html": "<h2>Monturas de Gafas Mujer que Protegen y Transforman tu Rostro</h2><p>En Marfil Colombia sabemos que las monturas de gafas mujer no son solo un accesorio: son la primera línea de defensa contra los rayos UV y el reflejo de tu personalidad. Nuestras colecciones combinan diseños modernos con tecnología polarizada UV400, porque proteger tu vista no significa sacrificar estilo. Cada montura está pensada para adaptarse a diferentes formas de rostro y preferencias, desde líneas geométricas hasta estilos cat eye y redondos que marcan tendencia.</p><p>Las tendencias de monturas para 2026 apuntan a la versatilidad: marcos que funcionan tanto en ambientes urbanos como en días de playa. Nuestras monturas de gafas mujer con lentes polarizados reducen reflejos molestos, mejoran el contraste visual y protegen contra dañinos rayos solares. Además, contamos con garantía incluida en cada compra y envío seguro a todo el país, para que recibas tu par en perfecto estado.</p><p>Elegir la montura ideal según tu tipo de rostro es más sencillo cuando tienes opciones variadas. Nuestro catálogo ofrece referencias en diferentes materiales, colores y formas, pensadas especialmente para mujeres que buscan calidad colombiana sin comprometer su comodidad diaria ni su protección visual.</p><ul>\n<li>Lentes polarizados que reducen reflejos y fatiga visual</li>\n<li>Protección UV400 contra radiación solar directa</li>\n<li>Diseños en tendencia: cat eye, redondos y geométricos</li>\n<li>Adaptables a diferentes formas y tamaños de rostro</li>\n<li>Garantía incluida en cada compra</li>\n<li>Envío seguro y rápido a nivel nacional</li>\n</ul><h3>Encuentra Tu Montura Perfecta Hoy</h3><p>No esperes a dañar tu vista. Navega nuestras colecciones de monturas de gafas mujer y elige el par que refleje quién eres, mientras proteges tus ojos con tecnología polarizada de verdad.</p>",
+          "body_word_count": 270
+        },
+        "crawl_signals": null,
+        "serp": null,
+        "score": 95.0,
+        "issues": [
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/marcos-hombre",
+        "primary_keyword": "monturas para gafas de hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744576709,
+        "handle": "marcos-hombre",
+        "current": {
+          "title": "Monturas para Gafas de Hombre | Marfil Colombia",
+          "page_title": "MARCOS HOMBRE",
+          "meta_description": "Monturas modernas para hombre en acetato y metal. UV400, polarizadas, garantía y envío rápido a Colombia. Descubre tu estilo.",
+          "body_html": "<h2>Monturas para gafas de hombre que combinan estilo y protección</h2><p>En Marfil Colombia entendemos que las monturas para gafas de hombre no son solo un accesorio funcional. Buscamos frames que protejan tus ojos mientras definen tu imagen personal. Por eso seleccionamos diseños en acetato y metal que se adaptan a diferentes formas de cara y estilos de vida, desde lo minimalista hasta lo más atrevido.</p><p>Nuestras monturas para gafas de hombre cuentan con certificación UV400 y opciones polarizadas para reducir reflejos y fatiga visual. Sabemos que pasás horas frente a pantallas o bajo el sol intenso colombiano. Cada frame está pensado para durar: materiales resistentes, ajustes precisos y acabados que mantienen su aspecto con el tiempo.</p><p>Elegir la montura correcta es cuestión de encontrar el balance entre comodidad, protección y personalidad. Nuestro catálogo responde a las tendencias actuales sin sacrificar funcionalidad: acetato de calidad, metales hipoalergénicos y geometrías que favorecen.</p><ul>\n<li>Protección UV400 certificada en todos los modelos</li>\n<li>Lentes polarizados disponibles para eliminar reflejos</li>\n<li>Diseños en acetato y metal para diferentes estilos</li>\n<li>Garantía y cambios sin costo en los primeros 30 días</li>\n<li>Envío rápido a toda Colombia con empaque seguro</li>\n<li>Asesoría de medidas para el ajuste perfecto</li>\n</ul><h3>Encuentra tu montura ideal hoy</h3><p>Navega nuestro catálogo de monturas para gafas de hombre y descargá nuestra guía de selección. Si tenés dudas sobre qué material o diseño se adapta mejor a tu rostro, nuestro equipo está disponible por chat o WhatsApp.</p>",
+          "body_word_count": 238
+        },
+        "crawl_signals": null,
+        "serp": null,
+        "score": 95.0,
+        "issues": [
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/cuelga-gafas",
+        "primary_keyword": "cordones para gafas",
+        "kind": "collection",
+        "status": "not_found"
+      }
+    ]
   }
 }

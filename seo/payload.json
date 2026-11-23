@@ -708,57 +708,352 @@
       }
     ]
   },
-  "layer1_technical": {
-    "score": 23.1,
-    "crawled_at": "2026-11-23T14:02:15Z",
-    "pages_crawled": 227,
-    "issues": {
-      "broken_links": 0,
-      "missing_meta": 27,
-      "missing_title": 0,
-      "missing_h1": 1,
-      "orphan_pages": 0,
-      "duplicate_titles": 68,
-      "duplicate_metas": 43,
-      "thin_content": 6,
-      "no_canonical": 0,
-      "redirect_chains_long": 0,
-      "images_without_alt": 1146
-    },
-    "schema": {
-      "ok": 64,
-      "wrong_type": 154,
-      "skipped": 8,
-      "missing": 1,
-      "pending_proposals": 1
-    },
-    "sitemap": {
-      "sitemap_size": 323,
-      "crawled_size": 300,
-      "overlap": 65,
-      "sitemap_orphans": 258,
-      "crawl_only": 235,
-      "sitemap_broken": 4
-    },
-    "lighthouse": {
-      "status": "ok",
-      "urls_count": 12,
-      "avg_lcp_ms": 7227.5,
-      "avg_cls": 0.0,
-      "avg_score_performance": 42.8,
-      "avg_score_seo": 94.4,
-      "avg_score_accessibility": 86.5
-    },
-    "indexation": {
-      "status": "skipped",
-      "urls_count": null,
-      "by_verdict": null
-    }
-  },
   "layer2_money_pages": {
-    "pending_proposals_total": 25,
+    "pending_proposals_total": 30,
     "pending_by_type": {
-      "linkless_mention_outreach": 25
-    }
+      "linkless_mention_outreach": 25,
+      "money_page_meta": 5
+    },
+    "audited_at": "2026-11-23T15:37:32Z",
+    "summary": {
+      "pages_audited": 6,
+      "avg_score": 80.8,
+      "issues_total": 2,
+      "not_found": 1
+    },
+    "worst_pages": [
+      {
+        "url": "/collections/marcos-hombre",
+        "primary_keyword": "monturas para gafas de hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744576709,
+        "handle": "marcos-hombre",
+        "current": {
+          "title": "Monturas para Gafas Hombre UV400 | Marfil Colombia",
+          "page_title": "MARCOS HOMBRE",
+          "meta_description": "Monturas para gafas de hombre UV400 y polarizadas. Acetato y metal con garantía. Envío rápido a Colombia. ¡Compra hoy!",
+          "body_html": "<h2>Monturas para gafas de hombre que combinan estilo y protección</h2><p>En Marfil Colombia entendemos que las monturas para gafas de hombre no son solo un accesorio funcional. Buscamos frames que protejan tus ojos mientras definen tu imagen personal. Por eso seleccionamos diseños en acetato y metal que se adaptan a diferentes formas de cara y estilos de vida, desde lo minimalista hasta lo más atrevido.</p><p>Nuestras monturas para gafas de hombre cuentan con certificación UV400 y opciones polarizadas para reducir reflejos y fatiga visual. Sabemos que pasás horas frente a pantallas o bajo el sol intenso colombiano. Cada frame está pensado para durar: materiales resistentes, ajustes precisos y acabados que mantienen su aspecto con el tiempo.</p><p>Elegir la montura correcta es cuestión de encontrar el balance entre comodidad, protección y personalidad. Nuestro catálogo responde a las tendencias actuales sin sacrificar funcionalidad: acetato de calidad, metales hipoalergénicos y geometrías que favorecen.</p><ul>\n<li>Protección UV400 certificada en todos los modelos</li>\n<li>Lentes polarizados disponibles para eliminar reflejos</li>\n<li>Diseños en acetato y metal para diferentes estilos</li>\n<li>Garantía y cambios sin costo en los primeros 30 días</li>\n<li>Envío rápido a toda Colombia con empaque seguro</li>\n<li>Asesoría de medidas para el ajuste perfecto</li>\n</ul><h3>Encuentra tu montura ideal hoy</h3><p>Navega nuestro catálogo de monturas para gafas de hombre y descargá nuestra guía de selección. Si tenés dudas sobre qué material o diseño se adapta mejor a tu rostro, nuestro equipo está disponible por chat o WhatsApp.</p>",
+          "body_word_count": 238
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Montura Ref. 1002280 · Gafas formuladas",
+            "Monturas de gafas deportivas para hombre – Página 4",
+            "Montura de Gafas Hombre Sam",
+            "Montura de Gafas para Hombre Modernas: Guía Completa",
+            "Monturas Lentes | MercadoLibre 📦",
+            "Monturas para Hombre Según Rostro | Marfil Colombia",
+            "¿Cansado de usar siempre las mismas gafas aburridas?  Nos ...",
+            "Montura de Gafas Hombre Vincent",
+            "Montura de Gafas Hombre Gian",
+            "Montura de Gafas Hombre Davide"
+          ],
+          "top_descriptions": [
+            "Visión sencilla Corrigen miopía, hipermetropía o astigmatismo para ver bien de lejos o de cerca. · Progresivos Ves de lejos, a media distancia y de cerca con el ...",
+            "Diseñadas para adaptarse a cada movimiento, ofrecen una combinación de ligereza, resistencia y comodidad. Perfectas para cualquier actividad, desde correr al ...",
+            "Esta es la montura para un look perfecto Contiene Montura Paño de microfibra Estuche Garantía de 3 meses por defecto de fabricación, no aplica para daños ...",
+            "20/10/2026 — Descubre qué hace moderna una montura de gafas para hombre. Tipos, materiales, cómo elegir y dónde comprar en Colombia. Guía completa.",
+            "Lentes Gafas De Sol Unisex Retro con armazón PV. Atrévete a destacar con lentes de sol retro unisex; diseño cuadrado, ligero armazón PV y protección UV para uso ...",
+            "21/07/2026 — Los marcos redondos, de gota o con curvas suavizan los ángulos de un rostro cuadrado. Evita marcos demasiado angulares o muy anchos que ...",
+            "trajimos estas 5 opciones de monturas para hombre que combinan con todo (de lo formal a lo ... # gafas #estilo # hombre #miopía # montura.",
+            "Esta es la montura para un look perfecto Contiene Montura Metálica Paño de microfibra Estuche Garantía de 3 meses por defecto de fabricación, no aplica para ...",
+            "En esta montura podrás encontrar un estilo clásico lleno de confianza Contiene Montura Acetato Paño de microfibra Estuche Garantía de 3 meses por defecto de ...",
+            "Montura de Gafas Hombre Davide ... Envío calculado en el pago. Montura TR y Metal; Paño de microfibra; Estuche. Si quieres una asesoría personalizada, contáctanos ..."
+          ],
+          "common_patterns": {
+            "year_in_title": 0,
+            "geo_modifier_in_title": 3
+          },
+          "paa": [
+            {
+              "question": "¿Cómo elegir monturas de gafas para hombre?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué marca de gafas es buena?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son los 4 tipos de lentes?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cómo se llaman los lentes que no tienen montura?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué tipos de monturas de gafas existen?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [],
+          "featured_snippet": null
+        },
+        "score": 90.0,
+        "issues": [
+          "primary_keyword_missing_from_title"
+        ]
+      },
+      {
+        "url": "/collections/lentes-de-hombre",
+        "primary_keyword": "gafas de sol hombre",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241606787269,
+        "handle": "lentes-de-hombre",
+        "current": {
+          "title": "Gafas de Sol Hombre Polarizadas UV400 | Marfil",
+          "page_title": "GAFAS DE HOMBRE",
+          "meta_description": "Gafas de sol polarizadas UV400 para hombre. Protección total contra rayos UV, envío gratis en Colombia y garantía. Estilos premium que se adaptan a ti.",
+          "body_html": "<h2>Gafas de sol hombre que protegen tu visión sin sacrificar estilo</h2><p>En Marfil Colombia entendemos que las gafas de sol hombre no son solo un accesorio: son tu escudo contra los rayos UV y el reflejo del sol que daña la retina día tras día. Nuestras gafas de sol hombre vienen con lentes polarizados y protección UV400, la máxima certificación en defensa ocular. Cada par está diseñado para durar, con marcos resistentes y cristales que reducen el brillo sin distorsionar los colores.</p><p>A diferencia de otras tiendas en línea, nosotros no vendemos cantidad: vendemos calidad verificada. Cada gafa de sol hombre en nuestro catálogo pasa control de polarización y bloqueo UV antes de llegar a tus manos. No es marketing, es garantía. Además, el envío es gratis en toda Colombia y tienes 30 días para devolver si no quedas satisfecho.</p><p>Sabemos que elegir gafas de sol hombre online genera dudas: ¿me van bien? ¿De verdad protegen? Por eso incluimos guía de tallas, especificaciones técnicas de cada lente y atención personalizada. Tu compra no es anónima; es una relación con una marca colombiana que vela por tu salud visual.</p><ul>\n<li>Lentes polarizados que eliminan reflejos y mejoran contraste</li>\n<li>Protección UV400 certificada contra radiación UVA y UVB</li>\n<li>Marcos de materiales premium: metal, acetato y nylon resistente</li>\n<li>Envío gratis en toda Colombia sin monto mínimo</li>\n<li>Garantía de devolución 30 días, sin preguntas</li>\n<li>Asesoramiento técnico incluido para elegir tu modelo</li>\n</ul><h3>Gafas de sol hombre que ves hoy, proteges mañana</h3><p>Invertir en gafas de sol hombre de verdad es invertir en tu salud ocular a largo plazo. Explora nuestros modelos, filtra por forma, color y material, y encuentra el par que complementa tu rostro y tu día a día. En Marfil Colombia, cada compra incluye una experiencia sin fricción.</p>",
+          "body_word_count": 293
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "https://www.vitkac.com/co/p/sunglasses-tom-ford-gl...",
+            "Gafasdesol",
+            "https://www.mercadolibre.com.co/navigation/address...",
+            "Gafas Hombres | MercadoLibre 📦",
+            "Gafas de Moda para Hombre",
+            "Gafas de Sol de Diseño sin marca para hombres",
+            "https://www.replaycol.com/gafas-casuales-para-homb...",
+            "Anteojos De Sol Para Hombres",
+            "10",
+            "Gafas de Sol"
+          ],
+          "top_descriptions": [
+            "¡ENCUENTRA TU MEJOR ESTILO DE GAFAS AQUÍ! Hay estilo de gafas de sol para cada tipo de cara. Encuentra el que màs te guste… Descubrir màs estilos. PARA MUJER.",
+            "Envíos Gratis en el día ✓ Compre Gafas Hombres en cuotas sin interés! Conozca nuestras increíbles ofertas y promociones en millones de productos.",
+            "1 pieza Gafas de estilo callejero retro personalizadas y geniales para hombres, con combinación de plástico dorado multicolor geométrico, con tachuelas, de moda ...",
+            "En eBay encuentras fabulosas ofertas en Gafas de Sol de Diseño sin marca para hombres. Encontrarás artículos nuevos o usados en Gafas de Sol de Diseño sin ...",
+            "MÁS VENDIDO. Gafas De Sol Hawkers One Ls Hombre Y Mujer Elige Tu Color Color de la lente Azul Color del armazón Negro/Blanco. HAWKERS 4.7. $199.000."
+          ],
+          "common_patterns": {
+            "year_in_title": 0,
+            "geo_modifier_in_title": 7
+          },
+          "paa": [
+            {
+              "question": "¿Qué gafas de sol quedan bien según tu cara?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las 10 mejores marcas de gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son los 4 tipos de lentes?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Dónde es más barato comprar gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué marcas de lentes de sol son buenas y baratas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [],
+          "featured_snippet": null
+        },
+        "score": 95.0,
+        "issues": [
+          "primary_keyword_missing_from_meta"
+        ]
+      },
+      {
+        "url": "/collections/lentes-de-mujer",
+        "primary_keyword": "gafas de sol mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241607770309,
+        "handle": "lentes-de-mujer",
+        "current": {
+          "title": "Gafas de Sol Mujer UV400 Polarizadas | Marfil",
+          "page_title": "GAFAS DE MUJER",
+          "meta_description": "Gafas de sol mujer con protección UV400 y lentes polarizados. Envío gratis en Colombia. Diseños exclusivos con garantía.",
+          "body_html": "<h2>Gafas de sol mujer con protección real para tu día a día</h2><p>En Marfil Colombia sabemos que las gafas de sol mujer no son solo un accesorio: protegen tu visión mientras definen tu estilo. Nuestras colecciones combinan diseño contemporáneo con tecnología UV400 certificada, garantizando que tus ojos estén protegidos contra los rayos ultravioleta sin comprometer la moda.</p><p>Cada par de gafas de sol mujer en nuestro catálogo está fabricado con materiales premium y lentes polarizados que reducen el brillo y mejoran la claridad visual. Esto significa menos fatiga ocular, mejor contraste y esos momentos perfectos sin entrecerrar los ojos bajo el sol colombiano.</p><p>Elegir las gafas de sol mujer correctas es invertir en salud ocular y confianza personal. Nuestros diseños trendy 2026 se adaptan a cualquier forma de rostro y color de piel, desde marcos clásicos hasta propuestas audaces que te permitirán expresar tu personalidad.</p><ul>\n<li>Protección UV400 certificada en todos los modelos</li>\n<li>Lentes polarizados para reducir reflejos y brillo</li>\n<li>Diseños exclusivos ajustados a tendencias actuales</li>\n<li>Materiales durables y resistentes al uso diario</li>\n<li>Envío gratis en toda Colombia</li>\n<li>Garantía de calidad en cada par</li>\n</ul><h3>Encuentra tu par perfecto hoy</h3><p>No todas las gafas de sol mujer ofrecen el balance correcto entre protección, comodidad y estilo. En Marfil Colombia, cada diseño es pensado para la mujer que no compromete. Explora nuestras colecciones y descubre por qué somos la opción confiable en gafas de sol para mujer en Colombia.</p>",
+          "body_word_count": 236
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Compra hoy las Gafas de Sol para Mujer",
+            "Gafas De Sol Para Mujer + Accesorios | Alta Calidad",
+            "Gafas de sol para mujer originales",
+            "Gafas de Sol para Mujer Originales — Guía Completa 2024",
+            "Gafas Mujer | MercadoLibre 📦",
+            "Compra hoy las Gafas de Sol para Mujer",
+            "https://www.ela.com.co/gafas/complementos?map=ft,c...",
+            "Gafas Mujer Sol | MercadoLibre 📦",
+            "Lentes De Sol Dama",
+            "Gafas de sol para mujer general | Falabella Colombia"
+          ],
+          "top_descriptions": [
+            "Ingresa aquí y compra en línea las Gafas de Sol para Mujeres, descubre la gran variedad y modelos que tenemos para complementar tu estilo. Ópticas Lafam.",
+            "Color del armazón: Dorado · Color de la lente: Azul Degrade · Lente para mujer. · Con protección UV. · Armazón de acero con forma cuadrado. · Varilla de acero color ...",
+            "Las gafas de sol para mujer de Monastery definen el lujo urbano con diseños exclusivos que elevan tu estilo a otro nivel.",
+            "21/10/2026 — Certificación UV400. Esto significa que bloquean el 100% de los rayos ultravioleta hasta 400 nanómetros. · Materiales de calidad. · Trazabilidad.",
+            "Envíos Gratis en el día ✓ Compre Gafas Mujer en cuotas sin interés! Conozca nuestras increíbles ofertas y promociones en millones de productos.",
+            "Ingresa aquí y compra en línea las Gafas de Sol para Mujeres, descubre la gran variedad y modelos que tenemos para complementar tu estilo. Ópticas Lafam.",
+            "Envíos Gratis en el día ✓ Compre Gafas Mujer Sol en cuotas sin interés! Conozca nuestras increíbles ofertas y promociones en millones de productos.",
+            "Gafas De Sol Hawkers Fervor Para Mujer. Elige Tu Color Color Morada Lente Morada Varilla. Disponible en 2 colores2. Gafas De Sol Hawkers Fervor Para Mujer.",
+            "Marca · General · Ray-ban · Hawkers · Tommy hilfiger · Oakley · Invicta · Fossil · Sybilla · Michael kors · Vogue. + Ver más. Precio. Descuentos. 20% dcto y más ..."
+          ],
+          "common_patterns": {
+            "year_in_title": 1,
+            "geo_modifier_in_title": 8
+          },
+          "paa": [
+            {
+              "question": "¿Qué gafas de sol se llevan ahora?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Dónde es más barato comprar gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué deben tener unas gafas de sol?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cómo se llaman las gafas de sol?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las 5 mejores marcas de lentes de sol?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [],
+          "featured_snippet": null
+        },
+        "score": 100.0,
+        "issues": []
+      },
+      {
+        "url": "/collections/marcos-mujer",
+        "primary_keyword": "monturas de gafas mujer",
+        "kind": "collection",
+        "sub_kind": "custom_collections",
+        "resource_id": 241744675013,
+        "handle": "marcos-mujer",
+        "current": {
+          "title": "Monturas de Gafas Mujer UV400 | Marfil Colombia",
+          "page_title": "Marcos Mujer",
+          "meta_description": "Monturas de gafas mujer UV400 polarizadas. Diseños colombianos con envío seguro y garantía. Compra en línea hoy.",
+          "body_html": "<h2>Monturas de Gafas Mujer que Protegen y Transforman tu Rostro</h2><p>En Marfil Colombia sabemos que las monturas de gafas mujer no son solo un accesorio: son la primera línea de defensa contra los rayos UV y el reflejo de tu personalidad. Nuestras colecciones combinan diseños modernos con tecnología polarizada UV400, porque proteger tu vista no significa sacrificar estilo. Cada montura está pensada para adaptarse a diferentes formas de rostro y preferencias, desde líneas geométricas hasta estilos cat eye y redondos que marcan tendencia.</p><p>Las tendencias de monturas para 2026 apuntan a la versatilidad: marcos que funcionan tanto en ambientes urbanos como en días de playa. Nuestras monturas de gafas mujer con lentes polarizados reducen reflejos molestos, mejoran el contraste visual y protegen contra dañinos rayos solares. Además, contamos con garantía incluida en cada compra y envío seguro a todo el país, para que recibas tu par en perfecto estado.</p><p>Elegir la montura ideal según tu tipo de rostro es más sencillo cuando tienes opciones variadas. Nuestro catálogo ofrece referencias en diferentes materiales, colores y formas, pensadas especialmente para mujeres que buscan calidad colombiana sin comprometer su comodidad diaria ni su protección visual.</p><ul>\n<li>Lentes polarizados que reducen reflejos y fatiga visual</li>\n<li>Protección UV400 contra radiación solar directa</li>\n<li>Diseños en tendencia: cat eye, redondos y geométricos</li>\n<li>Adaptables a diferentes formas y tamaños de rostro</li>\n<li>Garantía incluida en cada compra</li>\n<li>Envío seguro y rápido a nivel nacional</li>\n</ul><h3>Encuentra Tu Montura Perfecta Hoy</h3><p>No esperes a dañar tu vista. Navega nuestras colecciones de monturas de gafas mujer y elige el par que refleje quién eres, mientras proteges tus ojos con tecnología polarizada de verdad.</p>",
+          "body_word_count": 270
+        },
+        "crawl_signals": null,
+        "serp": {
+          "top_titles": [
+            "Montura de Gafas Mujer Amelia",
+            "Montura De Gafas Mujer Yen",
+            "Montura De Gafas Mujer Alina",
+            "Montura De Gafas Mujer Bianca",
+            "Monturas De Gafas Para Mujer De Marca: Guía Completa",
+            "Monturas de Gafas para Mujer — Guía Completa 2024",
+            "Montura De Gafas Mujer | MercadoLibre 📦",
+            "¡Te mostramos nuestras 4 monturas más vendidas para ...",
+            "Montura de Gafas Mujer Alice",
+            "Montura De Gafas Mujer Nicol"
+          ],
+          "top_descriptions": [
+            "Envío calculado en el pago. Montura Metal; Paño de microfibra; Estuche. Si quieres una asesoría personalizada, contáctanos y te brindaremos el mejor servicio.",
+            "Contiene Montura tr90/ metal Paño de microfibra Estuche Garantía de 3 meses por defecto de fabricación, no aplica para daños causados por mal uso Si quieres ...",
+            "Contiene Montura metal Paño de microfibra Estuche Garantía de 3 meses por defecto de fabricación, no aplica para daños causados por mal uso Si quieres una ...",
+            "Montura De Gafas Mujer Bianca · Montura acetato · Paño de microfibra · Estuche. Garantía de 3 meses por defecto de fabricación, no aplica para daños causados ...",
+            "18/10/2026 — Descubre cómo elegir las mejores monturas de gafas para mujer de marca. Guía completa sobre materiales, estilos y dónde comprar en Colombia.",
+            "28/06/2026 — Las monturas de mujer suelen tener puentes más estrechos (entre 14 y 18 mm vs. 18-22 mm en hombres), brazos más cortos y proporciones globales ...",
+            "Envíos Gratis en el día ✓ Compre Montura De Gafas Mujer en cuotas sin interés! Conozca nuestras increíbles ofertas y promociones en millones de productos.",
+            "Son ideales para quienes buscan discreción, comodidad y estilo en sus gafas. Perfectos para combinar con monturas modernas, los lentes de alto ...",
+            "Envío calculado en el pago. Montura Metal; Paño de microfibra; Estuche. Si quieres una asesoría personalizada, contáctanos y te brindaremos el mejor servicio.",
+            "Contiene Montura tr90 Paño de microfibra Estuche Garantía de 3 meses por defecto de fabricación, no aplica para daños causados por mal uso Si quieres una ..."
+          ],
+          "common_patterns": {
+            "year_in_title": 1,
+            "geo_modifier_in_title": 4
+          },
+          "paa": [
+            {
+              "question": "¿Cuáles son los 4 tipos de lentes?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuáles son las 10 mejores marcas de gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Cuál es el mejor material para monturas de gafas?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué tipos de monturas hay?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            },
+            {
+              "question": "¿Qué tipo de monturas se llevan ahora?",
+              "expanded_url": "",
+              "expanded_title": "",
+              "expanded_text": ""
+            }
+          ],
+          "related_searches": [],
+          "featured_snippet": null
+        },
+        "score": 100.0,
+        "issues": []
+      },
+      {
+        "url": "/collections/cuelga-gafas",
+        "primary_keyword": "cordones para gafas",
+        "kind": "collection",
+        "status": "not_found"
+      }
+    ]
   }
 }
